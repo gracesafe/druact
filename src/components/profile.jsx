@@ -16,20 +16,21 @@ class Profile extends Component {
     var uid = localStorage.getItem('uid');
     var auth = localStorage.getItem('auth');
     var self = this;
-    this.serverRequest = axios.get('http://druact-api.goran.cloud/user/' + uid + '?_format=json', {
-      headers: {"Authorization":"Basic " + auth}
+    this.serverRequest = axios.get('https://eas-grist06.aston.ac.uk/user/' + uid + '?_format=json', {
+      headers: { "Authorization": "Basic " + auth }
     })
-    .then(function(result){
-      var userDate = new Date(parseInt(result.data.created["0"].value, 10)*1000);
-      self.setState({
-        'name': result.data.name["0"].value,
-        'email': result.data.mail["0"].value,
-        'date': userDate.toISOString()
-      });
-    })
+      .then(function (result) {
+        console.log(result);
+        var userDate = new Date(parseInt(result.data.created["0"].value, 10) * 1000);
+        self.setState({
+          'name': result.data.name["0"].value,
+          'email': result.data.mail["0"].value,
+          'date': userDate.toISOString()
+        });
+      })
   }
 
-  render(){
+  render() {
     return (
       <div className="row top-buffer">
         <div className="col-md-4 offset-md-4">

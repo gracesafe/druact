@@ -63,16 +63,6 @@ class Navbar extends Component {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <NavLink exact className="nav-link" activeClassName="active" to="/articles">
-                    <i className="fa fa-newspaper-o"></i> Articles
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" activeClassName="active" to="/about">
-                    <i className="fa fa-info-circle"></i> About
-                  </NavLink>
-                </li>
-                <li className="nav-item">
                   <NavLink className="nav-link" activeClassName="active" to="/contact">
                     <i className="fa fa-envelope"></i> Contact
                   </NavLink>

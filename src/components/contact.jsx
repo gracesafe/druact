@@ -32,7 +32,7 @@ class Contact extends Component {
 
     var self = this;
 
-    axios.post('http://druact-api.goran.cloud/contact_message?_format=json', {
+    axios.post('https://eas-grist06.aston.ac.uk/contact_message?_format=json', {
       contact_form: [{"target_id":"feedback"}],
       name: [{"value": this.state.name}],
       mail: [{"value": this.state.email}],

@@ -15,6 +15,9 @@ class Login extends Component {
       email: '',
       password: '',
       password2: '',
+      sid: '',
+      postUrl: 'https://eas-grist06.aston.ac.uk/user/login?_format=json',
+      gristUrl: 'https://www.secure.egrist.org/login-headless.php?u=trust-su-drupal&p=delta4force&metaClinID=',
       success: '',
       error: '',
       redirect: false
@@ -38,35 +41,56 @@ class Login extends Component {
 
     var self = this;
 
-    axios.post('http://druact-api.goran.cloud/user/login?_format=json', {
+    axios.post('https://eas-grist06.aston.ac.uk/user/login?_format=json', {
       name: this.state.name,
       pass: this.state.password
     })
-    .then(function (response) {
-      self.setState({
-        'success': 'Login successful',
-        'error': ''
-      });
+      .then(function (response) {
+        self.setState({
+          'success': 'Login successful',
+          'error': ''
+        });
 
-      localStorage.setItem('username', response.data.current_user.name);
-      localStorage.setItem('uid', response.data.current_user.uid);
-      localStorage.setItem('csrf_token', response.data.csrf_token);
-      localStorage.setItem('logout_token', response.data.logout_token);
-      localStorage.setItem('auth', window.btoa(self.state.name + ':' + self.state.password));
+        localStorage.setItem('username', response.data.current_user.name);
+        localStorage.setItem('uid', response.data.current_user.uid);
+        localStorage.setItem('csrf_token', response.data.csrf_token);
+        localStorage.setItem('logout_token', response.data.logout_token);
+        localStorage.setItem('auth', window.btoa(self.state.name + ':' + self.state.password));
+        localStorage.setItem('roles', response.data.roles);
 
-      self.setState({redirect: true});
-    })
-    .catch(function (error) {
-      var errorResponse = error.response.data.message;
-      errorResponse = errorResponse.replace(/(?:\r\n|\r|\n)/g, '<br />');
-      self.setState({
-        'success': '',
-        'error': errorResponse
+        // login to GRiST if the drupal login is successful
+        axios.post('https://www.secure.egrist.org/login-headless.php?u=trust-su-drupal&p=delta4force&metaClinID=', 'GET')
+          .then(function (response) {
+            self.setState({
+              'success': 'Login successful',
+              'error': ''
+            });
+
+            var session = response['data'];
+            localStorage.setItem('sid', session);
+
+            self.setState({ redirect: true });
+          }).catch(function (error) {
+            console.log(error);
+            self.setState({
+              'success': '',
+              'error': error
+            });
+          });
+
+        // self.setState({ redirect: true });
+      })
+      .catch(function (error) {
+        var errorResponse = error.response.data.message;
+        errorResponse = errorResponse.replace(/(?:\r\n|\r|\n)/g, '<br />');
+        self.setState({
+          'success': '',
+          'error': errorResponse
+        });
       });
-    });
   }
 
-  render(){
+  render() {
 
     if (this.state.redirect) {
       return (
@@ -87,7 +111,7 @@ class Login extends Component {
             <button type="submit" className="btn btn-primary">Login</button>
             <div className="form-group messages">
               <p className="success">{this.state.success}</p>
-              <p className="error" dangerouslySetInnerHTML={{__html: this.state.error}} />
+              <p className="error" dangerouslySetInnerHTML={{ __html: this.state.error }} />
             </div>
             <NavLink to="/user/register">Don't have an account?</NavLink>
           </form>

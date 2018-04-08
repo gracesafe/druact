@@ -42,36 +42,36 @@ class Articles extends Component {
       id = 6;
     }
     var self = this;
-    this.serverRequest = axios.get('http://druact-api.goran.cloud/node/' + id + '?_format=json')
-    .then(function(result){
-      var body = result.data.body["0"].value;
-      self.setState({
-        article_title: result.data.title["0"].value,
-        article_body: body.replace('/sites/default/files', 'http://druact-api.goran.cloud/sites/default/files')
-      });
-    })
+    this.serverRequest = axios.get('https://eas-grist06.aston.ac.uk/node/' + id + '?_format=json')
+      .then(function (result) {
+        var body = result.data.body["0"].value;
+        self.setState({
+          article_title: result.data.title["0"].value,
+          article_body: body.replace('/sites/default/files', 'https://eas-grist06.aston.ac.uk/sites/default/files')
+        });
+      })
   }
 
   fetchArticleTitles() {
     var self = this;
-    this.serverRequest = axios.get('http://druact-api.goran.cloud/api/v1/articles/list')
-    .then(function(result){
-      self.setState({
-        articles: result.data
-      });
-    })
+    this.serverRequest = axios.get('https://eas-grist06.aston.ac.uk/api/v1/articles/list')
+      .then(function (result) {
+        self.setState({
+          articles: result.data
+        });
+      })
   }
 
-  componentDidMount () {
+  componentDidMount() {
     this.fetchArticleTitles();
     this.fetchArticle();
   }
 
-  render(){
+  render() {
 
     var rows = [];
     var self = this;
-    this.state.articles.forEach(function(article, index) {
+    this.state.articles.forEach(function (article, index) {
       if (article.title.toLowerCase().indexOf(self.state.keyword.toLowerCase()) !== -1) {
         var path = '/articles/' + article.nid;
         rows.push(<NavLink key={article.nid} data-value={article.nid} onClick={self.updateSelectedArticle} to={path} className="list-group-item list-group-item-action">{article.title}</NavLink>);
@@ -95,10 +95,7 @@ class Articles extends Component {
             <div className="card-header">
               {this.state.article_title}
             </div>
-            <div className="card-block" dangerouslySetInnerHTML={{__html: this.state.article_body}} />
-            <div className="card-footer text-muted text-left">
-              <em><small>By Goran Nikolovski.</small></em>
-            </div>
+            <div className="card-block" dangerouslySetInnerHTML={{ __html: this.state.article_body }} />
           </div>
         </div>
       </div>

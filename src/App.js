@@ -7,7 +7,6 @@ import {
 } from 'react-router-dom';
 
 import Navbar from './components/navbar.jsx';
-import Slider from './components/slider.jsx';
 import Footer from './components/footer.jsx';
 
 import Home from './components/home.jsx';
@@ -25,7 +24,6 @@ class App extends Component {
       <Router history={browserHistory}>
         <div className="container">
           <Navbar />
-          <Slider />
             <Route exact path="/" component={Home} />
             <Route path="/articles/:id?" component={Articles} />
             <Route path="/about" component={About} />
