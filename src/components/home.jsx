@@ -109,9 +109,9 @@ class Home extends Component {
   render() {
     return (
       <div className="row top-buffer">
-        <div className="col-md-4 offset-md-4">
-          <div className="list-group">
-            <h4 className="card-title">New Assessment</h4>
+        <div className="row">
+          <div className="list-group col-md-4">
+            <h4 className="card-title col-md-4">New Assessment</h4>
             <ul className="list-group">
               <li className="list-group-item list-group-item-success button">
                 <button onClick={(e) => this.handleClick(1)} className="list-group-item list-group-item-info">My state of mind</button>
@@ -151,8 +151,9 @@ class Home extends Component {
               </li>
             </ul>
           </div>
+          {/* <input name="qno" value={this.state.name} onChange={this.handleChange} type="text" className="form-control" placeholder="question" /> */}
+          <iframe name="fGrist" src={localStorage.getItem('sourceUrl')} height='500px' width='100%' className="col-md-8"/>
         </div>
-        <iframe src={localStorage.getItem('sourceUrl')} height='500px' width='100%' />
       </div>
     );
   }

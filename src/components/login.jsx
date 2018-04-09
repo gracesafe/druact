@@ -81,7 +81,8 @@ class Login extends Component {
         // self.setState({ redirect: true });
       })
       .catch(function (error) {
-        var errorResponse = error.response.data.message;
+        console.log(error);
+        var errorResponse = error.message;
         errorResponse = errorResponse.replace(/(?:\r\n|\r|\n)/g, '<br />');
         self.setState({
           'success': '',
