@@ -104,56 +104,13 @@ class Home extends Component {
 
     localStorage.setItem('sourceUrl', gristURL);
     localStorage.setItem('redirect', true);
-    <Redirect to="/question" />
+    <Redirect to="/home" />
   }
   render() {
+    console.log(this.props.location.search);
     return (
-      <div className="row top-buffer">
-        <div className="row">
-          <div className="list-group col-md-4">
-            <h4 className="card-title col-md-4">New Assessment</h4>
-            <ul className="list-group">
-              <li className="list-group-item list-group-item-success button">
-                <button onClick={(e) => this.handleClick(1)} className="list-group-item list-group-item-info">My state of mind</button>
-              </li>
-              <li className="list-group-item list-group-item-info">
-                <button onClick={(e) => this.handleClick(2)} className="list-group-item list-group-item-success">What's happening in my life right now</button>
-              </li>
-              <li className="list-group-item list-group-item-success">
-                <button onClick={(e) => this.handleClick(3)} className="list-group-item list-group-item-info">What my health is like today</button>
-              </li>
-              <li className="list-group-item list-group-item-info">
-                <button onClick={(e) => this.handleClick(4)} className="list-group-item list-group-item-success">My safety</button>
-              </li>
-              <li className="list-group-item list-group-item-success">
-                <button onClick={(e) => this.handleClick(5)} className="list-group-item list-group-item-info">My wellbeing</button>
-              </li>
-              <li className="list-group-item list-group-item-info">
-                <button onClick={(e) => this.handleClick(6)} className="list-group-item list-group-item-success">Overview of everything: past and present</button>
-              </li>
-            </ul>
-            <h4 className="card-title">My Profile</h4>
-            <ul className="list-group">
-              <li className="list-group-item list-group-item-success">
-                <button onClick={(e) => this.handleClick(7)} className="list-group-item list-group-item-info">My personal details</button>
-              </li>
-              <li className="list-group-item list-group-item-info">
-                <button onClick={(e) => this.handleClick(8)} className="list-group-item list-group-item-success">My life journey</button>
-              </li>
-              <li className="list-group-item list-group-item-success">
-                <button onClick={(e) => this.handleClick(9)} className="list-group-item list-group-item-info">My health and care</button>
-              </li>
-              <li className="list-group-item list-group-item-info">
-                <button onClick={(e) => this.handleClick(10)} className="list-group-item list-group-item-success">My involvement with life and others</button>
-              </li>
-              <li className="list-group-item list-group-item-success">
-                <button onClick={(e) => this.handleClick(11)} className="list-group-item list-group-item-info">My personality and way of thinking</button>
-              </li>
-            </ul>
-          </div>
-          {/* <input name="qno" value={this.state.name} onChange={this.handleChange} type="text" className="form-control" placeholder="question" /> */}
-          <iframe name="fGrist" src={localStorage.getItem('sourceUrl')} height='500px' width='100%' className="col-md-8"/>
-        </div>
+      <div className="row">
+        <iframe name="fGrist" src={localStorage.getItem('sourceUrl')} height='720px' width='85%' className="col" />
       </div>
     );
   }

@@ -7,6 +7,7 @@ import {
 } from 'react-router-dom';
 
 import Navbar from './components/navbar.jsx';
+import GraceMenu from './components/graceMenu.jsx';
 import Footer from './components/footer.jsx';
 
 import Home from './components/home.jsx';
@@ -24,18 +25,21 @@ class App extends Component {
       <Router history={browserHistory}>
         <div className="container">
           <Navbar />
-            <Route exact path="/" component={Home} />
-            <Route path="/articles/:id?" component={Articles} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/user/register" component={Register} />
-            <Route path="/user/login" component={Login} />
-            <Route path="/user/profile" component={Profile} />
-            <Route path="/user/logout" component={Logout} />
-          <Footer />
+          {/* <GraceMenu /> */}
+          <Route path="/user/profile" component={Profile} />
+          <Route exact path="/" component={Profile} />
+          <Route path="/home" component={Home} />
+          <Route path="/articles/:id?" component={Articles} />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
+          <Route path="/user/register" component={Register} />
+          <Route path="/user/login" component={Login} />
+          <Route path="/user/logout" component={Logout} />
+          {/* <Footer /> */}
         </div>
       </Router>
     );
-}}
+  }
+}
 
 export default App

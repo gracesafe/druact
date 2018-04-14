@@ -68,6 +68,7 @@ class Login extends Component {
 
             var session = response['data'];
             localStorage.setItem('sid', session);
+            console.log(session);
 
             self.setState({ redirect: true });
           }).catch(function (error) {

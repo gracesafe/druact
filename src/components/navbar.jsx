@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import GraceMenu from './graceMenu.jsx';
 
 class Navbar extends Component {
 
@@ -22,7 +23,7 @@ class Navbar extends Component {
       return (
         <span>
           <NavLink className="dropdown-item" activeClassName="active" to="/user/profile">
-            <i className="fa fa-user-circle"></i> Profile
+            <i className="fa fa-user-circle"></i> User Account Profile
           </NavLink>
           <NavLink className="dropdown-item" activeClassName="active" to="/user/logout">
             <i className="fa fa-sign-out"></i> Logout
@@ -62,14 +63,10 @@ class Navbar extends Component {
                     <i className="fa fa-home"></i> Home
                   </NavLink>
                 </li>
-                <li className="nav-item">
-                  <NavLink className="nav-link" activeClassName="active" to="/contact">
-                    <i className="fa fa-envelope"></i> Contact
-                  </NavLink>
-                </li>
+                <GraceMenu />
                 <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
-                    <i className="fa fa-user"></i> {userLinkTitle}
+                    <i className="fa fa-user"></i> User: {userLinkTitle}
                   </a>
                   <div className="dropdown-menu">
                     {this.renderUserLinks()}
