@@ -25,11 +25,12 @@ class Home extends Component {
 
   constructor(props) {
     super(props);
+    var startParam = this.props.location.search.split('=')[1];
     this.state = {
-      startMode: '1',
+      startMode: startParam,
       clientId: 'testClient1',
       patientName: 'Test Client',
-      sourceUrl: 'https://www.secure.egrist.org/panel/mhexperts/mh-dss-assess-light-launch.php',
+      sourceUrl: '/grace/',
       redirect: false
     }
     this.handleChange = this.handleChange.bind(this);
@@ -85,34 +86,109 @@ class Home extends Component {
   }
 
   handleClick(e) {
-    console.log('event new');
     console.log(e);
-    localStorage.setItem('startMode', e);
+    var w = document.getElementsByTagName('iframe')[0].contentWindow;
+    switch (e) {
+      case "1":
+        w.GlobalVariables.currentMygraceVersionPathways = w.GlobalVariables.mygraceVersionPathways.MY_LIFE;
+        w.LayoutManager.setMindMapLayout({
+          currentMindmapMode: w.GlobalVariables.MindMapModes.FULL
+        });
+        break;
+      case "2":
+        w.GlobalVariables.currentMygraceVersionPathways = w.GlobalVariables.mygraceVersionPathways.MY_LIFE;
+        w.LayoutManager.setMindMapLayout({
+          currentMindmapMode: w.GlobalVariables.MindMapModes.FULL
+        });
+        break;
+      case 1:
+        w.GlobalVariables.currentMygraceVersionPathways = w.GlobalVariables.mygraceVersionPathways.MY_WELLBEING;
+        w.LayoutManager.setupWellBeingAssessment();
+        break;
+      case 2:
+        w.GlobalVariables.currentMygraceVersionPathways = w.GlobalVariables.mygraceVersionPathways.MY_SAFETY;
+        w.LayoutManager.setupScreeningOnly();
+        break;
+      case 5:
+        w.GlobalVariables.currentMygraceVersionPathways = w.GlobalVariables.mygraceVersionPathways.MY_WELLBEING;
+        w.LayoutManager.setupWellBeingAssessment();
+        break;
+      default:
+        break;
+    }    
+}
 
+  createUrl() {
     var sid = localStorage.getItem('sid');
+    var startParam = this.props.location.search.split(',')[1];
 
-    var gristURL = 'https://www.secure.egrist.org/panel/mhexperts/mh-dss-assess-light-launch.php?SID=' + sid;
+    // var gristURL = 'https://www.secure.egrist.org/panel/mhexperts/mh-dss-assess-light-launch.php?SID=' + sid;
+    var gristURL = '/grace/?SID=' + sid;
     // eslint-disable-next-line
     gristURL += '&clinclientid=' + localStorage.getItem('clientId');;
     // eslint-disable-next-line
     gristURL += '&metaPatientName=' + localStorage.getItem('username');;
     // eslint-disable-next-line
-    gristURL += '&metaExtendedSettingsJSTool={"startMode":' + e + '}';
+    gristURL += '&metaExtendedSettingsJSTool={"startMode":' + startParam + '}';
     //  self.setState({redirect: true});
 
     console.log(gristURL);
 
     localStorage.setItem('sourceUrl', gristURL);
-    localStorage.setItem('redirect', true);
-    <Redirect to="/home" />
+    // if (document.getElementsByTagName('iframe').length > 0){
+
+    //   var w = document.getElementsByTagName('iframe')[0].contentWindow;
+    //   if (e==1)
+    //     w.LayoutManager.setupWellBeingAssessment();
+    //     else
+    //     w.LayoutManager.setupScreeningOnly();
+
+    //   console.log(w);
+    // }
+
+    // <Redirect to="/home" />
   }
+  componentDidMount() {
+    var sid = localStorage.getItem('sid');
+    var startParam = this.props.location.search.split('=')[1];
+
+    // var gristURL = 'https://www.secure.egrist.org/panel/mhexperts/mh-dss-assess-light-launch.php?SID=' + sid;
+    var gristURL = '/grace/?SID=' + sid;
+    // eslint-disable-next-line
+    gristURL += '&clinclientid=' + localStorage.getItem('clientId');;
+    // eslint-disable-next-line
+    gristURL += '&metaPatientName=' + localStorage.getItem('username');;
+    // eslint-disable-next-line
+    gristURL += '&metaExtendedSettingsJSTool={"startMode":' + startParam + '}';
+    localStorage.setItem('sourceUrl', gristURL);
+  }
+
   render() {
-    console.log(this.props.location.search);
+    var gristURL = localStorage.getItem('sourceUrl');
+    var startParam = this.props.location.search.split('=')[1];
+
+    console.log(gristURL);
+    // var url = localStorage.getItem('sourceUrl');
+    // console.log('render');
+    // console.log(localStorage.getItem('sourceUrl'));
+    // console.log(this.props.location.search);
     return (
       <div className="row">
-        <iframe name="fGrist" src={localStorage.getItem('sourceUrl')} height='720px' width='85%' className="col" />
+        <a href='#' onClick={(e) => this.handleClick(1)}>Wellbeing</a><br />
+        <a href='#' onClick={(e) => this.handleClick(2)}>Safety</a>
+        <iframe name="fGrist" src={gristURL} height='720px' width='85%' className="col" />
+        <script>
+          var w = document.getElementsByTagName('iframe')[0].contentWindow;
+          w.GlobalVariables.currentMygraceVersionPathways = w.GlobalVariables.mygraceVersionPathways.MY_WELLBEING;
+          w.LayoutManager.setupWellBeingAssessment();
+        </script>
       </div>
     );
+
+    if (document.getElementsByTagName('iframe').length > 0) {
+
+     
+    }
   }
 }
 

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<risk-questions-mappings>
+		<mapping topLevelNodeCode="suic" specificNodeCode="sui-specific" />
+		<mapping topLevelNodeCode="sh" specificNodeCode="sh-specific" />
+		<mapping topLevelNodeCode="hto" specificNodeCode="hto-specific" />
+		<mapping topLevelNodeCode="vuln-su" specificNodeCode="vuln-specific" />
+		<mapping topLevelNodeCode="sn" specificNodeCode="sn-appearnce" />
+		<mapping topLevelNodeCode="risk-dep" specificNodeCode="dependents-specific" />
+		<mapping topLevelNodeCode="absconding" specificNodeCode="absc-specific" />
+</risk-questions-mappings>

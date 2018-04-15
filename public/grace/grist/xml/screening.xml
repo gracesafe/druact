@@ -1,0 +1,2025 @@
+<?xml version="1.0"?>
+<xml>
+	<suic_curr_int_answer__Ch_YES_0.604000000_Ch_NO_0.091000000>
+		2.0357
+		<Yes>
+			<suic_plans_answer__Ch_YES_0.146000000_Ch_NO_0.149000000>
+				1.3263
+				<Yes>
+					<mental_health_answer__Ch_YES_0.032000000_Ch_NO_0.259000000>
+						1.3971
+						<Yes>
+							<suic_ideation_answer__Ch_YES_0.012000000_Ch_NO_0.242000000>
+								1.3487
+								<Yes>
+									<suic_int_p_trig_answer__Ch_YES_0.024000000_Ch_NO_0.315000000>
+										1.4832
+										<Yes>
+											<gen_depression_answer__Ch_YES_0.008000000_Ch_NO_0.288000000>
+												1.4218
+												<Yes>
+													<gen_presentation_answer__Ch_YES_0.156000000_Ch_NO_0.151000000>
+														1.3432
+														<Yes>
+															<suic_past_att_answer__Ch_YES_0.022000000_Ch_NO_0.311000000>
+																1.4745
+																<Yes>
+																	<gen_risk_verbal_answer__Ch_YES_0.047000000_Ch_NO_0.280000000>
+																		1.4475
+																		<Yes>
+																			<gen_self_worth_p_answer__Ch_YES_0.038000000_Ch_NO_0.119000000>
+																				1.1679
+																				<Yes>
+																					<pOfHR_0.7514124294__SampleSize_177>MCJ: 7.243__SD: 1.415__Variance: 2.003__pOfMR: 0.243__pOfLR: 0.006__PathSize: 10</pOfHR_0.7514124294__SampleSize_177>
+																				</Yes>
+																				<No>
+																					<pOfHR_0.5833333333__SampleSize_60>MCJ: 6.817__SD: 1.478__Variance: 2.183__pOfMR: 0.417__pOfLR: 0__PathSize: 10</pOfHR_0.5833333333__SampleSize_60>
+																				</No>
+																			</gen_self_worth_p_answer__Ch_YES_0.038000000_Ch_NO_0.119000000>
+																		</Yes>
+																		<No>
+																			<gen_mntl_cur_sympt_answer__Ch_YES_0.114000000_Ch_NO_0.529000000>
+																				1.9327
+																				<Yes>
+																					<insight_resp_answer__Ch_YES_0.310000000_Ch_NO_0.232000000>
+																						1.6828
+																						<Yes>
+																							<motive_eng_answer__Ch_YES_0.333000000_Ch_NO_0.667000000>
+																								2.3836
+																								<Yes>
+																									<pOfHR_1__SampleSize_4>MCJ: 8.75__SD: 0.433__Variance: 0.188__pOfMR: 0__pOfLR: 0__PathSize: 12</pOfHR_1__SampleSize_4>
+																								</Yes>
+																								<No>
+																									<pOfHR_0__SampleSize_2>MCJ: 5__SD: 0__Variance: 0__pOfMR: 1__pOfLR: 0__PathSize: 12</pOfHR_0__SampleSize_2>
+																								</No>
+																							</motive_eng_answer__Ch_YES_0.333000000_Ch_NO_0.667000000>
+																						</Yes>
+																						<No>
+																							<pOfHR_0.125__SampleSize_8>MCJ: 5.375__SD: 1.218__Variance: 1.484__pOfMR: 0.875__pOfLR: 0__PathSize: 11</pOfHR_0.125__SampleSize_8>
+																						</No>
+																					</insight_resp_answer__Ch_YES_0.310000000_Ch_NO_0.232000000>
+																				</Yes>
+																				<No>
+																					<pOfHR_1__SampleSize_3>MCJ: 8__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 0__PathSize: 10</pOfHR_1__SampleSize_3>
+																				</No>
+																			</gen_mntl_cur_sympt_answer__Ch_YES_0.114000000_Ch_NO_0.529000000>
+																		</No>
+																	</gen_risk_verbal_answer__Ch_YES_0.047000000_Ch_NO_0.280000000>
+																</Yes>
+																<No>
+																	<insight_resp_answer__Ch_YES_0.246000000_Ch_NO_0.091000000>
+																		1.4343
+																		<Yes>
+																			<gen_personality_answer__Ch_YES_0.067000000_Ch_NO_0.433000000>
+																				1.7244
+																				<Yes>
+																					<gen_risk_verbal_answer__Ch_YES_0.071000000_Ch_NO_0.429000000>
+																						1.7217
+																						<Yes>
+																							<pOfHR_0.25__SampleSize_12>MCJ: 5.583__SD: 1.187__Variance: 1.41__pOfMR: 0.75__pOfLR: 0__PathSize: 11</pOfHR_0.25__SampleSize_12>
+																						</Yes>
+																						<No>
+																							<pOfHR_0__SampleSize_2>MCJ: 4__SD: 1__Variance: 1__pOfMR: 0.5__pOfLR: 0.5__PathSize: 11</pOfHR_0__SampleSize_2>
+																						</No>
+																					</gen_risk_verbal_answer__Ch_YES_0.071000000_Ch_NO_0.429000000>
+																				</Yes>
+																				<No>
+																					<pOfHR_0.3333333333__SampleSize_3>MCJ: 5.333__SD: 2.494__Variance: 6.222__pOfMR: 0.333__pOfLR: 0.333__PathSize: 10</pOfHR_0.3333333333__SampleSize_3>
+																				</No>
+																			</gen_personality_answer__Ch_YES_0.067000000_Ch_NO_0.433000000>
+																		</Yes>
+																		<No>
+																			<gen_body_face_answer__Ch_YES_0.201000000_Ch_NO_0.235000000>
+																				1.5258
+																				<Yes>
+																					<pOfHR_0.7142857143__SampleSize_21>MCJ: 7.143__SD: 1.207__Variance: 1.456__pOfMR: 0.286__pOfLR: 0__PathSize: 10</pOfHR_0.7142857143__SampleSize_21>
+																				</Yes>
+																				<No>
+																					<ment_fac_answer__Ch_YES_0.889000000_Ch_NO_0.052000000>
+																						2.4755
+																						<Yes>
+																							<pOfHR_0__SampleSize_1>MCJ: 2__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 1__PathSize: 11</pOfHR_0__SampleSize_1>
+																						</Yes>
+																						<No>
+																							<gen_feel_emot_answer__Ch_YES_0.099000000_Ch_NO_0.687000000>
+																								2.1833
+																								<Yes>
+																									<pOfHR_0.3125__SampleSize_16>MCJ: 5.938__SD: 1.248__Variance: 1.559__pOfMR: 0.625__pOfLR: 0.063__PathSize: 12</pOfHR_0.3125__SampleSize_16>
+																								</Yes>
+																								<No>
+																									<pOfHR_1__SampleSize_2>MCJ: 9__SD: 1__Variance: 1__pOfMR: 0__pOfLR: 0__PathSize: 12</pOfHR_1__SampleSize_2>
+																								</No>
+																							</gen_feel_emot_answer__Ch_YES_0.099000000_Ch_NO_0.687000000>
+																						</No>
+																					</ment_fac_answer__Ch_YES_0.889000000_Ch_NO_0.052000000>
+																				</No>
+																			</gen_body_face_answer__Ch_YES_0.201000000_Ch_NO_0.235000000>
+																		</No>
+																	</insight_resp_answer__Ch_YES_0.246000000_Ch_NO_0.091000000>
+																</No>
+															</suic_past_att_answer__Ch_YES_0.022000000_Ch_NO_0.311000000>
+														</Yes>
+														<No>
+															<ment_fac_answer__Ch_YES_0.177000000_Ch_NO_0.016000000>
+																1.2434
+																<Yes>
+																	<gen_app_diet_answer__Ch_YES_0.256000000_Ch_NO_0.182000000>
+																		1.5421
+																		<Yes>
+																			<gen_mntl_cur_sympt_answer__Ch_YES_0.111000000_Ch_NO_0.889000000>
+																				2.5345
+																				<Yes>
+																					<pOfHR_1__SampleSize_8>MCJ: 7.625__SD: 0.992__Variance: 0.984__pOfMR: 0__pOfLR: 0__PathSize: 10</pOfHR_1__SampleSize_8>
+																				</Yes>
+																				<No>
+																					<pOfHR_0__SampleSize_1>MCJ: 5__SD: 0__Variance: 0__pOfMR: 1__pOfLR: 0__PathSize: 10</pOfHR_0__SampleSize_1>
+																				</No>
+																			</gen_mntl_cur_sympt_answer__Ch_YES_0.111000000_Ch_NO_0.889000000>
+																		</Yes>
+																		<No>
+																			<gen_subs_misuse_answer__Ch_YES_0.325000000_Ch_NO_0.217000000>
+																				1.693
+																				<Yes>
+																					<gen_feel_emot_answer__Ch_YES_0.097000000_Ch_NO_0.778000000>
+																						2.334
+																						<Yes>
+																							<pOfHR_0.125__SampleSize_8>MCJ: 5.125__SD: 1.166__Variance: 1.359__pOfMR: 0.75__pOfLR: 0.125__PathSize: 11</pOfHR_0.125__SampleSize_8>
+																						</Yes>
+																						<No>
+																							<pOfHR_1__SampleSize_1>MCJ: 7__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 0__PathSize: 11</pOfHR_1__SampleSize_1>
+																						</No>
+																					</gen_feel_emot_answer__Ch_YES_0.097000000_Ch_NO_0.778000000>
+																				</Yes>
+																				<No>
+																					<pOfHR_0.6666666667__SampleSize_12>MCJ: 6.167__SD: 1.624__Variance: 2.639__pOfMR: 0.25__pOfLR: 0.083__PathSize: 10</pOfHR_0.6666666667__SampleSize_12>
+																				</No>
+																			</gen_subs_misuse_answer__Ch_YES_0.325000000_Ch_NO_0.217000000>
+																		</No>
+																	</gen_app_diet_answer__Ch_YES_0.256000000_Ch_NO_0.182000000>
+																</Yes>
+																<No>
+																	<suic_past_att_answer__Ch_YES_0.047000000_Ch_NO_0.168000000>
+																		1.2592
+																		<Yes>
+																			<suic_patt_att_answer__Ch_YES_0.032000000_Ch_NO_0.113000000>
+																				1.1518
+																				<Yes>
+																					<pOfHR_0.4934497817__SampleSize_229>MCJ: 6.183__SD: 1.654__Variance: 2.735__pOfMR: 0.45__pOfLR: 0.057__PathSize: 10</pOfHR_0.4934497817__SampleSize_229>
+																				</Yes>
+																				<No>
+																					<pOfHR_0.3484848485__SampleSize_66>MCJ: 5.727__SD: 1.746__Variance: 3.047__pOfMR: 0.561__pOfLR: 0.091__PathSize: 10</pOfHR_0.3484848485__SampleSize_66>
+																				</No>
+																			</suic_patt_att_answer__Ch_YES_0.032000000_Ch_NO_0.113000000>
+																		</Yes>
+																		<No>
+																			<gen_feel_emot_answer__Ch_YES_0.047000000_Ch_NO_0.249000000>
+																				1.3953
+																				<Yes>
+																					<gen_mntl_cur_sympt_answer__Ch_YES_0.089000000_Ch_NO_0.445000000>
+																						1.7666
+																						<Yes>
+																							<gen_self_worth_p_answer__Ch_YES_0.143000000_Ch_NO_0.357000000>
+																								1.6728
+																								<Yes>
+																									<pOfHR_0.3__SampleSize_10>MCJ: 5.3__SD: 1.269__Variance: 1.61__pOfMR: 0.7__pOfLR: 0__PathSize: 12</pOfHR_0.3__SampleSize_10>
+																								</Yes>
+																								<No>
+																									<gen_paranoid_del_answer__Ch_YES_0.500000000_Ch_NO_0.500000000>
+																										2.27
+																										<Yes>
+																											<pOfHR_0__SampleSize_2>MCJ: 2__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 1__PathSize: 13</pOfHR_0__SampleSize_2>
+																										</Yes>
+																										<No>
+																											<pOfHR_1__SampleSize_2>MCJ: 7.5__SD: 0.5__Variance: 0.25__pOfMR: 0__pOfLR: 0__PathSize: 13</pOfHR_1__SampleSize_2>
+																										</No>
+																									</gen_paranoid_del_answer__Ch_YES_0.500000000_Ch_NO_0.500000000>
+																								</No>
+																							</gen_self_worth_p_answer__Ch_YES_0.143000000_Ch_NO_0.357000000>
+																						</Yes>
+																						<No>
+																							<pOfHR_0.3333333333__SampleSize_3>MCJ: 4.333__SD: 1.886__Variance: 3.556__pOfMR: 0__pOfLR: 0.667__PathSize: 11</pOfHR_0.3333333333__SampleSize_3>
+																						</No>
+																					</gen_mntl_cur_sympt_answer__Ch_YES_0.089000000_Ch_NO_0.445000000>
+																				</Yes>
+																				<No>
+																					<pOfHR_0.0714285714__SampleSize_14>MCJ: 3.857__SD: 1.767__Variance: 3.122__pOfMR: 0.5__pOfLR: 0.429__PathSize: 10</pOfHR_0.0714285714__SampleSize_14>
+																				</No>
+																			</gen_feel_emot_answer__Ch_YES_0.047000000_Ch_NO_0.249000000>
+																		</No>
+																	</suic_past_att_answer__Ch_YES_0.047000000_Ch_NO_0.168000000>
+																</No>
+															</ment_fac_answer__Ch_YES_0.177000000_Ch_NO_0.016000000>
+														</No>
+													</gen_presentation_answer__Ch_YES_0.156000000_Ch_NO_0.151000000>
+												</Yes>
+												<No>
+													<motive_eng_answer__Ch_YES_0.211000000_Ch_NO_0.201000000>
+														1.4855
+														<Yes>
+															<gen_meds_therpy_answer__Ch_YES_0.424000000_Ch_NO_0.176000000>
+																1.8183
+																<Yes>
+																	<suic_past_att_answer__Ch_YES_0.400000000_Ch_NO_0.600000000>
+																		2.338
+																		<Yes>
+																			<pOfHR_0.6666666667__SampleSize_3>MCJ: 7.667__SD: 1.247__Variance: 1.556__pOfMR: 0.333__pOfLR: 0__PathSize: 9</pOfHR_0.6666666667__SampleSize_3>
+																		</Yes>
+																		<No>
+																			<pOfHR_0__SampleSize_2>MCJ: 2.5__SD: 0.5__Variance: 0.25__pOfMR: 0__pOfLR: 1__PathSize: 9</pOfHR_0__SampleSize_2>
+																		</No>
+																	</suic_past_att_answer__Ch_YES_0.400000000_Ch_NO_0.600000000>
+																</Yes>
+																<No>
+																	<pOfHR_1__SampleSize_12>MCJ: 8.417__SD: 0.954__Variance: 0.91__pOfMR: 0__pOfLR: 0__PathSize: 8</pOfHR_1__SampleSize_12>
+																</No>
+															</gen_meds_therpy_answer__Ch_YES_0.424000000_Ch_NO_0.176000000>
+														</Yes>
+														<No>
+															<insight_resp_answer__Ch_YES_0.421000000_Ch_NO_0.150000000>
+																1.7873
+																<Yes>
+																	<gen_mntl_cur_sympt_answer__Ch_YES_0.250000000_Ch_NO_0.750000000>
+																		2.44
+																		<Yes>
+																			<pOfHR_0__SampleSize_3>MCJ: 5.333__SD: 0.471__Variance: 0.222__pOfMR: 1__pOfLR: 0__PathSize: 9</pOfHR_0__SampleSize_3>
+																		</Yes>
+																		<No>
+																			<pOfHR_0__SampleSize_1>MCJ: 2__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 1__PathSize: 9</pOfHR_0__SampleSize_1>
+																		</No>
+																	</gen_mntl_cur_sympt_answer__Ch_YES_0.250000000_Ch_NO_0.750000000>
+																</Yes>
+																<No>
+																	<pOfHR_0.5882352941__SampleSize_17>MCJ: 7.059__SD: 1.662__Variance: 2.761__pOfMR: 0.412__pOfLR: 0__PathSize: 8</pOfHR_0.5882352941__SampleSize_17>
+																</No>
+															</insight_resp_answer__Ch_YES_0.421000000_Ch_NO_0.150000000>
+														</No>
+													</motive_eng_answer__Ch_YES_0.211000000_Ch_NO_0.201000000>
+												</No>
+											</gen_depression_answer__Ch_YES_0.008000000_Ch_NO_0.288000000>
+										</Yes>
+										<No>
+											<suic_past_att_answer__Ch_YES_0.097000000_Ch_NO_0.778000000>
+												2.334
+												<Yes>
+													<gen_mntl_cur_sympt_answer__Ch_YES_0.857000000_Ch_NO_0.143000000>
+														2.5128
+														<Yes>
+															<gen_paranoid_del_answer__Ch_YES_0.536000000_Ch_NO_0.064000000>
+																1.8945
+																<Yes>
+																	<pOfHR_0__SampleSize_3>MCJ: 3__SD: 1.414__Variance: 2__pOfMR: 0.333__pOfLR: 0.667__PathSize: 8</pOfHR_0__SampleSize_3>
+																</Yes>
+																<No>
+																	<gen_feel_emot_answer__Ch_YES_0.085000000_Ch_NO_0.393000000>
+																		1.6752
+																		<Yes>
+																			<pOfHR_0.5217391304__SampleSize_23>MCJ: 6.174__SD: 1.785__Variance: 3.187__pOfMR: 0.391__pOfLR: 0.087__PathSize: 9</pOfHR_0.5217391304__SampleSize_23>
+																		</Yes>
+																		<No>
+																			<pOfHR_1__SampleSize_5>MCJ: 8.4__SD: 1.356__Variance: 1.84__pOfMR: 0__pOfLR: 0__PathSize: 9</pOfHR_1__SampleSize_5>
+																		</No>
+																	</gen_feel_emot_answer__Ch_YES_0.085000000_Ch_NO_0.393000000>
+																</No>
+															</gen_paranoid_del_answer__Ch_YES_0.536000000_Ch_NO_0.064000000>
+														</Yes>
+														<No>
+															<motive_eng_answer__Ch_YES_0.750000000_Ch_NO_0.250000000>
+																2.44
+																<Yes>
+																	<pOfHR_0__SampleSize_1>MCJ: 3__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 1__PathSize: 8</pOfHR_0__SampleSize_1>
+																</Yes>
+																<No>
+																	<pOfHR_0.3333333333__SampleSize_3>MCJ: 6__SD: 1.633__Variance: 2.667__pOfMR: 0.667__pOfLR: 0__PathSize: 8</pOfHR_0.3333333333__SampleSize_3>
+																</No>
+															</motive_eng_answer__Ch_YES_0.750000000_Ch_NO_0.250000000>
+														</No>
+													</gen_mntl_cur_sympt_answer__Ch_YES_0.857000000_Ch_NO_0.143000000>
+												</Yes>
+												<No>
+													<gen_feel_emot_answer__Ch_YES_0.080000000_Ch_NO_0.400000000>
+														1.682
+														<Yes>
+															<gen_personality_answer__Ch_YES_0.347000000_Ch_NO_0.109000000>
+																1.622
+																<Yes>
+																	<adv_life_event_answer__Ch_YES_0.333000000_Ch_NO_0.667000000>
+																		2.3836
+																		<Yes>
+																			<pOfHR_0__SampleSize_4>MCJ: 2.5__SD: 0.5__Variance: 0.25__pOfMR: 0__pOfLR: 1__PathSize: 9</pOfHR_0__SampleSize_4>
+																		</Yes>
+																		<No>
+																			<pOfHR_0__SampleSize_2>MCJ: 4.5__SD: 0.5__Variance: 0.25__pOfMR: 1__pOfLR: 0__PathSize: 9</pOfHR_0__SampleSize_2>
+																		</No>
+																	</adv_life_event_answer__Ch_YES_0.333000000_Ch_NO_0.667000000>
+																</Yes>
+																<No>
+																	<pOfHR_0.1578947368__SampleSize_19>MCJ: 4.737__SD: 1.649__Variance: 2.72__pOfMR: 0.632__pOfLR: 0.211__PathSize: 8</pOfHR_0.1578947368__SampleSize_19>
+																</No>
+															</gen_personality_answer__Ch_YES_0.347000000_Ch_NO_0.109000000>
+														</Yes>
+														<No>
+															<gen_self_worth_p_answer__Ch_YES_0.800000000_Ch_NO_0.200000000>
+																2.474
+																<Yes>
+																	<pOfHR_0__SampleSize_1>MCJ: 3__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 1__PathSize: 8</pOfHR_0__SampleSize_1>
+																</Yes>
+																<No>
+																	<pOfHR_0.75__SampleSize_4>MCJ: 6.5__SD: 1.5__Variance: 2.25__pOfMR: 0.25__pOfLR: 0__PathSize: 8</pOfHR_0.75__SampleSize_4>
+																</No>
+															</gen_self_worth_p_answer__Ch_YES_0.800000000_Ch_NO_0.200000000>
+														</No>
+													</gen_feel_emot_answer__Ch_YES_0.080000000_Ch_NO_0.400000000>
+												</No>
+											</suic_past_att_answer__Ch_YES_0.097000000_Ch_NO_0.778000000>
+										</No>
+									</suic_int_p_trig_answer__Ch_YES_0.024000000_Ch_NO_0.315000000>
+								</Yes>
+								<No>
+									<gen_personality_answer__Ch_YES_0.167000000_Ch_NO_0.833000000>
+										2.4964
+										<Yes>
+											<adv_life_event_answer__Ch_YES_0.067000000_Ch_NO_0.450000000>
+												1.753
+												<Yes>
+													<pOfHR_0.2272727273__SampleSize_22>MCJ: 5.227__SD: 1.677__Variance: 2.812__pOfMR: 0.591__pOfLR: 0.182__PathSize: 6</pOfHR_0.2272727273__SampleSize_22>
+												</Yes>
+												<No>
+													<pOfHR_0__SampleSize_3>MCJ: 3.333__SD: 0.471__Variance: 0.222__pOfMR: 0.333__pOfLR: 0.667__PathSize: 6</pOfHR_0__SampleSize_3>
+												</No>
+											</adv_life_event_answer__Ch_YES_0.067000000_Ch_NO_0.450000000>
+										</Yes>
+										<No>
+											<gen_subs_misuse_answer__Ch_YES_0.278000000_Ch_NO_0.177000000>
+												1.574
+												<Yes>
+													<pOfHR_0.2222222222__SampleSize_9>MCJ: 5.222__SD: 1.133__Variance: 1.284__pOfMR: 0.778__pOfLR: 0__PathSize: 6</pOfHR_0.2222222222__SampleSize_9>
+												</Yes>
+												<No>
+													<pOfHR_0.3636363636__SampleSize_11>MCJ: 5.182__SD: 2.405__Variance: 5.785__pOfMR: 0.182__pOfLR: 0.455__PathSize: 6</pOfHR_0.3636363636__SampleSize_11>
+												</No>
+											</gen_subs_misuse_answer__Ch_YES_0.278000000_Ch_NO_0.177000000>
+										</No>
+									</gen_personality_answer__Ch_YES_0.167000000_Ch_NO_0.833000000>
+								</No>
+							</suic_ideation_answer__Ch_YES_0.012000000_Ch_NO_0.242000000>
+						</Yes>
+						<No>
+							<gen_presentation_answer__Ch_YES_0.150000000_Ch_NO_0.130000000>
+								1.312
+								<Yes>
+									<insight_resp_answer__Ch_YES_0.309000000_Ch_NO_0.052000000>
+										1.5012
+										<Yes>
+											<motive_eng_answer__Ch_YES_0.900000000_Ch_NO_0.100000000>
+												2.542
+												<Yes>
+													<pOfHR_0__SampleSize_1>MCJ: 3__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 1__PathSize: 6</pOfHR_0__SampleSize_1>
+												</Yes>
+												<No>
+													<pOfHR_0.3333333333__SampleSize_9>MCJ: 6.333__SD: 1.491__Variance: 2.222__pOfMR: 0.667__pOfLR: 0__PathSize: 6</pOfHR_0.3333333333__SampleSize_9>
+												</No>
+											</motive_eng_answer__Ch_YES_0.900000000_Ch_NO_0.100000000>
+										</Yes>
+										<No>
+											<gen_risk_verbal_answer__Ch_YES_0.068000000_Ch_NO_0.291000000>
+												1.4869
+												<Yes>
+													<pOfHR_0.7291666667__SampleSize_48>MCJ: 7.125__SD: 1.615__Variance: 2.609__pOfMR: 0.229__pOfLR: 0.042__PathSize: 6</pOfHR_0.7291666667__SampleSize_48>
+												</Yes>
+												<No>
+													<pOfHR_0.4166666667__SampleSize_12>MCJ: 6.083__SD: 1.656__Variance: 2.743__pOfMR: 0.5__pOfLR: 0.083__PathSize: 6</pOfHR_0.4166666667__SampleSize_12>
+												</No>
+											</gen_risk_verbal_answer__Ch_YES_0.068000000_Ch_NO_0.291000000>
+										</No>
+									</insight_resp_answer__Ch_YES_0.309000000_Ch_NO_0.052000000>
+								</Yes>
+								<No>
+									<gen_subs_misuse_answer__Ch_YES_0.100000000_Ch_NO_0.136000000>
+										1.2585
+										<Yes>
+											<ment_fac_answer__Ch_YES_0.955000000_Ch_NO_0.022000000>
+												2.5564
+												<Yes>
+													<pOfHR_0__SampleSize_1>MCJ: 2__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 1__PathSize: 6</pOfHR_0__SampleSize_1>
+												</Yes>
+												<No>
+													<motive_eng_answer__Ch_YES_0.115000000_Ch_NO_0.061000000>
+														1.1842
+														<Yes>
+															<pOfHR_0.3529411765__SampleSize_17>MCJ: 5.706__SD: 1.871__Variance: 3.502__pOfMR: 0.471__pOfLR: 0.176__PathSize: 7</pOfHR_0.3529411765__SampleSize_17>
+														</Yes>
+														<No>
+															<pOfHR_0.34375__SampleSize_32>MCJ: 5.875__SD: 1.474__Variance: 2.172__pOfMR: 0.656__pOfLR: 0__PathSize: 7</pOfHR_0.34375__SampleSize_32>
+														</No>
+													</motive_eng_answer__Ch_YES_0.115000000_Ch_NO_0.061000000>
+												</No>
+											</ment_fac_answer__Ch_YES_0.955000000_Ch_NO_0.022000000>
+										</Yes>
+										<No>
+											<gen_meds_therpy_answer__Ch_YES_0.806000000_Ch_NO_0.023000000>
+												2.3071
+												<Yes>
+													<pOfHR_1__SampleSize_1>MCJ: 8__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 0__PathSize: 6</pOfHR_1__SampleSize_1>
+												</Yes>
+												<No>
+													<pOfHR_0.1714285714__SampleSize_35>MCJ: 4.771__SD: 1.929__Variance: 3.719__pOfMR: 0.543__pOfLR: 0.286__PathSize: 6</pOfHR_0.1714285714__SampleSize_35>
+												</No>
+											</gen_meds_therpy_answer__Ch_YES_0.806000000_Ch_NO_0.023000000>
+										</No>
+									</gen_subs_misuse_answer__Ch_YES_0.100000000_Ch_NO_0.136000000>
+								</No>
+							</gen_presentation_answer__Ch_YES_0.150000000_Ch_NO_0.130000000>
+						</No>
+					</mental_health_answer__Ch_YES_0.032000000_Ch_NO_0.259000000>
+				</Yes>
+				<No>
+					<gen_presentation_answer__Ch_YES_0.166000000_Ch_NO_0.065000000>
+						1.2739
+						<Yes>
+							<mental_health_answer__Ch_YES_0.042000000_Ch_NO_0.228000000>
+								1.355
+								<Yes>
+									<gen_risk_verbal_answer__Ch_YES_0.145000000_Ch_NO_0.438000000>
+										1.8108
+										<Yes>
+											<motive_eng_answer__Ch_YES_0.227000000_Ch_NO_0.227000000>
+												1.5384
+												<Yes>
+													<ment_fac_answer__Ch_YES_0.636000000_Ch_NO_0.142000000>
+														2.1405
+														<Yes>
+															<gen_impaird_cog_answer__Ch_YES_0.066000000_Ch_NO_0.857000000>
+																2.4358
+																<Yes>
+																	<gen_depression_answer__Ch_YES_0.071000000_Ch_NO_0.846000000>
+																		2.4223
+																		<Yes>
+																			<gen_body_face_answer__Ch_YES_0.083000000_Ch_NO_0.417000000>
+																				1.7136
+																				<Yes>
+																					<pOfHR_0.5__SampleSize_10>MCJ: 6.5__SD: 1.688__Variance: 2.85__pOfMR: 0.5__pOfLR: 0__PathSize: 10</pOfHR_0.5__SampleSize_10>
+																				</Yes>
+																				<No>
+																					<pOfHR_0.5__SampleSize_2>MCJ: 5.5__SD: 2.5__Variance: 6.25__pOfMR: 0__pOfLR: 0.5__PathSize: 10</pOfHR_0.5__SampleSize_2>
+																				</No>
+																			</gen_body_face_answer__Ch_YES_0.083000000_Ch_NO_0.417000000>
+																		</Yes>
+																		<No>
+																			<pOfHR_0__SampleSize_1>MCJ: 1__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 1__PathSize: 9</pOfHR_0__SampleSize_1>
+																		</No>
+																	</gen_depression_answer__Ch_YES_0.071000000_Ch_NO_0.846000000>
+																</Yes>
+																<No>
+																	<pOfHR_0__SampleSize_1>MCJ: 3__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 1__PathSize: 8</pOfHR_0__SampleSize_1>
+																</No>
+															</gen_impaird_cog_answer__Ch_YES_0.066000000_Ch_NO_0.857000000>
+														</Yes>
+														<No>
+															<gen_currnt_bhvr_answer__Ch_YES_0.111000000_Ch_NO_0.389000000>
+																1.6945
+																<Yes>
+																	<suic_past_att_answer__Ch_YES_0.056000000_Ch_NO_0.244000000>
+																		1.3959
+																		<Yes>
+																			<pOfHR_0.4285714286__SampleSize_63>MCJ: 6.206__SD: 1.663__Variance: 2.767__pOfMR: 0.524__pOfLR: 0.048__PathSize: 9</pOfHR_0.4285714286__SampleSize_63>
+																		</Yes>
+																		<No>
+																			<suic_ideation_answer__Ch_YES_0.076000000_Ch_NO_0.833000000>
+																				2.4054
+																				<Yes>
+																					<gen_app_diet_answer__Ch_YES_0.409000000_Ch_NO_0.091000000>
+																						1.7081
+																						<Yes>
+																							<pOfHR_0__SampleSize_2>MCJ: 3.5__SD: 0.5__Variance: 0.25__pOfMR: 0.5__pOfLR: 0.5__PathSize: 11</pOfHR_0__SampleSize_2>
+																						</Yes>
+																						<No>
+																							<adv_life_event_answer__Ch_YES_0.125000000_Ch_NO_0.875000000>
+																								2.5251
+																								<Yes>
+																									<pOfHR_0__SampleSize_7>MCJ: 4.857__SD: 0.833__Variance: 0.694__pOfMR: 1__pOfLR: 0__PathSize: 12</pOfHR_0__SampleSize_7>
+																								</Yes>
+																								<No>
+																									<pOfHR_1__SampleSize_1>MCJ: 7__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 0__PathSize: 12</pOfHR_1__SampleSize_1>
+																								</No>
+																							</adv_life_event_answer__Ch_YES_0.125000000_Ch_NO_0.875000000>
+																						</No>
+																					</gen_app_diet_answer__Ch_YES_0.409000000_Ch_NO_0.091000000>
+																				</Yes>
+																				<No>
+																					<pOfHR_0__SampleSize_1>MCJ: 3__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 1__PathSize: 10</pOfHR_0__SampleSize_1>
+																				</No>
+																			</suic_ideation_answer__Ch_YES_0.076000000_Ch_NO_0.833000000>
+																		</No>
+																	</suic_past_att_answer__Ch_YES_0.056000000_Ch_NO_0.244000000>
+																</Yes>
+																<No>
+																	<gen_depression_answer__Ch_YES_0.028000000_Ch_NO_0.793000000>
+																		2.2902
+																		<Yes>
+																			<insight_resp_answer__Ch_YES_0.321000000_Ch_NO_0.088000000>
+																				1.5573
+																				<Yes>
+																					<pOfHR_0.1666666667__SampleSize_6>MCJ: 4.333__SD: 1.599__Variance: 2.556__pOfMR: 0.333__pOfLR: 0.5__PathSize: 10</pOfHR_0.1666666667__SampleSize_6>
+																				</Yes>
+																				<No>
+																					<pOfHR_0.3636363636__SampleSize_22>MCJ: 5.727__SD: 1.543__Variance: 2.38__pOfMR: 0.545__pOfLR: 0.091__PathSize: 10</pOfHR_0.3636363636__SampleSize_22>
+																				</No>
+																			</insight_resp_answer__Ch_YES_0.321000000_Ch_NO_0.088000000>
+																		</Yes>
+																		<No>
+																			<pOfHR_0__SampleSize_1>MCJ: 2__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 1__PathSize: 9</pOfHR_0__SampleSize_1>
+																		</No>
+																	</gen_depression_answer__Ch_YES_0.028000000_Ch_NO_0.793000000>
+																</No>
+															</gen_currnt_bhvr_answer__Ch_YES_0.111000000_Ch_NO_0.389000000>
+														</No>
+													</ment_fac_answer__Ch_YES_0.636000000_Ch_NO_0.142000000>
+												</Yes>
+												<No>
+													<suic_ideation_answer__Ch_YES_0.050000000_Ch_NO_0.154000000>
+														1.2387
+														<Yes>
+															<ment_fac_answer__Ch_YES_0.314000000_Ch_NO_0.019000000>
+																1.4765
+																<Yes>
+																	<pOfHR_0.3333333333__SampleSize_3>MCJ: 5__SD: 2.16__Variance: 4.667__pOfMR: 0.333__pOfLR: 0.333__PathSize: 8</pOfHR_0.3333333333__SampleSize_3>
+																</Yes>
+																<No>
+																	<pOfHR_0.5090909091__SampleSize_55>MCJ: 6.309__SD: 1.605__Variance: 2.577__pOfMR: 0.491__pOfLR: 0__PathSize: 8</pOfHR_0.5090909091__SampleSize_55>
+																</No>
+															</ment_fac_answer__Ch_YES_0.314000000_Ch_NO_0.019000000>
+														</Yes>
+														<No>
+															<suic_past_att_answer__Ch_YES_0.105000000_Ch_NO_0.491000000>
+																1.8599
+																<Yes>
+																	<suic_patt_att_answer__Ch_YES_0.106000000_Ch_NO_0.600000000>
+																		2.044
+																		<Yes>
+																			<pOfHR_0.7058823529__SampleSize_17>MCJ: 6.824__SD: 1.757__Variance: 3.087__pOfMR: 0.235__pOfLR: 0.059__PathSize: 9</pOfHR_0.7058823529__SampleSize_17>
+																		</Yes>
+																		<No>
+																			<pOfHR_0__SampleSize_3>MCJ: 4.667__SD: 1.247__Variance: 1.556__pOfMR: 0.667__pOfLR: 0.333__PathSize: 9</pOfHR_0__SampleSize_3>
+																		</No>
+																	</suic_patt_att_answer__Ch_YES_0.106000000_Ch_NO_0.600000000>
+																</Yes>
+																<No>
+																	<pOfHR_0__SampleSize_3>MCJ: 3.667__SD: 1.7__Variance: 2.889__pOfMR: 0.333__pOfLR: 0.667__PathSize: 8</pOfHR_0__SampleSize_3>
+																</No>
+															</suic_past_att_answer__Ch_YES_0.105000000_Ch_NO_0.491000000>
+														</No>
+													</suic_ideation_answer__Ch_YES_0.050000000_Ch_NO_0.154000000>
+												</No>
+											</motive_eng_answer__Ch_YES_0.227000000_Ch_NO_0.227000000>
+										</Yes>
+										<No>
+											<ment_fac_answer__Ch_YES_0.300000000_Ch_NO_0.055000000>
+												1.4891
+												<Yes>
+													<gen_currnt_bhvr_answer__Ch_YES_0.162000000_Ch_NO_0.538000000>
+														1.9958
+														<Yes>
+															<pOfHR_0.6666666667__SampleSize_12>MCJ: 6.5__SD: 1.443__Variance: 2.083__pOfMR: 0.25__pOfLR: 0.083__PathSize: 7</pOfHR_0.6666666667__SampleSize_12>
+														</Yes>
+														<No>
+															<pOfHR_0__SampleSize_3>MCJ: 5.333__SD: 0.471__Variance: 0.222__pOfMR: 1__pOfLR: 0__PathSize: 7</pOfHR_0__SampleSize_3>
+														</No>
+													</gen_currnt_bhvr_answer__Ch_YES_0.162000000_Ch_NO_0.538000000>
+												</Yes>
+												<No>
+													<gen_phys_hlth_prb_answer__Ch_YES_0.217000000_Ch_NO_0.058000000>
+														1.3526
+														<Yes>
+															<adv_life_event_answer__Ch_YES_0.207000000_Ch_NO_0.325000000>
+																1.683
+																<Yes>
+																	<gen_feel_emot_answer__Ch_YES_0.082000000_Ch_NO_0.818000000>
+																		2.3862
+																		<Yes>
+																			<pOfHR_0.1__SampleSize_10>MCJ: 4.5__SD: 1.688__Variance: 2.85__pOfMR: 0.6__pOfLR: 0.3__PathSize: 9</pOfHR_0.1__SampleSize_10>
+																		</Yes>
+																		<No>
+																			<pOfHR_1__SampleSize_1>MCJ: 7__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 0__PathSize: 9</pOfHR_1__SampleSize_1>
+																		</No>
+																	</gen_feel_emot_answer__Ch_YES_0.082000000_Ch_NO_0.818000000>
+																</Yes>
+																<No>
+																	<pOfHR_0.7142857143__SampleSize_7>MCJ: 6.857__SD: 0.99__Variance: 0.98__pOfMR: 0.286__pOfLR: 0__PathSize: 8</pOfHR_0.7142857143__SampleSize_7>
+																</No>
+															</adv_life_event_answer__Ch_YES_0.207000000_Ch_NO_0.325000000>
+														</Yes>
+														<No>
+															<suic_ideation_answer__Ch_YES_0.068000000_Ch_NO_0.167000000>
+																1.2786
+																<Yes>
+																	<pOfHR_0.15__SampleSize_40>MCJ: 4.8__SD: 1.631__Variance: 2.66__pOfMR: 0.625__pOfLR: 0.225__PathSize: 8</pOfHR_0.15__SampleSize_40>
+																</Yes>
+																<No>
+																	<gen_mntl_cur_sympt_answer__Ch_YES_0.846000000_Ch_NO_0.071000000>
+																		2.4223
+																		<Yes>
+																			<pOfHR_1__SampleSize_1>MCJ: 8__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 0__PathSize: 9</pOfHR_1__SampleSize_1>
+																		</Yes>
+																		<No>
+																			<suic_past_att_answer__Ch_YES_0.091000000_Ch_NO_0.409000000>
+																				1.7081
+																				<Yes>
+																					<pOfHR_0__SampleSize_1>MCJ: 4__SD: 0__Variance: 0__pOfMR: 1__pOfLR: 0__PathSize: 10</pOfHR_0__SampleSize_1>
+																				</Yes>
+																				<No>
+																					<pOfHR_0__SampleSize_0>MCJ: 0__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 0__PathSize: 10</pOfHR_0__SampleSize_0>
+																				</No>
+																			</suic_past_att_answer__Ch_YES_0.091000000_Ch_NO_0.409000000>
+																		</No>
+																	</gen_mntl_cur_sympt_answer__Ch_YES_0.846000000_Ch_NO_0.071000000>
+																</No>
+															</suic_ideation_answer__Ch_YES_0.068000000_Ch_NO_0.167000000>
+														</No>
+													</gen_phys_hlth_prb_answer__Ch_YES_0.217000000_Ch_NO_0.058000000>
+												</No>
+											</ment_fac_answer__Ch_YES_0.300000000_Ch_NO_0.055000000>
+										</No>
+									</gen_risk_verbal_answer__Ch_YES_0.145000000_Ch_NO_0.438000000>
+								</Yes>
+								<No>
+									<gen_personality_answer__Ch_YES_0.254000000_Ch_NO_0.146000000>
+										1.5027
+										<Yes>
+											<pOfHR_0.25__SampleSize_16>MCJ: 4.75__SD: 1.887__Variance: 3.563__pOfMR: 0.375__pOfLR: 0.375__PathSize: 5</pOfHR_0.25__SampleSize_16>
+										</Yes>
+										<No>
+											<insight_resp_answer__Ch_YES_0.577000000_Ch_NO_0.075000000>
+												1.9745
+												<Yes>
+													<pOfHR_1__SampleSize_3>MCJ: 8.667__SD: 1.247__Variance: 1.556__pOfMR: 0__pOfLR: 0__PathSize: 6</pOfHR_1__SampleSize_3>
+												</Yes>
+												<No>
+													<pOfHR_0.3103448276__SampleSize_29>MCJ: 5.862__SD: 1.737__Variance: 3.015__pOfMR: 0.69__pOfLR: 0__PathSize: 6</pOfHR_0.3103448276__SampleSize_29>
+												</No>
+											</insight_resp_answer__Ch_YES_0.577000000_Ch_NO_0.075000000>
+										</No>
+									</gen_personality_answer__Ch_YES_0.254000000_Ch_NO_0.146000000>
+								</No>
+							</mental_health_answer__Ch_YES_0.042000000_Ch_NO_0.228000000>
+						</Yes>
+						<No>
+							<suic_int_p_trig_answer__Ch_YES_0.030000000_Ch_NO_0.188000000>
+								1.2758
+								<Yes>
+									<gen_soc_contxt_answer__Ch_YES_0.097000000_Ch_NO_0.113000000>
+										1.2168
+										<Yes>
+											<insight_resp_answer__Ch_YES_0.131000000_Ch_NO_0.022000000>
+												1.1722
+												<Yes>
+													<pOfHR_0.2647058824__SampleSize_68>MCJ: 5.074__SD: 1.674__Variance: 2.803__pOfMR: 0.515__pOfLR: 0.221__PathSize: 6</pOfHR_0.2647058824__SampleSize_68>
+												</Yes>
+												<No>
+													<suic_past_att_answer__Ch_YES_0.038000000_Ch_NO_0.110000000>
+														1.1528
+														<Yes>
+															<pOfHR_0.1533333333__SampleSize_300>MCJ: 4.753__SD: 1.585__Variance: 2.512__pOfMR: 0.623__pOfLR: 0.223__PathSize: 7</pOfHR_0.1533333333__SampleSize_300>
+														</Yes>
+														<No>
+															<gen_meds_therpy_answer__Ch_YES_0.347000000_Ch_NO_0.030000000>
+																1.543
+																<Yes>
+																	<pOfHR_0.1428571429__SampleSize_7>MCJ: 3.286__SD: 1.75__Variance: 3.061__pOfMR: 0.143__pOfLR: 0.714__PathSize: 8</pOfHR_0.1428571429__SampleSize_7>
+																</Yes>
+																<No>
+																	<gen_subs_misuse_answer__Ch_YES_0.195000000_Ch_NO_0.073000000>
+																		1.3306
+																		<Yes>
+																			<gen_phys_hlth_prb_answer__Ch_YES_0.357000000_Ch_NO_0.084000000>
+																				1.6138
+																				<Yes>
+																					<suic_ideation_answer__Ch_YES_0.250000000_Ch_NO_0.750000000>
+																						2.44
+																						<Yes>
+																							<pOfHR_0__SampleSize_3>MCJ: 3.333__SD: 0.471__Variance: 0.222__pOfMR: 0.333__pOfLR: 0.667__PathSize: 11</pOfHR_0__SampleSize_3>
+																						</Yes>
+																						<No>
+																							<pOfHR_1__SampleSize_1>MCJ: 7__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 0__PathSize: 11</pOfHR_1__SampleSize_1>
+																						</No>
+																					</suic_ideation_answer__Ch_YES_0.250000000_Ch_NO_0.750000000>
+																				</Yes>
+																				<No>
+																					<pOfHR_0.0555555556__SampleSize_18>MCJ: 4.722__SD: 0.989__Variance: 0.978__pOfMR: 0.889__pOfLR: 0.056__PathSize: 10</pOfHR_0.0555555556__SampleSize_18>
+																				</No>
+																			</gen_phys_hlth_prb_answer__Ch_YES_0.357000000_Ch_NO_0.084000000>
+																		</Yes>
+																		<No>
+																			<pOfHR_0.0491803279__SampleSize_61>MCJ: 3.803__SD: 1.491__Variance: 2.224__pOfMR: 0.525__pOfLR: 0.426__PathSize: 9</pOfHR_0.0491803279__SampleSize_61>
+																		</No>
+																	</gen_subs_misuse_answer__Ch_YES_0.195000000_Ch_NO_0.073000000>
+																</No>
+															</gen_meds_therpy_answer__Ch_YES_0.347000000_Ch_NO_0.030000000>
+														</No>
+													</suic_past_att_answer__Ch_YES_0.038000000_Ch_NO_0.110000000>
+												</No>
+											</insight_resp_answer__Ch_YES_0.131000000_Ch_NO_0.022000000>
+										</Yes>
+										<No>
+											<suic_past_att_answer__Ch_YES_0.131000000_Ch_NO_0.228000000>
+												1.444
+												<Yes>
+													<suic_patt_att_answer__Ch_YES_0.066000000_Ch_NO_0.198000000>
+														1.3286
+														<Yes>
+															<pOfHR_0.1761363636__SampleSize_176>MCJ: 5.085__SD: 1.563__Variance: 2.442__pOfMR: 0.688__pOfLR: 0.136__PathSize: 7</pOfHR_0.1761363636__SampleSize_176>
+														</Yes>
+														<No>
+															<gen_meds_therpy_answer__Ch_YES_0.429000000_Ch_NO_0.056000000>
+																1.7068
+																<Yes>
+																	<insight_resp_answer__Ch_YES_0.875000000_Ch_NO_0.125000000>
+																		2.5251
+																		<Yes>
+																			<pOfHR_1__SampleSize_1>MCJ: 7__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 0__PathSize: 9</pOfHR_1__SampleSize_1>
+																		</Yes>
+																		<No>
+																			<suic_ideation_answer__Ch_YES_0.143000000_Ch_NO_0.857000000>
+																				2.5128
+																				<Yes>
+																					<pOfHR_0__SampleSize_6>MCJ: 2.5__SD: 1.118__Variance: 1.25__pOfMR: 0__pOfLR: 1__PathSize: 10</pOfHR_0__SampleSize_6>
+																				</Yes>
+																				<No>
+																					<pOfHR_0__SampleSize_1>MCJ: 5__SD: 0__Variance: 0__pOfMR: 1__pOfLR: 0__PathSize: 10</pOfHR_0__SampleSize_1>
+																				</No>
+																			</suic_ideation_answer__Ch_YES_0.143000000_Ch_NO_0.857000000>
+																		</No>
+																	</insight_resp_answer__Ch_YES_0.875000000_Ch_NO_0.125000000>
+																</Yes>
+																<No>
+																	<insight_resp_answer__Ch_YES_0.435000000_Ch_NO_0.020000000>
+																		1.6808
+																		<Yes>
+																			<pOfHR_0.6666666667__SampleSize_3>MCJ: 6.333__SD: 0.943__Variance: 0.889__pOfMR: 0.333__pOfLR: 0__PathSize: 9</pOfHR_0.6666666667__SampleSize_3>
+																		</Yes>
+																		<No>
+																			<motive_eng_answer__Ch_YES_0.153000000_Ch_NO_0.047000000>
+																				1.234
+																				<Yes>
+																					<mental_health_answer__Ch_YES_0.125000000_Ch_NO_0.875000000>
+																						2.5251
+																						<Yes>
+																							<pOfHR_0.2857142857__SampleSize_7>MCJ: 6.143__SD: 0.639__Variance: 0.408__pOfMR: 0.714__pOfLR: 0__PathSize: 11</pOfHR_0.2857142857__SampleSize_7>
+																						</Yes>
+																						<No>
+																							<pOfHR_0__SampleSize_1>MCJ: 3__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 1__PathSize: 11</pOfHR_0__SampleSize_1>
+																						</No>
+																					</mental_health_answer__Ch_YES_0.125000000_Ch_NO_0.875000000>
+																				</Yes>
+																				<No>
+																					<pOfHR_0__SampleSize_35>MCJ: 4.029__SD: 1.341__Variance: 1.799__pOfMR: 0.6__pOfLR: 0.4__PathSize: 10</pOfHR_0__SampleSize_35>
+																				</No>
+																			</motive_eng_answer__Ch_YES_0.153000000_Ch_NO_0.047000000>
+																		</No>
+																	</insight_resp_answer__Ch_YES_0.435000000_Ch_NO_0.020000000>
+																</No>
+															</gen_meds_therpy_answer__Ch_YES_0.429000000_Ch_NO_0.056000000>
+														</No>
+													</suic_patt_att_answer__Ch_YES_0.066000000_Ch_NO_0.198000000>
+												</Yes>
+												<No>
+													<gen_feel_emot_answer__Ch_YES_0.056000000_Ch_NO_0.324000000>
+														1.5303
+														<Yes>
+															<motive_eng_answer__Ch_YES_0.155000000_Ch_NO_0.080000000>
+																1.2704
+																<Yes>
+																	<gen_meds_therpy_answer__Ch_YES_0.222000000_Ch_NO_0.063000000>
+																		1.366
+																		<Yes>
+																			<pOfHR_0__SampleSize_6>MCJ: 3.833__SD: 1.213__Variance: 1.472__pOfMR: 0.667__pOfLR: 0.333__PathSize: 9</pOfHR_0__SampleSize_6>
+																		</Yes>
+																		<No>
+																			<pOfHR_0.1428571429__SampleSize_21>MCJ: 4.81__SD: 1.096__Variance: 1.202__pOfMR: 0.81__pOfLR: 0.048__PathSize: 9</pOfHR_0.1428571429__SampleSize_21>
+																		</No>
+																	</gen_meds_therpy_answer__Ch_YES_0.222000000_Ch_NO_0.063000000>
+																</Yes>
+																<No>
+																	<suic_ideation_answer__Ch_YES_0.067000000_Ch_NO_0.259000000>
+																		1.4321
+																		<Yes>
+																			<pOfHR_0.0952380952__SampleSize_42>MCJ: 4.167__SD: 1.863__Variance: 3.472__pOfMR: 0.595__pOfLR: 0.31__PathSize: 9</pOfHR_0.0952380952__SampleSize_42>
+																		</Yes>
+																		<No>
+																			<pOfHR_0.0909090909__SampleSize_11>MCJ: 3.364__SD: 1.772__Variance: 3.14__pOfMR: 0.273__pOfLR: 0.636__PathSize: 9</pOfHR_0.0909090909__SampleSize_11>
+																		</No>
+																	</suic_ideation_answer__Ch_YES_0.067000000_Ch_NO_0.259000000>
+																</No>
+															</motive_eng_answer__Ch_YES_0.155000000_Ch_NO_0.080000000>
+														</Yes>
+														<No>
+															<mental_health_answer__Ch_YES_0.077000000_Ch_NO_0.423000000>
+																1.7176
+																<Yes>
+																	<pOfHR_0__SampleSize_13>MCJ: 3.462__SD: 1.278__Variance: 1.633__pOfMR: 0.385__pOfLR: 0.615__PathSize: 8</pOfHR_0__SampleSize_13>
+																</Yes>
+																<No>
+																	<pOfHR_0.5__SampleSize_2>MCJ: 5.5__SD: 2.5__Variance: 6.25__pOfMR: 0__pOfLR: 0.5__PathSize: 8</pOfHR_0.5__SampleSize_2>
+																</No>
+															</mental_health_answer__Ch_YES_0.077000000_Ch_NO_0.423000000>
+														</No>
+													</gen_feel_emot_answer__Ch_YES_0.056000000_Ch_NO_0.324000000>
+												</No>
+											</suic_past_att_answer__Ch_YES_0.131000000_Ch_NO_0.228000000>
+										</No>
+									</gen_soc_contxt_answer__Ch_YES_0.097000000_Ch_NO_0.113000000>
+								</Yes>
+								<No>
+									<suic_ideation_answer__Ch_YES_0.079000000_Ch_NO_0.254000000>
+										1.4357
+										<Yes>
+											<suic_past_att_answer__Ch_YES_0.196000000_Ch_NO_0.288000000>
+												1.6098
+												<Yes>
+													<gen_app_diet_answer__Ch_YES_0.292000000_Ch_NO_0.076000000>
+														1.4966
+														<Yes>
+															<pOfHR_0__SampleSize_11>MCJ: 3.909__SD: 1.621__Variance: 2.628__pOfMR: 0.545__pOfLR: 0.455__PathSize: 7</pOfHR_0__SampleSize_11>
+														</Yes>
+														<No>
+															<pOfHR_0.1956521739__SampleSize_46>MCJ: 5.13__SD: 1.752__Variance: 3.07__pOfMR: 0.652__pOfLR: 0.152__PathSize: 7</pOfHR_0.1956521739__SampleSize_46>
+														</No>
+													</gen_app_diet_answer__Ch_YES_0.292000000_Ch_NO_0.076000000>
+												</Yes>
+												<No>
+													<gen_feel_emot_answer__Ch_YES_0.179000000_Ch_NO_0.321000000>
+														1.6483
+														<Yes>
+															<gen_phys_hlth_prb_answer__Ch_YES_0.538000000_Ch_NO_0.071000000>
+																1.9049
+																<Yes>
+																	<pOfHR_0__SampleSize_3>MCJ: 2.667__SD: 0.471__Variance: 0.222__pOfMR: 0__pOfLR: 1__PathSize: 8</pOfHR_0__SampleSize_3>
+																</Yes>
+																<No>
+																	<gen_personality_answer__Ch_YES_0.636000000_Ch_NO_0.101000000>
+																		2.0995
+																		<Yes>
+																			<pOfHR_0__SampleSize_3>MCJ: 2.333__SD: 0.943__Variance: 0.889__pOfMR: 0__pOfLR: 1__PathSize: 9</pOfHR_0__SampleSize_3>
+																		</Yes>
+																		<No>
+																			<pOfHR_0.1__SampleSize_20>MCJ: 4.25__SD: 1.577__Variance: 2.488__pOfMR: 0.6__pOfLR: 0.3__PathSize: 9</pOfHR_0.1__SampleSize_20>
+																		</No>
+																	</gen_personality_answer__Ch_YES_0.636000000_Ch_NO_0.101000000>
+																</No>
+															</gen_phys_hlth_prb_answer__Ch_YES_0.538000000_Ch_NO_0.071000000>
+														</Yes>
+														<No>
+															<gen_self_worth_p_answer__Ch_YES_0.513000000_Ch_NO_0.154000000>
+																1.9458
+																<Yes>
+																	<pOfHR_0__SampleSize_4>MCJ: 2.75__SD: 1.299__Variance: 1.688__pOfMR: 0.5__pOfLR: 0.5__PathSize: 8</pOfHR_0__SampleSize_4>
+																</Yes>
+																<No>
+																	<pOfHR_0__SampleSize_11>MCJ: 2.182__SD: 0.386__Variance: 0.149__pOfMR: 0__pOfLR: 1__PathSize: 8</pOfHR_0__SampleSize_11>
+																</No>
+															</gen_self_worth_p_answer__Ch_YES_0.513000000_Ch_NO_0.154000000>
+														</No>
+													</gen_feel_emot_answer__Ch_YES_0.179000000_Ch_NO_0.321000000>
+												</No>
+											</suic_past_att_answer__Ch_YES_0.196000000_Ch_NO_0.288000000>
+										</Yes>
+										<No>
+											<insight_resp_answer__Ch_YES_0.731000000_Ch_NO_0.061000000>
+												2.2191
+												<Yes>
+													<pOfHR_0.5__SampleSize_2>MCJ: 5.5__SD: 1.5__Variance: 2.25__pOfMR: 0.5__pOfLR: 0__PathSize: 6</pOfHR_0.5__SampleSize_2>
+												</Yes>
+												<No>
+													<adv_life_event_answer__Ch_YES_0.233000000_Ch_NO_0.211000000>
+														1.5324
+														<Yes>
+															<gen_phys_hlth_prb_answer__Ch_YES_0.889000000_Ch_NO_0.111000000>
+																2.5345
+																<Yes>
+																	<pOfHR_1__SampleSize_1>MCJ: 9__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 0__PathSize: 8</pOfHR_1__SampleSize_1>
+																</Yes>
+																<No>
+																	<gen_currnt_bhvr_answer__Ch_YES_0.625000000_Ch_NO_0.208000000>
+																		2.188
+																		<Yes>
+																			<pOfHR_0__SampleSize_3>MCJ: 3.333__SD: 0.943__Variance: 0.889__pOfMR: 0.667__pOfLR: 0.333__PathSize: 9</pOfHR_0__SampleSize_3>
+																		</Yes>
+																		<No>
+																			<gen_meds_therpy_answer__Ch_YES_0.833000000_Ch_NO_0.167000000>
+																				2.4964
+																				<Yes>
+																					<pOfHR_0__SampleSize_2>MCJ: 3__SD: 2__Variance: 4__pOfMR: 0.5__pOfLR: 0.5__PathSize: 10</pOfHR_0__SampleSize_2>
+																				</Yes>
+																				<No>
+																					<pOfHR_0__SampleSize_6>MCJ: 2.333__SD: 0.471__Variance: 0.222__pOfMR: 0__pOfLR: 1__PathSize: 10</pOfHR_0__SampleSize_6>
+																				</No>
+																			</gen_meds_therpy_answer__Ch_YES_0.833000000_Ch_NO_0.167000000>
+																		</No>
+																	</gen_currnt_bhvr_answer__Ch_YES_0.625000000_Ch_NO_0.208000000>
+																</No>
+															</gen_phys_hlth_prb_answer__Ch_YES_0.889000000_Ch_NO_0.111000000>
+														</Yes>
+														<No>
+															<pOfHR_0__SampleSize_11>MCJ: 2.091__SD: 1.083__Variance: 1.174__pOfMR: 0.091__pOfLR: 0.909__PathSize: 7</pOfHR_0__SampleSize_11>
+														</No>
+													</adv_life_event_answer__Ch_YES_0.233000000_Ch_NO_0.211000000>
+												</No>
+											</insight_resp_answer__Ch_YES_0.731000000_Ch_NO_0.061000000>
+										</No>
+									</suic_ideation_answer__Ch_YES_0.079000000_Ch_NO_0.254000000>
+								</No>
+							</suic_int_p_trig_answer__Ch_YES_0.030000000_Ch_NO_0.188000000>
+						</No>
+					</gen_presentation_answer__Ch_YES_0.166000000_Ch_NO_0.065000000>
+				</No>
+			</suic_plans_answer__Ch_YES_0.146000000_Ch_NO_0.149000000>
+		</Yes>
+		<No>
+			<suic_int_p_trig_answer__Ch_YES_0.248000000_Ch_NO_0.096000000>
+				1.4426
+				<Yes>
+					<gen_presentation_answer__Ch_YES_0.159000000_Ch_NO_0.026000000>
+						1.2231
+						<Yes>
+							<gen_feel_emot_answer__Ch_YES_0.030000000_Ch_NO_0.204000000>
+								1.3027
+								<Yes>
+									<suic_ideation_answer__Ch_YES_0.139000000_Ch_NO_0.108000000>
+										1.2715
+										<Yes>
+											<gen_currnt_bhvr_answer__Ch_YES_0.054000000_Ch_NO_0.210000000>
+												1.3368
+												<Yes>
+													<gen_body_face_answer__Ch_YES_0.234000000_Ch_NO_0.304000000>
+														1.6748
+														<Yes>
+															<motive_eng_answer__Ch_YES_0.319000000_Ch_NO_0.371000000>
+																1.8723
+																<Yes>
+																	<ment_fac_answer__Ch_YES_0.329000000_Ch_NO_0.125000000>
+																		1.6078
+																		<Yes>
+																			<gen_impaird_cog_answer__Ch_YES_0.071000000_Ch_NO_0.429000000>
+																				1.7217
+																				<Yes>
+																					<pOfHR_0__SampleSize_13>MCJ: 3.538__SD: 1.337__Variance: 1.787__pOfMR: 0.385__pOfLR: 0.615__PathSize: 10</pOfHR_0__SampleSize_13>
+																				</Yes>
+																				<No>
+																					<pOfHR_0.5__SampleSize_2>MCJ: 5__SD: 2__Variance: 4__pOfMR: 0__pOfLR: 0.5__PathSize: 10</pOfHR_0.5__SampleSize_2>
+																				</No>
+																			</gen_impaird_cog_answer__Ch_YES_0.071000000_Ch_NO_0.429000000>
+																		</Yes>
+																		<No>
+																			<pOfHR_0.1794871795__SampleSize_39>MCJ: 4.744__SD: 1.514__Variance: 2.293__pOfMR: 0.641__pOfLR: 0.179__PathSize: 9</pOfHR_0.1794871795__SampleSize_39>
+																		</No>
+																	</ment_fac_answer__Ch_YES_0.329000000_Ch_NO_0.125000000>
+																</Yes>
+																<No>
+																	<gen_soc_contxt_answer__Ch_YES_0.833000000_Ch_NO_0.167000000>
+																		2.4964
+																		<Yes>
+																			<suic_past_att_answer__Ch_YES_0.146000000_Ch_NO_0.607000000>
+																				2.0958
+																				<Yes>
+																					<gen_meds_therpy_answer__Ch_YES_0.320000000_Ch_NO_0.080000000>
+																						1.5476
+																						<Yes>
+																							<gen_subs_misuse_answer__Ch_YES_0.400000000_Ch_NO_0.600000000>
+																								2.338
+																								<Yes>
+																									<pOfHR_0__SampleSize_3>MCJ: 4.333__SD: 0.471__Variance: 0.222__pOfMR: 1__pOfLR: 0__PathSize: 12</pOfHR_0__SampleSize_3>
+																								</Yes>
+																								<No>
+																									<pOfHR_0.3333333333__SampleSize_3>MCJ: 4.667__SD: 2.357__Variance: 5.556__pOfMR: 0__pOfLR: 0.667__PathSize: 12</pOfHR_0.3333333333__SampleSize_3>
+																								</No>
+																							</gen_subs_misuse_answer__Ch_YES_0.400000000_Ch_NO_0.600000000>
+																						</Yes>
+																						<No>
+																							<gen_subs_misuse_answer__Ch_YES_0.100000000_Ch_NO_0.186000000>
+																								1.3425
+																								<Yes>
+																									<pOfHR_0__SampleSize_14>MCJ: 4.714__SD: 0.7__Variance: 0.49__pOfMR: 1__pOfLR: 0__PathSize: 12</pOfHR_0__SampleSize_14>
+																								</Yes>
+																								<No>
+																									<pOfHR_0.2857142857__SampleSize_7>MCJ: 5.857__SD: 0.833__Variance: 0.694__pOfMR: 0.714__pOfLR: 0__PathSize: 12</pOfHR_0.2857142857__SampleSize_7>
+																								</No>
+																							</gen_subs_misuse_answer__Ch_YES_0.100000000_Ch_NO_0.186000000>
+																						</No>
+																					</gen_meds_therpy_answer__Ch_YES_0.320000000_Ch_NO_0.080000000>
+																				</Yes>
+																				<No>
+																					<mental_health_answer__Ch_YES_0.167000000_Ch_NO_0.833000000>
+																						2.4964
+																						<Yes>
+																							<pOfHR_0__SampleSize_5>MCJ: 2.8__SD: 0.4__Variance: 0.16__pOfMR: 0__pOfLR: 1__PathSize: 11</pOfHR_0__SampleSize_5>
+																						</Yes>
+																						<No>
+																							<pOfHR_0__SampleSize_1>MCJ: 4__SD: 0__Variance: 0__pOfMR: 1__pOfLR: 0__PathSize: 11</pOfHR_0__SampleSize_1>
+																						</No>
+																					</mental_health_answer__Ch_YES_0.167000000_Ch_NO_0.833000000>
+																				</No>
+																			</suic_past_att_answer__Ch_YES_0.146000000_Ch_NO_0.607000000>
+																		</Yes>
+																		<No>
+																			<ment_fac_answer__Ch_YES_0.846000000_Ch_NO_0.071000000>
+																				2.4223
+																				<Yes>
+																					<pOfHR_0__SampleSize_1>MCJ: 3__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 1__PathSize: 10</pOfHR_0__SampleSize_1>
+																				</Yes>
+																				<No>
+																					<pOfHR_0__SampleSize_13>MCJ: 5__SD: 0.877__Variance: 0.769__pOfMR: 0.923__pOfLR: 0.077__PathSize: 10</pOfHR_0__SampleSize_13>
+																				</No>
+																			</ment_fac_answer__Ch_YES_0.846000000_Ch_NO_0.071000000>
+																		</No>
+																	</gen_soc_contxt_answer__Ch_YES_0.833000000_Ch_NO_0.167000000>
+																</No>
+															</motive_eng_answer__Ch_YES_0.319000000_Ch_NO_0.371000000>
+														</Yes>
+														<No>
+															<adv_life_event_answer__Ch_YES_0.100000000_Ch_NO_0.400000000>
+																1.702
+																<Yes>
+																	<suic_past_att_answer__Ch_YES_0.075000000_Ch_NO_0.212000000>
+																		1.3612
+																		<Yes>
+																			<gen_soc_contxt_answer__Ch_YES_0.066000000_Ch_NO_0.161000000>
+																				1.2665
+																				<Yes>
+																					<pOfHR_0.0888888889__SampleSize_45>MCJ: 4.733__SD: 1.162__Variance: 1.351__pOfMR: 0.822__pOfLR: 0.089__PathSize: 10</pOfHR_0.0888888889__SampleSize_45>
+																				</Yes>
+																				<No>
+																					<suic_patt_att_answer__Ch_YES_0.154000000_Ch_NO_0.846000000>
+																						2.5053
+																						<Yes>
+																							<pOfHR_0.3636363636__SampleSize_11>MCJ: 5.636__SD: 1.494__Variance: 2.231__pOfMR: 0.636__pOfLR: 0__PathSize: 11</pOfHR_0.3636363636__SampleSize_11>
+																						</Yes>
+																						<No>
+																							<pOfHR_0__SampleSize_2>MCJ: 2__SD: 1__Variance: 1__pOfMR: 0__pOfLR: 1__PathSize: 11</pOfHR_0__SampleSize_2>
+																						</No>
+																					</suic_patt_att_answer__Ch_YES_0.154000000_Ch_NO_0.846000000>
+																				</No>
+																			</gen_soc_contxt_answer__Ch_YES_0.066000000_Ch_NO_0.161000000>
+																		</Yes>
+																		<No>
+																			<gen_engagement_answer__Ch_YES_0.438000000_Ch_NO_0.262000000>
+																				1.9279
+																				<Yes>
+																					<pOfHR_0__SampleSize_6>MCJ: 4.333__SD: 0.745__Variance: 0.556__pOfMR: 1__pOfLR: 0__PathSize: 10</pOfHR_0__SampleSize_6>
+																				</Yes>
+																				<No>
+																					<pOfHR_0__SampleSize_11>MCJ: 3.273__SD: 1.213__Variance: 1.471__pOfMR: 0.273__pOfLR: 0.727__PathSize: 10</pOfHR_0__SampleSize_11>
+																				</No>
+																			</gen_engagement_answer__Ch_YES_0.438000000_Ch_NO_0.262000000>
+																		</No>
+																	</suic_past_att_answer__Ch_YES_0.075000000_Ch_NO_0.212000000>
+																</Yes>
+																<No>
+																	<ment_fac_answer__Ch_YES_0.429000000_Ch_NO_0.071000000>
+																		1.7217
+																		<Yes>
+																			<pOfHR_0__SampleSize_2>MCJ: 4__SD: 1__Variance: 1__pOfMR: 0.5__pOfLR: 0.5__PathSize: 9</pOfHR_0__SampleSize_2>
+																		</Yes>
+																		<No>
+																			<pOfHR_0.0769230769__SampleSize_13>MCJ: 4.923__SD: 0.917__Variance: 0.84__pOfMR: 0.923__pOfLR: 0__PathSize: 9</pOfHR_0.0769230769__SampleSize_13>
+																		</No>
+																	</ment_fac_answer__Ch_YES_0.429000000_Ch_NO_0.071000000>
+																</No>
+															</adv_life_event_answer__Ch_YES_0.100000000_Ch_NO_0.400000000>
+														</No>
+													</gen_body_face_answer__Ch_YES_0.234000000_Ch_NO_0.304000000>
+												</Yes>
+												<No>
+													<mental_health_answer__Ch_YES_0.090000000_Ch_NO_0.543000000>
+														1.9322
+														<Yes>
+															<gen_depression_answer__Ch_YES_0.049000000_Ch_NO_0.643000000>
+																2.0592
+																<Yes>
+																	<gen_engagement_answer__Ch_YES_0.442000000_Ch_NO_0.081000000>
+																		1.7536
+																		<Yes>
+																			<gen_meds_therpy_answer__Ch_YES_0.750000000_Ch_NO_0.250000000>
+																				2.44
+																				<Yes>
+																					<pOfHR_0__SampleSize_1>MCJ: 6__SD: 0__Variance: 0__pOfMR: 1__pOfLR: 0__PathSize: 10</pOfHR_0__SampleSize_1>
+																				</Yes>
+																				<No>
+																					<pOfHR_0__SampleSize_4>MCJ: 2.25__SD: 0.829__Variance: 0.688__pOfMR: 0__pOfLR: 1__PathSize: 10</pOfHR_0__SampleSize_4>
+																				</No>
+																			</gen_meds_therpy_answer__Ch_YES_0.750000000_Ch_NO_0.250000000>
+																		</Yes>
+																		<No>
+																			<motive_eng_answer__Ch_YES_0.301000000_Ch_NO_0.143000000>
+																				1.5787
+																				<Yes>
+																					<gen_personality_answer__Ch_YES_0.444000000_Ch_NO_0.356000000>
+																						2.0319
+																						<Yes>
+																							<pOfHR_0__SampleSize_5>MCJ: 4.6__SD: 0.49__Variance: 0.24__pOfMR: 1__pOfLR: 0__PathSize: 11</pOfHR_0__SampleSize_5>
+																						</Yes>
+																						<No>
+																							<gen_risk_verbal_answer__Ch_YES_0.800000000_Ch_NO_0.200000000>
+																								2.474
+																								<Yes>
+																									<pOfHR_0__SampleSize_2>MCJ: 4.5__SD: 0.5__Variance: 0.25__pOfMR: 1__pOfLR: 0__PathSize: 12</pOfHR_0__SampleSize_2>
+																								</Yes>
+																								<No>
+																									<pOfHR_0__SampleSize_4>MCJ: 2.5__SD: 0.5__Variance: 0.25__pOfMR: 0__pOfLR: 1__PathSize: 12</pOfHR_0__SampleSize_4>
+																								</No>
+																							</gen_risk_verbal_answer__Ch_YES_0.800000000_Ch_NO_0.200000000>
+																						</No>
+																					</gen_personality_answer__Ch_YES_0.444000000_Ch_NO_0.356000000>
+																				</Yes>
+																				<No>
+																					<gen_meds_therpy_answer__Ch_YES_0.274000000_Ch_NO_0.059000000>
+																						1.4493
+																						<Yes>
+																							<pOfHR_0__SampleSize_3>MCJ: 4.333__SD: 1.7__Variance: 2.889__pOfMR: 0.667__pOfLR: 0.333__PathSize: 11</pOfHR_0__SampleSize_3>
+																						</Yes>
+																						<No>
+																							<pOfHR_0.1875__SampleSize_16>MCJ: 5.375__SD: 1.218__Variance: 1.484__pOfMR: 0.813__pOfLR: 0__PathSize: 11</pOfHR_0.1875__SampleSize_16>
+																						</No>
+																					</gen_meds_therpy_answer__Ch_YES_0.274000000_Ch_NO_0.059000000>
+																				</No>
+																			</motive_eng_answer__Ch_YES_0.301000000_Ch_NO_0.143000000>
+																		</No>
+																	</gen_engagement_answer__Ch_YES_0.442000000_Ch_NO_0.081000000>
+																</Yes>
+																<No>
+																	<gen_self_worth_p_answer__Ch_YES_0.750000000_Ch_NO_0.250000000>
+																		2.44
+																		<Yes>
+																			<pOfHR_0__SampleSize_1>MCJ: 4__SD: 0__Variance: 0__pOfMR: 1__pOfLR: 0__PathSize: 9</pOfHR_0__SampleSize_1>
+																		</Yes>
+																		<No>
+																			<pOfHR_0__SampleSize_3>MCJ: 2.333__SD: 0.471__Variance: 0.222__pOfMR: 0__pOfLR: 1__PathSize: 9</pOfHR_0__SampleSize_3>
+																		</No>
+																	</gen_self_worth_p_answer__Ch_YES_0.750000000_Ch_NO_0.250000000>
+																</No>
+															</gen_depression_answer__Ch_YES_0.049000000_Ch_NO_0.643000000>
+														</Yes>
+														<No>
+															<gen_personality_answer__Ch_YES_0.889000000_Ch_NO_0.111000000>
+																2.5345
+																<Yes>
+																	<pOfHR_0.3333333333__SampleSize_3>MCJ: 3.667__SD: 2.357__Variance: 5.556__pOfMR: 0__pOfLR: 0.667__PathSize: 8</pOfHR_0.3333333333__SampleSize_3>
+																</Yes>
+																<No>
+																	<gen_risk_verbal_answer__Ch_YES_0.300000000_Ch_NO_0.500000000>
+																		2.0701
+																		<Yes>
+																			<insight_resp_answer__Ch_YES_0.750000000_Ch_NO_0.250000000>
+																				2.44
+																				<Yes>
+																					<pOfHR_0__SampleSize_1>MCJ: 2__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 1__PathSize: 10</pOfHR_0__SampleSize_1>
+																				</Yes>
+																				<No>
+																					<gen_body_face_answer__Ch_YES_0.250000000_Ch_NO_0.750000000>
+																						2.44
+																						<Yes>
+																							<pOfHR_0__SampleSize_3>MCJ: 5__SD: 0.816__Variance: 0.667__pOfMR: 1__pOfLR: 0__PathSize: 11</pOfHR_0__SampleSize_3>
+																						</Yes>
+																						<No>
+																							<pOfHR_0__SampleSize_1>MCJ: 2__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 1__PathSize: 11</pOfHR_0__SampleSize_1>
+																						</No>
+																					</gen_body_face_answer__Ch_YES_0.250000000_Ch_NO_0.750000000>
+																				</No>
+																			</insight_resp_answer__Ch_YES_0.750000000_Ch_NO_0.250000000>
+																		</Yes>
+																		<No>
+																			<pOfHR_0__SampleSize_3>MCJ: 2__SD: 0.816__Variance: 0.667__pOfMR: 0__pOfLR: 1__PathSize: 9</pOfHR_0__SampleSize_3>
+																		</No>
+																	</gen_risk_verbal_answer__Ch_YES_0.300000000_Ch_NO_0.500000000>
+																</No>
+															</gen_personality_answer__Ch_YES_0.889000000_Ch_NO_0.111000000>
+														</No>
+													</mental_health_answer__Ch_YES_0.090000000_Ch_NO_0.543000000>
+												</No>
+											</gen_currnt_bhvr_answer__Ch_YES_0.054000000_Ch_NO_0.210000000>
+										</Yes>
+										<No>
+											<suic_past_att_answer__Ch_YES_0.068000000_Ch_NO_0.172000000>
+												1.287
+												<Yes>
+													<adv_life_event_answer__Ch_YES_0.059000000_Ch_NO_0.177000000>
+														1.2864
+														<Yes>
+															<gen_currnt_bhvr_answer__Ch_YES_0.058000000_Ch_NO_0.229000000>
+																1.3727
+																<Yes>
+																	<gen_meds_therpy_answer__Ch_YES_0.545000000_Ch_NO_0.205000000>
+																		2.0506
+																		<Yes>
+																			<suic_patt_att_answer__Ch_YES_0.057000000_Ch_NO_0.576000000>
+																				1.9547
+																				<Yes>
+																					<gen_forensic_proc_answer__Ch_YES_0.222000000_Ch_NO_0.193000000>
+																						1.496
+																						<Yes>
+																							<pOfHR_0__SampleSize_13>MCJ: 3.769__SD: 1.12__Variance: 1.254__pOfMR: 0.385__pOfLR: 0.615__PathSize: 11</pOfHR_0__SampleSize_13>
+																						</Yes>
+																						<No>
+																							<gen_soc_contxt_answer__Ch_YES_0.117000000_Ch_NO_0.467000000>
+																								1.8316
+																								<Yes>
+																									<pOfHR_0__SampleSize_12>MCJ: 5__SD: 0.913__Variance: 0.833__pOfMR: 0.917__pOfLR: 0.083__PathSize: 12</pOfHR_0__SampleSize_12>
+																								</Yes>
+																								<No>
+																									<pOfHR_0__SampleSize_3>MCJ: 3__SD: 1.414__Variance: 2__pOfMR: 0.333__pOfLR: 0.667__PathSize: 12</pOfHR_0__SampleSize_3>
+																								</No>
+																							</gen_soc_contxt_answer__Ch_YES_0.117000000_Ch_NO_0.467000000>
+																						</No>
+																					</gen_forensic_proc_answer__Ch_YES_0.222000000_Ch_NO_0.193000000>
+																				</Yes>
+																				<No>
+																					<pOfHR_0__SampleSize_3>MCJ: 3__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 1__PathSize: 10</pOfHR_0__SampleSize_3>
+																				</No>
+																			</suic_patt_att_answer__Ch_YES_0.057000000_Ch_NO_0.576000000>
+																		</Yes>
+																		<No>
+																			<gen_soc_contxt_answer__Ch_YES_0.250000000_Ch_NO_0.417000000>
+																				1.8807
+																				<Yes>
+																					<ment_fac_answer__Ch_YES_0.495000000_Ch_NO_0.047000000>
+																						1.8086
+																						<Yes>
+																							<gen_self_worth_p_answer__Ch_YES_0.600000000_Ch_NO_0.400000000>
+																								2.338
+																								<Yes>
+																									<pOfHR_0__SampleSize_3>MCJ: 3.667__SD: 0.471__Variance: 0.222__pOfMR: 0.667__pOfLR: 0.333__PathSize: 12</pOfHR_0__SampleSize_3>
+																								</Yes>
+																								<No>
+																									<pOfHR_1__SampleSize_3>MCJ: 7.667__SD: 0.471__Variance: 0.222__pOfMR: 0__pOfLR: 0__PathSize: 12</pOfHR_1__SampleSize_3>
+																								</No>
+																							</gen_self_worth_p_answer__Ch_YES_0.600000000_Ch_NO_0.400000000>
+																						</Yes>
+																						<No>
+																							<gen_life_abuse_answer__Ch_YES_0.057000000_Ch_NO_0.390000000>
+																								1.6422
+																								<Yes>
+																									<gen_forensic_proc_answer__Ch_YES_0.206000000_Ch_NO_0.183000000>
+																										1.4591
+																										<Yes>
+																											<pOfHR_0__SampleSize_16>MCJ: 4.813__SD: 0.726__Variance: 0.527__pOfMR: 1__pOfLR: 0__PathSize: 13</pOfHR_0__SampleSize_16>
+																										</Yes>
+																										<No>
+																											<pOfHR_0__SampleSize_18>MCJ: 3.889__SD: 1.1__Variance: 1.21__pOfMR: 0.611__pOfLR: 0.389__PathSize: 13</pOfHR_0__SampleSize_18>
+																										</No>
+																									</gen_forensic_proc_answer__Ch_YES_0.206000000_Ch_NO_0.183000000>
+																								</Yes>
+																								<No>
+																									<pOfHR_0__SampleSize_6>MCJ: 3__SD: 1.528__Variance: 2.333__pOfMR: 0.333__pOfLR: 0.667__PathSize: 12</pOfHR_0__SampleSize_6>
+																								</No>
+																							</gen_life_abuse_answer__Ch_YES_0.057000000_Ch_NO_0.390000000>
+																						</No>
+																					</ment_fac_answer__Ch_YES_0.495000000_Ch_NO_0.047000000>
+																				</Yes>
+																				<No>
+																					<gen_risk_verbal_answer__Ch_YES_0.412000000_Ch_NO_0.190000000>
+																						1.8122
+																						<Yes>
+																							<gen_personality_answer__Ch_YES_0.167000000_Ch_NO_0.833000000>
+																								2.4964
+																								<Yes>
+																									<pOfHR_0__SampleSize_6>MCJ: 5__SD: 0.816__Variance: 0.667__pOfMR: 1__pOfLR: 0__PathSize: 12</pOfHR_0__SampleSize_6>
+																								</Yes>
+																								<No>
+																									<pOfHR_0__SampleSize_1>MCJ: 3__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 1__PathSize: 12</pOfHR_0__SampleSize_1>
+																								</No>
+																							</gen_personality_answer__Ch_YES_0.167000000_Ch_NO_0.833000000>
+																						</Yes>
+																						<No>
+																							<mental_health_answer__Ch_YES_0.131000000_Ch_NO_0.436000000>
+																								1.7935
+																								<Yes>
+																									<gen_depression_answer__Ch_YES_0.100000000_Ch_NO_0.400000000>
+																										1.702
+																										<Yes>
+																											<pOfHR_0__SampleSize_8>MCJ: 2.875__SD: 0.331__Variance: 0.109__pOfMR: 0__pOfLR: 1__PathSize: 13</pOfHR_0__SampleSize_8>
+																										</Yes>
+																										<No>
+																											<pOfHR_0.5__SampleSize_2>MCJ: 4.5__SD: 2.5__Variance: 6.25__pOfMR: 0__pOfLR: 0.5__PathSize: 13</pOfHR_0.5__SampleSize_2>
+																										</No>
+																									</gen_depression_answer__Ch_YES_0.100000000_Ch_NO_0.400000000>
+																								</Yes>
+																								<No>
+																									<pOfHR_0.25__SampleSize_4>MCJ: 4.25__SD: 1.639__Variance: 2.688__pOfMR: 0.25__pOfLR: 0.5__PathSize: 12</pOfHR_0.25__SampleSize_4>
+																								</No>
+																							</mental_health_answer__Ch_YES_0.131000000_Ch_NO_0.436000000>
+																						</No>
+																					</gen_risk_verbal_answer__Ch_YES_0.412000000_Ch_NO_0.190000000>
+																				</No>
+																			</gen_soc_contxt_answer__Ch_YES_0.250000000_Ch_NO_0.417000000>
+																		</No>
+																	</gen_meds_therpy_answer__Ch_YES_0.545000000_Ch_NO_0.205000000>
+																</Yes>
+																<No>
+																	<mental_health_answer__Ch_YES_0.077000000_Ch_NO_0.401000000>
+																		1.6807
+																		<Yes>
+																			<gen_mntl_cur_sympt_answer__Ch_YES_0.800000000_Ch_NO_0.200000000>
+																				2.474
+																				<Yes>
+																					<pOfHR_0.1428571429__SampleSize_7>MCJ: 3.714__SD: 1.829__Variance: 3.347__pOfMR: 0.286__pOfLR: 0.571__PathSize: 10</pOfHR_0.1428571429__SampleSize_7>
+																				</Yes>
+																				<No>
+																					<pOfHR_0__SampleSize_8>MCJ: 3__SD: 0.866__Variance: 0.75__pOfMR: 0.25__pOfLR: 0.75__PathSize: 10</pOfHR_0__SampleSize_8>
+																				</No>
+																			</gen_mntl_cur_sympt_answer__Ch_YES_0.800000000_Ch_NO_0.200000000>
+																		</Yes>
+																		<No>
+																			<ment_fac_answer__Ch_YES_0.833000000_Ch_NO_0.167000000>
+																				2.4964
+																				<Yes>
+																					<pOfHR_0__SampleSize_1>MCJ: 2__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 1__PathSize: 10</pOfHR_0__SampleSize_1>
+																				</Yes>
+																				<No>
+																					<pOfHR_0.1666666667__SampleSize_6>MCJ: 5__SD: 1.633__Variance: 2.667__pOfMR: 0.667__pOfLR: 0.167__PathSize: 10</pOfHR_0.1666666667__SampleSize_6>
+																				</No>
+																			</ment_fac_answer__Ch_YES_0.833000000_Ch_NO_0.167000000>
+																		</No>
+																	</mental_health_answer__Ch_YES_0.077000000_Ch_NO_0.401000000>
+																</No>
+															</gen_currnt_bhvr_answer__Ch_YES_0.058000000_Ch_NO_0.229000000>
+														</Yes>
+														<No>
+															<ment_fac_answer__Ch_YES_0.600000000_Ch_NO_0.400000000>
+																2.338
+																<Yes>
+																	<pOfHR_0__SampleSize_9>MCJ: 3.556__SD: 0.956__Variance: 0.914__pOfMR: 0.444__pOfLR: 0.556__PathSize: 8</pOfHR_0__SampleSize_9>
+																</Yes>
+																<No>
+																	<insight_resp_answer__Ch_YES_0.190000000_Ch_NO_0.079000000>
+																		1.3282
+																		<Yes>
+																			<gen_app_diet_answer__Ch_YES_0.615000000_Ch_NO_0.185000000>
+																				2.1482
+																				<Yes>
+																					<pOfHR_1__SampleSize_3>MCJ: 8__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 0__PathSize: 10</pOfHR_1__SampleSize_3>
+																				</Yes>
+																				<No>
+																					<gen_meds_therpy_answer__Ch_YES_0.400000000_Ch_NO_0.267000000>
+																						1.869
+																						<Yes>
+																							<pOfHR_0.2__SampleSize_5>MCJ: 5__SD: 1.265__Variance: 1.6__pOfMR: 0.8__pOfLR: 0__PathSize: 11</pOfHR_0.2__SampleSize_5>
+																						</Yes>
+																						<No>
+																							<pOfHR_0.125__SampleSize_8>MCJ: 3.875__SD: 1.615__Variance: 2.609__pOfMR: 0.25__pOfLR: 0.625__PathSize: 11</pOfHR_0.125__SampleSize_8>
+																						</No>
+																					</gen_meds_therpy_answer__Ch_YES_0.400000000_Ch_NO_0.267000000>
+																				</No>
+																			</gen_app_diet_answer__Ch_YES_0.615000000_Ch_NO_0.185000000>
+																		</Yes>
+																		<No>
+																			<pOfHR_0.1081081081__SampleSize_37>MCJ: 4.541__SD: 1.57__Variance: 2.465__pOfMR: 0.676__pOfLR: 0.216__PathSize: 9</pOfHR_0.1081081081__SampleSize_37>
+																		</No>
+																	</insight_resp_answer__Ch_YES_0.190000000_Ch_NO_0.079000000>
+																</No>
+															</ment_fac_answer__Ch_YES_0.600000000_Ch_NO_0.400000000>
+														</No>
+													</adv_life_event_answer__Ch_YES_0.059000000_Ch_NO_0.177000000>
+												</Yes>
+												<No>
+													<gen_body_face_answer__Ch_YES_0.750000000_Ch_NO_0.250000000>
+														2.44
+														<Yes>
+															<gen_phys_hlth_prb_answer__Ch_YES_0.135000000_Ch_NO_0.047000000>
+																1.2038
+																<Yes>
+																	<gen_personality_answer__Ch_YES_0.288000000_Ch_NO_0.345000000>
+																		1.7977
+																		<Yes>
+																			<pOfHR_0__SampleSize_6>MCJ: 2.5__SD: 0.957__Variance: 0.917__pOfMR: 0.167__pOfLR: 0.833__PathSize: 9</pOfHR_0__SampleSize_6>
+																		</Yes>
+																		<No>
+																			<ment_fac_answer__Ch_YES_0.600000000_Ch_NO_0.400000000>
+																				2.338
+																				<Yes>
+																					<pOfHR_0.6666666667__SampleSize_3>MCJ: 6.667__SD: 1.886__Variance: 3.556__pOfMR: 0.333__pOfLR: 0__PathSize: 10</pOfHR_0.6666666667__SampleSize_3>
+																				</Yes>
+																				<No>
+																					<pOfHR_0__SampleSize_3>MCJ: 4__SD: 1.414__Variance: 2__pOfMR: 0.667__pOfLR: 0.333__PathSize: 10</pOfHR_0__SampleSize_3>
+																				</No>
+																			</ment_fac_answer__Ch_YES_0.600000000_Ch_NO_0.400000000>
+																		</No>
+																	</gen_personality_answer__Ch_YES_0.288000000_Ch_NO_0.345000000>
+																</Yes>
+																<No>
+																	<ment_fac_answer__Ch_YES_0.313000000_Ch_NO_0.104000000>
+																		1.5598
+																		<Yes>
+																			<pOfHR_0__SampleSize_8>MCJ: 3.375__SD: 0.857__Variance: 0.734__pOfMR: 0.625__pOfLR: 0.375__PathSize: 9</pOfHR_0__SampleSize_8>
+																		</Yes>
+																		<No>
+																			<pOfHR_0__SampleSize_24>MCJ: 2.833__SD: 1.106__Variance: 1.222__pOfMR: 0.208__pOfLR: 0.792__PathSize: 9</pOfHR_0__SampleSize_24>
+																		</No>
+																	</ment_fac_answer__Ch_YES_0.313000000_Ch_NO_0.104000000>
+																</No>
+															</gen_phys_hlth_prb_answer__Ch_YES_0.135000000_Ch_NO_0.047000000>
+														</Yes>
+														<No>
+															<gen_risk_verbal_answer__Ch_YES_0.199000000_Ch_NO_0.114000000>
+																1.3783
+																<Yes>
+																	<gen_meds_therpy_answer__Ch_YES_0.259000000_Ch_NO_0.455000000>
+																		1.9534
+																		<Yes>
+																			<pOfHR_0__SampleSize_7>MCJ: 3.571__SD: 1.178__Variance: 1.388__pOfMR: 0.714__pOfLR: 0.286__PathSize: 9</pOfHR_0__SampleSize_7>
+																		</Yes>
+																		<No>
+																			<gen_currnt_bhvr_answer__Ch_YES_0.200000000_Ch_NO_0.800000000>
+																				2.474
+																				<Yes>
+																					<pOfHR_0__SampleSize_4>MCJ: 2.5__SD: 0.5__Variance: 0.25__pOfMR: 0__pOfLR: 1__PathSize: 10</pOfHR_0__SampleSize_4>
+																				</Yes>
+																				<No>
+																					<pOfHR_0__SampleSize_1>MCJ: 4__SD: 0__Variance: 0__pOfMR: 1__pOfLR: 0__PathSize: 10</pOfHR_0__SampleSize_1>
+																				</No>
+																			</gen_currnt_bhvr_answer__Ch_YES_0.200000000_Ch_NO_0.800000000>
+																		</No>
+																	</gen_meds_therpy_answer__Ch_YES_0.259000000_Ch_NO_0.455000000>
+																</Yes>
+																<No>
+																	<gen_app_diet_answer__Ch_YES_0.277000000_Ch_NO_0.075000000>
+																		1.4704
+																		<Yes>
+																			<gen_subs_misuse_answer__Ch_YES_0.321000000_Ch_NO_0.429000000>
+																				1.9717
+																				<Yes>
+																					<gen_self_worth_p_answer__Ch_YES_0.250000000_Ch_NO_0.750000000>
+																						2.44
+																						<Yes>
+																							<pOfHR_0__SampleSize_3>MCJ: 4__SD: 0.816__Variance: 0.667__pOfMR: 0.667__pOfLR: 0.333__PathSize: 11</pOfHR_0__SampleSize_3>
+																						</Yes>
+																						<No>
+																							<pOfHR_1__SampleSize_1>MCJ: 8__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 0__PathSize: 11</pOfHR_1__SampleSize_1>
+																						</No>
+																					</gen_self_worth_p_answer__Ch_YES_0.250000000_Ch_NO_0.750000000>
+																				</Yes>
+																				<No>
+																					<pOfHR_0__SampleSize_3>MCJ: 2.333__SD: 0.943__Variance: 0.889__pOfMR: 0__pOfLR: 1__PathSize: 10</pOfHR_0__SampleSize_3>
+																				</No>
+																			</gen_subs_misuse_answer__Ch_YES_0.321000000_Ch_NO_0.429000000>
+																		</Yes>
+																		<No>
+																			<pOfHR_0__SampleSize_26>MCJ: 2.346__SD: 0.998__Variance: 0.996__pOfMR: 0.077__pOfLR: 0.923__PathSize: 9</pOfHR_0__SampleSize_26>
+																		</No>
+																	</gen_app_diet_answer__Ch_YES_0.277000000_Ch_NO_0.075000000>
+																</No>
+															</gen_risk_verbal_answer__Ch_YES_0.199000000_Ch_NO_0.114000000>
+														</No>
+													</gen_body_face_answer__Ch_YES_0.750000000_Ch_NO_0.250000000>
+												</No>
+											</suic_past_att_answer__Ch_YES_0.068000000_Ch_NO_0.172000000>
+										</No>
+									</suic_ideation_answer__Ch_YES_0.139000000_Ch_NO_0.108000000>
+								</Yes>
+								<No>
+									<adv_life_event_answer__Ch_YES_0.125000000_Ch_NO_0.875000000>
+										2.5251
+										<Yes>
+											<suic_ideation_answer__Ch_YES_0.750000000_Ch_NO_0.250000000>
+												2.44
+												<Yes>
+													<gen_subs_misuse_answer__Ch_YES_0.197000000_Ch_NO_0.442000000>
+														1.8696
+														<Yes>
+															<pOfHR_0__SampleSize_9>MCJ: 2.778__SD: 0.629__Variance: 0.395__pOfMR: 0.111__pOfLR: 0.889__PathSize: 7</pOfHR_0__SampleSize_9>
+														</Yes>
+														<No>
+															<suic_past_att_answer__Ch_YES_0.250000000_Ch_NO_0.750000000>
+																2.44
+																<Yes>
+																	<pOfHR_0__SampleSize_3>MCJ: 4.667__SD: 0.943__Variance: 0.889__pOfMR: 1__pOfLR: 0__PathSize: 8</pOfHR_0__SampleSize_3>
+																</Yes>
+																<No>
+																	<pOfHR_0__SampleSize_1>MCJ: 2__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 1__PathSize: 8</pOfHR_0__SampleSize_1>
+																</No>
+															</suic_past_att_answer__Ch_YES_0.250000000_Ch_NO_0.750000000>
+														</No>
+													</gen_subs_misuse_answer__Ch_YES_0.197000000_Ch_NO_0.442000000>
+												</Yes>
+												<No>
+													<gen_app_diet_answer__Ch_YES_0.117000000_Ch_NO_0.026000000>
+														1.1526
+														<Yes>
+															<pOfHR_0.1428571429__SampleSize_7>MCJ: 4.286__SD: 1.666__Variance: 2.776__pOfMR: 0.429__pOfLR: 0.429__PathSize: 7</pOfHR_0.1428571429__SampleSize_7>
+														</Yes>
+														<No>
+															<gen_subs_misuse_answer__Ch_YES_0.082000000_Ch_NO_0.548000000>
+																1.9326
+																<Yes>
+																	<pOfHR_0__SampleSize_27>MCJ: 3.148__SD: 1.483__Variance: 2.2__pOfMR: 0.37__pOfLR: 0.63__PathSize: 8</pOfHR_0__SampleSize_27>
+																</Yes>
+																<No>
+																	<pOfHR_0__SampleSize_4>MCJ: 5__SD: 0.707__Variance: 0.5__pOfMR: 1__pOfLR: 0__PathSize: 8</pOfHR_0__SampleSize_4>
+																</No>
+															</gen_subs_misuse_answer__Ch_YES_0.082000000_Ch_NO_0.548000000>
+														</No>
+													</gen_app_diet_answer__Ch_YES_0.117000000_Ch_NO_0.026000000>
+												</No>
+											</suic_ideation_answer__Ch_YES_0.750000000_Ch_NO_0.250000000>
+										</Yes>
+										<No>
+											<insight_resp_answer__Ch_YES_0.692000000_Ch_NO_0.126000000>
+												2.2186
+												<Yes>
+													<pOfHR_0__SampleSize_2>MCJ: 6__SD: 0__Variance: 0__pOfMR: 1__pOfLR: 0__PathSize: 6</pOfHR_0__SampleSize_2>
+												</Yes>
+												<No>
+													<ment_fac_answer__Ch_YES_0.900000000_Ch_NO_0.100000000>
+														2.542
+														<Yes>
+															<pOfHR_1__SampleSize_1>MCJ: 7__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 0__PathSize: 7</pOfHR_1__SampleSize_1>
+														</Yes>
+														<No>
+															<gen_phys_hlth_prb_answer__Ch_YES_0.800000000_Ch_NO_0.089000000>
+																2.363
+																<Yes>
+																	<pOfHR_0__SampleSize_2>MCJ: 4__SD: 1__Variance: 1__pOfMR: 0.5__pOfLR: 0.5__PathSize: 8</pOfHR_0__SampleSize_2>
+																</Yes>
+																<No>
+																	<gen_soc_contxt_answer__Ch_YES_0.389000000_Ch_NO_0.111000000>
+																		1.6945
+																		<Yes>
+																			<pOfHR_0__SampleSize_2>MCJ: 4__SD: 1__Variance: 1__pOfMR: 0.5__pOfLR: 0.5__PathSize: 9</pOfHR_0__SampleSize_2>
+																		</Yes>
+																		<No>
+																			<pOfHR_0__SampleSize_7>MCJ: 2.286__SD: 0.881__Variance: 0.776__pOfMR: 0__pOfLR: 1__PathSize: 9</pOfHR_0__SampleSize_7>
+																		</No>
+																	</gen_soc_contxt_answer__Ch_YES_0.389000000_Ch_NO_0.111000000>
+																</No>
+															</gen_phys_hlth_prb_answer__Ch_YES_0.800000000_Ch_NO_0.089000000>
+														</No>
+													</ment_fac_answer__Ch_YES_0.900000000_Ch_NO_0.100000000>
+												</No>
+											</insight_resp_answer__Ch_YES_0.692000000_Ch_NO_0.126000000>
+										</No>
+									</adv_life_event_answer__Ch_YES_0.125000000_Ch_NO_0.875000000>
+								</No>
+							</gen_feel_emot_answer__Ch_YES_0.030000000_Ch_NO_0.204000000>
+						</Yes>
+						<No>
+							<suic_past_att_answer__Ch_YES_0.037000000_Ch_NO_0.118000000>
+								1.1652
+								<Yes>
+									<gen_feel_emot_answer__Ch_YES_0.050000000_Ch_NO_0.109000000>
+										1.1631
+										<Yes>
+											<gen_self_worth_p_answer__Ch_YES_0.120000000_Ch_NO_0.065000000>
+												1.1966
+												<Yes>
+													<mental_health_answer__Ch_YES_0.068000000_Ch_NO_0.288000000>
+														1.4818
+														<Yes>
+															<gen_soc_contxt_answer__Ch_YES_0.139000000_Ch_NO_0.225000000>
+																1.447
+																<Yes>
+																	<gen_mntl_cur_sympt_answer__Ch_YES_0.110000000_Ch_NO_0.074000000>
+																		1.1888
+																		<Yes>
+																			<pOfHR_0.0487804878__SampleSize_205>MCJ: 3.99__SD: 1.34__Variance: 1.795__pOfMR: 0.59__pOfLR: 0.361__PathSize: 9</pOfHR_0.0487804878__SampleSize_205>
+																		</Yes>
+																		<No>
+																			<gen_personality_answer__Ch_YES_0.109000000_Ch_NO_0.268000000>
+																				1.4892
+																				<Yes>
+																					<motive_eng_answer__Ch_YES_0.269000000_Ch_NO_0.143000000>
+																						1.5249
+																						<Yes>
+																							<pOfHR_0__SampleSize_9>MCJ: 4.889__SD: 0.737__Variance: 0.543__pOfMR: 1__pOfLR: 0__PathSize: 11</pOfHR_0__SampleSize_9>
+																						</Yes>
+																						<No>
+																							<pOfHR_0.0588235294__SampleSize_17>MCJ: 4.059__SD: 1.259__Variance: 1.585__pOfMR: 0.529__pOfLR: 0.412__PathSize: 11</pOfHR_0.0588235294__SampleSize_17>
+																						</No>
+																					</motive_eng_answer__Ch_YES_0.269000000_Ch_NO_0.143000000>
+																				</Yes>
+																				<No>
+																					<pOfHR_0__SampleSize_11>MCJ: 3.455__SD: 1.233__Variance: 1.521__pOfMR: 0.364__pOfLR: 0.636__PathSize: 10</pOfHR_0__SampleSize_11>
+																				</No>
+																			</gen_personality_answer__Ch_YES_0.109000000_Ch_NO_0.268000000>
+																		</No>
+																	</gen_mntl_cur_sympt_answer__Ch_YES_0.110000000_Ch_NO_0.074000000>
+																</Yes>
+																<No>
+																	<gen_mntl_cur_sympt_answer__Ch_YES_0.127000000_Ch_NO_0.076000000>
+																		1.2194
+																		<Yes>
+																			<gen_meds_therpy_answer__Ch_YES_0.339000000_Ch_NO_0.038000000>
+																				1.5375
+																				<Yes>
+																					<pOfHR_0__SampleSize_12>MCJ: 4.25__SD: 0.829__Variance: 0.688__pOfMR: 0.917__pOfLR: 0.083__PathSize: 10</pOfHR_0__SampleSize_12>
+																				</Yes>
+																				<No>
+																					<gen_depression_answer__Ch_YES_0.011000000_Ch_NO_0.227000000>
+																						1.3224
+																						<Yes>
+																							<insight_resp_answer__Ch_YES_0.248000000_Ch_NO_0.044000000>
+																								1.3906
+																								<Yes>
+																									<gen_currnt_bhvr_answer__Ch_YES_0.167000000_Ch_NO_0.333000000>
+																										1.6564
+																										<Yes>
+																											<pOfHR_0.125__SampleSize_8>MCJ: 5.375__SD: 0.992__Variance: 0.984__pOfMR: 0.875__pOfLR: 0__PathSize: 13</pOfHR_0.125__SampleSize_8>
+																										</Yes>
+																										<No>
+																											<pOfHR_0__SampleSize_4>MCJ: 3.5__SD: 1.118__Variance: 1.25__pOfMR: 0.5__pOfLR: 0.5__PathSize: 13</pOfHR_0__SampleSize_4>
+																										</No>
+																									</gen_currnt_bhvr_answer__Ch_YES_0.167000000_Ch_NO_0.333000000>
+																								</Yes>
+																								<No>
+																									<pOfHR_0__SampleSize_77>MCJ: 3.675__SD: 1.221__Variance: 1.492__pOfMR: 0.494__pOfLR: 0.506__PathSize: 12</pOfHR_0__SampleSize_77>
+																								</No>
+																							</insight_resp_answer__Ch_YES_0.248000000_Ch_NO_0.044000000>
+																						</Yes>
+																						<No>
+																							<adv_life_event_answer__Ch_YES_0.250000000_Ch_NO_0.750000000>
+																								2.44
+																								<Yes>
+																									<motive_eng_answer__Ch_YES_0.750000000_Ch_NO_0.250000000>
+																										2.44
+																										<Yes>
+																											<pOfHR_0__SampleSize_1>MCJ: 4__SD: 0__Variance: 0__pOfMR: 1__pOfLR: 0__PathSize: 13</pOfHR_0__SampleSize_1>
+																										</Yes>
+																										<No>
+																											<pOfHR_0__SampleSize_3>MCJ: 2.333__SD: 0.471__Variance: 0.222__pOfMR: 0__pOfLR: 1__PathSize: 13</pOfHR_0__SampleSize_3>
+																										</No>
+																									</motive_eng_answer__Ch_YES_0.750000000_Ch_NO_0.250000000>
+																								</Yes>
+																								<No>
+																									<pOfHR_1__SampleSize_1>MCJ: 8__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 0__PathSize: 12</pOfHR_1__SampleSize_1>
+																								</No>
+																							</adv_life_event_answer__Ch_YES_0.250000000_Ch_NO_0.750000000>
+																						</No>
+																					</gen_depression_answer__Ch_YES_0.011000000_Ch_NO_0.227000000>
+																				</No>
+																			</gen_meds_therpy_answer__Ch_YES_0.339000000_Ch_NO_0.038000000>
+																		</Yes>
+																		<No>
+																			<gen_phys_hlth_prb_answer__Ch_YES_0.219000000_Ch_NO_0.031000000>
+																				1.329
+																				<Yes>
+																					<pOfHR_0.25__SampleSize_4>MCJ: 3.5__SD: 2.062__Variance: 4.25__pOfMR: 0__pOfLR: 0.75__PathSize: 10</pOfHR_0.25__SampleSize_4>
+																				</Yes>
+																				<No>
+																					<pOfHR_0__SampleSize_28>MCJ: 3.143__SD: 1.216__Variance: 1.48__pOfMR: 0.321__pOfLR: 0.679__PathSize: 10</pOfHR_0__SampleSize_28>
+																				</No>
+																			</gen_phys_hlth_prb_answer__Ch_YES_0.219000000_Ch_NO_0.031000000>
+																		</No>
+																	</gen_mntl_cur_sympt_answer__Ch_YES_0.127000000_Ch_NO_0.076000000>
+																</No>
+															</gen_soc_contxt_answer__Ch_YES_0.139000000_Ch_NO_0.225000000>
+														</Yes>
+														<No>
+															<suic_ideation_answer__Ch_YES_0.128000000_Ch_NO_0.094000000>
+																1.239
+																<Yes>
+																	<adv_life_event_answer__Ch_YES_0.140000000_Ch_NO_0.185000000>
+																		1.3808
+																		<Yes>
+																			<pOfHR_0__SampleSize_24>MCJ: 4.083__SD: 1.115__Variance: 1.243__pOfMR: 0.708__pOfLR: 0.292__PathSize: 9</pOfHR_0__SampleSize_24>
+																		</Yes>
+																		<No>
+																			<motive_eng_answer__Ch_YES_0.341000000_Ch_NO_0.437000000>
+																				2.0052
+																				<Yes>
+																					<insight_resp_answer__Ch_YES_0.778000000_Ch_NO_0.097000000>
+																						2.334
+																						<Yes>
+																							<pOfHR_1__SampleSize_1>MCJ: 8__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 0__PathSize: 11</pOfHR_1__SampleSize_1>
+																						</Yes>
+																						<No>
+																							<pOfHR_0.125__SampleSize_8>MCJ: 4.125__SD: 1.166__Variance: 1.359__pOfMR: 0.625__pOfLR: 0.25__PathSize: 11</pOfHR_0.125__SampleSize_8>
+																						</No>
+																					</insight_resp_answer__Ch_YES_0.778000000_Ch_NO_0.097000000>
+																				</Yes>
+																				<No>
+																					<pOfHR_0__SampleSize_8>MCJ: 3__SD: 1.225__Variance: 1.5__pOfMR: 0.125__pOfLR: 0.875__PathSize: 10</pOfHR_0__SampleSize_8>
+																				</No>
+																			</motive_eng_answer__Ch_YES_0.341000000_Ch_NO_0.437000000>
+																		</No>
+																	</adv_life_event_answer__Ch_YES_0.140000000_Ch_NO_0.185000000>
+																</Yes>
+																<No>
+																	<gen_personality_answer__Ch_YES_0.226000000_Ch_NO_0.096000000>
+																		1.4057
+																		<Yes>
+																			<pOfHR_0__SampleSize_19>MCJ: 3.579__SD: 1.389__Variance: 1.928__pOfMR: 0.579__pOfLR: 0.421__PathSize: 9</pOfHR_0__SampleSize_19>
+																		</Yes>
+																		<No>
+																			<gen_soc_contxt_answer__Ch_YES_0.083000000_Ch_NO_0.218000000>
+																				1.3793
+																				<Yes>
+																					<pOfHR_0__SampleSize_37>MCJ: 3.162__SD: 1.053__Variance: 1.109__pOfMR: 0.27__pOfLR: 0.73__PathSize: 10</pOfHR_0__SampleSize_37>
+																				</Yes>
+																				<No>
+																					<pOfHR_0.0714285714__SampleSize_14>MCJ: 4.143__SD: 1.355__Variance: 1.837__pOfMR: 0.5__pOfLR: 0.429__PathSize: 10</pOfHR_0.0714285714__SampleSize_14>
+																				</No>
+																			</gen_soc_contxt_answer__Ch_YES_0.083000000_Ch_NO_0.218000000>
+																		</No>
+																	</gen_personality_answer__Ch_YES_0.226000000_Ch_NO_0.096000000>
+																</No>
+															</suic_ideation_answer__Ch_YES_0.128000000_Ch_NO_0.094000000>
+														</No>
+													</mental_health_answer__Ch_YES_0.068000000_Ch_NO_0.288000000>
+												</Yes>
+												<No>
+													<suic_patt_att_answer__Ch_YES_0.046000000_Ch_NO_0.101000000>
+														1.1457
+														<Yes>
+															<pOfHR_0.027992278__SampleSize_1036>MCJ: 3.643__SD: 1.336__Variance: 1.784__pOfMR: 0.445__pOfLR: 0.527__PathSize: 7</pOfHR_0.027992278__SampleSize_1036>
+														</Yes>
+														<No>
+															<pOfHR_0.018556701__SampleSize_485>MCJ: 3.148__SD: 1.303__Variance: 1.698__pOfMR: 0.313__pOfLR: 0.668__PathSize: 7</pOfHR_0.018556701__SampleSize_485>
+														</No>
+													</suic_patt_att_answer__Ch_YES_0.046000000_Ch_NO_0.101000000>
+												</No>
+											</gen_self_worth_p_answer__Ch_YES_0.120000000_Ch_NO_0.065000000>
+										</Yes>
+										<No>
+											<insight_resp_answer__Ch_YES_0.152000000_Ch_NO_0.033000000>
+												1.2184
+												<Yes>
+													<gen_self_worth_p_answer__Ch_YES_0.294000000_Ch_NO_0.033000000>
+														1.4569
+														<Yes>
+															<pOfHR_0__SampleSize_24>MCJ: 3.542__SD: 1.224__Variance: 1.498__pOfMR: 0.542__pOfLR: 0.458__PathSize: 7</pOfHR_0__SampleSize_24>
+														</Yes>
+														<No>
+															<suic_patt_att_answer__Ch_YES_0.044000000_Ch_NO_0.280000000>
+																1.4444
+																<Yes>
+																	<mental_health_answer__Ch_YES_0.056000000_Ch_NO_0.231000000>
+																		1.3742
+																		<Yes>
+																			<gen_depression_answer__Ch_YES_0.020000000_Ch_NO_0.241000000>
+																				1.3549
+																				<Yes>
+																					<ment_fac_answer__Ch_YES_0.102000000_Ch_NO_0.017000000>
+																						1.1184
+																						<Yes>
+																							<gen_mntl_cur_sympt_answer__Ch_YES_0.500000000_Ch_NO_0.300000000>
+																								2.0701
+																								<Yes>
+																									<pOfHR_0__SampleSize_3>MCJ: 4__SD: 0__Variance: 0__pOfMR: 1__pOfLR: 0__PathSize: 12</pOfHR_0__SampleSize_3>
+																								</Yes>
+																								<No>
+																									<pOfHR_0__SampleSize_5>MCJ: 3__SD: 0.632__Variance: 0.4__pOfMR: 0.2__pOfLR: 0.8__PathSize: 12</pOfHR_0__SampleSize_5>
+																								</No>
+																							</gen_mntl_cur_sympt_answer__Ch_YES_0.500000000_Ch_NO_0.300000000>
+																						</Yes>
+																						<No>
+																							<pOfHR_0.0217391304__SampleSize_92>MCJ: 3.522__SD: 1.441__Variance: 2.076__pOfMR: 0.402__pOfLR: 0.576__PathSize: 11</pOfHR_0.0217391304__SampleSize_92>
+																						</No>
+																					</ment_fac_answer__Ch_YES_0.102000000_Ch_NO_0.017000000>
+																				</Yes>
+																				<No>
+																					<gen_personality_answer__Ch_YES_0.250000000_Ch_NO_0.417000000>
+																						1.8807
+																						<Yes>
+																							<pOfHR_0__SampleSize_5>MCJ: 3__SD: 1.414__Variance: 2__pOfMR: 0.4__pOfLR: 0.6__PathSize: 11</pOfHR_0__SampleSize_5>
+																						</Yes>
+																						<No>
+																							<pOfHR_0.6666666667__SampleSize_3>MCJ: 7__SD: 2.449__Variance: 6__pOfMR: 0.333__pOfLR: 0__PathSize: 11</pOfHR_0.6666666667__SampleSize_3>
+																						</No>
+																					</gen_personality_answer__Ch_YES_0.250000000_Ch_NO_0.417000000>
+																				</No>
+																			</gen_depression_answer__Ch_YES_0.020000000_Ch_NO_0.241000000>
+																		</Yes>
+																		<No>
+																			<gen_personality_answer__Ch_YES_0.140000000_Ch_NO_0.298000000>
+																				1.5706
+																				<Yes>
+																					<gen_currnt_bhvr_answer__Ch_YES_0.263000000_Ch_NO_0.154000000>
+																						1.5258
+																						<Yes>
+																							<pOfHR_0.2857142857__SampleSize_7>MCJ: 5__SD: 1.309__Variance: 1.714__pOfMR: 0.714__pOfLR: 0__PathSize: 11</pOfHR_0.2857142857__SampleSize_7>
+																						</Yes>
+																						<No>
+																							<gen_phys_hlth_prb_answer__Ch_YES_0.417000000_Ch_NO_0.083000000>
+																								1.7136
+																								<Yes>
+																									<pOfHR_0.3333333333__SampleSize_3>MCJ: 5__SD: 2.449__Variance: 6__pOfMR: 0.333__pOfLR: 0.333__PathSize: 12</pOfHR_0.3333333333__SampleSize_3>
+																								</Yes>
+																								<No>
+																									<pOfHR_0__SampleSize_10>MCJ: 3.5__SD: 1.36__Variance: 1.85__pOfMR: 0.6__pOfLR: 0.4__PathSize: 12</pOfHR_0__SampleSize_10>
+																								</No>
+																							</gen_phys_hlth_prb_answer__Ch_YES_0.417000000_Ch_NO_0.083000000>
+																						</No>
+																					</gen_currnt_bhvr_answer__Ch_YES_0.263000000_Ch_NO_0.154000000>
+																				</Yes>
+																				<No>
+																					<gen_app_diet_answer__Ch_YES_0.429000000_Ch_NO_0.171000000>
+																						1.8217
+																						<Yes>
+																							<pOfHR_0__SampleSize_4>MCJ: 4.5__SD: 0.5__Variance: 0.25__pOfMR: 1__pOfLR: 0__PathSize: 11</pOfHR_0__SampleSize_4>
+																						</Yes>
+																						<No>
+																							<pOfHR_0__SampleSize_10>MCJ: 3.5__SD: 1.204__Variance: 1.45__pOfMR: 0.4__pOfLR: 0.6__PathSize: 11</pOfHR_0__SampleSize_10>
+																						</No>
+																					</gen_app_diet_answer__Ch_YES_0.429000000_Ch_NO_0.171000000>
+																				</No>
+																			</gen_personality_answer__Ch_YES_0.140000000_Ch_NO_0.298000000>
+																		</No>
+																	</mental_health_answer__Ch_YES_0.056000000_Ch_NO_0.231000000>
+																</Yes>
+																<No>
+																	<pOfHR_0__SampleSize_25>MCJ: 2.48__SD: 0.985__Variance: 0.97__pOfMR: 0.12__pOfLR: 0.88__PathSize: 8</pOfHR_0__SampleSize_25>
+																</No>
+															</suic_patt_att_answer__Ch_YES_0.044000000_Ch_NO_0.280000000>
+														</No>
+													</gen_self_worth_p_answer__Ch_YES_0.294000000_Ch_NO_0.033000000>
+												</Yes>
+												<No>
+													<ment_fac_answer__Ch_YES_0.178000000_Ch_NO_0.006000000>
+														1.235
+														<Yes>
+															<gen_impaird_cog_answer__Ch_YES_0.127000000_Ch_NO_0.423000000>
+																1.7676
+																<Yes>
+																	<pOfHR_0.0476190476__SampleSize_21>MCJ: 3.714__SD: 1.485__Variance: 2.204__pOfMR: 0.476__pOfLR: 0.476__PathSize: 8</pOfHR_0.0476190476__SampleSize_21>
+																</Yes>
+																<No>
+																	<pOfHR_0__SampleSize_6>MCJ: 2.5__SD: 0.764__Variance: 0.583__pOfMR: 0__pOfLR: 1__PathSize: 8</pOfHR_0__SampleSize_6>
+																</No>
+															</gen_impaird_cog_answer__Ch_YES_0.127000000_Ch_NO_0.423000000>
+														</Yes>
+														<No>
+															<gen_meds_therpy_answer__Ch_YES_0.139000000_Ch_NO_0.014000000>
+																1.1775
+																<Yes>
+																	<gen_personality_answer__Ch_YES_0.180000000_Ch_NO_0.159000000>
+																		1.3914
+																		<Yes>
+																			<suic_patt_att_answer__Ch_YES_0.061000000_Ch_NO_0.606000000>
+																				2.0091
+																				<Yes>
+																					<pOfHR_0.0625__SampleSize_32>MCJ: 3.906__SD: 1.308__Variance: 1.71__pOfMR: 0.625__pOfLR: 0.313__PathSize: 10</pOfHR_0.0625__SampleSize_32>
+																				</Yes>
+																				<No>
+																					<pOfHR_0__SampleSize_4>MCJ: 2.75__SD: 0.433__Variance: 0.188__pOfMR: 0__pOfLR: 1__PathSize: 10</pOfHR_0__SampleSize_4>
+																				</No>
+																			</suic_patt_att_answer__Ch_YES_0.061000000_Ch_NO_0.606000000>
+																		</Yes>
+																		<No>
+																			<suic_ideation_answer__Ch_YES_0.244000000_Ch_NO_0.084000000>
+																				1.4239
+																				<Yes>
+																					<motive_eng_answer__Ch_YES_0.500000000_Ch_NO_0.333000000>
+																						2.103
+																						<Yes>
+																							<pOfHR_0__SampleSize_4>MCJ: 2.75__SD: 0.433__Variance: 0.188__pOfMR: 0__pOfLR: 1__PathSize: 11</pOfHR_0__SampleSize_4>
+																						</Yes>
+																						<No>
+																							<gen_self_worth_p_answer__Ch_YES_0.833000000_Ch_NO_0.167000000>
+																								2.4964
+																								<Yes>
+																									<pOfHR_1__SampleSize_1>MCJ: 7__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 0__PathSize: 12</pOfHR_1__SampleSize_1>
+																								</Yes>
+																								<No>
+																									<pOfHR_0__SampleSize_6>MCJ: 4__SD: 0.577__Variance: 0.333__pOfMR: 0.833__pOfLR: 0.167__PathSize: 12</pOfHR_0__SampleSize_6>
+																								</No>
+																							</gen_self_worth_p_answer__Ch_YES_0.833000000_Ch_NO_0.167000000>
+																						</No>
+																					</motive_eng_answer__Ch_YES_0.500000000_Ch_NO_0.333000000>
+																				</Yes>
+																				<No>
+																					<pOfHR_0__SampleSize_32>MCJ: 2.844__SD: 1.149__Variance: 1.319__pOfMR: 0.188__pOfLR: 0.813__PathSize: 10</pOfHR_0__SampleSize_32>
+																				</No>
+																			</suic_ideation_answer__Ch_YES_0.244000000_Ch_NO_0.084000000>
+																		</No>
+																	</gen_personality_answer__Ch_YES_0.180000000_Ch_NO_0.159000000>
+																</Yes>
+																<No>
+																	<suic_patt_att_answer__Ch_YES_0.044000000_Ch_NO_0.115000000>
+																		1.1673
+																		<Yes>
+																			<gen_self_worth_p_answer__Ch_YES_0.127000000_Ch_NO_0.017000000>
+																				1.1604
+																				<Yes>
+																					<gen_subs_misuse_answer__Ch_YES_0.123000000_Ch_NO_0.154000000>
+																						1.3117
+																						<Yes>
+																							<pOfHR_0__SampleSize_36>MCJ: 3.167__SD: 1.014__Variance: 1.028__pOfMR: 0.306__pOfLR: 0.694__PathSize: 11</pOfHR_0__SampleSize_36>
+																						</Yes>
+																						<No>
+																							<gen_personality_answer__Ch_YES_0.218000000_Ch_NO_0.171000000>
+																								1.4672
+																								<Yes>
+																									<mental_health_answer__Ch_YES_0.082000000_Ch_NO_0.818000000>
+																										2.3862
+																										<Yes>
+																											<pOfHR_0__SampleSize_11>MCJ: 4.091__SD: 0.9__Variance: 0.81__pOfMR: 0.818__pOfLR: 0.182__PathSize: 13</pOfHR_0__SampleSize_11>
+																										</Yes>
+																										<No>
+																											<pOfHR_0__SampleSize_1>MCJ: 0__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 1__PathSize: 13</pOfHR_0__SampleSize_1>
+																										</No>
+																									</mental_health_answer__Ch_YES_0.082000000_Ch_NO_0.818000000>
+																								</Yes>
+																								<No>
+																									<pOfHR_0__SampleSize_16>MCJ: 3.125__SD: 1.111__Variance: 1.234__pOfMR: 0.375__pOfLR: 0.625__PathSize: 12</pOfHR_0__SampleSize_16>
+																								</No>
+																							</gen_personality_answer__Ch_YES_0.218000000_Ch_NO_0.171000000>
+																						</No>
+																					</gen_subs_misuse_answer__Ch_YES_0.123000000_Ch_NO_0.154000000>
+																				</Yes>
+																				<No>
+																					<pOfHR_0.0101214575__SampleSize_494>MCJ: 3.053__SD: 1.257__Variance: 1.58__pOfMR: 0.277__pOfLR: 0.713__PathSize: 10</pOfHR_0.0101214575__SampleSize_494>
+																				</No>
+																			</gen_self_worth_p_answer__Ch_YES_0.127000000_Ch_NO_0.017000000>
+																		</Yes>
+																		<No>
+																			<gen_personality_answer__Ch_YES_0.152000000_Ch_NO_0.033000000>
+																				1.2184
+																				<Yes>
+																					<pOfHR_0__SampleSize_37>MCJ: 2.243__SD: 0.75__Variance: 0.562__pOfMR: 0.027__pOfLR: 0.973__PathSize: 10</pOfHR_0__SampleSize_37>
+																				</Yes>
+																				<No>
+																					<suic_ideation_answer__Ch_YES_0.106000000_Ch_NO_0.044000000>
+																						1.1521
+																						<Yes>
+																							<gen_currnt_bhvr_answer__Ch_YES_0.309000000_Ch_NO_0.062000000>
+																								1.5111
+																								<Yes>
+																									<pOfHR_0__SampleSize_7>MCJ: 4.143__SD: 1.245__Variance: 1.551__pOfMR: 0.571__pOfLR: 0.429__PathSize: 12</pOfHR_0__SampleSize_7>
+																								</Yes>
+																								<No>
+																									<pOfHR_0__SampleSize_37>MCJ: 2.703__SD: 1.112__Variance: 1.236__pOfMR: 0.189__pOfLR: 0.811__PathSize: 12</pOfHR_0__SampleSize_37>
+																								</No>
+																							</gen_currnt_bhvr_answer__Ch_YES_0.309000000_Ch_NO_0.062000000>
+																						</Yes>
+																						<No>
+																							<pOfHR_0__SampleSize_117>MCJ: 2.581__SD: 1.031__Variance: 1.064__pOfMR: 0.111__pOfLR: 0.889__PathSize: 11</pOfHR_0__SampleSize_117>
+																						</No>
+																					</suic_ideation_answer__Ch_YES_0.106000000_Ch_NO_0.044000000>
+																				</No>
+																			</gen_personality_answer__Ch_YES_0.152000000_Ch_NO_0.033000000>
+																		</No>
+																	</suic_patt_att_answer__Ch_YES_0.044000000_Ch_NO_0.115000000>
+																</No>
+															</gen_meds_therpy_answer__Ch_YES_0.139000000_Ch_NO_0.014000000>
+														</No>
+													</ment_fac_answer__Ch_YES_0.178000000_Ch_NO_0.006000000>
+												</No>
+											</insight_resp_answer__Ch_YES_0.152000000_Ch_NO_0.033000000>
+										</No>
+									</gen_feel_emot_answer__Ch_YES_0.050000000_Ch_NO_0.109000000>
+								</Yes>
+								<No>
+									<gen_phys_hlth_prb_answer__Ch_YES_0.254000000_Ch_NO_0.073000000>
+										1.4297
+										<Yes>
+											<pOfHR_0.003649635__SampleSize_274>MCJ: 3.033__SD: 1.236__Variance: 1.528__pOfMR: 0.299__pOfLR: 0.697__PathSize: 5</pOfHR_0.003649635__SampleSize_274>
+										</Yes>
+										<No>
+											<gen_currnt_bhvr_answer__Ch_YES_0.170000000_Ch_NO_0.078000000>
+												1.2936
+												<Yes>
+													<pOfHR_0.0081300813__SampleSize_369>MCJ: 3.084__SD: 1.267__Variance: 1.605__pOfMR: 0.317__pOfLR: 0.675__PathSize: 6</pOfHR_0.0081300813__SampleSize_369>
+												</Yes>
+												<No>
+													<ment_fac_answer__Ch_YES_0.133000000_Ch_NO_0.008000000>
+														1.1614
+														<Yes>
+															<gen_impaird_cog_answer__Ch_YES_0.136000000_Ch_NO_0.364000000>
+																1.6775
+																<Yes>
+																	<pOfHR_0__SampleSize_24>MCJ: 2.667__SD: 0.943__Variance: 0.889__pOfMR: 0.167__pOfLR: 0.833__PathSize: 8</pOfHR_0__SampleSize_24>
+																</Yes>
+																<No>
+																	<adv_life_event_answer__Ch_YES_0.625000000_Ch_NO_0.208000000>
+																		2.188
+																		<Yes>
+																			<pOfHR_0__SampleSize_2>MCJ: 2__SD: 0__Variance: 0__pOfMR: 0__pOfLR: 1__PathSize: 9</pOfHR_0__SampleSize_2>
+																		</Yes>
+																		<No>
+																			<pOfHR_0__SampleSize_6>MCJ: 4__SD: 0.577__Variance: 0.333__pOfMR: 0.833__pOfLR: 0.167__PathSize: 9</pOfHR_0__SampleSize_6>
+																		</No>
+																	</adv_life_event_answer__Ch_YES_0.625000000_Ch_NO_0.208000000>
+																</No>
+															</gen_impaird_cog_answer__Ch_YES_0.136000000_Ch_NO_0.364000000>
+														</Yes>
+														<No>
+															<pOfHR_0.0068846816__SampleSize_581>MCJ: 2.601__SD: 1.167__Variance: 1.362__pOfMR: 0.158__pOfLR: 0.835__PathSize: 7</pOfHR_0.0068846816__SampleSize_581>
+														</No>
+													</ment_fac_answer__Ch_YES_0.133000000_Ch_NO_0.008000000>
+												</No>
+											</gen_currnt_bhvr_answer__Ch_YES_0.170000000_Ch_NO_0.078000000>
+										</No>
+									</gen_phys_hlth_prb_answer__Ch_YES_0.254000000_Ch_NO_0.073000000>
+								</No>
+							</suic_past_att_answer__Ch_YES_0.037000000_Ch_NO_0.118000000>
+						</No>
+					</gen_presentation_answer__Ch_YES_0.159000000_Ch_NO_0.026000000>
+				</Yes>
+				<No>
+					<pOfHR_0.0026543505__SampleSize_18837>MCJ: 1.663__SD: 1.179__Variance: 1.39__pOfMR: 0.054__pOfLR: 0.943__PathSize: 2</pOfHR_0.0026543505__SampleSize_18837>
+				</No>
+			</suic_int_p_trig_answer__Ch_YES_0.248000000_Ch_NO_0.096000000>
+		</No>
+	</suic_curr_int_answer__Ch_YES_0.604000000_Ch_NO_0.091000000>
+	<pOfAnswer>0.93</pOfAnswer>
+	<MaxOfAnswer>0.68</MaxOfAnswer>
+	<NQPara>0</NQPara>
+	<averageSD>1.23</averageSD>
+	<AverageLength>9.59</AverageLength>
+</xml>

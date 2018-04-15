@@ -1,0 +1,124 @@
+
+
+
+
+div.questionPanel {
+	margin-bottom: 10px;
+	padding: 5px;
+	max-width:900px;
+}
+
+div.questionPanel.nominal, div.questionPanel.scale, div.questionPanel.date, div.questionPanel.number {
+	border-color: #B8B8B8;
+	border-bottom-style: solid;
+	border-width: 1px;
+	
+}
+
+div.questionPanel.steppedScreening {
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	
+}
+div.question-panel-for-border {
+	border-color: #B8B8B8;
+	border-bottom-style: solid;
+	border-width: 1px;
+}
+
+div.showBottomBorder {
+	border-color: #B8B8B8;
+	border-bottom-style: solid;
+	border-width: 1px;
+}
+
+.dateQuestionInstructions, .numberQuestionInstructions{
+	font-style: italic;
+	font-size: 90%;
+}
+
+.subQuestionWrapper{
+	margin-left: 20px;
+}
+
+.validationErrorBox {
+	display: none;
+	color: red;
+}
+
+.nominalValueHolder {
+	cursor: pointer;
+}
+
+.scaleAnswerHolder {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #444444;
+	margin: 2px;
+	padding: 5px;
+	cursor: pointer;
+	display: inline-block;
+	
+	/* the following lines are needed for IE7. taken from: http://uncorkedstudios.com/2011/12/12/how-to-fix-the-ie7-and-inline-block-css-bug/ */
+	zoom: 1;
+	*display: inline;
+}
+
+.scaleAnswerHolder.dkBox {
+	margin-left: 20px;
+}
+.scaleAnswerHolder.resetBox {
+	margin-left: 10px;
+	padding-left: 5px;
+	cursor: pointer;
+}
+
+.scale-pole-text, .scale-help-text {
+	font-style:italic;
+	font-size:90%;
+	margin-left: 5px;
+}
+
+.questionButtonIcon {
+	margin-top: 2px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.helpIcon, .persistentIcon {
+	cursor: default;
+}
+
+span.commentBoxTitle, span.mgmtCommentBoxTitle {
+	font-weight: bold;
+}
+.commentBox ,.mgmtCommentBox, .previousCommentBox, .previousMgmtCommentBox {
+	display: none;
+}
+
+.commentBox textarea,.mgmtCommentBox textarea, .previousCommentBox textarea, .previousMgmtCommentBox textarea {
+	height: 120px;
+	width: 500px;	
+}
+
+
+.noWrap {
+	white-space: nowrap;
+}
+
+div.answerPanel span.noWrap {
+	white-space: nowrap;
+	cursor: pointer;
+}
+
+.previousAnswer {
+	color: #7A7A7A;
+	font-style:italic;
+	font-size:90%;
+}
+
+label.radioLabel {
+	margin-right: 7px;
+	cursor: pointer;
+}

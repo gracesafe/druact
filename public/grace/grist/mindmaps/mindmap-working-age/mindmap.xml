@@ -1,0 +1,42 @@
+<mindmap>
+    <map name="fm_imagemap" id="fm_imagemap">
+        <area shape="rect" href="#FMID_1300671985FM" title="" coords="397,144,534,374" code-path="mental-health-risk"/>
+        <area shape="rect" href="#FMID_613054464FM" title="personal details" coords="594,9,724,32" showprogressicon="right" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-demog"/>
+        <area shape="rect" href="#FMID_1137279856FM" title="personality and way of thinking" coords="583,64,708,106" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-person-thinking"/>
+        <area shape="rect" href="#FMID_1151251422FM" title="personality" coords="731,35,818,57" showprogressicon="right" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-person-thinking,gen-personality"/>
+        <area shape="rect" href="#FMID_1996417330FM" title="mental   cognitive faculties" coords="729,71,922,93" showprogressicon="right" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-person-thinking,ment-fac"/>
+        <area shape="rect" href="#FMID_1604049278FM" title="insight   responsibility" coords="730,106,890,128" showprogressicon="right" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-person-thinking,insight-resp"/>
+        <area shape="rect" href="#FMID_574427563FM" title="risks" coords="553,303,604,326" code-path="mental-health-risk"/>
+        <area shape="rect" href="#FMID_815717573FM" title="suicide" coords="657,160,725,183" code-path="mental-health-risk,suic"/>
+        <area shape="rect" href="#FMID_1431316094FM" title="previous episodes" coords="760,139,879,159" showprogressicon="right" code-path="mental-health-risk,suic,sui-specific,suic-past-att"/>
+        <area shape="rect" href="#FMID_1465294261FM" title="current situation and behaviour" coords="751,170,937,190" showprogressicon="right" code-path="mental-health-risk,suic,sui-specific,suic-curr-sit-behav"/>
+        <area shape="rect" href="#FMID_961537879FM" title="self harm" coords="661,227,743,250" code-path="mental-health-risk,sh"/>
+        <area shape="rect" href="#FMID_1592114844FM" title="previous episodes" coords="778,206,897,226" showprogressicon="right" code-path="mental-health-risk,sh,sh-specific,sh-past-curr-ep"/>
+        <area shape="rect" href="#FMID_1980319436FM" title="current situation and behaviour" coords="769,237,955,257" showprogressicon="right" code-path="mental-health-risk,sh,sh-specific,self-harm-curr-sit-behav"/>
+        <area shape="rect" href="#FMID_1217542536FM" title="harm to others or damage" coords="644,303,842,326" code-path="mental-health-risk,hto"/>
+        <area shape="rect" href="#FMID_1203882476FM" title="previous episodes" coords="877,269,996,289" showprogressicon="right" code-path="mental-health-risk,hto,hto-specific,hto-past-curr-ep"/>
+        <area shape="rect" href="#FMID_1068001283FM" title="current situation and behaviour" coords="868,300,1054,320" showprogressicon="right" code-path="mental-health-risk,hto,hto-specific,harm-dam-curr-sit-behav"/>
+        <area shape="rect" href="#FMID_961772570FM" title="risk to dependents" coords="876,330,1026,353" showprogressicon="right" code-path="mental-health-risk,risk-dep"/>
+        <area shape="rect" href="#FMID_1718688338FM" title="self neglect" coords="655,369,755,392" code-path="mental-health-risk,sn"/>
+        <area shape="rect" href="#FMID_1990581786FM" title="appearance indicators" coords="781,369,921,389" showprogressicon="right" code-path="mental-health-risk,sn,sn-appearnce"/>
+        <area shape="rect" href="#FMID_751432290FM" title="vulnerability" coords="643,407,747,430" code-path="mental-health-risk,vuln-su"/>
+        <area shape="rect" href="#FMID_1871777246FM" title="current situation and behaviour" coords="773,409,959,429" showprogressicon="right" code-path="mental-health-risk,vuln-su,vuln-specific,vuln-app-behavr"/>
+        <area shape="rect" href="#FMID_69188807FM" title="state of mind" coords="233,55,341,78" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-state-mind"/>
+        <area shape="rect" href="#FMID_1710911393FM" title="feelings and emotions" coords="53,37,210,59" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-state-mind,gen-feel-emot"/>
+        <area shape="rect" href="#FMID_1494736236FM" title="sense of self worth" coords="72,69,207,91" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-state-mind,gen-self-worth-p"/>
+        <area shape="rect" href="#FMID_1002407974FM" title="behaviour at assessment" coords="149,104,343,127" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-presentation"/>
+        <area shape="rect" href="#FMID_816180316FM" title="involvement with life and others" coords="215,199,353,241" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-involve-social"/>
+        <area shape="rect" href="#FMID_1063785187FM" title="motivation and engagement" coords="76,139,188,179" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-involve-social,motive-eng"/>
+        <area shape="rect" href="#FMID_1875165358FM" title="social context" coords="89,191,194,213" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-involve-social,gen-soc-contxt"/>
+        <area shape="rect" href="#FMID_1605043317FM" title="general current behaviour" coords="11,224,194,246" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-involve-social,gen-currnt-bhvr"/>
+        <area shape="rect" href="#FMID_244183090FM" title="substance misuse" coords="67,256,195,278" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-involve-social,gen-subs-misuse"/>
+        <area shape="rect" href="#FMID_731878243FM" title="health and care" coords="252,327,378,350" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-health-care"/>
+        <area shape="rect" href="#FMID_320280543FM" title="mental health" coords="125,290,230,312" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-health-care,mental-health"/>
+        <area shape="rect" href="#FMID_285407468FM" title="physical health" coords="112,328,225,350" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-health-care,gen-phys-hlth-prb"/>
+        <area shape="rect" href="#FMID_1388309352FM" title="concordance with care" coords="61,363,223,385" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-health-care,gen-meds-therpy"/>
+        <area shape="rect" href="#FMID_1443952917FM" title="adverse life events" coords="235,417,389,440" code-path="mental-health-risk,genericRootNode-added-by-tool,adv-life-event"/>
+        <area shape="rect" href="#FMID_1334510522FM" title="abuse to person" coords="87,396,205,418" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,adv-life-event,gen-life-abuse"/>
+        <area shape="rect" href="#FMID_250333679FM" title="other challenging experiences" coords="0,432,211,454" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,adv-life-event,other-chall-exp"/>
+    </map>
+</mindmap>
+

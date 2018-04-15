@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Button } from 'react';
 import { NavLink } from 'react-router-dom';
 
 class homeMenu extends Component {
@@ -8,12 +8,26 @@ class homeMenu extends Component {
     this.state = {
       username: localStorage.getItem('username')
     };
+    this.handleClick = this.handleClick.bind(this);
   }
 
   componentWillReceiveProps() {
     this.setState({
       'username': localStorage.getItem('username')
     });
+  }
+
+  handleClick(event) {
+    console.log(event);
+    // document.getElementsByTagName('iframe')[0].contentWindow.LayoutManager.setupWellBeingAssessment();
+    // document.getElementsByTagName('iframe')[0].contentWindow.GlobalVariables.currentMygraceVersionPathways = 2;
+    // document.getElementsByTagName('iframe')[0].contentWindow.LayoutManager.setupWellBeingAssessment();
+   
+    //
+    // .setupWellBeingAssessment();
+    // var w = document.getElementsByTagName('iframe')[0].contentWindow;
+    // w.GlobalVariables.currentMygraceVersionPathways = w.GlobalVariables.mygraceVersionPathways.MY_SAFETY;
+    // w.LayoutManager.setupScreeningOnly();
   }
 
   renderCurrentLinks() {
@@ -36,7 +50,7 @@ class homeMenu extends Component {
           </NavLink>
         <NavLink className="dropdown-item" activeClassName="active" to="/home?m=6">
           <i className="fa fa-sign-in"></i> Overview of everything: past and present
-          </NavLink>
+        </NavLink>
       </span>
     );
   }
@@ -46,19 +60,19 @@ class homeMenu extends Component {
       <span>
         <NavLink className="dropdown-item" activeClassName="active" to="/home?m=7">
           <i className="fa fa-id-card"></i> My life journey
-          </NavLink>
+        </NavLink>
         <NavLink className="dropdown-item" activeClassName="active" to="/home?m=8">
           <i className="fa fa-sign-in"></i> My health and care
-          </NavLink>
+        </NavLink>
         <NavLink className="dropdown-item" activeClassName="active" to="/home?m=9">
           <i className="fa fa-sign-in"></i> My personal details
-          </NavLink>
+        </NavLink>
         <NavLink className="dropdown-item" activeClassName="active" to="/home?m=10">
           <i className="fa fa-sign-in"></i> My involvement with life and others
-          </NavLink>
+        </NavLink>
         <NavLink className="dropdown-item" activeClassName="active" to="/home?m=11">
           <i className="fa fa-sign-in"></i> My personality and way of thinking
-          </NavLink>
+        </NavLink>
       </span>
     );
   }
@@ -71,8 +85,13 @@ class homeMenu extends Component {
       <div>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li>
+          <a className="nav-link" href="#" id="navbarButtonTest" data-toggle="dropdown" onClick={this.handleClick(1)}>
+                <i className="fa fa-user"></i> Test
+          </a>
+            </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkCurrent" data-toggle="dropdown">
                 <i className="fa fa-user"></i> Current Events
                   </a>
               <div className="dropdown-menu">
@@ -80,7 +99,7 @@ class homeMenu extends Component {
               </div>
             </li>
             <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkHistory" data-toggle="dropdown">
                 <i className="fa fa-user"></i> My History
                   </a>
               <div className="dropdown-menu">

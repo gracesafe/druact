@@ -1,0 +1,103 @@
+ul.dynatree-container
+{
+	overflow: visible;
+	border: none;
+	/*background-color: #F1EFEF;*/
+	
+}
+.dynatree-title { 
+    white-space: normal; 
+}
+
+
+ul.dynatree-container li {
+	padding: 6px 0 0;
+}
+
+ul.dynatree-container a
+/*, ul.dynatree-container a:visited*/
+{
+	
+	color: #262626;
+    
+    display: inline-block;
+	
+	
+	/*USE THIS TO CHANGE THE FONT SIZE OF THE TREE*/
+	font-size: 11pt;
+
+}
+
+
+span.dynatree-active-first-person a {
+  background-color: #C4E6C4 !important;
+  color: #000 !important;
+}
+div.tree-first-person span.dynatree-node a:hover {
+  background-color: #dbf0db !important;
+  color: #000 !important;
+}
+
+span.dynatree-active-third-person a {
+  background-color: #8ac5f4 !important;
+  color: #000 !important;
+}
+
+div.tree-third-person span.dynatree-node a:hover {
+  background-color: #d0e8fb !important;
+  color: #000 !important;
+}
+/*SEARCH stuff*/
+span.searchResultNode a
+{
+    /*color: red;*/
+}
+
+span.searchResultNodeLabel a, label.searchOptionlabel
+{
+    background-color: #d3f9bc;
+}
+span.searchResultNodeComments a, label.searchOptioncomment
+{
+    background-color: #ffeeab;
+}
+span.searchResultNodeMgmtComments a, label.searchOptionmgmtComment
+{
+    background-color: #ffdebd;
+}
+span.searchResultNodeHelpText a, label.searchOptionHelpText
+{
+    background-color: #e6ccff;
+}
+span.searchResultNodeQuestionText a, label.searchOptionquestion
+{
+    background-color: #bcdff5;
+}
+
+ul.dynatree-container {
+	background-color: transparent;
+}
+
+span.dynatree-folder a {
+       font-weight: normal;
+}
+/*
+ This is for sumo select. should really be in its own custom file
+ * */
+.SumoSelect .select-all {
+	font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

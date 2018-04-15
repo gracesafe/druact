@@ -1,0 +1,669 @@
+/*
+ body {
+ overflow-y: scroll;
+ }
+ */
+
+html {
+
+	/*font-family: Verdana,Arial,sans-serif;*/
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	color: #494949;
+}
+
+.bodyBackground {
+	background-color: #f3fcf4;
+}
+
+/*a hack to prevent IE 8 from putting blue border around image*/
+img#mindmap-image {
+	border: none;
+}
+
+.red-border {
+	border: 2px solid red;
+}
+
+div.warning-message {
+	padding: 10px;
+	color: #8a6d3b;
+	background-color: #fcf8e3;
+	border: 1px solid  #f1c15d;
+
+}
+
+#project-title {
+	font-size: 16px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#top-header {
+	position: fixed;
+	/*height: 110px; set as GlobalVariables.headerHeight*/
+
+	left: 0;
+	top: 0;
+	width: 100%;
+	/*background: none repeat scroll 0 0 #e9efe9;*/
+
+	background-color: #e9efe9;
+	/*background-image: url("../grist/images/mygrist-logo-blue.png");*/
+	background-position: 10px 50px;
+	background-repeat: no-repeat;
+	border-bottom-style: solid;
+	border-width: 1px;
+	border-color: #8E8D8D;
+	z-index: 100;
+}
+
+#logo-container {
+	position: fixed;
+	padding: 5px;
+	cursor: pointer;
+}
+
+#logo-container img:hover {
+	
+	border: 1px solid gray;
+}
+
+#upperBlockinHeader {
+	padding: 10px;
+	color: #ffffff;
+	font-size: 12px;
+	border-bottom-style: solid;
+	border-width: 1px;
+	border-color: #8E8D8D;
+}
+
+#upperBlockinHeader-right {
+	float: right;
+}
+
+#upperBlockinHeader-right a {
+	text-decoration: none;
+	
+}
+#upperBlockinHeader-right a:hover {
+	text-decoration: underline;
+}
+
+#upperBlockinHeader-right #patient-welcome {
+	color: #FFFFFF;
+	font-style: italic;
+}
+
+#upperBlockinHeader-left {
+	display: inline-block;
+}
+#upperBlockinHeader-left-person{
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+
+.upperBlockinHeaderGreen {
+	background: #79bd98 none repeat scroll 0 0;
+}
+.upperBlockinHeaderBlue {
+	background: #7993bd none repeat scroll 0 0;
+}
+
+#upperBlockinHeader a {
+	color: #ffffff;
+}
+
+input[type="radio"] {
+	cursor: pointer;
+}
+
+#finish-intermediate-bottom {
+	background: #e9efe9 none repeat scroll 0 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	z-index: 999;
+	border-top: 4px solid #c4e6c4;
+	
+}
+#footer {
+	background: #e9efe9 none repeat scroll 0 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	z-index: 999;
+	/*height: 20px; this is set dynamically*/
+}
+
+.footerGreen {
+	border-top: 4px solid #c4e6c4;
+}
+
+.footerBlue {
+	border-top: 4px solid #c4e0e6;
+}
+
+#footer-left {
+	float: left;
+	padding-left: 10px;
+}
+
+#footer-center {
+	text-align: left;
+	margin: 0 auto !important;
+	display: inline-block;
+}
+
+#footer-right {
+	float: right;
+	padding-right: 10px;
+}
+
+.footer-button {
+	margin-right: 10px;
+}
+
+#menuButtons {
+	margin-top: 5px;
+	overflow: auto;
+	
+}
+
+#panelDescription h1 {
+	margin-bottom: 5px;
+}
+#panelDescription p {
+	margin-top: 5px;
+}
+
+#graceLogo {
+
+	padding-left: 30px;
+	line-height: 20px;
+	font-size: 24px;
+}
+
+.showinline {
+	display: inline-block;
+}
+
+#second-menu-row {
+	padding-left: 10px;
+	padding-top: 8px;
+	/*text-align:center;*/
+}
+
+#third-menu-row {
+	padding-left: 10px;
+	margin-top: 7px;
+	/*text-align:center;*/
+}
+
+
+#progressBarContainer {
+	display: inline-block;
+	vertical-align: middle;
+	/*width: 300px;*/
+}
+
+.progress-label {
+	float: left;
+	font-size: 80%;
+	width: 100%;
+	text-align: center;
+	cursor: default;
+	padding-top: 2px;
+	/*margin-left: 50%;*/
+}
+
+#progressbar {
+	width: 200px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/*#searchContainer,#preferenceContainer,#riskContextContainer, #mindmapModeContainer {*/
+.secondrow-button {
+	height: 20px;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+#loadingMessage, #savingAnswers {
+	color: red;
+	/*display: none;*/
+	display: inline-block;
+	float: right;
+}
+
+#notify-warning-panel {
+	color: #FF0066;
+	float: left;
+	margin-right: 5px;
+}
+
+#risk-selection-container {
+	float: left;
+}
+
+#left-sidebar {
+	position: fixed;
+	height: 500px; /* actually should be 100% - the height of the top banner. will need js to work that out	 */
+	overflow-x: auto;
+    overflow-y: scroll;
+	background-color: #eef8f8;
+	left: 0;
+	padding-right: 35px;
+	/*top: 111px;
+	 /*width: 300px; THIS IS specified as a GlobalVariables.treeWidth */
+}
+
+#tree-buttons {
+	padding: 5px;
+	font-weight: normal;
+	position: fixed;
+	height: 20px;
+	background-color: #eef8f8;
+}
+#tree {
+	margin-top: 25px;
+}
+
+#searchResults {
+	overflow: scroll;
+	height: 90%;
+	/*background-color: #F1EFEF;*/
+	display: none;
+}
+
+#searchAttributesDiv {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+#searchTextField {
+	width: 300px;
+}
+#searchOptions {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #D1D5E6;
+}
+
+#right-questionPanelWrapper {
+	line-height: 1.54;
+}
+
+#right-questionPanelWrapperRiskJudgement, #right-questionPanelWrapperSteppedScreening {
+	line-height: 1.54;
+	max-width: 900px;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#searchHeaderPanel {
+	position: fixed;
+	width: 100%;
+	background-color: #f3fcf4;
+	border-bottom: 3px solid #adebb5;
+	border-top: 3px solid #adebb5;
+	padding-left: 10px;
+    padding-top: 10px;
+	
+}
+
+#right-instructions {
+	width: 500px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #8E8D8D;
+	color: #9F6000;
+	background-color: #FEEFB3;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+
+#right-statusBar {
+	margin: 0;
+	padding: 20px 10px 20px 10px;
+	text-align: center;
+}
+
+#mindMapPanel {
+	margin: 0;
+	text-align: center;
+	background-color: white;
+	position: relative;
+}
+
+.mindmapLink {
+	cursor: pointer;
+}
+
+.overlay-image-progressIcon {
+	position: absolute;
+	/*z-index: 10;*/
+}
+
+.overlay-image {
+	position: absolute;
+	font-family: serif;
+	-moz-border-radius: 5px; /* Firefox 3.6-, removed in Firefox 13 */
+	-webkit-border-radius: 5px; /* Safari 4-, Chrome 3- */
+	border-radius: 5px;
+	cursor: pointer;
+	/*z-index: 10;*/
+}
+
+#mindmap-risk-indicator-container {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.tabledesign {
+	width: 90%;
+	color: #494949;
+	border-top: 1px solid #D1D5E6;
+	border-right: 1px solid #D1D5E6;
+	margin: 1em auto;
+	border-collapse: collapse;
+}
+
+.tabledesign tr.topRow td {
+	background: #E6EEEE;
+	font-weight: bold;
+	height: 20px;
+	
+}
+
+.tabledesign tr.category-header td {
+	height: 50px;
+	
+}
+
+.tabledesign td {
+	border-bottom: 1px solid #D1D5E6;
+	border-left: 1px solid #D1D5E6;
+	padding: .3em 1em;
+	height: 70px;
+	
+}
+
+.tabledesign tr.odd td {
+	background: #F0F0F6;
+}
+
+.tabledesignActions {
+	color: #494949;
+	border-top: 1px solid #D1D5E6;
+	border-right: 1px solid #D1D5E6;
+	margin: 1em auto;
+	border-collapse: collapse;
+}
+
+.tabledesignActions tr.topRow td {
+	background: #E6EEEE;
+	font-weight: bold;
+	height: 20px;
+	padding-left: 5px;
+}
+
+.tabledesignActions tr.category-header td {
+	height: 50px;
+	padding-left: 5px;
+}
+
+.tabledesignActions td {
+	border-bottom: 1px solid #D1D5E6;
+	border-left: 1px solid #D1D5E6;
+	padding: .3em 1em;
+	/*height: 70px;*/
+	padding-left: 50px;
+}
+
+.tabledesignActions tr.odd td {
+	background: #F0F0F6;
+}
+
+#risk-judgement-table .column1 {
+	font-weight: bold;
+}
+
+.risk-judgement-table-div {
+	overflow: auto;
+	width: 100%;
+	height: 100%;
+}
+
+/*this is required to make the buttons in jquery ui dialog expand the whole length*/
+.ui-dialog-buttonset {
+	width: 100%;
+}
+.leftButton {
+	float: left;
+}
+.rightButton {
+	float: right;
+}
+
+#overall-comment {
+	width: 100%;
+	height: 60px;
+}
+
+#overall-risk-comment-instructions {
+	/*color: #999999;*/
+	font-size: 90%;
+	font-style: italic;
+}
+
+p.personal-info-errors {
+	color: red;
+	margin: 5px 0;
+}
+
+/**************************************************************
+ *				Help html css, key popup
+ **************************************************************/
+ol.lowerRoman {
+	list-style-type: lower-alpha;
+}
+#dialog-help li {
+	margin-bottom: 10px;
+}
+
+.gotoTop {
+	float: right;
+}
+
+#key-table td {
+	border: 1px solid #D1D5E6;
+	padding: 5px;
+}
+#key-table {
+	border-collapse: collapse;
+}
+
+/**************************************************************
+ *				FINISHED layout panel
+ **************************************************************/
+#center-finishedLayoutPanel {
+	margin: 110px 0 0 0px;
+	line-height: 1.54;
+}
+
+#finish-msg {
+	text-align: center;
+	color: green;
+}
+
+/**************************************************************
+ *				opening page layout
+ **************************************************************/
+
+#openingPage-top {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	background-image: url("../images/treeBGcrop2.jpg");
+	background-position: right top;
+	background-repeat: no-repeat;
+}
+
+#openingPage-top-content {
+	/*width: 400px;*/
+	padding: 20px;
+}
+
+#openingPage-top-content h2 {
+	line-height: 33px;
+	font-size: 30px;
+}
+
+#openingPage-top-content a {
+	font-size: 16px;
+	margin-top: 10px;
+	color: #bbb;
+	cursor: default;
+}
+
+#openingPage-top-content a.active {
+	cursor: pointer;
+	color: #262626;
+}
+
+#openingPage-top-content a.active:hover {
+	text-decoration: underline;
+}
+
+#openingPage-top-content a span {
+	background: #ff9934 none repeat scroll 0 0;
+	border-radius: 50%;
+	color: #fff;
+	display: inline-block;
+	margin-right: 5px;
+	padding: 4px 10px;
+}
+#openingPage-bottom {
+	margin-top: 20px;
+}
+/**************************************************************
+ *				risk consensus stuff
+ **************************************************************/
+#dialog-consensus .riskAssessmentBox {
+	border: 1px solid #FF5C33;
+	border-radius: 6px;
+	margin-bottom: 20px;
+	margin-right: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+#dialog-consensus .riskAssessmentBox .questionText {
+	color: #888888;
+	font-style: italic;
+	padding: 10px;
+}
+#dialog-consensus .riskAssessmentBox .questionPanel {
+	display: none;
+}
+#dialog-consensus .mgColourText {
+	padding: 5px;
+}
+
+#dialog-consensus .informationText {
+	margin-bottom: 5px;
+}
+
+#dialog-consensus .commentPanel {
+	display: none;
+	margin-top: 10px;
+}
+
+#dialog-consensus .commentPanel .usercomment {
+	height: 120px;
+	width: 50%;
+}
+#dialog-consensus .errorMsg {
+	color: red;
+	display: none;
+}
+
+#dialog-consensus #fixed-top {
+
+}
+#dialog-consensus #rest-of-it {
+
+	overflow-y: scroll;
+}
+
+/* this is used to remove the close cross on dialog buttons. see http://stackoverflow.com/questions/896777/how-to-remove-close-button-on-the-jquery-ui-dialog*/
+.no-close .ui-dialog-titlebar-close {
+	display: none
+}
+
+
+label.form-label {
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 50px;
+    text-align: right;
+    margin-top: 10px;
+}
+input.form-input {
+  display: inline-block;
+  float: left;
+  margin-top: 10px;
+}
+
+
+/**************************************************************
+ *				jui dropdown list stuff
+ **************************************************************/
+
+.jui-container {
+	margin-left: 10px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.jui-menu {
+	position: absolute;
+	width: 300px !important;
+	margin-top: 3px !important;
+	z-index: 999;
+}
+
+/* avatar stuff */
+.popover-content {
+	background: url("../images/popoverBG2.jpg") no-repeat scroll right top;
+	padding-right: 120px;
+	min-height: 188px;
+}
+
+.webui-popover-inner a.close {
+	opacity: 1.0;
+	font-size: 20px;
+}
+
+.jui-container a {
+	text-decoration: none;
+}
+

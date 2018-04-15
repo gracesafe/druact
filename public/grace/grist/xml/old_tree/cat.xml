@@ -1,0 +1,1541 @@
+<node label="mental-health-risk" code="mental-health-risk" min-mg-exceptions="(hto-sex-asslt gen-dep-stage)" populations="service-user" services="((structure ((iapt ((future-changes needed)))(service-user ((future-changes needed)))))(rendition ((service-user ((su-pop-alt-report-scale-col true))))))" level="0">
+	<node label="ending your own life" code="suic" value-mg="((0 0) (10 1))">
+		<node label="questions specifically about taking your own life" code="sui-specific">
+			<node label="past and current attempts to end your life" code="suic-past-att" layer="0" filter-q="">
+				<node label="occurrence of suicide attempts" code="suic-occur">
+					<node label="most recent attempt to end your life" code="suic-most-rec" value-mg="((0 1) (52 0))"/>
+					<node label="pattern of attempts to end your life" code="suic-patt-att" value-mg="((0 0) (10 1))" filter-q="">
+						<node label="first time you tried to end your life" code="suic-first-occ" value-mg="((0 0) (52 1))"/>
+						<node label="how many attempts to end your life" code="suic-how-many" value-mg="((0 0)(1 0.5)(3 1))"/>
+						<node label="frequency of attempts to end your life" code="suic-escalate" value-mg="((DECREASING 0) (SAME 0.5) (INCREASING 1))"/>
+					</node>
+				</node>
+				<node label="preparation and seriousness of attempts to end your life" code="suic-prep-serious-at" value-mg="((0 0) (10 1))">
+					<node label="suicide note" code="suic-note-prev" value-mg="((YES 1) (NO 0))"/>
+					<node label="seriousness of suicide methods" code="suic-ser-method">
+						<node label="chance of being found after attempting to end your life" code="suic-discovery" value-mg="((0 0) (10 1))"/>
+						<node label="how dangerous were your attempts to end your life" code="suic-lethality" value-mg="((0 0) (10 1))"/>
+					</node>
+				</node>
+				<node label="what do you think now about past attempts to end your life" code="suic-person-per" value-mg="((0 0) (10 1))">
+					<node label="thoughts/feelings related to previous suicide attempts" code="suic-thght-prev">
+						<node label="How much did you want to end your life" code="suic-ser-succd" value-mg="((0 0) (10 1))"/>
+						<node label="regret trying to end your life" code="suic-regret" value-mg="((0 1) (10 0))"/>
+					</node>
+
+				</node>
+			</node>
+			<node label="current suicidal situation and behaviour" code="suic-curr-sit-behav">
+				<node label="current intention to end your life" code="suic-curr-int" layer="0">
+					<node label="plans and methods for ending your life" code="suic-plans" value-mg="((0 0) (10 1))" filter-q="">
+						<node label="realism of plan to end your life" code="suic-plan-real" value-mg="((0 0) (10 1))"/>
+						<node label="steps taken towards carrying out your plan to end your life" code="suic-steps-takn" value-mg="((0 0) (10 1))"/>
+						<node label="dangerousness of method to end your life" code="suic-prosp-leth" value-mg="((0 0) (10 1))"/>
+					</node>
+					<node label="told anyone about ending your life" code="suic-int-inform" value-mg="((YES 1) (NO 0))"/>
+					<node label="making end of life preparations" code="suic-eol-prep" value-mg="((0 0) (10 1))"/>
+					<node label="dangerous self-harming" code="suic-s-h-behv" value-mg="((0 0) (10 1))"/>
+					<node label="things that might help stop you ending your life" code="suic-bhvr-const" value-mg="((0 1) (10 0))">
+						<node label="insight and responsibility" code="insight-resp" value-mg="((0 0) (10 1))" layer="0" generic="g">
+							<node label="understanding risk taking" code="gen-insght-behvr" value-mg="((0 1) (10 0))"/>
+							<node label="taking responsibility for the risks I take" code="gen-resp-impct-oth" value-mg="((0 1) (10 0))"/>
+							<node label="my need for help" code="gen-nd-hlp-diff" value-mg="((0 1) (10 0))"/>
+						</node>
+						<node label="spiritual/religious values/beliefs" code="suic-rel-belief" value-mg="((STRONGLY-PROTECT 0) (PROTECT 0) (NO-EFFECT 0) (INCREASE 0.5) (STRONGLY-INCREASE 1))"/>
+					</node>
+				</node>
+				<node label="triggers for ending your life" code="suic-int-p-trig" value-mg="((0 0) (10 1))" layer="0">
+					<node label="potential triggers for ending your life" code="suic-pot-trig" value-mg="((0 0) (10 1))"/>
+					<node label="match between current triggers and dangerous ones in the past" code="suic-p-trig-mtch" value-mg="((0 0) (10 1))"/>
+					<node label="family history of suicide" code="suic-fam-hist" value-mg="((YES 1) (NO 0))"/>
+				</node>
+				<node label="thoughts about ending your life" code="suic-ideation" value-mg="((0 0) (10 1))" layer="0" filter-q="">
+					<node label="ability to control thoughts about ending your life" code="suic-id-control" value-mg="((0 1) (10 0))"/>
+					<node label="very risky thoughts about ending your life" code="suic-id-hi-risk" value-mg="((0 0) (10 1))"/>
+					<node label="frequency of thoughts about ending your life" code="suic-id-freq" value-mg="((DAILY 1) (WEEKLY 0.5) (MONTHLY 0.2) (LESS-THAN-MONTHLY 0))"/>
+					<node label="strength, intensity, intrusiveness, and persistence of thoughts about ending your life" code="suic-id-strngth" value-mg="((0 0) (10 1))"/>
+				</node>
+				<node label="your appearance and the distress it reflects" code="suic-app-behvr" value-mg="((0 0) (10 1))">
+					<node label="physical indicators of suicide" code="suic-phys-indic">
+						<node label="appearance indicators of self neglect" code="sn-appearnce" layer="0" generic="g">
+							<node label="hair and clothes" code="sn-hair-clothes" value-mg="((0 0) (10 1))"/>
+							<node label="personal hygiene" code="sn-hygiene" value-mg="((0 0) (10 1))" generic-type="g"/>
+							<node label="recent changes in your appearance" code="sn-recnt-app-chnge" value-mg="((0 0) (10 1))"/>
+							<node label="skin" code="sn-skin" value-mg="((0 0) (10 1))"/>
+						</node>
+						<node label="self-harming injuries" code="gen-sh-cuts" generic-datum="g" value-mg="((0 0) (10 1))"/>
+					</node>
+
+				</node>
+			</node>
+		</node>
+		<node label="feelings and emotions" code="gen-feel-emot" layer="0" generic-type="gd">
+			<node label="feeling sad" code="gen-sad" value-mg="((0 0) (10 1))"/>
+			<node label="anxiety" code="gen-anx-emotns" value-mg="((0 0) (10 1))"/>
+			<node label="mood swings" code="gen-mood-swings" value-mg="((0 0) (10 1))"/>
+			<node label="negative feelings about myself" code="gen-negative-self" value-mg="((0 0) (10 1))"/>
+			<node label="feeling angry" code="gen-angry-emotns" value-mg="((0 0) (10 1))"/>
+			<node label="feeling helpless" code="gen-helpless" value-mg="((0 0) (10 1))"/>
+			<node label="distress" code="gen-distress" value-mg="((0 0) (10 1))"/>
+			<node label="jealousy" code="gen-jealous" value-mg="((0 0) (10 1))"/>
+			<node label="hopefulness" code="gen-hopeless" value-mg="((0 0) (10 1))" header="Questions on hopefulness" generic-type="g">
+				<node label="plans for the future" code="gen-plans-future" value-mg="((0 1) (10 0))"/>
+				<node label="enjoyment of your life" code="gen-life-not-livng" value-mg="((0 1) (10 0))"/>
+			</node>
+		</node>
+		<node label="my sense of self worth" code="gen-self-worth-p" layer="0" generic-type="gd">
+			<node label="your sense of self-worth" code="worthlessness" value-mg="((0 1) (10 0))"/>
+			<node label="feeling all-important" code="grandiosity" value-mg="((0 0) (10 1))"/>
+
+		</node>
+		<node label="my mental health" code="mental-health" layer="0" filter-q="">
+
+			<node label="depression" code="gen-depression" filter-q="" generic-type="g">
+				<node label="seriousness of current depression" code="serious-depression" value-mg="((none 0) (mild 0.3) (moderate 0.65) (severe 1))">
+					<node label="feelings/emotions" code="gen-feel-emot" layer="0" generic="gd">
+						<node label="feeling sad" code="gen-sad" value-mg="((0 0) (10 1))"/>
+						<node label="anxiety" code="gen-anx-emotns" value-mg="((0 0) (10 1))"/>
+						<node label="mood swings" code="gen-mood-swings" value-mg="((0 0) (10 1))"/>
+						<node label="negative feelings about myself" code="gen-negative-self" value-mg="((0 0) (10 1))"/>
+						<node label="feeling angry" code="gen-angry-emotns" value-mg="((0 0) (10 1))"/>
+						<node label="feeling helpless" code="gen-helpless" value-mg="((0 0) (10 1))"/>
+						<node label="distress" code="gen-distress" value-mg="((0 0) (10 1))"/>
+						<node label="jealousy" code="gen-jealous" value-mg="((0 0) (10 1))"/>
+						<node label="hopefulness" code="gen-hopeless" value-mg="((0 0) (10 1))" header="Questions on hopefulness" generic-type="g">
+							<node label="plans for the future" code="gen-plans-future" value-mg="((0 1) (10 0))"/>
+							<node label="enjoyment of your life" code="gen-life-not-livng" value-mg="((0 1) (10 0))"/>
+						</node>
+					</node>
+					<node label="perspective of self worth" code="gen-self-worth-p" layer="0" generic="gd">
+						<node label="your sense of self-worth" code="worthlessness" value-mg="((0 1) (10 0))"/>
+						<node label="feeling all-important" code="grandiosity" value-mg="((0 0) (10 1))"/>
+
+					</node>
+					<node label="my motivation in life" code="gen-motivation" generic-datum="g" value-mg="((0 1) (10 0))"/>
+					<node label="voice hallucinations" code="gen-voice-hal" filter-q="" header="Questions on voice hallucinations" generic="g">
+						<node label="type of voices" code="gen-voices-type">
+							<node label="danger of the voices to you" code="gen-voice-dang-s" value-mg="((0 0) (10 1))"/>
+							<node label="danger of the voices to others" code="gen-voice-dang-o" value-mg="((0 0) (10 1))"/>
+						</node>
+						<node label="acting on the voices" code="gen-prob-act-voice" value-mg="((0 0) (10 1))"/>
+					</node>
+					<node label="paranoid delusions" code="gen-paranoid-del" filter-q="" header="Questions on paranoid delusions" generic="g">
+						<node label="type of paranoid delusions" code="gen-type-paranoid-del">
+							<node label="about specific people" code="gen-paran-del-spec" value-mg="((0 0) (10 1))"/>
+							<node label="feeling under threat" code="gen-paran-del-pers" value-mg="((0 0) (10 1))"/>
+						</node>
+						<node label="acting on your paranoid thoughts" code="gen-prob-act-par-del" value-mg="((0 0) (10 1))"/>
+					</node>
+					<node label="impaired cognitive function" code="gen-impaird-cog" filter-q="" generic="g">
+						<node label="making decisions" code="gen-decision" value-mg="((0 1) (10 0))"/>
+						<node label="concentration" code="gen-concentr" value-mg="((0 1) (10 0))"/>
+						<node label="thinking processes and memory" code="gen-cog-think-mem" value-mg="((0 0) (10 1))"/>
+
+					</node>
+					<node label="general current behaviour" code="gen-currnt-bhvr" layer="0" generic="gd">
+						<node label="structure in my life" code="gen-day-actvty" value-mg="((0 1) (10 0))">
+							<node label="structure in my lfe" code="gen-day-struct" value-mg="((0 1) (10 0))"/>
+							<node label="being active" code="gen-day-actvty-lev" value-mg="((PASSIVE-INERT 1) (UNDERACTIVE 0.5) (NORMAL 0) (OVERACTIVE 0.5) (HYPERACTIVE 1))" generic-type="gd" generic-datum="gd"/>
+						</node>
+						<node label="sleep" code="gen-sleep-dist" value-mg="((0 0) (10 1))"/>
+						<node label="my diet" code="gen-app-diet" value-mg="((0 1) (10 0))" layer="0" generic="g">
+							<node label="eating" code="gen-diet-eating" value-mg="((0 1) (10 0))"/>
+							<node label="weight" code="gen-diet-weight">
+								<node label="my weight" code="gen-diet-weigt-ext" value-mg="((EXTREME-UNDERWEIGHT 1) (UNDERWEIGHT 0.5) (WEIGHT-OK 0) (OVERWEIGHT 0.5) (EXTREME-OVERWEIGHT 1))"/>
+								<node label="weight change" code="gen-diet-weigt-chg" value-mg="((0 0) (10 1))"/>
+							</node>
+							<node label="fluid intake" code="gen-diet-drink" value-mg="((0 1) (10 0))"/>
+						</node>
+						<node label="not being myself" code="gen-unusl-rec-bhvr" value-mg="((0 0) (10 1))"/>
+						<node label="risky activities" code="gen-rsk-behavr" value-mg="((0 0) (10 1))"/>
+						<node label="carelessness" code="gen-unint-risk-behavr" value-mg="((0 0) (10 1))"/>
+
+					</node>
+					<node label="engagement with world" code="gen-eng-world" value-mg="((0 1) (10 0))" generic="gd">
+						<node label="physical withdrawal from the world" code="gen-phys-withd" value-mg="((0 0) (10 1))"/>
+						<node label="mental withdrawal" code="gen-mental-withd" value-mg="((0 1) (10 0))"/>
+					</node>
+				</node>
+				<node label="stage of depression" code="gen-dep-stage" value-mg="((FIRST-DIAGNOSIS 1) (RECOVERY-SINGLE-EPISODE 0) (RECOVERY-REPEAT-EPISODES 0.4) (RELAPSE 1))"/>
+			</node>
+			<node label="serious mental-health problems" code="gen-ser-mentl-ill" filter-q="" generic-type="gd">
+				<node label="understanding my mental-health problems" code="gen-mentl-insght" value-mg="((0 1) (10 0))"/>
+				<node label="current symptoms of severe mental-health problems" code="gen-mntl-cur-sympt" filter-q="">
+					<node label="feeling manic" code="gen-mania" value-mg="((0 0) (10 1))"/>
+					<node label="hearing voices" code="gen-voice-hal" filter-q="" header="Questions on voice hallucinations" generic-type="g">
+						<node label="type of voices" code="gen-voices-type">
+							<node label="danger of the voices to you" code="gen-voice-dang-s" value-mg="((0 0) (10 1))"/>
+							<node label="danger of the voices to others" code="gen-voice-dang-o" value-mg="((0 0) (10 1))"/>
+						</node>
+						<node label="acting on the voices" code="gen-prob-act-voice" value-mg="((0 0) (10 1))"/>
+					</node>
+					<node label="feeling paranoid" code="gen-paranoid-del" filter-q="" header="Questions on paranoid delusions" generic-type="g">
+						<node label="type of paranoid delusions" code="gen-type-paranoid-del">
+							<node label="about specific people" code="gen-paran-del-spec" value-mg="((0 0) (10 1))"/>
+							<node label="feeling under threat" code="gen-paran-del-pers" value-mg="((0 0) (10 1))"/>
+						</node>
+						<node label="acting on your paranoid thoughts" code="gen-prob-act-par-del" value-mg="((0 0) (10 1))"/>
+					</node>
+				</node>
+			</node>
+		</node>
+		<node label="thinking and memory" code="ment-fac" layer="0">
+			<node label="problems with thinking and memory" code="gen-impaird-cog" filter-q="" generic-type="g">
+				<node label="making decisions" code="gen-decision" value-mg="((0 1) (10 0))"/>
+				<node label="concentration" code="gen-concentr" value-mg="((0 1) (10 0))"/>
+				<node label="thinking processes and memory" code="gen-cog-think-mem" value-mg="((0 0) (10 1))"/>
+
+			</node>
+			<node label="learning disabilities" code="gen-learn-disab" value-mg="((0 0) (10 1))"/>
+		</node>
+		<node label="personality" code="gen-personality" layer="0" generic-type="gd">
+			<node label="assertiveness" code="gen-assertive" value-mg="((NOT-ASSERTIVE 1) (SOMEWHAT-ASSERTIVE 0.3) (NORMALLY-ASSERTIVE 0) (VERY-ASSERTIVE 0) (EXCESSIVELY-ASSERTIVE 0))" generic-type="gd" generic-datum="gd"/>
+			<node label="empathy" code="gen-empathy-abil" value-mg="((0 1) (10 0))"/>
+			<node label="dependence" code="gen-dependence" value-mg="((0 0) (10 1))"/>
+			<node label="being organised" code="gen-controlling" value-mg="((chaotic 0.5) (disorganised 0.2) (normal 0) (very-organised 0.5)(obsessional-perfectionist 1))" generic-type="gd" generic-datum="gd"/>
+			<node label="coping with major life stresses" code="gen-coping-abil" value-mg="((0 1) (10 0))"/>
+			<node label="hostility" code="gen-hostile" value-mg="((0 0) (10 1))"/>
+			<node label="impulsiveness" code="gen-impulse" value-mg="((0 0) (10 1))"/>
+			<node label="reliability" code="gen-reliable" value-mg="((0 1) (10 0))"/>
+		</node>
+		<node label="my involvement with life and others" code="motive-eng" layer="0">
+			<node label="engagement with world" code="gen-eng-world" value-mg="((0 1) (10 0))" generic-type="gd">
+				<node label="physical withdrawal from the world" code="gen-phys-withd" value-mg="((0 0) (10 1))"/>
+				<node label="mental withdrawal" code="gen-mental-withd" value-mg="((0 1) (10 0))"/>
+			</node>
+			<node label="my motivation in life" code="gen-motivation" value-mg="((0 1) (10 0))"/>
+			<node label="energy" code="gen-listless" value-mg="((0 1) (10 0))"/>
+		</node>
+		<node label="my social world" code="gen-soc-contxt" layer="0" generic-type="gd">
+			<node label="relationships" code="gen-relatnshps" header="Questions on current relationships" generic-type="gd">
+				<node label="network of people in my life" code="gen-net-relat" value-mg="((0 1) (10 0))"/>
+				<node label="nature of relationships" code="gen-relat-nature">
+					<node label="supportive relationships" code="gen-relat-supp" value-mg="((0 1) (10 0))"/>
+					<node label="relationships that bring you down" code="gen-relat-detr" value-mg="((0 0) (10 1))"/>
+				</node>
+				<node label="changes for the worse in relationships" code="gen-relat-detr-chg" value-mg="((0 0) (10 1))"/>
+			</node>
+			<node label="where I live" code="gen-living-arr" header="Questions on living arrangements" generic-type="gd">
+				<node label="moving house" code="gen-move-freq" value-mg="((LESS-THAN-EVERY-YEAR 0) (ONCE-EVERY-YEAR 0.5) (SEVERAL-TIMES-YEAR 0.8) (ONCE-A-MONTH-OR-MORE 1))"/>
+				<node label="type of home" code="gen-home-type" value-mg="((HOMELESS 1) (HOSTEL 0.8) (institution-fully-supervised 0) (daily-support 0.1)(limited-support 0.2)(no-support 0.5))"/>
+				<node label="neighbourhood" code="gen-neighbrhd">
+					<node label="living in an isolated place" code="gen-isol-accom" value-mg="((0 0) (10 1))"/>
+					<node label="my neighbourhood" code="gen-neigbrhd-rsky" value-mg="((0 0) (10 1))"/>
+				</node>
+				<node label="state of accommodation" code="gen-accom-state">
+					<node label="caring for my home" code="gen-accom-hm-care" value-mg="((0 1) (10 0))"/>
+					<node label="home comfort" code="gen-accom-habitbl" value-mg="((0 1) (10 0))"/>
+				</node>
+			</node>
+			<node label="money concerns" code="gen-finance-prob" header="Questions on financial problems">
+				<node label="cost of living" code="gen-poverty" value-mg="((0 1) (10 0))"/>
+				<node label="debt" code="gen-perc-debt-anx" value-mg="((0 0) (10 1))"/>
+
+			</node>
+			<node label="employment" code="gen-employment">
+				<node label="my work history" code="gen-job-chg-frq" value-mg="((0 1) (10 0))"/>
+				<node label="unhelpful changes to employment" code="gen-rec-bad-job-ch" value-mg="((0 0) (10 1))"/>
+			</node>
+		</node>
+		<node label="how I am and things I am doing at the moment" code="gen-currnt-bhvr" layer="0" generic-type="gd">
+			<node label="structure in my life" code="gen-day-actvty" value-mg="((0 1) (10 0))">
+				<node label="structure in my lfe" code="gen-day-struct" value-mg="((0 1) (10 0))"/>
+				<node label="being active" code="gen-day-actvty-lev" value-mg="((PASSIVE-INERT 0) (UNDERACTIVE 0) (NORMAL 0) (OVERACTIVE 0.5) (HYPERACTIVE 1))" generic-type="gd" generic-datum="gd"/>
+			</node>
+			<node label="sleep" code="gen-sleep-dist" value-mg="((0 0) (10 1))"/>
+			<node label="my diet" code="gen-app-diet" value-mg="((0 1) (10 0))" layer="0" generic="g">
+				<node label="eating" code="gen-diet-eating" value-mg="((0 1) (10 0))"/>
+				<node label="weight" code="gen-diet-weight">
+					<node label="my weight" code="gen-diet-weigt-ext" value-mg="((EXTREME-UNDERWEIGHT 1) (UNDERWEIGHT 0.5) (WEIGHT-OK 0) (OVERWEIGHT 0.5) (EXTREME-OVERWEIGHT 1))"/>
+					<node label="weight change" code="gen-diet-weigt-chg" value-mg="((0 0) (10 1))"/>
+				</node>
+				<node label="fluid intake" code="gen-diet-drink" value-mg="((0 1) (10 0))"/>
+			</node>
+			<node label="not being myself" code="gen-unusl-rec-bhvr" value-mg="((0 0) (10 1))"/>
+			<node label="risky activities" code="gen-rsk-behavr" value-mg="((0 0) (10 1))"/>
+			<node label="carelessness" code="gen-unint-risk-behavr" value-mg="((0 0) (10 1))"/>
+
+		</node>
+		<node label="drink and drugs" code="gen-subs-misuse" layer="0" filter-q="" generic-type="gd">
+			<node label="bad effects of alcohol" code="gen-alc-misuse" value-mg="((0 0) (10 1))"/>
+			<node label="bad effects of drugs" code="gen-drug-misuse" value-mg="((0 0) (10 1))"/>
+		</node>
+		<node label="taking responsibility" code="insight-resp" value-mg="((0 0) (10 1))" layer="0" generic-type="g">
+			<node label="understanding risk taking" code="gen-insght-behvr" value-mg="((0 1) (10 0))"/>
+			<node label="taking responsibility for the risks I take" code="gen-resp-impct-oth" value-mg="((0 1) (10 0))"/>
+			<node label="my need for help" code="gen-nd-hlp-diff" value-mg="((0 1) (10 0))"/>
+		</node>
+		<node label="my physical health" code="gen-phys-hlth-prb" layer="0" generic-type="gd">
+			<node label="mobility and dexterity" code="gen-phys-hlth-disa" value-mg="((0 0) (10 1))"/>
+			<node label="communication difficulties" code="gen-com-imp" value-mg="((0 0) (10 1))"/>
+			<node label="pain" code="gen-phys-hlth-pain" value-mg="((0 0) (10 1))"/>
+			<node label="worsening physical health" code="gen-phys-hlth-det" value-mg="((0 0) (10 1))"/>
+			<node label="first diagnosis of serious illness" code="gen-phys-hlth-deg-diag" value-mg="((3 1) (36 0))"/>
+
+		</node>
+		<node label="my care" code="gen-meds-therpy" layer="0" generic-type="g">
+			<node label="following health professionals' advice" code="gen-meds-concord" value-mg="((0 1) (10 0))"/>
+			<node label="service support" code="gen-serv-perc-supp" value-mg="((0 1) (10 0))"/>
+			<node label="regular use of services" code="gen-serv-last-acc" value-mg="((0 1) (10 0))"/>
+			<node label="benefit from treatment" code="gen-med-perc-benft" value-mg="((0 1) (10 0))"/>
+		</node>
+		<node label="my life journey" code="adv-life-event" layer="0" filter-q="" generic-type="gd">
+			<node label="environment I grew up in" code="gen-env-grew-up" value-mg="((0 0) (10 1))"/>
+			<node label="school days" code="gen-educ-expr" value-mg="((0 0) (10 1))"/>
+			<node label="eating disorders" code="gen-eating-dis" value-mg="((0 0) (10 1))"/>
+			<node label="traumatic experiences" code="gen-life-trauma" generic-type="gd">
+				<node label="abuse" code="gen-life-abuse" filter-q="" generic-type="g">
+					<node label="emotional abuse" code="gen-emot-abse" value-mg="((0 0) (10 1))" filter-q="">
+						<node label="most recent emotional abuse" code="gen-emot-abse-last" value-mg="((0 1) (24 0.2))"/>
+						<node label="emotional abuse during childhood (0 to 16 yrs)" code="gen-emo-abse-as-ch" value-mg="((YES 1) (NO 0))"/>
+					</node>
+					<node label="physical abuse" code="gen-phys-abse" value-mg="((0 0) (10 1))" filter-q="">
+						<node label="most recent physical abuse" code="gen-phys-abse-last" value-mg="((0 1) (24 0.2))"/>
+						<node label="physical abuse during childhood (0 to 16 yrs)" code="gen-phy-abse-as-ch" value-mg="((YES 1) (NO 0))"/>
+					</node>
+					<node label="sexual abuse" code="gen-life-sex-abuse" value-mg="((0 0) (10 1))" filter-q="">
+						<node label="most recent sexual abuse" code="gen-sex-abse-last" value-mg="((0 1) (5 0.3))"/>
+						<node label="sexual abuse during childhood (0 to 16 yrs)" code="gen-sex-abse-as-ch" value-mg="((YES 1) (NO 0))"/>
+					</node>
+					<node label="financial abuse" code="gen-financial-abuse" value-mg="((YES 1) (NO 0))"/>
+
+				</node>
+				<node label="trouble with the law" code="gen-forensic-proc" value-mg="((YES 1) (NO 0))"/>
+				<node label="recent traumatic life changes" code="gen-recent-life-trauma" generic-type="g">
+					<node label="first diagnosis of serious illness" code="gen-phys-hlth-deg-diag" generic-datum="g" value-mg="((3 1) (36 0))"/>
+					<node label="changes for the worse in relationships" code="gen-relat-detr-chg" generic-datum="g" value-mg="((0 0) (10 1))"/>
+					<node label="unhelpful changes to employment" code="gen-rec-bad-job-ch" generic-datum="g" value-mg="((0 0) (10 1))"/>
+
+				</node>
+
+			</node>
+
+		</node>
+		<node label="about me" code="gen-demog" generic-type="gd">
+			<node label="date of birth" code="gen-age" value-mg="((14 0) (20 1) (30 0.5) (50 0) (60 0.3) (80 1))" generic-type="gd" generic-datum="gd"/>
+			<node label="gender" code="gen-gender" value-mg="((MALE 1) (FEMALE 0))" generic-type="gd" generic-datum="gd"/>
+			<node label="relationship status" code="gen-marital-status" value-mg="((SINGLE 0.5) (WITH-PARTNER 0) (SEPARATED-FROM-PARTNER 1) (PARTNER-DIED 1))" generic-type="gd" generic-datum="gd"/>
+			<node label="who I live with" code="gen-accom-share" filter-q="">
+				<node label="Dependents" code="gen-accom-depndnts" filter-q="">
+					<node label="number of dependents" code="gen-accom-num-dep" value-mg="((0 0) (8 1))"/>
+					<node label="age of youngest dependent" code="gen-dep-ygnst-age" value-mg="((0 1) (10 0.7) (18 0))"/>
+				</node>
+				<node label="partner" code="partner-share-acc" value-mg="((no 1)(yes 0))"/>
+				<node label="number of others I live with" code="gen-accm-share-nd" value-mg="((0 0)(5 1))"/>
+
+			</node>
+			<node label="ethnicity" code="gen-ethnicity" value-mg="((WHITE-BRITISH 0) (WHITE-IRISH 0) (OTHER-WHITE 0) (WHITE-BLACK-CARIBBEAN 0) (WHITE-BLACK-AFRICAN 0)    (WHITE-ASIAN 0) (OTHER-MIXED 0) (INDIAN 0) (PAKISTANI 0) (BANGLADESHI 0) (OTHER-ASIAN 0) (BLACK-CARIBBEAN 0)    (BLACK-AFRICAN 0) (OTHER-BLACK 0) (CHINESE 0) (OTHER-ETHNIC 0))" generic-type="gd" generic-datum="gd"/>
+		</node>
+
+	</node>
+	<node label="Harming yourself" code="sh" value-mg="((0 0) (10 1))">
+		<node label="questions about harming yourself" code="sh-specific">
+			<node label="past and current episodes of self-harm" code="sh-past-curr-ep" layer="0" filter-q="">
+				<node label="occurrence of self-harm episodes" code="sh-occ-of-ep">
+					<node label="self-harming injuries" code="gen-sh-cuts" value-mg="((0 0) (10 1))"/>
+					<node label="most recent self-harm episode" code="sh-most-rec-ep" value-mg="((0 1) (60 0))"/>
+					<node label="pattern of self-harming" code="sh-patt-of-eps" value-mg="((0 0) (10 1))" filter-q="">
+						<node label="first time self-harm episode occurred" code="sh-first-time-ep" value-mg="((0 0) (60 1))"/>
+						<node label="frequency of self-harming episodes" code="sh-freq-eps" value-mg="((DAILY 1) (WEEKLY 0.75) (MONTHLY 0.3) (LESS-THAN-MONTHLY 0))"/>
+						<node label="changes in the frequency with which you harm yourself" code="sh-incrse-eps" value-mg="((DECREASING 0) (SAME 0.5) (INCREASING 1))"/>
+					</node>
+				</node>
+				<node label="seriousness of self-harming" code="sh-seriousns-eps" value-mg="((0 0) (10 1))">
+
+					<node label="chance of being helped after self-harming" code="sh-hlp-after" value-mg="((0 0) (10 1))"/>
+					<node label="dangerousness of self-harming method" code="sh-lethality-mth" value-mg="((0 0) (10 1))"/>
+				</node>
+				<node label="self-harming to get help" code="sh-for-hlp-diff" value-mg="((0 1) (10 0))"/>
+				<node label="self-harming and coping with difficulties" code="sh-hlp-cope-diff" value-mg="((yes 0) (somewhat 0.5) (no 1))"/>
+			</node>
+			<node label="current self-harm situation and context" code="self-harm-curr-sit-behav">
+				<node label="triggers for self-harm" code="sh-pot-triggs-p" value-mg="((0 0) (10 1))" layer="0">
+					<node label="potential triggers for self-harm" code="sh-pot-triggs" value-mg="((0 0) (10 1))"/>
+					<node label="match between current trggers and dangerous ones in the past" code="sh-pot-trigs-mtch" value-mg="((0 0) (10 1))"/>
+					<node label="family history of self-harm" code="sh-family-hist" value-mg="((YES 1) (NO 0))"/>
+				</node>
+				<node label="self-harming thoughts" code="sh-ideation" value-mg="((0 0) (10 1))" layer="0" filter-q="">
+					<node label="strength, intensity, intrusiveness, and persistence of self-harming thoughts" code="sh-strength" value-mg="((0 0) (10 1))"/>
+					<node label="frequency of self-harming thoughts" code="sh-freq-ideatn" value-mg="((DAILY 1) (WEEKLY 0.5) (MONTHLY 0.2) (LESS-THAN-MONTHLY 0))"/>
+				</node>
+
+			</node>
+		</node>
+		<node label="feelings and emotions" code="gen-feel-emot" layer="0" generic-type="gd">
+			<node label="feeling sad" code="gen-sad" value-mg="((0 0) (10 1))"/>
+			<node label="anxiety" code="gen-anx-emotns" value-mg="((0 0) (10 1))"/>
+			<node label="mood swings" code="gen-mood-swings" value-mg="((0 0) (10 1))"/>
+			<node label="negative feelings about myself" code="gen-negative-self" value-mg="((0 0) (10 1))"/>
+			<node label="feeling angry" code="gen-angry-emotns" value-mg="((0 0) (10 1))"/>
+			<node label="feeling helpless" code="gen-helpless" value-mg="((0 0) (10 1))"/>
+			<node label="distress" code="gen-distress" value-mg="((0 0) (10 1))"/>
+			<node label="jealousy" code="gen-jealous" value-mg="((0 0) (10 1))"/>
+			<node label="hopefulness" code="gen-hopeless" value-mg="((0 0) (10 1))" header="Questions on hopefulness" generic-type="g">
+				<node label="plans for the future" code="gen-plans-future" value-mg="((0 1) (10 0))"/>
+				<node label="enjoyment of your life" code="gen-life-not-livng" value-mg="((0 1) (10 0))"/>
+			</node>
+		</node>
+		<node label="my sense of self worth" code="gen-self-worth-p" layer="0" generic-type="gd">
+			<node label="your sense of self-worth" code="worthlessness" value-mg="((0 1) (10 0))"/>
+			<node label="feeling all-important" code="grandiosity" value-mg="((0 0) (10 1))"/>
+
+		</node>
+		<node label="my mental health" code="mental-health" layer="0" filter-q="">
+
+			<node label="depression" code="gen-depression" filter-q="" generic-type="g">
+				<node label="seriousness of current depression" code="serious-depression" value-mg="((none 0) (mild 0.3) (moderate 0.65) (severe 1))">
+					<node label="feelings/emotions" code="gen-feel-emot" layer="0" generic="gd">
+						<node label="feeling sad" code="gen-sad" value-mg="((0 0) (10 1))"/>
+						<node label="anxiety" code="gen-anx-emotns" value-mg="((0 0) (10 1))"/>
+						<node label="mood swings" code="gen-mood-swings" value-mg="((0 0) (10 1))"/>
+						<node label="negative feelings about myself" code="gen-negative-self" value-mg="((0 0) (10 1))"/>
+						<node label="feeling angry" code="gen-angry-emotns" value-mg="((0 0) (10 1))"/>
+						<node label="feeling helpless" code="gen-helpless" value-mg="((0 0) (10 1))"/>
+						<node label="distress" code="gen-distress" value-mg="((0 0) (10 1))"/>
+						<node label="jealousy" code="gen-jealous" value-mg="((0 0) (10 1))"/>
+						<node label="hopefulness" code="gen-hopeless" value-mg="((0 0) (10 1))" header="Questions on hopefulness" generic-type="g">
+							<node label="plans for the future" code="gen-plans-future" value-mg="((0 1) (10 0))"/>
+							<node label="enjoyment of your life" code="gen-life-not-livng" value-mg="((0 1) (10 0))"/>
+						</node>
+					</node>
+					<node label="perspective of self worth" code="gen-self-worth-p" layer="0" generic="gd">
+						<node label="your sense of self-worth" code="worthlessness" value-mg="((0 1) (10 0))"/>
+						<node label="feeling all-important" code="grandiosity" value-mg="((0 0) (10 1))"/>
+
+					</node>
+					<node label="my motivation in life" code="gen-motivation" generic-datum="g" value-mg="((0 1) (10 0))"/>
+					<node label="voice hallucinations" code="gen-voice-hal" filter-q="" header="Questions on voice hallucinations" generic="g">
+						<node label="type of voices" code="gen-voices-type">
+							<node label="danger of the voices to you" code="gen-voice-dang-s" value-mg="((0 0) (10 1))"/>
+							<node label="danger of the voices to others" code="gen-voice-dang-o" value-mg="((0 0) (10 1))"/>
+						</node>
+						<node label="acting on the voices" code="gen-prob-act-voice" value-mg="((0 0) (10 1))"/>
+					</node>
+					<node label="paranoid delusions" code="gen-paranoid-del" filter-q="" header="Questions on paranoid delusions" generic="g">
+						<node label="type of paranoid delusions" code="gen-type-paranoid-del">
+							<node label="about specific people" code="gen-paran-del-spec" value-mg="((0 0) (10 1))"/>
+							<node label="feeling under threat" code="gen-paran-del-pers" value-mg="((0 0) (10 1))"/>
+						</node>
+						<node label="acting on your paranoid thoughts" code="gen-prob-act-par-del" value-mg="((0 0) (10 1))"/>
+					</node>
+					<node label="impaired cognitive function" code="gen-impaird-cog" filter-q="" generic="g">
+						<node label="making decisions" code="gen-decision" value-mg="((0 1) (10 0))"/>
+						<node label="concentration" code="gen-concentr" value-mg="((0 1) (10 0))"/>
+						<node label="thinking processes and memory" code="gen-cog-think-mem" value-mg="((0 0) (10 1))"/>
+
+					</node>
+					<node label="general current behaviour" code="gen-currnt-bhvr" layer="0" generic="gd">
+						<node label="structure in my life" code="gen-day-actvty" value-mg="((0 1) (10 0))">
+							<node label="structure in my lfe" code="gen-day-struct" value-mg="((0 1) (10 0))"/>
+							<node label="being active" code="gen-day-actvty-lev" value-mg="((PASSIVE-INERT 1) (UNDERACTIVE 0.5) (NORMAL 0) (OVERACTIVE 0.5) (HYPERACTIVE 1))" generic-type="gd" generic-datum="gd"/>
+						</node>
+						<node label="sleep" code="gen-sleep-dist" value-mg="((0 0) (10 1))"/>
+						<node label="my diet" code="gen-app-diet" value-mg="((0 1) (10 0))" layer="0" generic="g">
+							<node label="eating" code="gen-diet-eating" value-mg="((0 1) (10 0))"/>
+							<node label="weight" code="gen-diet-weight">
+								<node label="my weight" code="gen-diet-weigt-ext" value-mg="((EXTREME-UNDERWEIGHT 1) (UNDERWEIGHT 0.5) (WEIGHT-OK 0) (OVERWEIGHT 0.5) (EXTREME-OVERWEIGHT 1))"/>
+								<node label="weight change" code="gen-diet-weigt-chg" value-mg="((0 0) (10 1))"/>
+							</node>
+							<node label="fluid intake" code="gen-diet-drink" value-mg="((0 1) (10 0))"/>
+						</node>
+						<node label="not being myself" code="gen-unusl-rec-bhvr" value-mg="((0 0) (10 1))"/>
+						<node label="risky activities" code="gen-rsk-behavr" value-mg="((0 0) (10 1))"/>
+						<node label="carelessness" code="gen-unint-risk-behavr" value-mg="((0 0) (10 1))"/>
+
+					</node>
+					<node label="engagement with world" code="gen-eng-world" value-mg="((0 1) (10 0))" generic="gd">
+						<node label="physical withdrawal from the world" code="gen-phys-withd" value-mg="((0 0) (10 1))"/>
+						<node label="mental withdrawal" code="gen-mental-withd" value-mg="((0 1) (10 0))"/>
+					</node>
+				</node>
+				<node label="stage of depression" code="gen-dep-stage" value-mg="((FIRST-DIAGNOSIS 1) (RECOVERY-SINGLE-EPISODE 0) (RECOVERY-REPEAT-EPISODES 0.4) (RELAPSE 1))"/>
+			</node>
+			<node label="serious mental-health problems" code="gen-ser-mentl-ill" filter-q="" generic-type="gd">
+				<node label="understanding my mental-health problems" code="gen-mentl-insght" value-mg="((0 1) (10 0))"/>
+				<node label="current symptoms of severe mental-health problems" code="gen-mntl-cur-sympt" filter-q="">
+					<node label="feeling manic" code="gen-mania" value-mg="((0 0) (10 1))"/>
+					<node label="hearing voices" code="gen-voice-hal" filter-q="" header="Questions on voice hallucinations" generic-type="g">
+						<node label="type of voices" code="gen-voices-type">
+							<node label="danger of the voices to you" code="gen-voice-dang-s" value-mg="((0 0) (10 1))"/>
+							<node label="danger of the voices to others" code="gen-voice-dang-o" value-mg="((0 0) (10 1))"/>
+						</node>
+						<node label="acting on the voices" code="gen-prob-act-voice" value-mg="((0 0) (10 1))"/>
+					</node>
+					<node label="feeling paranoid" code="gen-paranoid-del" filter-q="" header="Questions on paranoid delusions" generic-type="g">
+						<node label="type of paranoid delusions" code="gen-type-paranoid-del">
+							<node label="about specific people" code="gen-paran-del-spec" value-mg="((0 0) (10 1))"/>
+							<node label="feeling under threat" code="gen-paran-del-pers" value-mg="((0 0) (10 1))"/>
+						</node>
+						<node label="acting on your paranoid thoughts" code="gen-prob-act-par-del" value-mg="((0 0) (10 1))"/>
+					</node>
+				</node>
+			</node>
+		</node>
+		<node label="thinking and memory" code="ment-fac" layer="0">
+			<node label="problems with thinking and memory" code="gen-impaird-cog" filter-q="" generic-type="g">
+				<node label="making decisions" code="gen-decision" value-mg="((0 1) (10 0))"/>
+				<node label="concentration" code="gen-concentr" value-mg="((0 1) (10 0))"/>
+				<node label="thinking processes and memory" code="gen-cog-think-mem" value-mg="((0 0) (10 1))"/>
+
+			</node>
+			<node label="learning disabilities" code="gen-learn-disab" value-mg="((0 0) (10 1))"/>
+		</node>
+		<node label="personality" code="gen-personality" layer="0" generic-type="gd">
+			<node label="assertiveness" code="gen-assertive" value-mg="((NOT-ASSERTIVE 1) (SOMEWHAT-ASSERTIVE 0.3) (NORMALLY-ASSERTIVE 0) (VERY-ASSERTIVE 0) (EXCESSIVELY-ASSERTIVE 0))" generic-type="gd" generic-datum="gd"/>
+			<node label="empathy" code="gen-empathy-abil" value-mg="((0 1) (10 0))"/>
+			<node label="dependence" code="gen-dependence" value-mg="((0 0) (10 1))"/>
+			<node label="being organised" code="gen-controlling" value-mg="((chaotic 0.5) (disorganised 0.2) (normal 0) (very-organised 0.5)(obsessional-perfectionist 1))" generic-type="gd" generic-datum="gd"/>
+			<node label="coping with major life stresses" code="gen-coping-abil" value-mg="((0 1) (10 0))"/>
+			<node label="hostility" code="gen-hostile" value-mg="((0 0) (10 1))"/>
+			<node label="impulsiveness" code="gen-impulse" value-mg="((0 0) (10 1))"/>
+			<node label="reliability" code="gen-reliable" value-mg="((0 1) (10 0))"/>
+		</node>
+		<node label="my involvement with life and others" code="motive-eng" layer="0">
+			<node label="engagement with world" code="gen-eng-world" value-mg="((0 1) (10 0))" generic-type="gd">
+				<node label="physical withdrawal from the world" code="gen-phys-withd" value-mg="((0 0) (10 1))"/>
+				<node label="mental withdrawal" code="gen-mental-withd" value-mg="((0 1) (10 0))"/>
+			</node>
+			<node label="my motivation in life" code="gen-motivation" value-mg="((0 1) (10 0))"/>
+			<node label="energy" code="gen-listless" value-mg="((0 1) (10 0))"/>
+		</node>
+		<node label="my social world" code="gen-soc-contxt" layer="0" generic-type="gd">
+			<node label="relationships" code="gen-relatnshps" header="Questions on current relationships" generic-type="gd">
+				<node label="network of people in my life" code="gen-net-relat" value-mg="((0 1) (10 0))"/>
+				<node label="nature of relationships" code="gen-relat-nature">
+					<node label="supportive relationships" code="gen-relat-supp" value-mg="((0 1) (10 0))"/>
+					<node label="relationships that bring you down" code="gen-relat-detr" value-mg="((0 0) (10 1))"/>
+				</node>
+				<node label="changes for the worse in relationships" code="gen-relat-detr-chg" value-mg="((0 0) (10 1))"/>
+			</node>
+			<node label="where I live" code="gen-living-arr" header="Questions on living arrangements" generic-type="gd">
+				<node label="moving house" code="gen-move-freq" value-mg="((LESS-THAN-EVERY-YEAR 0) (ONCE-EVERY-YEAR 0.5) (SEVERAL-TIMES-YEAR 0.8) (ONCE-A-MONTH-OR-MORE 1))"/>
+				<node label="type of home" code="gen-home-type" value-mg="((HOMELESS 1) (HOSTEL 0.8) (institution-fully-supervised 0) (daily-support 0.1)(limited-support 0.2)(no-support 0.5))"/>
+				<node label="neighbourhood" code="gen-neighbrhd">
+					<node label="living in an isolated place" code="gen-isol-accom" value-mg="((0 0) (10 1))"/>
+					<node label="my neighbourhood" code="gen-neigbrhd-rsky" value-mg="((0 0) (10 1))"/>
+				</node>
+				<node label="state of accommodation" code="gen-accom-state">
+					<node label="caring for my home" code="gen-accom-hm-care" value-mg="((0 1) (10 0))"/>
+					<node label="home comfort" code="gen-accom-habitbl" value-mg="((0 1) (10 0))"/>
+				</node>
+			</node>
+			<node label="money concerns" code="gen-finance-prob" header="Questions on financial problems">
+				<node label="cost of living" code="gen-poverty" value-mg="((0 1) (10 0))"/>
+				<node label="debt" code="gen-perc-debt-anx" value-mg="((0 0) (10 1))"/>
+
+			</node>
+			<node label="employment" code="gen-employment">
+				<node label="my work history" code="gen-job-chg-frq" value-mg="((0 1) (10 0))"/>
+				<node label="unhelpful changes to employment" code="gen-rec-bad-job-ch" value-mg="((0 0) (10 1))"/>
+			</node>
+		</node>
+		<node label="how I am and things I am doing at the moment" code="gen-currnt-bhvr" layer="0" generic-type="gd">
+			<node label="structure in my life" code="gen-day-actvty" value-mg="((0 1) (10 0))">
+				<node label="structure in my lfe" code="gen-day-struct" value-mg="((0 1) (10 0))"/>
+				<node label="being active" code="gen-day-actvty-lev" value-mg="((PASSIVE-INERT 0) (UNDERACTIVE 0) (NORMAL 0) (OVERACTIVE 0.5) (HYPERACTIVE 1))" generic-type="gd" generic-datum="gd"/>
+			</node>
+			<node label="sleep" code="gen-sleep-dist" value-mg="((0 0) (10 1))"/>
+			<node label="my diet" code="gen-app-diet" value-mg="((0 1) (10 0))" layer="0" generic="g">
+				<node label="eating" code="gen-diet-eating" value-mg="((0 1) (10 0))"/>
+				<node label="weight" code="gen-diet-weight">
+					<node label="my weight" code="gen-diet-weigt-ext" value-mg="((EXTREME-UNDERWEIGHT 1) (UNDERWEIGHT 0.5) (WEIGHT-OK 0) (OVERWEIGHT 0.5) (EXTREME-OVERWEIGHT 1))"/>
+					<node label="weight change" code="gen-diet-weigt-chg" value-mg="((0 0) (10 1))"/>
+				</node>
+				<node label="fluid intake" code="gen-diet-drink" value-mg="((0 1) (10 0))"/>
+			</node>
+			<node label="not being myself" code="gen-unusl-rec-bhvr" value-mg="((0 0) (10 1))"/>
+			<node label="risky activities" code="gen-rsk-behavr" value-mg="((0 0) (10 1))"/>
+			<node label="carelessness" code="gen-unint-risk-behavr" value-mg="((0 0) (10 1))"/>
+
+		</node>
+		<node label="drink and drugs" code="gen-subs-misuse" layer="0" filter-q="" generic-type="gd">
+			<node label="bad effects of alcohol" code="gen-alc-misuse" value-mg="((0 0) (10 1))"/>
+			<node label="bad effects of drugs" code="gen-drug-misuse" value-mg="((0 0) (10 1))"/>
+		</node>
+		<node label="taking responsibility" code="insight-resp" value-mg="((0 0) (10 1))" layer="0" generic-type="g">
+			<node label="understanding risk taking" code="gen-insght-behvr" value-mg="((0 1) (10 0))"/>
+			<node label="taking responsibility for the risks I take" code="gen-resp-impct-oth" value-mg="((0 1) (10 0))"/>
+			<node label="my need for help" code="gen-nd-hlp-diff" value-mg="((0 1) (10 0))"/>
+		</node>
+		<node label="my physical health" code="gen-phys-hlth-prb" layer="0" generic-type="gd">
+			<node label="mobility and dexterity" code="gen-phys-hlth-disa" value-mg="((0 0) (10 1))"/>
+			<node label="communication difficulties" code="gen-com-imp" value-mg="((0 0) (10 1))"/>
+			<node label="pain" code="gen-phys-hlth-pain" value-mg="((0 0) (10 1))"/>
+			<node label="worsening physical health" code="gen-phys-hlth-det" value-mg="((0 0) (10 1))"/>
+			<node label="first diagnosis of serious illness" code="gen-phys-hlth-deg-diag" value-mg="((3 1) (36 0))"/>
+
+		</node>
+		<node label="my care" code="gen-meds-therpy" layer="0" generic-type="g">
+			<node label="following health professionals' advice" code="gen-meds-concord" value-mg="((0 1) (10 0))"/>
+			<node label="service support" code="gen-serv-perc-supp" value-mg="((0 1) (10 0))"/>
+			<node label="regular use of services" code="gen-serv-last-acc" value-mg="((0 1) (10 0))"/>
+			<node label="benefit from treatment" code="gen-med-perc-benft" value-mg="((0 1) (10 0))"/>
+		</node>
+		<node label="my life journey" code="adv-life-event" layer="0" filter-q="" generic-type="gd">
+			<node label="environment I grew up in" code="gen-env-grew-up" value-mg="((0 0) (10 1))"/>
+			<node label="school days" code="gen-educ-expr" value-mg="((0 0) (10 1))"/>
+			<node label="eating disorders" code="gen-eating-dis" value-mg="((0 0) (10 1))"/>
+			<node label="traumatic experiences" code="gen-life-trauma" generic-type="gd">
+				<node label="abuse" code="gen-life-abuse" filter-q="" generic-type="g">
+					<node label="emotional abuse" code="gen-emot-abse" value-mg="((0 0) (10 1))" filter-q="">
+						<node label="most recent emotional abuse" code="gen-emot-abse-last" value-mg="((0 1) (24 0.2))"/>
+						<node label="emotional abuse during childhood (0 to 16 yrs)" code="gen-emo-abse-as-ch" value-mg="((YES 1) (NO 0))"/>
+					</node>
+					<node label="physical abuse" code="gen-phys-abse" value-mg="((0 0) (10 1))" filter-q="">
+						<node label="most recent physical abuse" code="gen-phys-abse-last" value-mg="((0 1) (24 0.2))"/>
+						<node label="physical abuse during childhood (0 to 16 yrs)" code="gen-phy-abse-as-ch" value-mg="((YES 1) (NO 0))"/>
+					</node>
+					<node label="sexual abuse" code="gen-life-sex-abuse" value-mg="((0 0) (10 1))" filter-q="">
+						<node label="most recent sexual abuse" code="gen-sex-abse-last" value-mg="((0 1) (5 0.3))"/>
+						<node label="sexual abuse during childhood (0 to 16 yrs)" code="gen-sex-abse-as-ch" value-mg="((YES 1) (NO 0))"/>
+					</node>
+					<node label="financial abuse" code="gen-financial-abuse" value-mg="((YES 1) (NO 0))"/>
+
+				</node>
+				<node label="trouble with the law" code="gen-forensic-proc" value-mg="((YES 1) (NO 0))"/>
+				<node label="recent traumatic life changes" code="gen-recent-life-trauma" generic-type="g">
+					<node label="first diagnosis of serious illness" code="gen-phys-hlth-deg-diag" generic-datum="g" value-mg="((3 1) (36 0))"/>
+					<node label="changes for the worse in relationships" code="gen-relat-detr-chg" generic-datum="g" value-mg="((0 0) (10 1))"/>
+					<node label="unhelpful changes to employment" code="gen-rec-bad-job-ch" generic-datum="g" value-mg="((0 0) (10 1))"/>
+
+				</node>
+
+			</node>
+
+		</node>
+		<node label="about me" code="gen-demog" generic-type="gd">
+			<node label="date of birth" code="gen-age" value-mg="((10 0) (15 1) (20 1) (30 0.5) (60 0))" generic-type="gd" generic-datum="gd"/>
+			<node label="gender" code="gen-gender" value-mg="((MALE 0) (FEMALE 1))" generic-type="gd" generic-datum="gd"/>
+			<node label="relationship status" code="gen-marital-status" value-mg="((SINGLE 0.8) (WITH-PARTNER 0) (SEPARATED-FROM-PARTNER 1) (PARTNER-DIED 1))" generic-type="gd" generic-datum="gd"/>
+			<node label="who I live with" code="gen-accom-share" filter-q="">
+				<node label="Dependents" code="gen-accom-depndnts" filter-q="">
+					<node label="number of dependents" code="gen-accom-num-dep" value-mg="((0 0) (8 1))"/>
+					<node label="age of youngest dependent" code="gen-dep-ygnst-age" value-mg="((0 1) (10 0.7) (18 0))"/>
+				</node>
+				<node label="partner" code="partner-share-acc" value-mg="((no 1)(yes 0))"/>
+				<node label="number of others I live with" code="gen-accm-share-nd" value-mg="((0 0)(5 1))"/>
+
+			</node>
+			<node label="ethnicity" code="gen-ethnicity" value-mg="((WHITE-BRITISH 0) (WHITE-IRISH 0) (OTHER-WHITE 0) (WHITE-BLACK-CARIBBEAN 0) (WHITE-BLACK-AFRICAN 0)    (WHITE-ASIAN 0) (OTHER-MIXED 0) (INDIAN 0) (PAKISTANI 0) (BANGLADESHI 0) (OTHER-ASIAN 0) (BLACK-CARIBBEAN 0)    (BLACK-AFRICAN 0) (OTHER-BLACK 0) (CHINESE 0) (OTHER-ETHNIC 0))" generic-type="gd" generic-datum="gd"/>
+		</node>
+
+	</node>
+	<node label="harming others or damaging property" code="hto" value-mg="((0 0) (10 1))">
+		<node label="questions about harm/damage" code="hto-specific">
+			<node label="past and current episodes of harm or damage" code="hto-past-curr-ep" layer="0" filter-q="">
+				<node label="type and seriousness of harm or damage episodes" code="hto-type">
+					<node label="emotional harm to others" code="hto-emotional-eps" filter-q="">
+						<node label="seriousness of emotional harm to others" code="hto-emotional-ep" value-mg="((0 0) (10 1))"/>
+						<node label="pattern of emotional episodes of harm to others" code="hto-patt-emotional-eps">
+							<node label="most recent episode of emotional harm to others" code="hto-recent-emotional-eps" value-mg="((0 1) (24 0))"/>
+							<node label="first episode of emotional harm to others" code="hto-first-time-emotional-ep" value-mg="((0 0) (12 1))"/>
+						</node>
+					</node>
+					<node label="violence/physical attacks on others" code="hto-any-violent" layer="0" filter-q="">
+						<node label="seriousness of violence or abuse" code="hto-violent" value-mg="((0 0) (10 1))" header="Questions on physical assault/abuse"/>
+						<node label="pattern of violent episodes of harm to others" code="hto-patt-violent-eps">
+							<node label="most recent violent harm to others" code="hto-recent-violent-eps" value-mg="((0 1) (24 0))"/>
+							<node label="first violent attack on others" code="hto-first-time-violent-ep" value-mg="((0 0) (12 1))"/>
+						</node>
+						<node label="sexual assault" code="hto-any-sex-asslt" filter-q="" header="Questions on sexual assault/abuse">
+							<node label="type of sexual assault" code="hto-sex-asslt" value-mg="((INDECENT-EXPOSURE 0.1)(FONDLING 0.2) (SEXUAL-ASSAULT 0.5) (ORAL-ANAL 1) (RAPE 1))"/>
+							<node label="pattern of sexual assaults" code="hto-patt-sexual-eps">
+								<node label="most recent sexual assault" code="hto-recent-sexual-eps" value-mg="((0 1) (24 0))"/>
+								<node label="first sexual assault" code="hto-first-time-sexual-ep" value-mg="((0 0) (12 1))"/>
+							</node>
+						</node>
+						<node label="using weapons" code="hto-weapons-hist" value-mg="((YES 1) (NO 0))"/>
+					</node>
+					<node label="damaging property" code="hto-any-dest-prprty" filter-q="">
+						<node label="seriousness of damage to property" code="hto-dest-prprty" value-mg="((0 0) (10 1))"/>
+						<node label="pattern of destructive acts concerning property" code="hto-patt-destructive-eps">
+							<node label="most recent damage to property" code="hto-recent-destructive-eps" value-mg="((0 1) (24 0))"/>
+							<node label="first time you damaged property" code="hto-first-time-destructive-ep" value-mg="((0 0) (12 1))"/>
+						</node>
+					</node>
+					<node label="fire-setting" code="hto-any-fire-setting" layer="0" filter-q="">
+						<node label="seriouness of fire-setting" code="hto-fire-setting" value-mg="((0 0) (10 1))"/>
+						<node label="pattern of fire-setting episodes" code="hto-patt-fire-setting-eps">
+							<node label="most recent fire setting" code="hto-recent-fire-setting-eps" value-mg="((0 1) (24 0))"/>
+							<node label="first fire-setting episode" code="hto-first-time-fire-setting-ep" value-mg="((0 0) (12 1))"/>
+						</node>
+					</node>
+					<node label="harming animals" code="hto-any-to-anmls" filter-q="">
+						<node label="seriousness of harming animals" code="hto-to-anmls" value-mg="((0 0) (10 1))"/>
+						<node label="pattern of animal abuse" code="hto-patt-animal-eps">
+							<node label="most recent harm to animals" code="hto-recent-animal-eps" value-mg="((0 1) (24 0))"/>
+							<node label="first harm to animals" code="hto-first-time-animal-ep" value-mg="((0 0) (12 1))"/>
+						</node>
+					</node>
+				</node>
+				<node label="regularity of harm or damage episodes" code="hto-regularity">
+					<node label="number of times you have caused harm or damage" code="hto-number" value-mg="((0 0) (8 1))" header="General questions relating to any previous episodes of harm or damage"/>
+					<node label="changes in frequency of harm or damage" code="hto-increase" value-mg="((DECREASING 0) (SAME 0.5) (INCREASING 1))"/>
+				</node>
+				<node label="targets of harm" code="hto-targets" layer="0" filter-q="" generic-type="gd">
+					<node label="carers or family" code="carers-family" value-mg="((yes 1) (no 0))"/>
+					<node label="neighbours or people sharing living space" code="shared-accom-neighbours" value-mg="((yes 1) (no 0))"/>
+					<node label="friends or colleagues" code="friends-colleagues" value-mg="((yes 1) (no 0))"/>
+					<node label="health workers" code="health-workers" value-mg="((yes 1) (no 0))"/>
+					<node label="authority figures" code="authority-figs" value-mg="((yes 1) (no 0))"/>
+					<node label="those from a different ethnic background" code="ethnic" value-mg="((yes 1) (no 0))"/>
+				</node>
+				<node label="thoughts about harm or damage you caused in the past" code="hto-curr-persp-ep" value-mg="((0 0) (10 1))"/>
+			</node>
+			<node label="current harm or damage situation and related behaviour" code="harm-dam-curr-sit-behav">
+				<node label="intention to cause harm or damage" code="hto-intention" value-mg="((0 0) (10 1))" level-q="(((child-adolescent) &quot;To what extent does the young persons's intention to harm or damage match one that would cause you most concern?&quot;) ((service-user) &quot;To what extent does your wanting to harm or damage make others afraid that you will cause serious harm or damage to people or property?&quot;) ((older working-age ) &quot;To what extent does the persons's intention to harm or damage match one that would cause you most concern?&quot;))" layer="0">
+					<node label="ability to carry out your plan to cause harm or damage" code="hto-means-plan" value-mg="((0 0) (10 1))"/>
+					<node label="putting your plan for harm or damage into action" code="hto-steps-plan" value-mg="((0 0) (10 1))"/>
+					<node label="harming a particular person" code="hto-targets-id" value-mg="((YES 1) (NO 0))"/>
+					<node label="things that stop you causing harm or damage" code="hto-constr-bhvr" value-mg="((0 0) (10 1))">
+						<node label="insight and responsibility" code="insight-resp" value-mg="((0 0) (10 1))" layer="0" generic="g">
+							<node label="understanding risk taking" code="gen-insght-behvr" value-mg="((0 1) (10 0))"/>
+							<node label="taking responsibility for the risks I take" code="gen-resp-impct-oth" value-mg="((0 1) (10 0))"/>
+							<node label="my need for help" code="gen-nd-hlp-diff" value-mg="((0 1) (10 0))"/>
+						</node>
+						<node label="spiritual/religious values/beliefs affecting harm or damage" code="hto-religious" value-mg="((STRONGLY-REDUCE 0) (REDUCE 0) (NO-EFFECT 0) (INCREASE 0.5) (STRONGLY-INCREASE 1))"/>
+					</node>
+				</node>
+				<node label="triggers for harm or damage" code="pot-trig-hto" value-mg="((0 0) (10 1))" layer="0">
+					<node label="potential triggers of harm or damage" code="hto-pot-trig" value-mg="((0 0) (10 1))"/>
+					<node label="match between current triggers and dangerous ones in the past" code="hto-pot-trig-mtch" value-mg="((0 0) (10 1))"/>
+					<node label="interest in violent pursuits" code="gen-violent-purs" value-mg="((0 0) (10 1))"/>
+					<node label="family history of causing harm or damage" code="hto-fam-hist" value-mg="((0 0) (10 1))"/>
+				</node>
+				<node label="violent thoughts" code="hto-ideation-vio" value-mg="((0 0) (10 1))" layer="0" filter-q="">
+					<node label="high risk violent thoughts" code="hto-hi-rsk-ideatn" value-mg="((0 0) (10 1))"/>
+					<node label="frequency of thoughts about causing harm or damage" code="hto-freq-ideatn" value-mg="((DAILY 1) (WEEKLY 0.5) (MONTHLY 0.2) (LESS-THAN-MONTHLY 0))"/>
+					<node label="strength, intensity, intrusiveness, and persistence of thoughts about causing harm or damage" code="hto-strgth-ideatn" value-mg="((0 0) (10 1))"/>
+					<node label="violent thoughts about real people, events and circumstances in your life" code="hto-ideatn-link" value-mg="((0 0) (10 1))"/>
+				</node>
+
+			</node>
+		</node>
+		<node label="feelings and emotions" code="gen-feel-emot" layer="0" generic-type="gd">
+			<node label="feeling sad" code="gen-sad" value-mg="((0 0) (10 1))"/>
+			<node label="anxiety" code="gen-anx-emotns" value-mg="((0 0) (10 1))"/>
+			<node label="mood swings" code="gen-mood-swings" value-mg="((0 0) (10 1))"/>
+			<node label="negative feelings about myself" code="gen-negative-self" value-mg="((0 0) (10 1))"/>
+			<node label="feeling angry" code="gen-angry-emotns" value-mg="((0 0) (10 1))"/>
+			<node label="feeling helpless" code="gen-helpless" value-mg="((0 0) (10 1))"/>
+			<node label="distress" code="gen-distress" value-mg="((0 0) (10 1))"/>
+			<node label="jealousy" code="gen-jealous" value-mg="((0 0) (10 1))"/>
+			<node label="hopefulness" code="gen-hopeless" value-mg="((0 0) (10 1))" header="Questions on hopefulness" generic-type="g">
+				<node label="plans for the future" code="gen-plans-future" value-mg="((0 1) (10 0))"/>
+				<node label="enjoyment of your life" code="gen-life-not-livng" value-mg="((0 1) (10 0))"/>
+			</node>
+		</node>
+		<node label="my sense of self worth" code="gen-self-worth-p" layer="0" generic-type="gd">
+			<node label="your sense of self-worth" code="worthlessness" value-mg="((0 1) (10 0))"/>
+			<node label="feeling all-important" code="grandiosity" value-mg="((0 0) (10 1))"/>
+
+		</node>
+		<node label="my mental health" code="mental-health" layer="0" filter-q="">
+
+			<node label="depression" code="gen-depression" filter-q="" generic-type="g">
+				<node label="seriousness of current depression" code="serious-depression" value-mg="((none 0) (mild 0.3) (moderate 0.65) (severe 1))">
+					<node label="feelings/emotions" code="gen-feel-emot" layer="0" generic="gd">
+						<node label="feeling sad" code="gen-sad" value-mg="((0 0) (10 1))"/>
+						<node label="anxiety" code="gen-anx-emotns" value-mg="((0 0) (10 1))"/>
+						<node label="mood swings" code="gen-mood-swings" value-mg="((0 0) (10 1))"/>
+						<node label="negative feelings about myself" code="gen-negative-self" value-mg="((0 0) (10 1))"/>
+						<node label="feeling angry" code="gen-angry-emotns" value-mg="((0 0) (10 1))"/>
+						<node label="feeling helpless" code="gen-helpless" value-mg="((0 0) (10 1))"/>
+						<node label="distress" code="gen-distress" value-mg="((0 0) (10 1))"/>
+						<node label="jealousy" code="gen-jealous" value-mg="((0 0) (10 1))"/>
+						<node label="hopefulness" code="gen-hopeless" value-mg="((0 0) (10 1))" header="Questions on hopefulness" generic-type="g">
+							<node label="plans for the future" code="gen-plans-future" value-mg="((0 1) (10 0))"/>
+							<node label="enjoyment of your life" code="gen-life-not-livng" value-mg="((0 1) (10 0))"/>
+						</node>
+					</node>
+					<node label="perspective of self worth" code="gen-self-worth-p" layer="0" generic="gd">
+						<node label="your sense of self-worth" code="worthlessness" value-mg="((0 1) (10 0))"/>
+						<node label="feeling all-important" code="grandiosity" value-mg="((0 0) (10 1))"/>
+
+					</node>
+					<node label="my motivation in life" code="gen-motivation" generic-datum="g" value-mg="((0 1) (10 0))"/>
+					<node label="voice hallucinations" code="gen-voice-hal" filter-q="" header="Questions on voice hallucinations" generic="g">
+						<node label="type of voices" code="gen-voices-type">
+							<node label="danger of the voices to you" code="gen-voice-dang-s" value-mg="((0 0) (10 1))"/>
+							<node label="danger of the voices to others" code="gen-voice-dang-o" value-mg="((0 0) (10 1))"/>
+						</node>
+						<node label="acting on the voices" code="gen-prob-act-voice" value-mg="((0 0) (10 1))"/>
+					</node>
+					<node label="paranoid delusions" code="gen-paranoid-del" filter-q="" header="Questions on paranoid delusions" generic="g">
+						<node label="type of paranoid delusions" code="gen-type-paranoid-del">
+							<node label="about specific people" code="gen-paran-del-spec" value-mg="((0 0) (10 1))"/>
+							<node label="feeling under threat" code="gen-paran-del-pers" value-mg="((0 0) (10 1))"/>
+						</node>
+						<node label="acting on your paranoid thoughts" code="gen-prob-act-par-del" value-mg="((0 0) (10 1))"/>
+					</node>
+					<node label="impaired cognitive function" code="gen-impaird-cog" filter-q="" generic="g">
+						<node label="making decisions" code="gen-decision" value-mg="((0 1) (10 0))"/>
+						<node label="concentration" code="gen-concentr" value-mg="((0 1) (10 0))"/>
+						<node label="thinking processes and memory" code="gen-cog-think-mem" value-mg="((0 0) (10 1))"/>
+
+					</node>
+					<node label="general current behaviour" code="gen-currnt-bhvr" layer="0" generic="gd">
+						<node label="structure in my life" code="gen-day-actvty" value-mg="((0 1) (10 0))">
+							<node label="structure in my lfe" code="gen-day-struct" value-mg="((0 1) (10 0))"/>
+							<node label="being active" code="gen-day-actvty-lev" value-mg="((PASSIVE-INERT 1) (UNDERACTIVE 0.5) (NORMAL 0) (OVERACTIVE 0.5) (HYPERACTIVE 1))" generic-type="gd" generic-datum="gd"/>
+						</node>
+						<node label="sleep" code="gen-sleep-dist" value-mg="((0 0) (10 1))"/>
+						<node label="my diet" code="gen-app-diet" value-mg="((0 1) (10 0))" layer="0" generic="g">
+							<node label="eating" code="gen-diet-eating" value-mg="((0 1) (10 0))"/>
+							<node label="weight" code="gen-diet-weight">
+								<node label="my weight" code="gen-diet-weigt-ext" value-mg="((EXTREME-UNDERWEIGHT 1) (UNDERWEIGHT 0.5) (WEIGHT-OK 0) (OVERWEIGHT 0.5) (EXTREME-OVERWEIGHT 1))"/>
+								<node label="weight change" code="gen-diet-weigt-chg" value-mg="((0 0) (10 1))"/>
+							</node>
+							<node label="fluid intake" code="gen-diet-drink" value-mg="((0 1) (10 0))"/>
+						</node>
+						<node label="not being myself" code="gen-unusl-rec-bhvr" value-mg="((0 0) (10 1))"/>
+						<node label="risky activities" code="gen-rsk-behavr" value-mg="((0 0) (10 1))"/>
+						<node label="carelessness" code="gen-unint-risk-behavr" value-mg="((0 0) (10 1))"/>
+
+					</node>
+					<node label="engagement with world" code="gen-eng-world" value-mg="((0 1) (10 0))" generic="gd">
+						<node label="physical withdrawal from the world" code="gen-phys-withd" value-mg="((0 0) (10 1))"/>
+						<node label="mental withdrawal" code="gen-mental-withd" value-mg="((0 1) (10 0))"/>
+					</node>
+				</node>
+				<node label="stage of depression" code="gen-dep-stage" value-mg="((FIRST-DIAGNOSIS 1) (RECOVERY-SINGLE-EPISODE 0) (RECOVERY-REPEAT-EPISODES 0.4) (RELAPSE 1))"/>
+			</node>
+			<node label="serious mental-health problems" code="gen-ser-mentl-ill" filter-q="" generic-type="gd">
+				<node label="understanding my mental-health problems" code="gen-mentl-insght" value-mg="((0 1) (10 0))"/>
+				<node label="current symptoms of severe mental-health problems" code="gen-mntl-cur-sympt" filter-q="">
+					<node label="feeling manic" code="gen-mania" value-mg="((0 0) (10 1))"/>
+					<node label="hearing voices" code="gen-voice-hal" filter-q="" header="Questions on voice hallucinations" generic-type="g">
+						<node label="type of voices" code="gen-voices-type">
+							<node label="danger of the voices to you" code="gen-voice-dang-s" value-mg="((0 0) (10 1))"/>
+							<node label="danger of the voices to others" code="gen-voice-dang-o" value-mg="((0 0) (10 1))"/>
+						</node>
+						<node label="acting on the voices" code="gen-prob-act-voice" value-mg="((0 0) (10 1))"/>
+					</node>
+					<node label="feeling paranoid" code="gen-paranoid-del" filter-q="" header="Questions on paranoid delusions" generic-type="g">
+						<node label="type of paranoid delusions" code="gen-type-paranoid-del">
+							<node label="about specific people" code="gen-paran-del-spec" value-mg="((0 0) (10 1))"/>
+							<node label="feeling under threat" code="gen-paran-del-pers" value-mg="((0 0) (10 1))"/>
+						</node>
+						<node label="acting on your paranoid thoughts" code="gen-prob-act-par-del" value-mg="((0 0) (10 1))"/>
+					</node>
+				</node>
+			</node>
+		</node>
+		<node label="thinking and memory" code="ment-fac" layer="0">
+			<node label="problems with thinking and memory" code="gen-impaird-cog" filter-q="" generic-type="g">
+				<node label="making decisions" code="gen-decision" value-mg="((0 1) (10 0))"/>
+				<node label="concentration" code="gen-concentr" value-mg="((0 1) (10 0))"/>
+				<node label="thinking processes and memory" code="gen-cog-think-mem" value-mg="((0 0) (10 1))"/>
+
+			</node>
+			<node label="learning disabilities" code="gen-learn-disab" value-mg="((0 0) (10 1))"/>
+		</node>
+		<node label="personality" code="gen-personality" layer="0" generic-type="gd">
+			<node label="assertiveness" code="gen-assertive" value-mg="((NOT-ASSERTIVE 0) (SOMEWHAT-ASSERTIVE 0.1) (NORMALLY-ASSERTIVE 0.2) (VERY-ASSERTIVE 0.5) (EXCESSIVELY-ASSERTIVE 1))" generic-type="gd" generic-datum="gd"/>
+			<node label="empathy" code="gen-empathy-abil" value-mg="((0 1) (10 0))"/>
+			<node label="dependence" code="gen-dependence" value-mg="((0 0) (10 1))"/>
+			<node label="being organised" code="gen-controlling" value-mg="((chaotic 0) (disorganised 0) (normal 0) (very-organised 0)(obsessional-perfectionist 0))" generic-type="gd" generic-datum="gd"/>
+			<node label="coping with major life stresses" code="gen-coping-abil" value-mg="((0 1) (10 0))"/>
+			<node label="hostility" code="gen-hostile" value-mg="((0 0) (10 1))"/>
+			<node label="impulsiveness" code="gen-impulse" value-mg="((0 0) (10 1))"/>
+			<node label="reliability" code="gen-reliable" value-mg="((0 1) (10 0))"/>
+		</node>
+		<node label="my involvement with life and others" code="motive-eng" layer="0">
+			<node label="engagement with world" code="gen-eng-world" value-mg="((0 1) (10 0))" generic-type="gd">
+				<node label="physical withdrawal from the world" code="gen-phys-withd" value-mg="((0 0) (10 1))"/>
+				<node label="mental withdrawal" code="gen-mental-withd" value-mg="((0 1) (10 0))"/>
+			</node>
+			<node label="my motivation in life" code="gen-motivation" value-mg="((0 1) (10 0))"/>
+			<node label="energy" code="gen-listless" value-mg="((0 1) (10 0))"/>
+		</node>
+		<node label="my social world" code="gen-soc-contxt" layer="0" generic-type="gd">
+			<node label="relationships" code="gen-relatnshps" header="Questions on current relationships" generic-type="gd">
+				<node label="network of people in my life" code="gen-net-relat" value-mg="((0 1) (10 0))"/>
+				<node label="nature of relationships" code="gen-relat-nature">
+					<node label="supportive relationships" code="gen-relat-supp" value-mg="((0 1) (10 0))"/>
+					<node label="relationships that bring you down" code="gen-relat-detr" value-mg="((0 0) (10 1))"/>
+				</node>
+				<node label="changes for the worse in relationships" code="gen-relat-detr-chg" value-mg="((0 0) (10 1))"/>
+			</node>
+			<node label="where I live" code="gen-living-arr" header="Questions on living arrangements" generic-type="gd">
+				<node label="moving house" code="gen-move-freq" value-mg="((LESS-THAN-EVERY-YEAR 0) (ONCE-EVERY-YEAR 0.5) (SEVERAL-TIMES-YEAR 0.8) (ONCE-A-MONTH-OR-MORE 1))"/>
+				<node label="type of home" code="gen-home-type" value-mg="((HOMELESS 1) (HOSTEL 0.8) (institution-fully-supervised 0) (daily-support 0.1)(limited-support 0.2)(no-support 0.5))"/>
+				<node label="neighbourhood" code="gen-neighbrhd">
+					<node label="living in an isolated place" code="gen-isol-accom" value-mg="((0 0) (10 1))"/>
+					<node label="my neighbourhood" code="gen-neigbrhd-rsky" value-mg="((0 0) (10 1))"/>
+				</node>
+				<node label="state of accommodation" code="gen-accom-state">
+					<node label="caring for my home" code="gen-accom-hm-care" value-mg="((0 1) (10 0))"/>
+					<node label="home comfort" code="gen-accom-habitbl" value-mg="((0 1) (10 0))"/>
+				</node>
+			</node>
+			<node label="money concerns" code="gen-finance-prob" header="Questions on financial problems">
+				<node label="cost of living" code="gen-poverty" value-mg="((0 1) (10 0))"/>
+				<node label="debt" code="gen-perc-debt-anx" value-mg="((0 0) (10 1))"/>
+
+			</node>
+			<node label="employment" code="gen-employment">
+				<node label="my work history" code="gen-job-chg-frq" value-mg="((0 1) (10 0))"/>
+				<node label="unhelpful changes to employment" code="gen-rec-bad-job-ch" value-mg="((0 0) (10 1))"/>
+			</node>
+		</node>
+		<node label="how I am and things I am doing at the moment" code="gen-currnt-bhvr" layer="0" generic-type="gd">
+			<node label="structure in my life" code="gen-day-actvty" value-mg="((0 1) (10 0))">
+				<node label="structure in my lfe" code="gen-day-struct" value-mg="((0 1) (10 0))"/>
+				<node label="being active" code="gen-day-actvty-lev" value-mg="((PASSIVE-INERT 0) (UNDERACTIVE 0) (NORMAL 0) (OVERACTIVE 0.5) (HYPERACTIVE 1))" generic-type="gd" generic-datum="gd"/>
+			</node>
+			<node label="sleep" code="gen-sleep-dist" value-mg="((0 0) (10 1))"/>
+			<node label="my diet" code="gen-app-diet" value-mg="((0 1) (10 0))" layer="0" generic="g">
+				<node label="eating" code="gen-diet-eating" value-mg="((0 1) (10 0))"/>
+				<node label="weight" code="gen-diet-weight">
+					<node label="my weight" code="gen-diet-weigt-ext" value-mg="((EXTREME-UNDERWEIGHT 1) (UNDERWEIGHT 0.5) (WEIGHT-OK 0) (OVERWEIGHT 0.5) (EXTREME-OVERWEIGHT 1))"/>
+					<node label="weight change" code="gen-diet-weigt-chg" value-mg="((0 0) (10 1))"/>
+				</node>
+				<node label="fluid intake" code="gen-diet-drink" value-mg="((0 1) (10 0))"/>
+			</node>
+			<node label="not being myself" code="gen-unusl-rec-bhvr" value-mg="((0 0) (10 1))"/>
+			<node label="risky activities" code="gen-rsk-behavr" value-mg="((0 0) (10 1))"/>
+			<node label="carelessness" code="gen-unint-risk-behavr" value-mg="((0 0) (10 1))"/>
+
+		</node>
+		<node label="drink and drugs" code="gen-subs-misuse" layer="0" filter-q="" generic-type="gd">
+			<node label="bad effects of alcohol" code="gen-alc-misuse" value-mg="((0 0) (10 1))"/>
+			<node label="bad effects of drugs" code="gen-drug-misuse" value-mg="((0 0) (10 1))"/>
+		</node>
+		<node label="taking responsibility" code="insight-resp" value-mg="((0 0) (10 1))" layer="0" generic-type="g">
+			<node label="understanding risk taking" code="gen-insght-behvr" value-mg="((0 1) (10 0))"/>
+			<node label="taking responsibility for the risks I take" code="gen-resp-impct-oth" value-mg="((0 1) (10 0))"/>
+			<node label="my need for help" code="gen-nd-hlp-diff" value-mg="((0 1) (10 0))"/>
+		</node>
+		<node label="my physical health" code="gen-phys-hlth-prb" layer="0" generic-type="gd">
+			<node label="mobility and dexterity" code="gen-phys-hlth-disa" value-mg="((0 0) (10 1))"/>
+			<node label="communication difficulties" code="gen-com-imp" value-mg="((0 0) (10 1))"/>
+			<node label="pain" code="gen-phys-hlth-pain" value-mg="((0 0) (10 1))"/>
+			<node label="worsening physical health" code="gen-phys-hlth-det" value-mg="((0 0) (10 1))"/>
+			<node label="first diagnosis of serious illness" code="gen-phys-hlth-deg-diag" value-mg="((3 1) (36 0))"/>
+
+		</node>
+		<node label="my care" code="gen-meds-therpy" layer="0" generic-type="g">
+			<node label="following health professionals' advice" code="gen-meds-concord" value-mg="((0 1) (10 0))"/>
+			<node label="service support" code="gen-serv-perc-supp" value-mg="((0 1) (10 0))"/>
+			<node label="regular use of services" code="gen-serv-last-acc" value-mg="((0 1) (10 0))"/>
+			<node label="benefit from treatment" code="gen-med-perc-benft" value-mg="((0 1) (10 0))"/>
+		</node>
+		<node label="my life journey" code="adv-life-event" layer="0" filter-q="" generic-type="gd">
+			<node label="environment I grew up in" code="gen-env-grew-up" value-mg="((0 0) (10 1))"/>
+			<node label="school days" code="gen-educ-expr" value-mg="((0 0) (10 1))"/>
+			<node label="eating disorders" code="gen-eating-dis" value-mg="((0 0) (10 1))"/>
+			<node label="traumatic experiences" code="gen-life-trauma" generic-type="gd">
+				<node label="abuse" code="gen-life-abuse" filter-q="" generic-type="g">
+					<node label="emotional abuse" code="gen-emot-abse" value-mg="((0 0) (10 1))" filter-q="">
+						<node label="most recent emotional abuse" code="gen-emot-abse-last" value-mg="((0 1) (24 0.2))"/>
+						<node label="emotional abuse during childhood (0 to 16 yrs)" code="gen-emo-abse-as-ch" value-mg="((YES 1) (NO 0))"/>
+					</node>
+					<node label="physical abuse" code="gen-phys-abse" value-mg="((0 0) (10 1))" filter-q="">
+						<node label="most recent physical abuse" code="gen-phys-abse-last" value-mg="((0 1) (24 0.2))"/>
+						<node label="physical abuse during childhood (0 to 16 yrs)" code="gen-phy-abse-as-ch" value-mg="((YES 1) (NO 0))"/>
+					</node>
+					<node label="sexual abuse" code="gen-life-sex-abuse" value-mg="((0 0) (10 1))" filter-q="">
+						<node label="most recent sexual abuse" code="gen-sex-abse-last" value-mg="((0 1) (5 0.3))"/>
+						<node label="sexual abuse during childhood (0 to 16 yrs)" code="gen-sex-abse-as-ch" value-mg="((YES 1) (NO 0))"/>
+					</node>
+					<node label="financial abuse" code="gen-financial-abuse" value-mg="((YES 1) (NO 0))"/>
+
+				</node>
+				<node label="trouble with the law" code="gen-forensic-proc" value-mg="((YES 1) (NO 0))"/>
+				<node label="recent traumatic life changes" code="gen-recent-life-trauma" generic-type="g">
+					<node label="first diagnosis of serious illness" code="gen-phys-hlth-deg-diag" generic-datum="g" value-mg="((3 1) (36 0))"/>
+					<node label="changes for the worse in relationships" code="gen-relat-detr-chg" generic-datum="g" value-mg="((0 0) (10 1))"/>
+					<node label="unhelpful changes to employment" code="gen-rec-bad-job-ch" generic-datum="g" value-mg="((0 0) (10 1))"/>
+
+				</node>
+
+			</node>
+
+		</node>
+		<node label="about me" code="gen-demog" generic-type="gd">
+			<node label="date of birth" code="gen-age" value-mg="((12 0) (20 1) (25 1) (35 0.5) (50 0))" generic-type="gd" generic-datum="gd"/>
+			<node label="gender" code="gen-gender" value-mg="((MALE 1) (FEMALE 0))" generic-type="gd" generic-datum="gd"/>
+			<node label="relationship status" code="gen-marital-status" value-mg="((SINGLE 0.1) (WITH-PARTNER 0) (SEPARATED-FROM-PARTNER 1) (PARTNER-DIED 1))" generic-type="gd" generic-datum="gd"/>
+			<node label="who I live with" code="gen-accom-share" filter-q="">
+				<node label="Dependents" code="gen-accom-depndnts" filter-q="">
+					<node label="number of dependents" code="gen-accom-num-dep" value-mg="((0 0) (8 1))"/>
+					<node label="age of youngest dependent" code="gen-dep-ygnst-age" value-mg="((0 1) (10 0.7) (18 0))"/>
+				</node>
+				<node label="partner" code="partner-share-acc" value-mg="((no 1)(yes 0))"/>
+				<node label="number of others I live with" code="gen-accm-share-nd" value-mg="((0 0)(5 1))"/>
+
+			</node>
+			<node label="ethnicity" code="gen-ethnicity" value-mg="((WHITE-BRITISH 0) (WHITE-IRISH 0) (OTHER-WHITE 0) (WHITE-BLACK-CARIBBEAN 0) (WHITE-BLACK-AFRICAN 0)    (WHITE-ASIAN 0) (OTHER-MIXED 0) (INDIAN 0) (PAKISTANI 0) (BANGLADESHI 0) (OTHER-ASIAN 0) (BLACK-CARIBBEAN 0)    (BLACK-AFRICAN 0) (OTHER-BLACK 0) (CHINESE 0) (OTHER-ETHNIC 0))" generic-type="gd" generic-datum="gd"/>
+		</node>
+
+	</node>
+	<node label="risk to dependents" code="risk-dep" value-mg="((0 0) (10 1))">
+		<node label="questions specifically about risk to dependents" code="dependents-specific">
+			<node label="current risk to dependents" code="risk-dep-curr" value-mg="((yes 1) (no 0))" layer="0"/>
+			<node label="risk to children" code="child-prot" value-mg="((yes 1) (no 0))" layer="0"/>
+		</node>
+
+	</node>
+	<node label="not looking after yourself" code="sn" value-mg="((0 0) (10 1))">
+		<node label="your appearance and the lack of care for yourself  it reflects" code="sn-app-behavr" value-mg="((0 0) (10 1))">
+			<node label="signs of neglect" code="sn-appearnce" layer="0" generic-type="g">
+				<node label="hair and clothes" code="sn-hair-clothes" value-mg="((0 0) (10 1))"/>
+				<node label="personal hygiene" code="sn-hygiene" value-mg="((0 0) (10 1))" generic-type="g"/>
+				<node label="recent changes in your appearance" code="sn-recnt-app-chnge" value-mg="((0 0) (10 1))"/>
+				<node label="skin" code="sn-skin" value-mg="((0 0) (10 1))"/>
+			</node>
+
+		</node>
+		<node label="feelings and emotions" code="gen-feel-emot" layer="0" generic-type="gd">
+			<node label="feeling sad" code="gen-sad" value-mg="((0 0) (10 1))"/>
+			<node label="anxiety" code="gen-anx-emotns" value-mg="((0 0) (10 1))"/>
+			<node label="mood swings" code="gen-mood-swings" value-mg="((0 0) (10 1))"/>
+			<node label="negative feelings about myself" code="gen-negative-self" value-mg="((0 0) (10 1))"/>
+			<node label="feeling angry" code="gen-angry-emotns" value-mg="((0 0) (10 1))"/>
+			<node label="feeling helpless" code="gen-helpless" value-mg="((0 0) (10 1))"/>
+			<node label="distress" code="gen-distress" value-mg="((0 0) (10 1))"/>
+			<node label="jealousy" code="gen-jealous" value-mg="((0 0) (10 1))"/>
+			<node label="hopefulness" code="gen-hopeless" value-mg="((0 0) (10 1))" header="Questions on hopefulness" generic-type="g">
+				<node label="plans for the future" code="gen-plans-future" value-mg="((0 1) (10 0))"/>
+				<node label="enjoyment of your life" code="gen-life-not-livng" value-mg="((0 1) (10 0))"/>
+			</node>
+		</node>
+		<node label="my sense of self worth" code="gen-self-worth-p" layer="0" generic-type="gd">
+			<node label="your sense of self-worth" code="worthlessness" value-mg="((0 1) (10 0))"/>
+			<node label="feeling all-important" code="grandiosity" value-mg="((0 0) (10 1))"/>
+
+		</node>
+		<node label="my mental health" code="mental-health" layer="0" filter-q="">
+
+			<node label="depression" code="gen-depression" filter-q="" generic-type="g">
+				<node label="seriousness of current depression" code="serious-depression" value-mg="((none 0) (mild 0.3) (moderate 0.65) (severe 1))">
+					<node label="feelings/emotions" code="gen-feel-emot" layer="0" generic="gd">
+						<node label="feeling sad" code="gen-sad" value-mg="((0 0) (10 1))"/>
+						<node label="anxiety" code="gen-anx-emotns" value-mg="((0 0) (10 1))"/>
+						<node label="mood swings" code="gen-mood-swings" value-mg="((0 0) (10 1))"/>
+						<node label="negative feelings about myself" code="gen-negative-self" value-mg="((0 0) (10 1))"/>
+						<node label="feeling angry" code="gen-angry-emotns" value-mg="((0 0) (10 1))"/>
+						<node label="feeling helpless" code="gen-helpless" value-mg="((0 0) (10 1))"/>
+						<node label="distress" code="gen-distress" value-mg="((0 0) (10 1))"/>
+						<node label="jealousy" code="gen-jealous" value-mg="((0 0) (10 1))"/>
+						<node label="hopefulness" code="gen-hopeless" value-mg="((0 0) (10 1))" header="Questions on hopefulness" generic-type="g">
+							<node label="plans for the future" code="gen-plans-future" value-mg="((0 1) (10 0))"/>
+							<node label="enjoyment of your life" code="gen-life-not-livng" value-mg="((0 1) (10 0))"/>
+						</node>
+					</node>
+					<node label="perspective of self worth" code="gen-self-worth-p" layer="0" generic="gd">
+						<node label="your sense of self-worth" code="worthlessness" value-mg="((0 1) (10 0))"/>
+						<node label="feeling all-important" code="grandiosity" value-mg="((0 0) (10 1))"/>
+
+					</node>
+					<node label="my motivation in life" code="gen-motivation" generic-datum="g" value-mg="((0 1) (10 0))"/>
+					<node label="voice hallucinations" code="gen-voice-hal" filter-q="" header="Questions on voice hallucinations" generic="g">
+						<node label="type of voices" code="gen-voices-type">
+							<node label="danger of the voices to you" code="gen-voice-dang-s" value-mg="((0 0) (10 1))"/>
+							<node label="danger of the voices to others" code="gen-voice-dang-o" value-mg="((0 0) (10 1))"/>
+						</node>
+						<node label="acting on the voices" code="gen-prob-act-voice" value-mg="((0 0) (10 1))"/>
+					</node>
+					<node label="paranoid delusions" code="gen-paranoid-del" filter-q="" header="Questions on paranoid delusions" generic="g">
+						<node label="type of paranoid delusions" code="gen-type-paranoid-del">
+							<node label="about specific people" code="gen-paran-del-spec" value-mg="((0 0) (10 1))"/>
+							<node label="feeling under threat" code="gen-paran-del-pers" value-mg="((0 0) (10 1))"/>
+						</node>
+						<node label="acting on your paranoid thoughts" code="gen-prob-act-par-del" value-mg="((0 0) (10 1))"/>
+					</node>
+					<node label="impaired cognitive function" code="gen-impaird-cog" filter-q="" generic="g">
+						<node label="making decisions" code="gen-decision" value-mg="((0 1) (10 0))"/>
+						<node label="concentration" code="gen-concentr" value-mg="((0 1) (10 0))"/>
+						<node label="thinking processes and memory" code="gen-cog-think-mem" value-mg="((0 0) (10 1))"/>
+
+					</node>
+					<node label="general current behaviour" code="gen-currnt-bhvr" layer="0" generic="gd">
+						<node label="structure in my life" code="gen-day-actvty" value-mg="((0 1) (10 0))">
+							<node label="structure in my lfe" code="gen-day-struct" value-mg="((0 1) (10 0))"/>
+							<node label="being active" code="gen-day-actvty-lev" value-mg="((PASSIVE-INERT 1) (UNDERACTIVE 0.5) (NORMAL 0) (OVERACTIVE 0.5) (HYPERACTIVE 1))" generic-type="gd" generic-datum="gd"/>
+						</node>
+						<node label="sleep" code="gen-sleep-dist" value-mg="((0 0) (10 1))"/>
+						<node label="my diet" code="gen-app-diet" value-mg="((0 1) (10 0))" layer="0" generic="g">
+							<node label="eating" code="gen-diet-eating" value-mg="((0 1) (10 0))"/>
+							<node label="weight" code="gen-diet-weight">
+								<node label="my weight" code="gen-diet-weigt-ext" value-mg="((EXTREME-UNDERWEIGHT 1) (UNDERWEIGHT 0.5) (WEIGHT-OK 0) (OVERWEIGHT 0.5) (EXTREME-OVERWEIGHT 1))"/>
+								<node label="weight change" code="gen-diet-weigt-chg" value-mg="((0 0) (10 1))"/>
+							</node>
+							<node label="fluid intake" code="gen-diet-drink" value-mg="((0 1) (10 0))"/>
+						</node>
+						<node label="not being myself" code="gen-unusl-rec-bhvr" value-mg="((0 0) (10 1))"/>
+						<node label="risky activities" code="gen-rsk-behavr" value-mg="((0 0) (10 1))"/>
+						<node label="carelessness" code="gen-unint-risk-behavr" value-mg="((0 0) (10 1))"/>
+
+					</node>
+					<node label="engagement with world" code="gen-eng-world" value-mg="((0 1) (10 0))" generic="gd">
+						<node label="physical withdrawal from the world" code="gen-phys-withd" value-mg="((0 0) (10 1))"/>
+						<node label="mental withdrawal" code="gen-mental-withd" value-mg="((0 1) (10 0))"/>
+					</node>
+				</node>
+				<node label="stage of depression" code="gen-dep-stage" value-mg="((FIRST-DIAGNOSIS 1) (RECOVERY-SINGLE-EPISODE 0) (RECOVERY-REPEAT-EPISODES 0.4) (RELAPSE 1))"/>
+			</node>
+			<node label="serious mental-health problems" code="gen-ser-mentl-ill" filter-q="" generic-type="gd">
+				<node label="understanding my mental-health problems" code="gen-mentl-insght" value-mg="((0 1) (10 0))"/>
+				<node label="current symptoms of severe mental-health problems" code="gen-mntl-cur-sympt" filter-q="">
+					<node label="feeling manic" code="gen-mania" value-mg="((0 0) (10 1))"/>
+					<node label="hearing voices" code="gen-voice-hal" filter-q="" header="Questions on voice hallucinations" generic-type="g">
+						<node label="type of voices" code="gen-voices-type">
+							<node label="danger of the voices to you" code="gen-voice-dang-s" value-mg="((0 0) (10 1))"/>
+							<node label="danger of the voices to others" code="gen-voice-dang-o" value-mg="((0 0) (10 1))"/>
+						</node>
+						<node label="acting on the voices" code="gen-prob-act-voice" value-mg="((0 0) (10 1))"/>
+					</node>
+					<node label="feeling paranoid" code="gen-paranoid-del" filter-q="" header="Questions on paranoid delusions" generic-type="g">
+						<node label="type of paranoid delusions" code="gen-type-paranoid-del">
+							<node label="about specific people" code="gen-paran-del-spec" value-mg="((0 0) (10 1))"/>
+							<node label="feeling under threat" code="gen-paran-del-pers" value-mg="((0 0) (10 1))"/>
+						</node>
+						<node label="acting on your paranoid thoughts" code="gen-prob-act-par-del" value-mg="((0 0) (10 1))"/>
+					</node>
+				</node>
+			</node>
+		</node>
+		<node label="thinking and memory" code="ment-fac" layer="0">
+			<node label="problems with thinking and memory" code="gen-impaird-cog" filter-q="" generic-type="g">
+				<node label="making decisions" code="gen-decision" value-mg="((0 1) (10 0))"/>
+				<node label="concentration" code="gen-concentr" value-mg="((0 1) (10 0))"/>
+				<node label="thinking processes and memory" code="gen-cog-think-mem" value-mg="((0 0) (10 1))"/>
+
+			</node>
+			<node label="learning disabilities" code="gen-learn-disab" value-mg="((0 0) (10 1))"/>
+		</node>
+		<node label="personality" code="gen-personality" layer="0" generic-type="gd">
+			<node label="assertiveness" code="gen-assertive" value-mg="((NOT-ASSERTIVE 1) (SOMEWHAT-ASSERTIVE 0.3) (NORMALLY-ASSERTIVE 0) (VERY-ASSERTIVE 0) (EXCESSIVELY-ASSERTIVE 0))" generic-type="gd" generic-datum="gd"/>
+			<node label="empathy" code="gen-empathy-abil" value-mg="((0 1) (10 0))"/>
+			<node label="dependence" code="gen-dependence" value-mg="((0 0) (10 1))"/>
+			<node label="being organised" code="gen-controlling" value-mg="((chaotic 1) (disorganised 0.2) (normal 0) (very-organised 0)(obsessional-perfectionist 0))" generic-type="gd" generic-datum="gd"/>
+			<node label="coping with major life stresses" code="gen-coping-abil" value-mg="((0 1) (10 0))"/>
+			<node label="hostility" code="gen-hostile" value-mg="((0 0) (10 1))"/>
+			<node label="impulsiveness" code="gen-impulse" value-mg="((0 0) (10 1))"/>
+			<node label="reliability" code="gen-reliable" value-mg="((0 1) (10 0))"/>
+		</node>
+		<node label="my involvement with life and others" code="motive-eng" layer="0">
+			<node label="engagement with world" code="gen-eng-world" value-mg="((0 1) (10 0))" generic-type="gd">
+				<node label="physical withdrawal from the world" code="gen-phys-withd" value-mg="((0 0) (10 1))"/>
+				<node label="mental withdrawal" code="gen-mental-withd" value-mg="((0 1) (10 0))"/>
+			</node>
+			<node label="my motivation in life" code="gen-motivation" value-mg="((0 1) (10 0))"/>
+			<node label="energy" code="gen-listless" value-mg="((0 1) (10 0))"/>
+		</node>
+		<node label="my social world" code="gen-soc-contxt" layer="0" generic-type="gd">
+			<node label="relationships" code="gen-relatnshps" header="Questions on current relationships" generic-type="gd">
+				<node label="network of people in my life" code="gen-net-relat" value-mg="((0 1) (10 0))"/>
+				<node label="nature of relationships" code="gen-relat-nature">
+					<node label="supportive relationships" code="gen-relat-supp" value-mg="((0 1) (10 0))"/>
+					<node label="relationships that bring you down" code="gen-relat-detr" value-mg="((0 0) (10 1))"/>
+				</node>
+				<node label="changes for the worse in relationships" code="gen-relat-detr-chg" value-mg="((0 0) (10 1))"/>
+			</node>
+			<node label="where I live" code="gen-living-arr" header="Questions on living arrangements" generic-type="gd">
+				<node label="moving house" code="gen-move-freq" value-mg="((LESS-THAN-EVERY-YEAR 0) (ONCE-EVERY-YEAR 0.5) (SEVERAL-TIMES-YEAR 0.8) (ONCE-A-MONTH-OR-MORE 1))"/>
+				<node label="type of home" code="gen-home-type" value-mg="((HOMELESS 1) (HOSTEL 0.8) (institution-fully-supervised 0) (daily-support 0.1)(limited-support 0.2)(no-support 0.5))"/>
+				<node label="neighbourhood" code="gen-neighbrhd">
+					<node label="living in an isolated place" code="gen-isol-accom" value-mg="((0 0) (10 1))"/>
+					<node label="my neighbourhood" code="gen-neigbrhd-rsky" value-mg="((0 0) (10 1))"/>
+				</node>
+				<node label="state of accommodation" code="gen-accom-state">
+					<node label="caring for my home" code="gen-accom-hm-care" value-mg="((0 1) (10 0))"/>
+					<node label="home comfort" code="gen-accom-habitbl" value-mg="((0 1) (10 0))"/>
+				</node>
+			</node>
+			<node label="money concerns" code="gen-finance-prob" header="Questions on financial problems">
+				<node label="cost of living" code="gen-poverty" value-mg="((0 1) (10 0))"/>
+				<node label="debt" code="gen-perc-debt-anx" value-mg="((0 0) (10 1))"/>
+
+			</node>
+			<node label="employment" code="gen-employment">
+				<node label="my work history" code="gen-job-chg-frq" value-mg="((0 1) (10 0))"/>
+				<node label="unhelpful changes to employment" code="gen-rec-bad-job-ch" value-mg="((0 0) (10 1))"/>
+			</node>
+		</node>
+		<node label="how I am and things I am doing at the moment" code="gen-currnt-bhvr" layer="0" generic-type="gd">
+			<node label="structure in my life" code="gen-day-actvty" value-mg="((0 1) (10 0))">
+				<node label="structure in my lfe" code="gen-day-struct" value-mg="((0 1) (10 0))"/>
+				<node label="being active" code="gen-day-actvty-lev" value-mg="((PASSIVE-INERT 1) (UNDERACTIVE 0.5) (NORMAL 0) (OVERACTIVE 0) (HYPERACTIVE 0))" generic-type="gd" generic-datum="gd"/>
+			</node>
+			<node label="sleep" code="gen-sleep-dist" value-mg="((0 0) (10 1))"/>
+			<node label="my diet" code="gen-app-diet" value-mg="((0 1) (10 0))" layer="0" generic="g">
+				<node label="eating" code="gen-diet-eating" value-mg="((0 1) (10 0))"/>
+				<node label="weight" code="gen-diet-weight">
+					<node label="my weight" code="gen-diet-weigt-ext" value-mg="((EXTREME-UNDERWEIGHT 1) (UNDERWEIGHT 0.5) (WEIGHT-OK 0) (OVERWEIGHT 0.5) (EXTREME-OVERWEIGHT 1))"/>
+					<node label="weight change" code="gen-diet-weigt-chg" value-mg="((0 0) (10 1))"/>
+				</node>
+				<node label="fluid intake" code="gen-diet-drink" value-mg="((0 1) (10 0))"/>
+			</node>
+			<node label="not being myself" code="gen-unusl-rec-bhvr" value-mg="((0 0) (10 1))"/>
+			<node label="risky activities" code="gen-rsk-behavr" value-mg="((0 0) (10 1))"/>
+			<node label="carelessness" code="gen-unint-risk-behavr" value-mg="((0 0) (10 1))"/>
+
+		</node>
+		<node label="drink and drugs" code="gen-subs-misuse" layer="0" filter-q="" generic-type="gd">
+			<node label="bad effects of alcohol" code="gen-alc-misuse" value-mg="((0 0) (10 1))"/>
+			<node label="bad effects of drugs" code="gen-drug-misuse" value-mg="((0 0) (10 1))"/>
+		</node>
+		<node label="taking responsibility" code="insight-resp" value-mg="((0 0) (10 1))" layer="0" generic-type="g">
+			<node label="understanding risk taking" code="gen-insght-behvr" value-mg="((0 1) (10 0))"/>
+			<node label="taking responsibility for the risks I take" code="gen-resp-impct-oth" value-mg="((0 1) (10 0))"/>
+			<node label="my need for help" code="gen-nd-hlp-diff" value-mg="((0 1) (10 0))"/>
+		</node>
+		<node label="my physical health" code="gen-phys-hlth-prb" layer="0" generic-type="gd">
+			<node label="mobility and dexterity" code="gen-phys-hlth-disa" value-mg="((0 0) (10 1))"/>
+			<node label="communication difficulties" code="gen-com-imp" value-mg="((0 0) (10 1))"/>
+			<node label="pain" code="gen-phys-hlth-pain" value-mg="((0 0) (10 1))"/>
+			<node label="worsening physical health" code="gen-phys-hlth-det" value-mg="((0 0) (10 1))"/>
+			<node label="first diagnosis of serious illness" code="gen-phys-hlth-deg-diag" value-mg="((3 1) (36 0))"/>
+
+		</node>
+		<node label="my care" code="gen-meds-therpy" layer="0" generic-type="g">
+			<node label="following health professionals' advice" code="gen-meds-concord" value-mg="((0 1) (10 0))"/>
+			<node label="service support" code="gen-serv-perc-supp" value-mg="((0 1) (10 0))"/>
+			<node label="regular use of services" code="gen-serv-last-acc" value-mg="((0 1) (10 0))"/>
+			<node label="benefit from treatment" code="gen-med-perc-benft" value-mg="((0 1) (10 0))"/>
+		</node>
+		<node label="my life journey" code="adv-life-event" layer="0" filter-q="" generic-type="gd">
+			<node label="environment I grew up in" code="gen-env-grew-up" value-mg="((0 0) (10 1))"/>
+			<node label="school days" code="gen-educ-expr" value-mg="((0 0) (10 1))"/>
+			<node label="eating disorders" code="gen-eating-dis" value-mg="((0 0) (10 1))"/>
+			<node label="traumatic experiences" code="gen-life-trauma" generic-type="gd">
+				<node label="abuse" code="gen-life-abuse" filter-q="" generic-type="g">
+					<node label="emotional abuse" code="gen-emot-abse" value-mg="((0 0) (10 1))" filter-q="">
+						<node label="most recent emotional abuse" code="gen-emot-abse-last" value-mg="((0 1) (24 0.2))"/>
+						<node label="emotional abuse during childhood (0 to 16 yrs)" code="gen-emo-abse-as-ch" value-mg="((YES 1) (NO 0))"/>
+					</node>
+					<node label="physical abuse" code="gen-phys-abse" value-mg="((0 0) (10 1))" filter-q="">
+						<node label="most recent physical abuse" code="gen-phys-abse-last" value-mg="((0 1) (24 0.2))"/>
+						<node label="physical abuse during childhood (0 to 16 yrs)" code="gen-phy-abse-as-ch" value-mg="((YES 1) (NO 0))"/>
+					</node>
+					<node label="sexual abuse" code="gen-life-sex-abuse" value-mg="((0 0) (10 1))" filter-q="">
+						<node label="most recent sexual abuse" code="gen-sex-abse-last" value-mg="((0 1) (5 0.3))"/>
+						<node label="sexual abuse during childhood (0 to 16 yrs)" code="gen-sex-abse-as-ch" value-mg="((YES 1) (NO 0))"/>
+					</node>
+					<node label="financial abuse" code="gen-financial-abuse" value-mg="((YES 1) (NO 0))"/>
+
+				</node>
+				<node label="trouble with the law" code="gen-forensic-proc" value-mg="((YES 1) (NO 0))"/>
+				<node label="recent traumatic life changes" code="gen-recent-life-trauma" generic-type="g">
+					<node label="first diagnosis of serious illness" code="gen-phys-hlth-deg-diag" generic-datum="g" value-mg="((3 1) (36 0))"/>
+					<node label="changes for the worse in relationships" code="gen-relat-detr-chg" generic-datum="g" value-mg="((0 0) (10 1))"/>
+					<node label="unhelpful changes to employment" code="gen-rec-bad-job-ch" generic-datum="g" value-mg="((0 0) (10 1))"/>
+
+				</node>
+
+			</node>
+
+		</node>
+		<node label="about me" code="gen-demog" generic-type="gd">
+			<node label="date of birth" code="gen-age" value-mg="((15 0) (50 0.2) (80 1))" generic-type="gd" generic-datum="gd"/>
+			<node label="gender" code="gen-gender" value-mg="((MALE 1) (FEMALE 0))" generic-type="gd" generic-datum="gd"/>
+			<node label="relationship status" code="gen-marital-status" value-mg="((SINGLE 1) (WITH-PARTNER 0) (SEPARATED-FROM-PARTNER 1) (PARTNER-DIED 1))" generic-type="gd" generic-datum="gd"/>
+			<node label="who I live with" code="gen-accom-share" filter-q="">
+				<node label="Dependents" code="gen-accom-depndnts" filter-q="">
+					<node label="number of dependents" code="gen-accom-num-dep" value-mg="((0 0) (8 1))"/>
+					<node label="age of youngest dependent" code="gen-dep-ygnst-age" value-mg="((0 1) (10 0.7) (18 0))"/>
+				</node>
+				<node label="partner" code="partner-share-acc" value-mg="((no 1)(yes 0))"/>
+				<node label="number of others I live with" code="gen-accm-share-nd" value-mg="((0 0)(5 1))"/>
+
+			</node>
+			<node label="ethnicity" code="gen-ethnicity" value-mg="((WHITE-BRITISH 0) (WHITE-IRISH 0) (OTHER-WHITE 0) (WHITE-BLACK-CARIBBEAN 0) (WHITE-BLACK-AFRICAN 0)    (WHITE-ASIAN 0) (OTHER-MIXED 0) (INDIAN 0) (PAKISTANI 0) (BANGLADESHI 0) (OTHER-ASIAN 0) (BLACK-CARIBBEAN 0)    (BLACK-AFRICAN 0) (OTHER-BLACK 0) (CHINESE 0) (OTHER-ETHNIC 0))" generic-type="gd" generic-datum="gd"/>
+		</node>
+
+	</node>
+	<node label="feeling vulnerable" code="vuln-su" value-mg="((0 0) (10 1))">
+		<node label="questions specifically about vulnerability" code="vuln-specific">
+			<node label="falls and accidents" code="falls" value-mg="((yes 1) (no 0))" layer="0" filter-q="">
+				<node label="recent falls or accidents" code="recent-falls" value-mg="((yes 1) (no 0))"/>
+				<node label="causes of falls and accidents" code="falls-reasons" value-mg="((yes 0) (no 1))"/>
+				<node label="frailty" code="frailty" value-mg="((no 0) (yes 1))"/>
+			</node>
+			<node label="your appearance and behaviour, and the vulnerability they reflect" code="vuln-app-behavr" value-mg="((0 0) (10 1))" layer="0">
+
+				<node label="appearance indicators of self neglect" code="sn-appearnce" layer="0" generic="g">
+					<node label="hair and clothes" code="sn-hair-clothes" value-mg="((0 0) (10 1))"/>
+					<node label="personal hygiene" code="sn-hygiene" value-mg="((0 0) (10 1))" generic-type="g"/>
+					<node label="recent changes in your appearance" code="sn-recnt-app-chnge" value-mg="((0 0) (10 1))"/>
+					<node label="skin" code="sn-skin" value-mg="((0 0) (10 1))"/>
+				</node>
+				<node label="your appearance and the vulnerability to abuse it reflects" code="app-vuln-abuse" value-mg="((0 0)(10 1))"/>
+				<node label="behaviour causing potential vulnerability to abuse by others" code="vuln-abuse-behav">
+					<node label="emotional vulnerability" code="emot-vuln" value-mg="((0 0) (10 1))"/>
+					<node label="physical vulnerability" code="phys-vuln" value-mg="((0 0) (10 1))"/>
+					<node label="sexual vulnerability" code="sex-vuln" value-mg="((0 0) (10 1))"/>
+					<node label="financial vulnerability" code="finan-vuln" value-mg="((0 0) (10 1))"/>
+
+				</node>
+				<node label="wandering" code="wandering" value-mg="((yes 1) (no 0))" layer="0"/>
+				<node label="confusion and disorientation" code="dis-conf" value-mg="((0 0) (10 1))"/>
+
+			</node>
+			<node label="independent living" code="indep-living" layer="0">
+				<node label="depending on carers" code="carers" value-mg="((0 0) (10 1))"/>
+				<node label="life skills" code="gen-liv-skills" value-mg="((0 1) (10 0))"/>
+			</node>
+		</node>
+		<node label="feelings and emotions" code="gen-feel-emot" layer="0" generic-type="gd">
+			<node label="feeling sad" code="gen-sad" value-mg="((0 0) (10 1))"/>
+			<node label="anxiety" code="gen-anx-emotns" value-mg="((0 0) (10 1))"/>
+			<node label="mood swings" code="gen-mood-swings" value-mg="((0 0) (10 1))"/>
+			<node label="negative feelings about myself" code="gen-negative-self" value-mg="((0 0) (10 1))"/>
+			<node label="feeling angry" code="gen-angry-emotns" value-mg="((0 0) (10 1))"/>
+			<node label="feeling helpless" code="gen-helpless" value-mg="((0 0) (10 1))"/>
+			<node label="distress" code="gen-distress" value-mg="((0 0) (10 1))"/>
+			<node label="jealousy" code="gen-jealous" value-mg="((0 0) (10 1))"/>
+			<node label="hopefulness" code="gen-hopeless" value-mg="((0 0) (10 1))" header="Questions on hopefulness" generic-type="g">
+				<node label="plans for the future" code="gen-plans-future" value-mg="((0 1) (10 0))"/>
+				<node label="enjoyment of your life" code="gen-life-not-livng" value-mg="((0 1) (10 0))"/>
+			</node>
+		</node>
+		<node label="my sense of self worth" code="gen-self-worth-p" layer="0" generic-type="gd">
+			<node label="your sense of self-worth" code="worthlessness" value-mg="((0 1) (10 0))"/>
+			<node label="feeling all-important" code="grandiosity" value-mg="((0 0) (10 1))"/>
+
+		</node>
+		<node label="my mental health" code="mental-health" layer="0" filter-q="">
+
+			<node label="depression" code="gen-depression" filter-q="" generic-type="g">
+				<node label="seriousness of current depression" code="serious-depression" value-mg="((none 0) (mild 0.3) (moderate 0.65) (severe 1))">
+					<node label="feelings/emotions" code="gen-feel-emot" layer="0" generic="gd">
+						<node label="feeling sad" code="gen-sad" value-mg="((0 0) (10 1))"/>
+						<node label="anxiety" code="gen-anx-emotns" value-mg="((0 0) (10 1))"/>
+						<node label="mood swings" code="gen-mood-swings" value-mg="((0 0) (10 1))"/>
+						<node label="negative feelings about myself" code="gen-negative-self" value-mg="((0 0) (10 1))"/>
+						<node label="feeling angry" code="gen-angry-emotns" value-mg="((0 0) (10 1))"/>
+						<node label="feeling helpless" code="gen-helpless" value-mg="((0 0) (10 1))"/>
+						<node label="distress" code="gen-distress" value-mg="((0 0) (10 1))"/>
+						<node label="jealousy" code="gen-jealous" value-mg="((0 0) (10 1))"/>
+						<node label="hopefulness" code="gen-hopeless" value-mg="((0 0) (10 1))" header="Questions on hopefulness" generic-type="g">
+							<node label="plans for the future" code="gen-plans-future" value-mg="((0 1) (10 0))"/>
+							<node label="enjoyment of your life" code="gen-life-not-livng" value-mg="((0 1) (10 0))"/>
+						</node>
+					</node>
+					<node label="perspective of self worth" code="gen-self-worth-p" layer="0" generic="gd">
+						<node label="your sense of self-worth" code="worthlessness" value-mg="((0 1) (10 0))"/>
+						<node label="feeling all-important" code="grandiosity" value-mg="((0 0) (10 1))"/>
+
+					</node>
+					<node label="my motivation in life" code="gen-motivation" generic-datum="g" value-mg="((0 1) (10 0))"/>
+					<node label="voice hallucinations" code="gen-voice-hal" filter-q="" header="Questions on voice hallucinations" generic="g">
+						<node label="type of voices" code="gen-voices-type">
+							<node label="danger of the voices to you" code="gen-voice-dang-s" value-mg="((0 0) (10 1))"/>
+							<node label="danger of the voices to others" code="gen-voice-dang-o" value-mg="((0 0) (10 1))"/>
+						</node>
+						<node label="acting on the voices" code="gen-prob-act-voice" value-mg="((0 0) (10 1))"/>
+					</node>
+					<node label="paranoid delusions" code="gen-paranoid-del" filter-q="" header="Questions on paranoid delusions" generic="g">
+						<node label="type of paranoid delusions" code="gen-type-paranoid-del">
+							<node label="about specific people" code="gen-paran-del-spec" value-mg="((0 0) (10 1))"/>
+							<node label="feeling under threat" code="gen-paran-del-pers" value-mg="((0 0) (10 1))"/>
+						</node>
+						<node label="acting on your paranoid thoughts" code="gen-prob-act-par-del" value-mg="((0 0) (10 1))"/>
+					</node>
+					<node label="impaired cognitive function" code="gen-impaird-cog" filter-q="" generic="g">
+						<node label="making decisions" code="gen-decision" value-mg="((0 1) (10 0))"/>
+						<node label="concentration" code="gen-concentr" value-mg="((0 1) (10 0))"/>
+						<node label="thinking processes and memory" code="gen-cog-think-mem" value-mg="((0 0) (10 1))"/>
+
+					</node>
+					<node label="general current behaviour" code="gen-currnt-bhvr" layer="0" generic="gd">
+						<node label="structure in my life" code="gen-day-actvty" value-mg="((0 1) (10 0))">
+							<node label="structure in my lfe" code="gen-day-struct" value-mg="((0 1) (10 0))"/>
+							<node label="being active" code="gen-day-actvty-lev" value-mg="((PASSIVE-INERT 1) (UNDERACTIVE 0.5) (NORMAL 0) (OVERACTIVE 0.5) (HYPERACTIVE 1))" generic-type="gd" generic-datum="gd"/>
+						</node>
+						<node label="sleep" code="gen-sleep-dist" value-mg="((0 0) (10 1))"/>
+						<node label="my diet" code="gen-app-diet" value-mg="((0 1) (10 0))" layer="0" generic="g">
+							<node label="eating" code="gen-diet-eating" value-mg="((0 1) (10 0))"/>
+							<node label="weight" code="gen-diet-weight">
+								<node label="my weight" code="gen-diet-weigt-ext" value-mg="((EXTREME-UNDERWEIGHT 1) (UNDERWEIGHT 0.5) (WEIGHT-OK 0) (OVERWEIGHT 0.5) (EXTREME-OVERWEIGHT 1))"/>
+								<node label="weight change" code="gen-diet-weigt-chg" value-mg="((0 0) (10 1))"/>
+							</node>
+							<node label="fluid intake" code="gen-diet-drink" value-mg="((0 1) (10 0))"/>
+						</node>
+						<node label="not being myself" code="gen-unusl-rec-bhvr" value-mg="((0 0) (10 1))"/>
+						<node label="risky activities" code="gen-rsk-behavr" value-mg="((0 0) (10 1))"/>
+						<node label="carelessness" code="gen-unint-risk-behavr" value-mg="((0 0) (10 1))"/>
+
+					</node>
+					<node label="engagement with world" code="gen-eng-world" value-mg="((0 1) (10 0))" generic="gd">
+						<node label="physical withdrawal from the world" code="gen-phys-withd" value-mg="((0 0) (10 1))"/>
+						<node label="mental withdrawal" code="gen-mental-withd" value-mg="((0 1) (10 0))"/>
+					</node>
+				</node>
+				<node label="stage of depression" code="gen-dep-stage" value-mg="((FIRST-DIAGNOSIS 1) (RECOVERY-SINGLE-EPISODE 0) (RECOVERY-REPEAT-EPISODES 0.4) (RELAPSE 1))"/>
+			</node>
+			<node label="serious mental-health problems" code="gen-ser-mentl-ill" filter-q="" generic-type="gd">
+				<node label="understanding my mental-health problems" code="gen-mentl-insght" value-mg="((0 1) (10 0))"/>
+				<node label="current symptoms of severe mental-health problems" code="gen-mntl-cur-sympt" filter-q="">
+					<node label="feeling manic" code="gen-mania" value-mg="((0 0) (10 1))"/>
+					<node label="hearing voices" code="gen-voice-hal" filter-q="" header="Questions on voice hallucinations" generic-type="g">
+						<node label="type of voices" code="gen-voices-type">
+							<node label="danger of the voices to you" code="gen-voice-dang-s" value-mg="((0 0) (10 1))"/>
+							<node label="danger of the voices to others" code="gen-voice-dang-o" value-mg="((0 0) (10 1))"/>
+						</node>
+						<node label="acting on the voices" code="gen-prob-act-voice" value-mg="((0 0) (10 1))"/>
+					</node>
+					<node label="feeling paranoid" code="gen-paranoid-del" filter-q="" header="Questions on paranoid delusions" generic-type="g">
+						<node label="type of paranoid delusions" code="gen-type-paranoid-del">
+							<node label="about specific people" code="gen-paran-del-spec" value-mg="((0 0) (10 1))"/>
+							<node label="feeling under threat" code="gen-paran-del-pers" value-mg="((0 0) (10 1))"/>
+						</node>
+						<node label="acting on your paranoid thoughts" code="gen-prob-act-par-del" value-mg="((0 0) (10 1))"/>
+					</node>
+				</node>
+			</node>
+		</node>
+		<node label="thinking and memory" code="ment-fac" layer="0">
+			<node label="problems with thinking and memory" code="gen-impaird-cog" filter-q="" generic-type="g">
+				<node label="making decisions" code="gen-decision" value-mg="((0 1) (10 0))"/>
+				<node label="concentration" code="gen-concentr" value-mg="((0 1) (10 0))"/>
+				<node label="thinking processes and memory" code="gen-cog-think-mem" value-mg="((0 0) (10 1))"/>
+
+			</node>
+			<node label="learning disabilities" code="gen-learn-disab" value-mg="((0 0) (10 1))"/>
+		</node>
+		<node label="personality" code="gen-personality" layer="0" generic-type="gd">
+			<node label="assertiveness" code="gen-assertive" value-mg="((NOT-ASSERTIVE 1) (SOMEWHAT-ASSERTIVE 0.3) (NORMALLY-ASSERTIVE 0) (VERY-ASSERTIVE 0) (EXCESSIVELY-ASSERTIVE 0))" generic-type="gd" generic-datum="gd"/>
+			<node label="empathy" code="gen-empathy-abil" value-mg="((0 1) (10 0))"/>
+			<node label="dependence" code="gen-dependence" value-mg="((0 0) (10 1))"/>
+			<node label="being organised" code="gen-controlling" value-mg="((chaotic 1) (disorganised 0.2) (normal 0) (very-organised 0.1)(obsessional-perfectionist 0.2))" generic-type="gd" generic-datum="gd"/>
+			<node label="coping with major life stresses" code="gen-coping-abil" value-mg="((0 1) (10 0))"/>
+			<node label="hostility" code="gen-hostile" value-mg="((0 0) (10 1))"/>
+			<node label="impulsiveness" code="gen-impulse" value-mg="((0 0) (10 1))"/>
+			<node label="reliability" code="gen-reliable" value-mg="((0 1) (10 0))"/>
+		</node>
+		<node label="my involvement with life and others" code="motive-eng" layer="0">
+			<node label="engagement with world" code="gen-eng-world" value-mg="((0 1) (10 0))" generic-type="gd">
+				<node label="physical withdrawal from the world" code="gen-phys-withd" value-mg="((0 0) (10 1))"/>
+				<node label="mental withdrawal" code="gen-mental-withd" value-mg="((0 1) (10 0))"/>
+			</node>
+			<node label="my motivation in life" code="gen-motivation" value-mg="((0 1) (10 0))"/>
+			<node label="energy" code="gen-listless" value-mg="((0 1) (10 0))"/>
+		</node>
+		<node label="my social world" code="gen-soc-contxt" layer="0" generic-type="gd">
+			<node label="relationships" code="gen-relatnshps" header="Questions on current relationships" generic-type="gd">
+				<node label="network of people in my life" code="gen-net-relat" value-mg="((0 1) (10 0))"/>
+				<node label="nature of relationships" code="gen-relat-nature">
+					<node label="supportive relationships" code="gen-relat-supp" value-mg="((0 1) (10 0))"/>
+					<node label="relationships that bring you down" code="gen-relat-detr" value-mg="((0 0) (10 1))"/>
+				</node>
+				<node label="changes for the worse in relationships" code="gen-relat-detr-chg" value-mg="((0 0) (10 1))"/>
+			</node>
+			<node label="where I live" code="gen-living-arr" header="Questions on living arrangements" generic-type="gd">
+				<node label="moving house" code="gen-move-freq" value-mg="((LESS-THAN-EVERY-YEAR 0) (ONCE-EVERY-YEAR 0.5) (SEVERAL-TIMES-YEAR 0.8) (ONCE-A-MONTH-OR-MORE 1))"/>
+				<node label="type of home" code="gen-home-type" value-mg="((HOMELESS 1) (HOSTEL 0.8) (institution-fully-supervised 0) (daily-support 0.1)(limited-support 0.2)(no-support 0.5))"/>
+				<node label="neighbourhood" code="gen-neighbrhd">
+					<node label="living in an isolated place" code="gen-isol-accom" value-mg="((0 0) (10 1))"/>
+					<node label="my neighbourhood" code="gen-neigbrhd-rsky" value-mg="((0 0) (10 1))"/>
+				</node>
+				<node label="state of accommodation" code="gen-accom-state">
+					<node label="caring for my home" code="gen-accom-hm-care" value-mg="((0 1) (10 0))"/>
+					<node label="home comfort" code="gen-accom-habitbl" value-mg="((0 1) (10 0))"/>
+				</node>
+			</node>
+			<node label="money concerns" code="gen-finance-prob" header="Questions on financial problems">
+				<node label="cost of living" code="gen-poverty" value-mg="((0 1) (10 0))"/>
+				<node label="debt" code="gen-perc-debt-anx" value-mg="((0 0) (10 1))"/>
+
+			</node>
+			<node label="employment" code="gen-employment">
+				<node label="my work history" code="gen-job-chg-frq" value-mg="((0 1) (10 0))"/>
+				<node label="unhelpful changes to employment" code="gen-rec-bad-job-ch" value-mg="((0 0) (10 1))"/>
+			</node>
+		</node>
+		<node label="how I am and things I am doing at the moment" code="gen-currnt-bhvr" layer="0" generic-type="gd">
+			<node label="structure in my life" code="gen-day-actvty" value-mg="((0 1) (10 0))">
+				<node label="structure in my lfe" code="gen-day-struct" value-mg="((0 1) (10 0))"/>
+				<node label="being active" code="gen-day-actvty-lev" value-mg="((PASSIVE-INERT 1) (UNDERACTIVE 0.5) (NORMAL 0) (OVERACTIVE 0.5) (HYPERACTIVE 1))" generic-type="gd" generic-datum="gd"/>
+			</node>
+			<node label="sleep" code="gen-sleep-dist" value-mg="((0 0) (10 1))"/>
+			<node label="my diet" code="gen-app-diet" value-mg="((0 1) (10 0))" layer="0" generic="g">
+				<node label="eating" code="gen-diet-eating" value-mg="((0 1) (10 0))"/>
+				<node label="weight" code="gen-diet-weight">
+					<node label="my weight" code="gen-diet-weigt-ext" value-mg="((EXTREME-UNDERWEIGHT 1) (UNDERWEIGHT 0.5) (WEIGHT-OK 0) (OVERWEIGHT 0.5) (EXTREME-OVERWEIGHT 1))"/>
+					<node label="weight change" code="gen-diet-weigt-chg" value-mg="((0 0) (10 1))"/>
+				</node>
+				<node label="fluid intake" code="gen-diet-drink" value-mg="((0 1) (10 0))"/>
+			</node>
+			<node label="not being myself" code="gen-unusl-rec-bhvr" value-mg="((0 0) (10 1))"/>
+			<node label="risky activities" code="gen-rsk-behavr" value-mg="((0 0) (10 1))"/>
+			<node label="carelessness" code="gen-unint-risk-behavr" value-mg="((0 0) (10 1))"/>
+
+		</node>
+		<node label="drink and drugs" code="gen-subs-misuse" layer="0" filter-q="" generic-type="gd">
+			<node label="bad effects of alcohol" code="gen-alc-misuse" value-mg="((0 0) (10 1))"/>
+			<node label="bad effects of drugs" code="gen-drug-misuse" value-mg="((0 0) (10 1))"/>
+		</node>
+		<node label="taking responsibility" code="insight-resp" value-mg="((0 0) (10 1))" layer="0" generic-type="g">
+			<node label="understanding risk taking" code="gen-insght-behvr" value-mg="((0 1) (10 0))"/>
+			<node label="taking responsibility for the risks I take" code="gen-resp-impct-oth" value-mg="((0 1) (10 0))"/>
+			<node label="my need for help" code="gen-nd-hlp-diff" value-mg="((0 1) (10 0))"/>
+		</node>
+		<node label="my physical health" code="gen-phys-hlth-prb" layer="0" generic-type="gd">
+			<node label="mobility and dexterity" code="gen-phys-hlth-disa" value-mg="((0 0) (10 1))"/>
+			<node label="communication difficulties" code="gen-com-imp" value-mg="((0 0) (10 1))"/>
+			<node label="pain" code="gen-phys-hlth-pain" value-mg="((0 0) (10 1))"/>
+			<node label="worsening physical health" code="gen-phys-hlth-det" value-mg="((0 0) (10 1))"/>
+			<node label="first diagnosis of serious illness" code="gen-phys-hlth-deg-diag" value-mg="((3 1) (36 0))"/>
+
+		</node>
+		<node label="my care" code="gen-meds-therpy" layer="0" generic-type="g">
+			<node label="following health professionals' advice" code="gen-meds-concord" value-mg="((0 1) (10 0))"/>
+			<node label="service support" code="gen-serv-perc-supp" value-mg="((0 1) (10 0))"/>
+			<node label="regular use of services" code="gen-serv-last-acc" value-mg="((0 1) (10 0))"/>
+			<node label="benefit from treatment" code="gen-med-perc-benft" value-mg="((0 1) (10 0))"/>
+		</node>
+		<node label="my life journey" code="adv-life-event" layer="0" filter-q="" generic-type="gd">
+			<node label="environment I grew up in" code="gen-env-grew-up" value-mg="((0 0) (10 1))"/>
+			<node label="school days" code="gen-educ-expr" value-mg="((0 0) (10 1))"/>
+			<node label="eating disorders" code="gen-eating-dis" value-mg="((0 0) (10 1))"/>
+			<node label="traumatic experiences" code="gen-life-trauma" generic-type="gd">
+				<node label="abuse" code="gen-life-abuse" filter-q="" generic-type="g">
+					<node label="emotional abuse" code="gen-emot-abse" value-mg="((0 0) (10 1))" filter-q="">
+						<node label="most recent emotional abuse" code="gen-emot-abse-last" value-mg="((0 1) (24 0.2))"/>
+						<node label="emotional abuse during childhood (0 to 16 yrs)" code="gen-emo-abse-as-ch" value-mg="((YES 1) (NO 0))"/>
+					</node>
+					<node label="physical abuse" code="gen-phys-abse" value-mg="((0 0) (10 1))" filter-q="">
+						<node label="most recent physical abuse" code="gen-phys-abse-last" value-mg="((0 1) (24 0.2))"/>
+						<node label="physical abuse during childhood (0 to 16 yrs)" code="gen-phy-abse-as-ch" value-mg="((YES 1) (NO 0))"/>
+					</node>
+					<node label="sexual abuse" code="gen-life-sex-abuse" value-mg="((0 0) (10 1))" filter-q="">
+						<node label="most recent sexual abuse" code="gen-sex-abse-last" value-mg="((0 1) (5 0.3))"/>
+						<node label="sexual abuse during childhood (0 to 16 yrs)" code="gen-sex-abse-as-ch" value-mg="((YES 1) (NO 0))"/>
+					</node>
+					<node label="financial abuse" code="gen-financial-abuse" value-mg="((YES 1) (NO 0))"/>
+
+				</node>
+				<node label="trouble with the law" code="gen-forensic-proc" value-mg="((YES 1) (NO 0))"/>
+				<node label="recent traumatic life changes" code="gen-recent-life-trauma" generic-type="g">
+					<node label="first diagnosis of serious illness" code="gen-phys-hlth-deg-diag" generic-datum="g" value-mg="((3 1) (36 0))"/>
+					<node label="changes for the worse in relationships" code="gen-relat-detr-chg" generic-datum="g" value-mg="((0 0) (10 1))"/>
+					<node label="unhelpful changes to employment" code="gen-rec-bad-job-ch" generic-datum="g" value-mg="((0 0) (10 1))"/>
+
+				</node>
+
+			</node>
+
+		</node>
+		<node label="about me" code="gen-demog" generic-type="gd">
+			<node label="date of birth" code="gen-age" value-mg="((18 1) (50 0) (70 0.8) (80 1))" generic-type="gd" generic-datum="gd"/>
+			<node label="gender" code="gen-gender" value-mg="((MALE 0) (FEMALE 1))" generic-type="gd" generic-datum="gd"/>
+			<node label="relationship status" code="gen-marital-status" value-mg="((SINGLE 0.8) (WITH-PARTNER 0) (SEPARATED-FROM-PARTNER 1) (PARTNER-DIED 1))" generic-type="gd" generic-datum="gd"/>
+			<node label="who I live with" code="gen-accom-share" filter-q="">
+				<node label="Dependents" code="gen-accom-depndnts" filter-q="">
+					<node label="number of dependents" code="gen-accom-num-dep" value-mg="((0 0) (8 1))"/>
+					<node label="age of youngest dependent" code="gen-dep-ygnst-age" value-mg="((0 1) (10 0.7) (18 0))"/>
+				</node>
+				<node label="partner" code="partner-share-acc" value-mg="((no 1)(yes 0))"/>
+				<node label="number of others I live with" code="gen-accm-share-nd" value-mg="((0 0)(5 1))"/>
+
+			</node>
+			<node label="ethnicity" code="gen-ethnicity" value-mg="((WHITE-BRITISH 0) (WHITE-IRISH 0) (OTHER-WHITE 0) (WHITE-BLACK-CARIBBEAN 0) (WHITE-BLACK-AFRICAN 0)    (WHITE-ASIAN 0) (OTHER-MIXED 0) (INDIAN 0) (PAKISTANI 0) (BANGLADESHI 0) (OTHER-ASIAN 0) (BLACK-CARIBBEAN 0)    (BLACK-AFRICAN 0) (OTHER-BLACK 0) (CHINESE 0) (OTHER-ETHNIC 0))" generic-type="gd" generic-datum="gd"/>
+		</node>
+
+	</node>
+
+</node>

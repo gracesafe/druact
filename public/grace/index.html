@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<meta charset="utf-8" />
+	<head>
+
+		<link rel="stylesheet" href="css/question-panel-style.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		<link rel="stylesheet" href="css/layout-prototype1.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		<link rel="stylesheet" href="css/socnet.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+
+		<link rel="stylesheet" href="css/tree-skin/ui.dynatree.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		<link rel="stylesheet" href="css/ui.dynatree-custom.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		<link rel="stylesheet" href="css/contextmenu/jquery.contextMenu.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+
+		<link rel="stylesheet" href="css/jquery.jui_dropdown.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		<link rel="stylesheet" href="css/sumoselect.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		<link rel="stylesheet" href="css/jquery.webui-popover.min.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+
+		<script src="libraries/jquery-1.12.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libraries/jquery-ui-1.10.1.custom.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libraries/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libraries/jquery.dynatree.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libraries/jquery.contextMenu.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libraries/jquery.jui_dropdown.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libraries/jquery.sumoselect-modified.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libraries/jquery.webui-popover-modified.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libraries/moment.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libraries/linkify.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libraries/linkify-string.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--
+
+		<script src="libraries/source/jquery.webui-popover-modified.js" type="text/javascript" charset="utf-8"></script>
+		-->
+
+		<!--
+		<script src="libraries/d3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libraries/jquery.textfill.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/d3-style.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		-->
+
+		<script src="scripts/GlobalVariables.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/Utilities.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/Launcher.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/LayoutManager.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/LayoutManager.FinishedLayout.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/LayoutManager.MindMapLayout.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/LayoutManager.OpeningPageLayout.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/LayoutManager.QuestionnaireLayout.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/LayoutManager.RiskJudgementLayout.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/LayoutManager.RiskOverviewLayout.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/LayoutManager.AdviceLayout.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/LayoutManager.FinishIntermediateLayout.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/LayoutManager.SteppedScreeningLayout.js" type="text/javascript" charset="utf-8"></script>
+
+		<script src="scripts/LayoutNavigator.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/XMLInput.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/XMLOutput.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/Questions.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/QuestionRenderer2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/Socnet.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/ActionAlert.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript">
+			$(function() {
+
+				//========================================================================
+				//					SERVER LAUNCH
+				//========================================================================
+				/*
+				GlobalVariables.launchParams = {sid: "<?php echo $SID; ?>",
+				patientId: "<?php echo $theClientID; ?>",
+				assessmentId: "<?php echo $assessmentID; ?>",
+				assessmentType: "<?php echo $assessmentType; ?>",
+				warned: "<?php echo $warned; ?>",
+				metaPatientName: "<?php echo $metaPatientName; ?>"};
+
+				Launcher.initialiseForGristSERVERLaunch(GlobalVariables.launchParams);
+				*/
+
+				//========================================================================
+				//					LOCAL LAUNCH
+				//========================================================================
+
+				var demogDataFile1 = "<answers mode=\"auto-demographic\">\n  <node code2=\"gen-agewww\" answer=\"10212020\" \/>\n  <node code=\"gen-accm-share-nd\" answer=\"32\" \/>\n  <node code=\"gen-marital-status\" answer=\"NO\" \/>\n  <node code=\"gen-ethnicity\" answer=\"indian\" \/>\n<\/answers>";
+				var demogDataFile2 = "<answers mode=\"auto-demographic\">\n  <node code=\"gen-gender\" answer=\"male\" \/>\n<\/answers>";
+				var demogDataFile3 = "<answers mode=\"auto-demographic\">\n  <node code=\"gen-age\" answer=\"1974\" \/>\n  <node code=\"gen-gender\" answer=\"male\" \/>\n  <node code=\"gen-marital-status\" answer=\"\" \/>\n  <node code=\"gen-ethnicity\" answer=\"martian\" \/>\n<\/answers>";
+
+				var personalDataJSONstring = '{"personal_info":{"friends":[{"name":"fiend1d","email":"friend1@email.com","phone":"123"},{"name":"friend2","email":"friend2@email.com","phone":"123"},{"name":"friend3","email":"friend3@email.com","phone":"123"}],"carers":[{"name":"carer1","email":"carer1@email.com","phone":"123"},{"name":"carer2","email":"carer2@email.com","phone":"123"},{"name":"carer3","email":"carer3@email.com","phone":"123"}],"GP":{"name":"Dr abc","email":"abcgp@email.com","phone":"123","address":"1 Hill Street, Edgbaston","city":"Birmingham","postcode":"B12 1AB"},"addresses":{"homeAddress":"1 Hill Street, Edgbaston","homePostcode":"B12 1AB","workAddress":"1 Hill Street, Edgbaston","workPostcode":"B12 1AB"}}}';
+				var url = new URL(location.href);
+				var forcePopulation = url.searchParams.get("p");
+
+				Launcher.initialiseForGristLocalLaunch({
+					personalDataJSONstring : personalDataJSONstring,
+					demogDataFile : demogDataFile1,
+					loadAT : true,
+					effectiveScreeningLevel : '1',
+					//fe: "1",
+					forcePopulation: forcePopulation,
+					ACAS: "1"
+				});
+				//Launcher.initialiseForGristLocalLaunch({loadAT:true, effectiveScreeningLevel:null});
+
+			});
+
+		</script>
+
+	</head>
+	<body></body>
+</html>

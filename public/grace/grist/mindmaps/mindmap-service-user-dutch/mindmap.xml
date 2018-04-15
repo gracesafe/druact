@@ -1,0 +1,33 @@
+<mindmap>
+    <map name="fm_imagemap" id="fm_imagemap">
+        <area shape="rect" href="#FMID_911765918FM" title="myGRaCE" coords="441,195,606,279" code-path="mental-health-risk"/>
+        <area shape="rect" href="#FMID_708587450FM" title="mijn persoonlijke gegevens" coords="242,4,455,27" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-demog"/>
+        <area shape="rect" href="#FMID_69188807FM" title="mijn gemoedstoestand" coords="253,100,430,123" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-state-mind"/>
+        <area shape="rect" href="#FMID_1710911393FM" title="gevoelens en emoties" coords="74,73,230,95" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-state-mind,gen-feel-emot"/>
+        <area shape="rect" href="#FMID_1494736236FM" title="mijn gevoel van eigenwaarde" coords="99,105,227,145" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-state-mind,gen-self-worth-p"/>
+        <area shape="rect" href="#FMID_816180316FM" title="mijn betrokkenheid bij het leven v ..." coords="219,237,396,279" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-involve-social"/>
+        <area shape="rect" href="#FMID_1063785187FM" title="mijn motivatie en deelname" coords="84,177,192,217" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-involve-social,motive-eng"/>
+        <area shape="rect" href="#FMID_1875165358FM" title="mijn sociale wereld" coords="56,229,198,251" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-involve-social,gen-soc-contxt"/>
+        <area shape="rect" href="#FMID_1605043317FM" title="mijn dagelijks leven" coords="53,262,198,284" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-involve-social,gen-currnt-bhvr"/>
+        <area shape="rect" href="#FMID_244183090FM" title="drank en drugs" coords="87,294,199,316" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-involve-social,gen-subs-misuse"/>
+        <area shape="rect" href="#FMID_731878243FM" title="mijn gezondheid en zorg" coords="219,394,409,417" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-health-care"/>
+        <area shape="rect" href="#FMID_320280543FM" title="mijn geestelijke gezondheid" coords="0,348,197,370" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-health-care,mental-health"/>
+        <area shape="rect" href="#FMID_285407468FM" title="mijn lichamelijke gezondheid" coords="65,386,192,426" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-health-care,gen-phys-hlth-prb"/>
+        <area shape="rect" href="#FMID_1388309352FM" title="mijn zorg" coords="113,439,190,461" showprogressicon="left" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-health-care,gen-meds-therpy"/>
+        <area shape="rect" href="#FMID_1137279856FM" title="mijn persoonlijkheid en manier van ..." coords="594,24,768,66" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-person-thinking"/>
+        <area shape="rect" href="#FMID_1151251422FM" title="persoonlijkheid" coords="788,0,903,22" showprogressicon="right" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-person-thinking,gen-personality"/>
+        <area shape="rect" href="#FMID_1996417330FM" title="denken en geheugen" coords="788,32,940,54" showprogressicon="right" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-person-thinking,ment-fac"/>
+        <area shape="rect" href="#FMID_1604049278FM" title="begrijpen van risico's en verantwo ..." coords="789,62,961,102" showprogressicon="right" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-person-thinking,insight-resp"/>
+        <area shape="rect" href="#FMID_1443952917FM" title="mijn levensreis" coords="668,191,793,214" code-path="mental-health-risk,genericRootNode-added-by-tool,adv-life-event"/>
+        <area shape="rect" href="#FMID_1486350240FM" title="omgeving waarin ik opgroeide" coords="816,131,944,171" showprogressicon="right" code-path="mental-health-risk,genericRootNode-added-by-tool,adv-life-event,other-chall-exp,gen-env-grew-up"/>
+        <area shape="rect" href="#FMID_1334510522FM" title="schooldagen" coords="819,190,917,212" showprogressicon="right" code-path="mental-health-risk,genericRootNode-added-by-tool,adv-life-event,other-chall-exp,gen-educ-expr"/>
+        <area shape="rect" href="#FMID_1584805262FM" title="eetstoornissen" coords="815,228,923,250" showprogressicon="right" code-path="mental-health-risk,genericRootNode-added-by-tool,adv-life-event,other-chall-exp,gen-eating-dis"/>
+        <area shape="rect" href="#FMID_630164916FM" title="behouden veiligheid" coords="563,353,652,395" code-path="mental-health-risk"/>
+        <area shape="rect" href="#FMID_751432290FM" title="gevoel van kwetsbaarheid? " coords="708,282,924,305" showprogressicon="right" code-path="mental-health-risk,vuln-su"/>
+        <area shape="rect" href="#FMID_1718688338FM" title="niet voor uzelf zorgen?" coords="704,320,885,343" showprogressicon="right" code-path="mental-health-risk,sn"/>
+        <area shape="rect" href="#FMID_961537879FM" title="gevoel om uzelf te kwetsen?" coords="703,357,922,380" showprogressicon="right" code-path="mental-health-risk,sh"/>
+        <area shape="rect" href="#FMID_1217542536FM" title="gevoel om anderen te kwetsen?" coords="702,391,946,414" showprogressicon="right" code-path="mental-health-risk,hto"/>
+        <area shape="rect" href="#FMID_815717573FM" title="gevoel om alles te beëindigen? " coords="701,426,944,449" showprogressicon="right" code-path="mental-health-risk,suic"/>
+    </map>
+</mindmap>
+

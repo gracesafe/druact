@@ -48,36 +48,70 @@ class Navbar extends Component {
   render() {
 
     var userLinkTitle = this.state.username ? this.state.username : 'User';
+    var loggedIn = localStorage.getItem('auth');
 
-    return (
-      <div className="row top-buffer">
-        <div className="col">
-          <nav className="navbar navbar-toggleable-md navbar-inverse bg-success">
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-              <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li className="nav-item">
-                  <NavLink exact className="nav-link" activeClassName="active" to="/">
-                    <i className="fa fa-home"></i> Home
+    if (loggedIn) {
+
+      return (
+        <div className="row top-buffer">
+          <div className="col">
+            <nav className="navbar navbar-toggleable-md navbar-inverse bg-success">
+              <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01">
+                <span className="navbar-toggler-icon"></span>
+              </button>
+              <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li className="nav-item">
+                    <NavLink exact className="nav-link" activeClassName="active" to="/">
+                      <i className="fa fa-home"></i> Home
+                      {/* <img src='/public/images/mygracelogo.png' className="img-fluid"/> */}
                   </NavLink>
-                </li>
-                <GraceMenu />
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
-                    <i className="fa fa-user"></i> User: {userLinkTitle}
-                  </a>
-                  <div className="dropdown-menu">
-                    {this.renderUserLinks()}
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </nav>
+                  </li>
+                  <GraceMenu />
+                  <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+                      <i className="fa fa-user"></i> User: {userLinkTitle}
+                    </a>
+                    <div className="dropdown-menu">
+                      {this.renderUserLinks()}
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
         </div>
-      </div>
-    );
+      );
+    } else {
+      return (
+        <div className="row top-buffer">
+          <div className="col">
+            <nav className="navbar navbar-toggleable-md navbar-inverse bg-success">
+              <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01">
+                <span className="navbar-toggler-icon"></span>
+              </button>
+              <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li className="nav-item">
+                    <NavLink exact className="nav-link" activeClassName="active" to="/">
+                      <i className="fa fa-home"></i> Home
+                  </NavLink>
+                  </li>
+                  <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+                      <i className="fa fa-user"></i> User: {userLinkTitle}
+                    </a>
+                    <div className="dropdown-menu">
+                      {this.renderUserLinks()}
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      );
+    }
   }
 }
 

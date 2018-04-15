@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<meta charset="utf-8" />
+
+<!--
+LOGS:
+2013-10-05
+		- at generator changed so that assessment comments are only put in the AT if there are some actual data to put in, otherwise assessment comment node is not put in. Previously, a blank attribute was being put in.	
+	
+	
+	
+	
+	
+	
+	
+-------------------	
+OPTIMIZATION
+	- will need optimisation as the code is too slow.
+	- possible techniques
+		- while parsing the cat, parse all the attributes as json object so that xmlNode is not needed and no further xml parsing would be required.
+		- in traverseTree, for nominal,scale,number etc, append the containing div and put the call to drawQuestion in a delayed block. appening the containing div would be necessary
+			beacause otherwise the order of questions would be messed up. the dalay block would not be applied to layer and filter questions.
+		- for filter and layer, instead of firing a click event(for answer=yes), put it in an array and send those click events after all the questions have been laid.(in same place where you assign jquery tooltips)
+		- remove all lowercase/uppercase conversions in question renders... they cause extra processing delay
+	- adding the tooltip for red and yellow pins increases load time by 300ms!!!! is there a better way to do this.
+	- after each question is rendered, the notifyFinished method is called... this means it called as many times as there are nodes in the tree...
+		sounds very inefficient... how about, we remove explicit calls to this altogether and instead put it in a timer that calls this method after every 50ms or so?
+		and set the timer inside this to about 100ms.. this would achieve the same end as the current infrastructure, and would be a lot more efficient.
+	- parsing CAT to json on start up and then using that with traverseTree.. will that help? try.
+	- is worth parsing the value-mg list for nominal questions
+	
+FOR GERALD(testing)
+	- explain how to test auto-answer
+	- answer constraint validation
+	- previous answer
+	- cross browser
+	- all the test must be done in all browsers.
+
+ITEMS TO BE TESTED ON IE AND CHROME
+	- DONE: cookies to remember open nodes
+	- DONE: multiple instances change color based on thier own value-mg list
+	- IE7: when save is clicked, nothing appears... a msg saying saving... with a progress bar should appear
+	- IE: auto-answer and answer-constraint not checked in other browsers	
+	- check if resizing is ok in all browsers
+	- DONE: IE7 problem: clicking on a div to select the underlying radio button: Does not work in IE7.. ok for IE8
+	- new previous comments feature: test in IE
+	- ***ERROR: mind-map links do not work in Chromium. check chrome too
+	- right click context menu: Test in IE
+	- overall assessment comment feature not tested in IE yet.
+	- context menu.. check in ie
+
+
+FOR TOMORROW
+	- risk context
+	- risk judgement
+	- progress bar?
+	- search? / navigation
+	- ask ABU and ANN: is the report capable of handling enhanced comments
+	- key
+	- progress bar under mindmap links
+	- search??	
+	- demographic questions should not have any colour?
+	
+	
+FROM meeting with Ann and Chris
+	- for chris: change the ordering in mindmap
+	- implement risk context
+	- interface to have a key, a new button for overview, which has a link to more detailed instructions.
+		where is this help being taken in from?
+	- guided tour
+	- progress bar in the top panel
+	- risk summation to be called "myRisks" - implement this
+		should not open comment box automatically
+		new wording: answer = my risk, comment= my toughts, management = my plans
+		write "risk" in top grid
+		heading: my risk assessment
+	- use the word self-management instead of management for all questions
+	- put finish and suspend together.
+	- think which menu items need to go on the mindmap page
+	
+	
+SOCNET-TASKs
+	- workspace moved inside localhost as ajax requests work only on same domain
+	- separate signpost tree... change the root lable to make it clear
+	- what happens when a node in tree has no code! - handle the error properly
+
+LOGS
+	- action alert feature added
+	
+IMMEDIATE TAKS
+	- NEED VERSIONING system to identify different versions and patches.
+	- what happens when user clicks on search result... close the search box and select that node in the tree.
+	
+	- !!! IMPORTANT: mindmap image is being downloaded everytime the front page is loaded?
+		investigate.. set firebug on net mode and play around the tool and see what get and post requests are being sent.
+	
+	- z index now in use, check if IE 7 still works. probably not. if so, tell chris that we do not support that
+	
+	- ask CHRIS: tooltip for risk context, and all other buttons
+	
+	
+	- grist3 patient management does not log mygrist access... fix this so that all logins and access is logged.
+	- sort out the last page... with a questionnair
+	- put the ordering of button in dialog back again, without fucking up IE7
+	- the read-only comment boxes remain same colour as the writable comment boxes in chrome and ie.. make them explicitly grey to make it obvious that they are read only
+
+	
+			
+	- plugin to check which browser and give a msg accrodingly
+		- IMP: put a check in the beginning that gives a warning if ie6 is being used.
+	- javascript is being cached by chrome.... how do i prevent this?
+	- script loader, so that the screen does not stay blank while all the js files are downloaded
+	- test in safari!!! if we are targetting home users, we must take into account macs
+	- if the help html has been downloaded once, it should be stored and downloaded again.
+	
+	
+	
+	- menu space problem, maybe combine together some items
+	- shoot video for help
+	- get new pc in office for windows testing
+	
+	- BIG PROBLEM: browser is caching the js... so if i update the code, it does not affect people who have cached version of older code...SORT IT OUT!!!
+	
+	
+	- in detailed help, add hyperlinks... make them open in a new window
+	- read the help thoroughly and put in some pictures if possible
+	- multiple choice questions???? tool does not support them yet
+	- How to answer myGRiST questions >> scale ... add more text.. saying what does 0 and 10 mean and that they can see help
+	
+	- ANNONYMOUS login
+	- COPYRIGHT
+	- FINAL QUESTIONNAIR.... either make it ok or remove it.
+	
+	- check all the features in chrome and ie8+
+	
+	- ADVANCE: the demographics hack may have messed up the tree painting after classification... TEST to confirm
+	
+	
+	- PROBLEM: after the questions have been rendered, the scroll is set to top... but if the user has already started 
+			to scroll down by the time the rendering was finished, it should not just go to top..
+			think how to solve this.
+	
+	
+	
+	
+	- need to put in async download of xml files... at the moment the browser window stays blank till all the javascript and xmls are loaded..
+		- actually can we have a little page that shows that javascript is being loaded... like a javascript-loaded. with a progress bar.
+	
+			
+					
+	- optimisation: anything that repeats for all the questions must be put in while rendering the question.
+		for example the tooltips, the validation error msg etc.. anything that is static.. they should be injected after the questions have been rendered.
+		- the validation error div should be empty for all the questions. only when an error is detected, should it be populated.
+		- similarly look for any html that does not absolutely need to be there... 
+		 
+	- big problem: sometimes the mindmap image takes a long time to download... meanwhile the tool look like it has crashed...
+			- show a proper indication that the tool is still loading...
+			- same for downloading the xml files
+		-TEST THIS ^^^^
+	
+		
+	- the plus icon in the tree is a little off... by few pixels... wasn't always like that.
+			did it happen after introducing the large resize handle to the right of the tree... quite possibly
+	
+	- fucking IE7 again: top menu item fucked. appear in 2 lines instead of one.. fix. IE 8 ok.
+		- progress bar fucked too... is it even worth spending time to get everything to work in this fucking shit piece of junk
+	
+	
+	
+	- put tooltips to show how much risk a particular option has. just a colour is not enough.
+	- the text in risk judgement window should not just be 8. it should be something like "8/10 - very high risk"
+	- ASK CHRIS: change the name of home screen to something like see all risks...
+	- ask chris: what happens when assessment finishes.. do we ask for feedback? 
+	- disable log output in production version
+	- add a contact us button in the menu
+	
+	- put a slogan next to title.. instead of "javascript edition"
+	- ask chris: confirm if max comment length of 2000 chars is ok
+	- ASK CHRIS: tooltips for all menu options
+	
+	- all the new features added are not complaint with advance... fix that.
+
+	- optimisation idea: don't put tooltip text for icons that have static help.. that is same for all the questions
+			assign them tooltip afer the questions have been rendered... will this really help? maybe not! 
+	
+	- back button problem: for now atleast stop the user from clicking there.. or just disable the navigation menu
+	
+	
+	- what if someone put some html tag in comment... how will it appear in the comment box and the finish gui?? should i be concerned?
+	- why do all comments in AT have two &#10;&#10; attached at the end? investigate
+	
+	- answering layer and filter questions do not reflect on repeated instances of the same questions.. this is a problem only on the all risk screen
+	- ask chris: disable click in the center. many layer questions are repeated, so are demographic questions. does not make sense.
+		why some labels start with capital and some in small
+		- should "my risks" be just a number? or some text along with it? check abu's report
+		
+	
+	- try again with a full tree and note the load times.. i have a feeling its a bit bloated now... how can we make this more streamlined
+	
+	
+	
+	
+	- filter and layer listen functions were written in a way that they expect to be called during initial rendering too. Now that has changed as the initial rendering is now
+		done by traverseTree method.. so remove the extra code that might still be in there and make it more efficient.
+	- check if the mg colours are in the same bracket as Abu's tool.
+	- if a leaf node has no question or even a code, an error should be sent to console.
+	- IMP: in-application navigation using url so that pressing back button does not take them unintentionally out of the tool.
+	- if value-mg list is incorrect, color selection should have difficulty being calculated.. should log an error msg... instead of just showing null...
+	- parsers are quite brittle right now... should be more robust. so in case there is a problem with the xmls then it would not completely crash as it does now.	
+	- spell check as done for PHP tool?	 
+	
+	
+	- ask ABU: can the search tool from his tool be used in this one.
+	- ask ABU: the nodes in AT are not separated by line break... hope that is ok with the rest of the system.
+		- also the ordering of assessment date and status is at the bottom as opposed to the beginning as shown in the example in spec.. hope this does not make any difference
+	- ask ABU: for checking answer constraints, scale up the granuality or scale it down to the other answer?
+	- for abu: i am assuming the root node of cat to always have a node code... is this enforeced in the spec?
+	- ask ABU: why does the auto answer have to have the full path when a given node-code will have the same answer regardless of the path... so there is no need of the path!, just a code will do.
+		- same for answer-constraint.. should not need the whole path.
+	
+	 
+	- mind map must have risk context... NOT implemented yet
+	- ask CHRIS: comments and management comment to be location specific.. has abu updated the reporting mechanism to handle this?
+			- at the moment same comment and management comment applied to all the nodes.
+	- ask CHRIS: is the pin icon ok or you would rather want the padlock?
+	- ASK CHRIS: can i store risk context in AT so that user does not have to select risk context on resume and repeat assessments
+	- ASK CHRIS: demographic questions should not have colours.. ask chris
+	- ASK CHRIS: service attribute ???
+	- ask chris: headers are shown only for concept nodes that do not have any filter or layer question attached. if there is a filter or layer then that question acts as a
+					header itself and no additonal header should be presented... confirm this hypothesis with chris
+	- ASK Chris: tell chris about the new filter question behavior and get it authorised
+	- the tool should not be opened in a new window... should open just like php tool does.
+	- replace confirm box with a nice jquery dialogue box...context: when answer-constraint is not satisfied and an error msg comes up
+	
+	
+	- look up all TODO items flagged in the code.
+	- a comment should be unique to a node. changing it should not have any effect on other repeated questions.
+	 		- at the moment, it behaves as answer.. changing it at one place changes it at all repeating occurances
+	- loading of the tree to be non-blocking with a progress bar (async)
+	- make the tool more robust.. better error handling.
+	- put a border on mindmap on mouse hover [tried with the plugin maphighlight but it messes up the center alingnment of the image.]
+	- put an information message just above the mindmap for fresh assessments saying what they must do now.. this should have a close button to get rid of.
+	- loading animation freezes in IE.. doesn't seem like a work-around exists.. try again later.
+		
+	
+COSMETIC CHANGES
+	- maybe put a border or something around icons when they are hovered over.. will make the interface feel more responsive
+	- when an info icon is cliked, show tooltip straight away.
+	- sandy color for questions that are nested.. worry about this later
+	- maybe: put a close button on comment and management box?
+	- consider using patters instead of solid colours for showing risks in questions answers. would be easier on the eyes
+	- the tooltips for buttons should be like the buttons on youtube page: transcript, statistics, report button.. check out the tooltip on those and use the same
+	
+
+FOR LATER
+	- the colour scheme used for ICONS for classification is still green to red,.. grist uses violet colour scheme.. update this when we start doing classificition in grist
+	- move window.timer1 to another better location.. maybe under globalConstants.temp.something
+	- move all the html to a separate file called template or something
+
+
+
+DONE
+	- filter close/open
+	- colors in questions
+	- integrate with server
+	- animation for loading...
+	- bottons on top
+	- help for questions						
+	- FIXED: when a question is answered, all its repeating instances get the same colour as the mg calculated for the question just changed.
+				this should not have happened. the colour of these other questions should be determined by their own value-mg list
+	- DONE: remove risk judgement questions - flag them at startup		
+	- DONE: inline divs not working in IE7 (scale question options)
+	- FIXED: error if a scale has an answer and then set to dk, colors don't revert back.
+	- DONE: layout/ indentation fix... questions with header.
+	- DONE: classifier
+	- DONE: Tree to remember the open nodes when going between mind map and questions
+	- DONE: IMP: make sure the ajax requests are not cached in any way!!! > double check this
+	- DONE: show help nodes for questions.
+	- DONE: classifier: the tree resets... it should remember which nodes were open... how is this going to be impelemented.
+	- DONE: IE problem: date questions are not showing colours when an answer is put in.
+	- DONE: what does save button do??? same as suspend except for not ending the assessment? check the spec and talk to abu
+	- DONE: AT to be not generated afresh. take in the at that has been passed and add/remove things from it.. so that any additional information in AT is not lost.
+	- DONE: auto-answer implemented
+	- DONE: answer-previous -implement this in at parser and in question renderer
+	- DONE: persistent="hard|soft" -will also work with previous answer... see spec and implement this properly
+	- DONE: auto-answer
+	- DONE: when filter answered yes, auto answer comes in play... dgt spec 3.1.2
+	- DONE: color scheme is wrong.. should use purple.
+	- DONE: dk should not be coloured... confirm with CHRIS
+	- DONE: when a scale button needs to be clicked, we should be able to just click on the box and the button inside should automatically be selected. NOTE: does not work in IE7. ie8 is ok
+	- DONE: use the font color and background colour similar to cineworld website: http://www.cineworld.co.uk/whatson?cinema=56 , looks nice and easy on eyes
+	- DONE: tree must allow to be resized with dragging
+	- DONE: sort out the comments.. with date prefixed as changed in spec
+	- DONE: 80 char max length for question text.. 900px max width for questions
+	- DONE: tooltips for buttons in headers
+	- DONE: tree resize to be persistent
+	- DONE: previous answer text a little smaller
+	- DONE: tree handler for resizing to be bigger
+	- DONE: get nice padlock icons for the tool... replace the pins
+	- DONE: progress bar
+	- DONE: problem: when risk judgement clicked from mindmap screen.. nothing happens. fix that.
+	- DONE: put a maximum limit on the length of comment and managment comment to avoid any misuse. [limit set to 2000 chars]
+	- DONE: rename save->save answers. suspend>suspend assessment.. 2 lines?
+	- DONE: - problem with scroll... when the tool is launched, it is already scrolled halfway through.. it happens if the tool was launched last time and scrolled down a little... check
+				- it seems to remember the scroll from before.. a firefox problem.(remember scroll position on reload of a page... check how this can be avoided and are affected if the tool starts in a new window)
+				- [solved by using .scrollTop(0) in notifyFinish]
+	- DONE: it is not immediately obvious that the tree is resizable... do something about it.
+	- DONE: help button
+	- DONE: risk judgement
+	- DONE: finish assessment gui
+	- DONE: risk assessment window
+	- DONE: redo menu for both pages
+	- DONE: put a line break in questions that are too long. 80 chars.
+	- DONE: the comment box opens up with the scroll bar somewhere in the middle! why? check and fix
+	- DONE: add question button : "show this node in the tree"
+	- DONE: interface for key
+	- DONE: context menu for tree?
+	- DONE: overall assessment notes??? implement this
+	- DONE: in questionnair layout, the scrollbar resets even after a filer or layer is opened... this should not happen... should only reset when questionair layout run for the first time
+	- DONE:make the home screen button not disappear.
+	- DONE: fix scrollbar on quick help dialog
+	- DONE: position the risk judgement div in the middle of the screen.
+	- DONE: DISASTER: THE ORDERING OF THE QUESTIONS IS MESSES UP.... SOME SN NODE APPEAR BEFORE HTO NODE... IN CAT, THE ROOT SN NODE APPEARS AFTER HTO!!!!!!!
+			THIS IS CRITICAL.... FIX IT ASAP.
+			possible solution: before rendering the questions, make a method do the layout first without any fancy pseudo-multi-threading.
+	- DONE: previous answer: make the text a little darker.. it grey on grey background
+	- DONE: risk judgement must be in the middle
+	- DONE: disable click in the center
+	- DONE: don't count duplicate questions for progress bar. so it shows questions they actually have to answer.
+	- DONE: if questionnair panel is scrolled half way, then finish dialog appears. now if we scroll the whole thing moves up or down... not sure if we want that.
+	- DONE: progress bar now updates everytime a node is clicked in the tree
+	- DONE: management to be called my management or something
+	- DONE: risk context
+	- DONE: demographic answers being picked up by the report??? check.
+	- DONE: each question should have a button that highlights the node in the tree
+	- DONE: risk context to be redone... put dropdown box next to the progress bar
+	- DONE: answer attribute in AT can be any case... make sure this is enforced everywhere....
+	- DONE: in previous answer, make the answer appear in lower case.. looks better
+	- DONE: PROBLEM: my risk assessment window has scroll bar set to bottom!!!
+	-->
+
+	<head>
+		
+
+		<link rel="stylesheet" href="css/question-panel-style.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		<link rel="stylesheet" href="css/layout-prototype1.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		<link rel="stylesheet" href="css/socnet.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		
+		<link rel="stylesheet" href="css/tree-skin/ui.dynatree.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		<link rel="stylesheet" href="css/ui.dynatree-custom.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		<link rel="stylesheet" href="css/contextmenu/jquery.contextMenu.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		
+
+		<script src="libraries/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libraries/jquery-ui-1.10.1.custom.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libraries/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libraries/jquery.dynatree.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/jquery-redmond/jquery-ui-1.10.1.custom.min.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+		<script src="libraries/jquery.contextMenu.js" type="text/javascript" charset="utf-8"></script>
+		<script src="libraries/jquery.textfill.min.js" type="text/javascript" charset="utf-8"></script>
+		
+
+		<script src="scripts/GlobalVariables.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/Utilities.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/Launcher.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/LayoutManager.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/XMLInput.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/XMLOutput.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/Questions.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/QuestionRenderer2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/Socnet.js" type="text/javascript" charset="utf-8"></script>
+		<script src="scripts/ActionAlert.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script type="text/javascript">
+			$(function() {
+				
+				
+				
+				//========================================================================
+				//					SERVER LAUNCH
+				//========================================================================
+				/*
+				GlobalVariables.launchParams = {sid: "<?php echo $SID; ?>",
+							patientId: "<?php echo $theClientID; ?>",
+							assessmentId: "<?php echo $assessmentID; ?>",
+							assessmentType: "<?php echo $assessmentType; ?>",
+							warned: "<?php echo $warned; ?>",
+							metaPatientName: "<?php echo $metaPatientName; ?>"};
+				
+				Launcher.initialiseForGristSERVERLaunch(GlobalVariables.launchParams);
+				*/
+				
+				
+				
+				//========================================================================
+				//					LOCAL LAUNCH
+				//========================================================================
+				//Launcher.initialiseForGristLocalLaunch(true);
+				
+				Launcher.initialiseForGristLocalLaunch(false);
+				
+				
+				//Launcher.initialiseForAdvanceLocalLaunch(true);
+				
+			});
+			
+			
+			
+			
+		</script>
+
+	</head>
+	<body></body>
+</html>

@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!--
+
+The attribute 'code-path' is the link from the mindmap box to the corresponding node in CAT.
+
+Sometimes, one box in mindmap may link to different nodes in CAT (example, one in sucide, one in harm-to-others etc ). In such cases, put all the links in the same code-path attributes separated by '##'
+example: code-path="mental-health-risk,suic,gen-feel-emot ## mental-health-risk,sh,gen-feel-emot ## mental-health-risk,hto,gen-feel-emot ## mental-health-risk,sn,gen-feel-emot ## mental-health-risk,vuln-su,gen-feel-emot"
+
+If the code-path attribute value is empty, no link is created in the mindmap.
+
+- title attribute is necessary.
+
+ATTRIBUTES
+- showProgressIcon
+- if true: progress icons(tick) shown on the mindmap. usually set to true for end nodes.
+- if missing, treated as false
+- default: false
+- if true, clicking on this will activate the screening mode
+
+--> 
+
+<mindmap>
+	<map name="fm_imagemap" id="fm_imagemap">
+		<area shape="rect" href="#FMID_911765918FM" alt="" title="" coords="347,22,623,508" />
+		<area shape="rect" showProgressIcon = "right" href="#FMID_708587450FM" alt="my personal details" title="my personal details" coords="539,11,669,34" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-demog"/>
+		<area shape="rect" href="#FMID_1137279856FM" alt="my personality and way of thinking" title="my personality and way of thinking" coords="545,66,670,108" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-person-thinking"/>
+		<area shape="rect" showProgressIcon = "right" href="#FMID_1151251422FM" alt="personality" title="personality" coords="693,37,780,59" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-person-thinking,gen-personality"/>
+		<area shape="rect" showProgressIcon = "right" href="#FMID_1996417330FM" alt="mental  cognitive faculties" title="mental cognitive faculties" coords="691,73,884,95" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-person-thinking,ment-fac"/>
+		<area shape="rect" showProgressIcon = "right" href="#FMID_1604049278FM" alt="insight  responsibility" title="insight  responsibility" coords="692,108,852,130" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-person-thinking,insight-resp"/>
+		<area shape="rect" href="#FMID_630164916FM" alt="keeping safe" title="keeping safe" code-path="mental-health-risk" coords="531,302,582,325"/>
+		<area shape="rect" href="#FMID_751432290FM" alt="feel vulnerable?" title="feel vulnerable?" coords="621,406,725,429" code-path="mental-health-risk,vuln-su"/>
+		<area shape="rect" showProgressIcon = "right" href="#FMID_815717573FM" alt="current situation and behaviour" title="current situation and behaviour" coords="751,408,937,428" code-path="mental-health-risk,vuln-su,vuln-specific,vuln-app-behavr"/>
+		<area shape="rect" href="#FMID_1718688338FM" alt="not looking after yourself?" title="not looking after yourself?" coords="633,368,733,391" code-path="mental-health-risk,sn"/>
+		<area shape="rect" showProgressIcon = "right" href="#FMID_1718688338FM" alt="current situation and behaviour" title="current situation and behaviour" coords="759,368,945,388" code-path="mental-health-risk,sn,sn-appearnce"/>
+		<area shape="rect"  href="#FMID_961537879FM" alt="feel like hurting yourself?" title="feel like hurting yourself?" coords="639,226,721,249" code-path="mental-health-risk,sh" />
+		<area shape="rect" showProgressIcon = "right" href="#FMID_815717573FM" alt="previous episodes" title="previous episodes" coords="756,205,875,225" code-path="mental-health-risk,sh,sh-specific,sh-past-curr-ep"/>
+		<area shape="rect" showProgressIcon = "right" href="#FMID_815717573FM" alt="current situation and behaviour" title="current situation and behaviour" coords="747,236,933,256" code-path="mental-health-risk,sh,sh-specific,self-harm-curr-sit-behav"/>
+		<area shape="rect" href="#FMID_1217542536FM" alt="feel llke hurting someone else?" title="feel llke hurting someone else?" coords="622,302,820,325" code-path="mental-health-risk,hto" />
+		<area shape="rect" showProgressIcon = "right" href="#FMID_815717573FM" alt="previous episodes" title="previous episodes" coords="855,268,974,288" code-path="mental-health-risk,hto,hto-specific,hto-past-curr-ep" />
+		<area shape="rect" showProgressIcon = "right" href="#FMID_815717573FM" alt="current situation and behaviour" title="current situation and behaviour" coords="846,299,1032,319" code-path="mental-health-risk,hto,hto-specific,harm-dam-curr-sit-behav" />
+		<area shape="rect" showProgressIcon = "right" href="#FMID_1718688338FM" alt="risk to dependents" title="risk to dependents" coords="854,329,1004,352" code-path="mental-health-risk,risk-dep" />
+		<area shape="rect" href="#FMID_815717573FM" alt="feel like ending it all?" title="feel like ending it all?" coords="635,159,703,182" code-path="mental-health-risk,suic" />
+		<area shape="rect" showProgressIcon = "right" href="#FMID_815717573FM" alt="previous episodes" title="previous episodes" coords="738,138,857,158" code-path="mental-health-risk,suic,sui-specific,suic-past-att"/>
+		<area shape="rect" showProgressIcon = "right" href="#FMID_815717573FM" alt="current situation and behaviour" title="current situation and behaviour" coords="729,169,915,189" code-path="mental-health-risk,suic,sui-specific,suic-curr-sit-behav"/>
+		<area shape="rect" href="#FMID_69188807FM"  alt="my state of mind" title="my state of mind" coords="252,27,360,50" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-state-mind"/>
+		<area shape="rect" showProgressIcon = "left" href="#FMID_1710911393FM" alt="feelings and emotions" title="feelings and emotions" coords="72,9,229,31" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-state-mind,gen-feel-emot"/>
+		<area shape="rect" showProgressIcon = "left" href="#FMID_1494736236FM" alt="my sense of self worth" title="my sense of self worth" coords="91,41,226,63" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-state-mind,gen-self-worth-p"/>
+		<area shape="rect" showProgressIcon = "left" href="#FMID_1137279856FM" alt="presentation at assessment" title="presentation at assessment" coords="143,76,355,99" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-presentation" />
+		<area shape="rect" href="#FMID_816180316FM" alt="my involvement with life and others" title="my involvement with life and others" coords="210,171,348,213" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-involve-social" />
+		<area shape="rect" showProgressIcon = "left" href="#FMID_1063785187FM" alt="my motivation and taking part" title="my motivation and taking part" coords="71,111,183,151" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-involve-social,motive-eng" />
+		<area shape="rect" showProgressIcon = "left" href="#FMID_1875165358FM" alt="my social world" title="my social world" coords="84,163,189,185" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-involve-social,gen-soc-contxt" />
+		<area shape="rect" showProgressIcon = "left" href="#FMID_1605043317FM" alt="my daily life" title="my daily life" coords="6,196,189,218" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-involve-social,gen-currnt-bhvr" />
+		<area shape="rect" showProgressIcon = "left" href="#FMID_244183090FM" alt="drink and drugs" title="drink and drugs" coords="62,228,190,250" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-involve-social,gen-subs-misuse" />
+		<area shape="rect" href="#FMID_731878243FM" alt="my health and care" title="my health and care" coords="248,303,374,326" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-health-care" />
+		<area shape="rect" showProgressIcon = "left" href="#FMID_320280543FM" alt="my mental health" title="my mental health" coords="121,266,226,288" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-health-care,mental-health"/>
+		<area shape="rect" showProgressIcon = "left" href="#FMID_285407468FM" alt="my physical health" title="my physical health" coords="108,304,221,326" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-health-care,gen-phys-hlth-prb"/>
+		<area shape="rect" showProgressIcon = "left" href="#FMID_1388309352FM" alt="my care" title="my care" coords="57,339,219,361" code-path="mental-health-risk,genericRootNode-added-by-tool,gen-health-care,gen-meds-therpy"/>
+		<area shape="rect" href="#FMID_1443952917FM" alt="my life journey" title="my life journey" coords="235,394,389,417" code-path="mental-health-risk,genericRootNode-added-by-tool,adv-life-event" />
+		<area shape="rect" showProgressIcon = "left" href="#FMID_1486350240FM" alt="abuse to person" title="abuse to person" coords="87,373,205,395" code-path="mental-health-risk,genericRootNode-added-by-tool,adv-life-event,gen-life-abuse" />
+		<area shape="rect" showProgressIcon = "left" href="#FMID_1334510522FM" alt="other challenging experiences" title="other challenging experiences" coords="0,409,211,431" code-path="mental-health-risk,genericRootNode-added-by-tool,adv-life-event,other-chall-exp"/>
+
+	</map>
+
+</mindmap>

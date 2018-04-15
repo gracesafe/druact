@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+
+<!--
+a location of xyz would map to ./grist/mindmaps/xyz/mindmap.xml
+and ./grist/mindmaps/xyz/mindmap-image.png
+
+if no population is found, the "default" one would be used. 
+
+
+-->
+<mindmap-mappings>
+		<mapping population="service-user" location="help-files-for-serviceuser" />
+		<mapping population="service-user-dutch" location="help-files-for-serviceuser" />
+		<mapping population="friends-supporters" location="help-files-for-friends-supporters" />
+		<mapping population="working-age" location="help-files-for-all-others" />
+		<mapping population="child-adolescent" location="help-files-for-all-others" />
+		<mapping population="older" location="help-files-for-all-others" />
+		<mapping population="iapt" location="help-files-for-all-others" />
+		<mapping population="learning-disabilities" location="help-files-for-all-others" />
+		<mapping population="hybrid-forensic-working-age" location="help-files-for-all-others" />
+		<mapping population="hybrid-forensic-child-adolescent" location="help-files-for-all-others" />
+		<mapping population="hybrid-forensic-older" location="help-files-for-all-others" />
+		<mapping population="default" location="help-files-for-all-others" />
+</mindmap-mappings>

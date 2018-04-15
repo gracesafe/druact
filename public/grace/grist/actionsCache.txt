@@ -1,0 +1,2427 @@
+{
+  "status": "OK",
+  "actions": [
+    {
+      "id": "1",
+      "node_code": "suic",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.4,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "1"
+    },
+    {
+      "id": "2",
+      "node_code": "suic",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.4,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "2"
+    },
+    {
+      "id": "3",
+      "node_code": "sh",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.4,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "1"
+    },
+    {
+      "id": "4",
+      "node_code": "hto",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.4,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "1"
+    },
+    {
+      "id": "5",
+      "node_code": "risk-dep",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.4,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "1"
+    },
+    {
+      "id": "6",
+      "node_code": "sn",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.4,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "1"
+    },
+    {
+      "id": "7",
+      "node_code": "vuln-su",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.4,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "1"
+    },
+    {
+      "id": "8",
+      "node_code": "absconding",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.4,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "1"
+    },
+    {
+      "id": "9",
+      "node_code": "suic-curr-int",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "3"
+    },
+    {
+      "id": "10",
+      "node_code": "suic-curr-int",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [
+        "working-age",
+        "child-adolescent"
+      ],
+      "template_id": "2"
+    },
+    {
+      "id": "11",
+      "node_code": "suic-curr-int",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.4,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "1"
+    },
+    {
+      "id": "12",
+      "node_code": "suic-ideation",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.4,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "1"
+    },
+    {
+      "id": "13",
+      "node_code": "suic-ideation",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "2"
+    },
+    {
+      "id": "14",
+      "node_code": "suic-ideation",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "3"
+    },
+    {
+      "id": "15",
+      "node_code": "suic-fam-hist",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "11"
+    },
+    {
+      "id": "16",
+      "node_code": "sh-most-rec-ep",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.4,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "1"
+    },
+    {
+      "id": "17",
+      "node_code": "sh-freq-eps",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.4,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "1"
+    },
+    {
+      "id": "18",
+      "node_code": "sh-most-rec-ep",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.6,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "12"
+    },
+    {
+      "id": "19",
+      "node_code": "sh-freq-eps",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.3,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "12"
+    },
+    {
+      "id": "20",
+      "node_code": "sh-incrse-eps",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.4,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "1"
+    },
+    {
+      "id": "21",
+      "node_code": "sh-ideation",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.4,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "1"
+    },
+    {
+      "id": "22",
+      "node_code": "sh-incrse-eps",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.6,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "12"
+    },
+    {
+      "id": "23",
+      "node_code": "sh-ideation",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.3,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "12"
+    },
+    {
+      "id": "24",
+      "node_code": "sn-appearnce",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "16"
+    },
+    {
+      "id": "25",
+      "node_code": "sn-appearnce",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "17"
+    },
+    {
+      "id": "26",
+      "node_code": "vuln-app-behavr",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "18"
+    },
+    {
+      "id": "27",
+      "node_code": "vuln-app-behavr",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "19"
+    },
+    {
+      "id": "28",
+      "node_code": "falls",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "20"
+    },
+    {
+      "id": "29",
+      "node_code": "falls",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "21"
+    },
+    {
+      "id": "30",
+      "node_code": "falls",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "22"
+    },
+    {
+      "id": "31",
+      "node_code": "gen-mood-swings",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "23"
+    },
+    {
+      "id": "32",
+      "node_code": "gen-mood-swings",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "122"
+    },
+    {
+      "id": "33",
+      "node_code": "gen-negative-self",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "16"
+    },
+    {
+      "id": "34",
+      "node_code": "gen-negative-self",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "122"
+    },
+    {
+      "id": "35",
+      "node_code": "gen-plans-future",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "24"
+    },
+    {
+      "id": "37",
+      "node_code": "gen-angry-emotns",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "15"
+    },
+    {
+      "id": "38",
+      "node_code": "gen-angry-emotns",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "26"
+    },
+    {
+      "id": "39",
+      "node_code": "gen-anx-emotns",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "27"
+    },
+    {
+      "id": "40",
+      "node_code": "gen-anx-emotns",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "28"
+    },
+    {
+      "id": "41",
+      "node_code": "gen-anx-emotns",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "29"
+    },
+    {
+      "id": "42",
+      "node_code": "gen-helpless",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "30"
+    },
+    {
+      "id": "43",
+      "node_code": "gen-helpless",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "25"
+    },
+    {
+      "id": "44",
+      "node_code": "gen-sad",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "10"
+    },
+    {
+      "id": "46",
+      "node_code": "gen-sad",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "31"
+    },
+    {
+      "id": "47",
+      "node_code": "gen-sad",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "33"
+    },
+    {
+      "id": "48",
+      "node_code": "gen-distress",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "34"
+    },
+    {
+      "id": "49",
+      "node_code": "gen-distress",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "35"
+    },
+    {
+      "id": "50",
+      "node_code": "gen-jealous",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "36"
+    },
+    {
+      "id": "51",
+      "node_code": "worthlessness",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "25"
+    },
+    {
+      "id": "52",
+      "node_code": "worthlessness",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "37"
+    },
+    {
+      "id": "53",
+      "node_code": "gen-assertive",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "38"
+    },
+    {
+      "id": "54",
+      "node_code": "gen-dependence",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "39"
+    },
+    {
+      "id": "55",
+      "node_code": "gen-dependence",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "25"
+    },
+    {
+      "id": "56",
+      "node_code": "gen-dependence",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "38"
+    },
+    {
+      "id": "57",
+      "node_code": "gen-controlling",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "40"
+    },
+    {
+      "id": "58",
+      "node_code": "gen-controlling",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "41"
+    },
+    {
+      "id": "59",
+      "node_code": "gen-coping-abil",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "42"
+    },
+    {
+      "id": "60",
+      "node_code": "gen-coping-abil",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "43"
+    },
+    {
+      "id": "61",
+      "node_code": "gen-impaird-cog",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "44"
+    },
+    {
+      "id": "62",
+      "node_code": "gen-impaird-cog",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "45"
+    },
+    {
+      "id": "63",
+      "node_code": "gen-dep-stage",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "31"
+    },
+    {
+      "id": "64",
+      "node_code": "gen-dep-stage",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "31"
+    },
+    {
+      "id": "65",
+      "node_code": "gen-mania",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "50"
+    },
+    {
+      "id": "66",
+      "node_code": "gen-mania",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "51"
+    },
+    {
+      "id": "67",
+      "node_code": "gen-voice-hal",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "47"
+    },
+    {
+      "id": "68",
+      "node_code": "gen-paranoid-del",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "48"
+    },
+    {
+      "id": "69",
+      "node_code": "gen-paranoid-del",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "49"
+    },
+    {
+      "id": "70",
+      "node_code": "tinnitus",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "52"
+    },
+    {
+      "id": "71",
+      "node_code": "diabetes",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "59"
+    },
+    {
+      "id": "72",
+      "node_code": "diabetes",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "60"
+    },
+    {
+      "id": "73",
+      "node_code": "multiple-sclerosis",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "61"
+    },
+    {
+      "id": "74",
+      "node_code": "multiple-sclerosis",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "62"
+    },
+    {
+      "id": "75",
+      "node_code": "heart-disease",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "53"
+    },
+    {
+      "id": "76",
+      "node_code": "heart-disease",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "54"
+    },
+    {
+      "id": "77",
+      "node_code": "kidney-disease",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "55"
+    },
+    {
+      "id": "78",
+      "node_code": "kidney-disease",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "56"
+    },
+    {
+      "id": "79",
+      "node_code": "lung-disease",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "65"
+    },
+    {
+      "id": "80",
+      "node_code": "lung-disease",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "66"
+    },
+    {
+      "id": "81",
+      "node_code": "arthritis",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "57"
+    },
+    {
+      "id": "82",
+      "node_code": "arthritis",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "58"
+    },
+    {
+      "id": "83",
+      "node_code": "high-blood-pressure",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "67"
+    },
+    {
+      "id": "84",
+      "node_code": "high-blood-pressure",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "68"
+    },
+    {
+      "id": "85",
+      "node_code": "gen-phys-hlth-deg-diag",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "69"
+    },
+    {
+      "id": "86",
+      "node_code": "gen-phys-hlth-deg-diag",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "70"
+    },
+    {
+      "id": "87",
+      "node_code": "gen-phys-hlth-deg-diag",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "71"
+    },
+    {
+      "id": "88",
+      "node_code": "gen-phys-hlth-deg-diag",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "72"
+    },
+    {
+      "id": "89",
+      "node_code": "gen-phys-hlth-deg-diag",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "73"
+    },
+    {
+      "id": "90",
+      "node_code": "gen-phys-hlth-pain",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "84"
+    },
+    {
+      "id": "91",
+      "node_code": "gen-phys-hlth-disa",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "81"
+    },
+    {
+      "id": "92",
+      "node_code": "gen-phys-hlth-disa",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "82"
+    },
+    {
+      "id": "93",
+      "node_code": "gen-phys-hlth-disa",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "83"
+    },
+    {
+      "id": "94",
+      "node_code": "gen-com-imp",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "74"
+    },
+    {
+      "id": "95",
+      "node_code": "gen-com-imp",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "75"
+    },
+    {
+      "id": "96",
+      "node_code": "gen-com-imp",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "76"
+    },
+    {
+      "id": "97",
+      "node_code": "gen-com-imp",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "77"
+    },
+    {
+      "id": "98",
+      "node_code": "gen-com-imp",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "78"
+    },
+    {
+      "id": "99",
+      "node_code": "gen-com-imp",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "79"
+    },
+    {
+      "id": "100",
+      "node_code": "gen-com-imp",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "80"
+    },
+    {
+      "id": "101",
+      "node_code": "gen-meds-concord",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "120"
+    },
+    {
+      "id": "102",
+      "node_code": "gen-serv-perc-supp",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "121"
+    },
+    {
+      "id": "103",
+      "node_code": "motive-eng",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "89"
+    },
+    {
+      "id": "104",
+      "node_code": "motive-eng",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "90"
+    },
+    {
+      "id": "105",
+      "node_code": "gen-eng-world",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "33"
+    },
+    {
+      "id": "106",
+      "node_code": "gen-eng-world",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "91"
+    },
+    {
+      "id": "107",
+      "node_code": "gen-eng-world",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "90"
+    },
+    {
+      "id": "108",
+      "node_code": "gen-phys-withd",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "33"
+    },
+    {
+      "id": "109",
+      "node_code": "gen-phys-withd",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "91"
+    },
+    {
+      "id": "110",
+      "node_code": "gen-phys-withd",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "90"
+    },
+    {
+      "id": "111",
+      "node_code": "gen-mental-withd",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "33"
+    },
+    {
+      "id": "112",
+      "node_code": "gen-mental-withd",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "90"
+    },
+    {
+      "id": "113",
+      "node_code": "gen-motivation",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "90"
+    },
+    {
+      "id": "114",
+      "node_code": "gen-listless",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "92"
+    },
+    {
+      "id": "115",
+      "node_code": "gen-relatnshps",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "42"
+    },
+    {
+      "id": "116",
+      "node_code": "gen-relatnshps",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "43"
+    },
+    {
+      "id": "117",
+      "node_code": "gen-relatnshps",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "93"
+    },
+    {
+      "id": "118",
+      "node_code": "gen-relat-detr",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "95"
+    },
+    {
+      "id": "119",
+      "node_code": "gen-relat-detr",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "94"
+    },
+    {
+      "id": "120",
+      "node_code": "gen-relat-detr",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "96"
+    },
+    {
+      "id": "121",
+      "node_code": "gen-relat-detr",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "19"
+    },
+    {
+      "id": "122",
+      "node_code": "gen-relat-detr-chg",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "95"
+    },
+    {
+      "id": "123",
+      "node_code": "gen-relat-detr-chg",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "94"
+    },
+    {
+      "id": "124",
+      "node_code": "gen-relat-detr-chg",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "96"
+    },
+    {
+      "id": "125",
+      "node_code": "gen-relat-detr-chg",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "19"
+    },
+    {
+      "id": "126",
+      "node_code": "gen-living-arr",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "97"
+    },
+    {
+      "id": "127",
+      "node_code": "gen-living-arr",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "98"
+    },
+    {
+      "id": "128",
+      "node_code": "gen-living-arr",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "99"
+    },
+    {
+      "id": "129",
+      "node_code": "gen-perc-debt-anx",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "43"
+    },
+    {
+      "id": "130",
+      "node_code": "gen-perc-debt-anx",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "100"
+    },
+    {
+      "id": "131",
+      "node_code": "gen-perc-debt-anx",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "101"
+    },
+    {
+      "id": "132",
+      "node_code": "gen-perc-debt-anx",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "102"
+    },
+    {
+      "id": "133",
+      "node_code": "gen-perc-debt-anx",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "103"
+    },
+    {
+      "id": "134",
+      "node_code": "gen-perc-debt-anx",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "104"
+    },
+    {
+      "id": "135",
+      "node_code": "gen-perc-debt-anx",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "105"
+    },
+    {
+      "id": "136",
+      "node_code": "gen-poverty",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "43"
+    },
+    {
+      "id": "137",
+      "node_code": "gen-poverty",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "105"
+    },
+    {
+      "id": "138",
+      "node_code": "gen-unint-risk-behavr",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "110"
+    },
+    {
+      "id": "139",
+      "node_code": "gen-unint-risk-behavr",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "111"
+    },
+    {
+      "id": "140",
+      "node_code": "gen-unint-risk-behavr",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "112"
+    },
+    {
+      "id": "141",
+      "node_code": "gen-unint-risk-behavr",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "113"
+    },
+    {
+      "id": "142",
+      "node_code": "gen-sleep-dist",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "106"
+    },
+    {
+      "id": "143",
+      "node_code": "gen-sleep-dist",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "107"
+    },
+    {
+      "id": "144",
+      "node_code": "gen-day-actvty",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "108"
+    },
+    {
+      "id": "145",
+      "node_code": "gen-day-actvty",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "109"
+    },
+    {
+      "id": "146",
+      "node_code": "gen-day-actvty-lev",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "108"
+    },
+    {
+      "id": "147",
+      "node_code": "gen-day-actvty-lev",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "109"
+    },
+    {
+      "id": "148",
+      "node_code": "gen-eating-dis",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "85"
+    },
+    {
+      "id": "149",
+      "node_code": "gen-eating-dis",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "86"
+    },
+    {
+      "id": "150",
+      "node_code": "gen-eating-dis",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "87"
+    },
+    {
+      "id": "151",
+      "node_code": "gen-diet-eating",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "23"
+    },
+    {
+      "id": "152",
+      "node_code": "gen-diet-eating",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "114"
+    },
+    {
+      "id": "153",
+      "node_code": "gen-diet-weigt-chg",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "115"
+    },
+    {
+      "id": "154",
+      "node_code": "gen-diet-weigt-chg",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "116"
+    },
+    {
+      "id": "155",
+      "node_code": "gen-diet-weigt-chg",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "87"
+    },
+    {
+      "id": "156",
+      "node_code": "gen-diet-weigt-chg",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "85"
+    },
+    {
+      "id": "157",
+      "node_code": "gen-diet-weigt-chg",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "86"
+    },
+    {
+      "id": "158",
+      "node_code": "gen-alc-misuse",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "117"
+    },
+    {
+      "id": "159",
+      "node_code": "gen-alc-misuse",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "118"
+    },
+    {
+      "id": "160",
+      "node_code": "gen-drug-misuse",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "119"
+    },
+    {
+      "id": "161",
+      "node_code": "gen-life-abuse",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "18"
+    },
+    {
+      "id": "162",
+      "node_code": "gen-life-abuse",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "88"
+    },
+    {
+      "id": "163",
+      "node_code": "gen-life-abuse",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "19"
+    },
+    {
+      "id": "164",
+      "node_code": "suic-id-strngth",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "10"
+    },
+    {
+      "id": "165",
+      "node_code": "suic-id-hi-risk",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "10"
+    },
+    {
+      "id": "166",
+      "node_code": "suic-id-control",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "10"
+    },
+    {
+      "id": "167",
+      "node_code": "suic-ideation",
+      "action_type_table_name": "galassify_action_open_url_templates",
+      "action_type_id": "1",
+      "mg_lower": 0.5,
+      "mg_higher": 1,
+      "populations_restricted_to": [],
+      "template_id": "10"
+    },
+    {
+      "id": "175",
+      "node_code": "test-code",
+      "action_type_table_name": "galassify_action_send_email_templates",
+      "action_type_id": "2",
+      "mg_lower": 0.5,
+      "mg_higher": 0.9,
+      "populations_restricted_to": [],
+      "template_id": "1"
+    }
+  ],
+  "template": {
+    "galassify_action_open_url_templates": [
+      {
+        "id": "1",
+        "name": "carer-help-medium",
+        "url": null,
+        "text": "We recommend you seek help from either your GP, the 111 service, or any mental health practitioner currently helping\r\nyou."
+      },
+      {
+        "id": "2",
+        "name": "samaritans",
+        "url": "http://www.samaritans.org/how-we-can-help-you/contact-us",
+        "text": "Samaritans National 24 hour helpline 08457 90 90 90"
+      },
+      {
+        "id": "3",
+        "name": "mental-health-matters-helpline",
+        "url": null,
+        "text": "Crisis Helpline - Mental Health Matters Helpline available 24 hours a day, seven days a week - 0800 616171 from a landline or 0300 330 5487 from a mobile phone. Text: 07786 202242."
+      },
+      {
+        "id": "4",
+        "name": "nat-dom-viol",
+        "url": "http://www.nationaldomesticviolencehelpline.org.uk/",
+        "text": "National domestic violence 24 hour free helpline 0808 2000 247"
+      },
+      {
+        "id": "5",
+        "name": "emergency",
+        "url": "http://www.nhs.uk/service-search/accident-and-emergency-services/locationsearch/428",
+        "text": "Dial 999 or find your nearest Accident and Emergency Department."
+      },
+      {
+        "id": "6",
+        "name": "non-emergency",
+        "url": "http://www.nhs.uk/NHSEngland/AboutNHSservices/Emergencyandurgentcareservices/Pages/NHS-111.aspx",
+        "text": "Dial 111 to speak to a highly trained adviser about any type of\r\nhealth problem."
+      },
+      {
+        "id": "7",
+        "name": "mind-a-z",
+        "url": "http://www.mind.org.uk/information-support/mental-health-a-z/#",
+        "text": "MIND's A-Z of Mental Health."
+      },
+      {
+        "id": "8",
+        "name": "nhs-choices-a-z",
+        "url": "http://www.nhs.uk/Pages/HomePage.aspx",
+        "text": "Information and advice about a wide range of health topics."
+      },
+      {
+        "id": "9",
+        "name": "self-help-uk",
+        "url": "http://www.self-help.org.uk/",
+        "text": "Self-Help UK for finding local support groups across a range of conditions."
+      },
+      {
+        "id": "10",
+        "name": "mind-suicidal",
+        "url": "http://www.mind.org.uk/information-support/types-of-mental-health-problems/suicidal-feelings/?gclid=CKLz0Mi-icUCFWzHtAodLEUA0g#.VTdbE19wZdg",
+        "text": "Here is some help from MIND."
+      },
+      {
+        "id": "11",
+        "name": "alliance-hope",
+        "url": "http://www.allianceofhope.org/?gclid=CKTrveC_icUCFavpwgodWKsAOg",
+        "text": "Some help from the Alliance of Hope."
+      },
+      {
+        "id": "12",
+        "name": "mind-self-harm",
+        "url": "http://www.mind.org.uk/information-support/types-of-mental-health-problems/self-harm/?gclid=CIqRrtjBicUCFezHtAodmRIAhg#.VTdemF9wZdh",
+        "text": "Some help from MIND."
+      },
+      {
+        "id": "13",
+        "name": "mind-self-harm-child",
+        "url": "http://www.youngminds.org.uk/for_children_young_people/whats_worrying_you/self-harm?gclid=CN_0u9bCicUCFSnLtAodyWEATQ",
+        "text": "Some help from MIND."
+      },
+      {
+        "id": "14",
+        "name": "nhs-choices-anger",
+        "url": "http://www.nhs.uk/Conditions/stress-anxiety-depression/Pages/controlling-anger.aspx",
+        "text": "NHS Choices: how to control your anger."
+      },
+      {
+        "id": "15",
+        "name": "mind-anger",
+        "url": "http://www.mind.org.uk/information-support/types-of-mental-health-problems/anger/#.VVs9aV9wZdg",
+        "text": "Mind information and advice about controlling anger."
+      },
+      {
+        "id": "16",
+        "name": "mentalhealth-look-after",
+        "url": "http://www.mentalhealth.org.uk/help-information/10-ways-to-look-after-your-mental-health/",
+        "text": "10 ways to look after your mental health."
+      },
+      {
+        "id": "17",
+        "name": "netherfield",
+        "url": "http://www.wayaheaduk.org/",
+        "text": "Netherfield Association for help with daily living skills."
+      },
+      {
+        "id": "18",
+        "name": "mind-abuse",
+        "url": "http://www.mind.org.uk/information-support/guides-to-support-and-services/abuse/",
+        "text": "Mind information and advice about abuse (physical, emotional, financial) or harassment."
+      },
+      {
+        "id": "19",
+        "name": "safeline",
+        "url": "http://www.safeline.org.uk",
+        "text": "Safeline."
+      },
+      {
+        "id": "20",
+        "name": "diabetes-sm",
+        "url": "http://www.diabetesselfmanagement.com/managing-diabetes/general-health-issues/preventing-falls/",
+        "text": "Preventing falls."
+      },
+      {
+        "id": "21",
+        "name": "ageuk-falls",
+        "url": "http://www.ageuk.org.uk/walthamforest/information--advice/falls-prevention-advice/",
+        "text": "Age UK advice on falls."
+      },
+      {
+        "id": "22",
+        "name": "nhs-falls",
+        "url": "http://www.nhs.uk/conditions/Falls/Pages/Introduction.aspx",
+        "text": "NHS advice on falls."
+      },
+      {
+        "id": "23",
+        "name": "mind-mood-food",
+        "url": "http://www.mind.org.uk/information-support/tips-for-everyday-living/food-and-mood/#.VTej119wZdg",
+        "text": "MIND information and support about food and mood."
+      },
+      {
+        "id": "24",
+        "name": "mind-hopeless",
+        "url": "http://www.mind.org.uk/information-support/types-of-mental-health-problems/suicidal-feelings/?gclid=CKLz0Mi-icUCFWzHtAodLEUA0g#.VTdbE19wZdg",
+        "text": "Mind information and advice about feeling hopeless."
+      },
+      {
+        "id": "25",
+        "name": "together-uk-wellbeing",
+        "url": "http://www.together-uk.org",
+        "text": "Together for Mental Wellbeing for help with achieving a fulfilling and\r\nindependent life."
+      },
+      {
+        "id": "26",
+        "name": "nhs-anger",
+        "url": "http://www.nhs.uk/Conditions/stress-anxiety-depression/Pages/controlling-anger.aspx",
+        "text": "NHS Choices: how to control your anger."
+      },
+      {
+        "id": "27",
+        "name": "mind-anxiety",
+        "url": "http://www.mind.org.uk/information-support/types-of-mental-health-problems/anxiety-and-panic-attacks/#.VTegJl9wZdg",
+        "text": "MIND information and advice about anxiety and panic attacks."
+      },
+      {
+        "id": "28",
+        "name": "mind-panic",
+        "url": "http://www.mind.org.uk/information-support/archive-redirects/panic-attacks-tips-2013/#.VTenYl9wZdg",
+        "text": "MIND tips for coping with panic attacks."
+      },
+      {
+        "id": "29",
+        "name": "mind-phobias",
+        "url": "http://www.mind.org.uk/information-support/types-of-mental-health-problems/phobias/#.VTeoLV9wZdg",
+        "text": "MIND information and support about phobias."
+      },
+      {
+        "id": "30",
+        "name": "health-habits-helplessness",
+        "url": "http://www.the6healthyhabits.com/learned-helplessness.html",
+        "text": "Overcoming helplessness."
+      },
+      {
+        "id": "31",
+        "name": "mind-depression",
+        "url": "http://www.mind.org.uk/information-support/types-of-mental-health-problems/depression/#.VTeiEl9wZdg",
+        "text": "MIND depression advice and support."
+      },
+      {
+        "id": "32",
+        "name": "nhs-mood-anxiety-stress",
+        "url": "http://www.nhs.uk/conditions/stress-anxiety-depression/pages/low-mood-stress-anxiety.aspx",
+        "text": "NHS Choices Information and advice about stress, anxiety and\r\ndepression."
+      },
+      {
+        "id": "33",
+        "name": "mind-loneliness",
+        "url": "http://www.mind.org.uk/information-support/tips-for-everyday-living/loneliness/#.VTelgV9wZdg",
+        "text": "MIND information about coping with loneliness."
+      },
+      {
+        "id": "34",
+        "name": "mind-stress",
+        "url": "http://www.mind.org.uk/information-support/tips-for-everyday-living/stress/#.VTerjF9wZdg",
+        "text": "MIND information about how to manage stress."
+      },
+      {
+        "id": "35",
+        "name": "mind-relaxation",
+        "url": "http://www.mind.org.uk/information-support/tips-for-everyday-living/relaxation-tips/",
+        "text": "MIND tips for relaxation."
+      },
+      {
+        "id": "36",
+        "name": "nhs-jealousy",
+        "url": "http://www.nhs.uk/Livewell/emotionalhealth/Pages/Overcomingjealousy.aspx",
+        "text": "NHS Choices Advice: overcoming jealousy."
+      },
+      {
+        "id": "37",
+        "name": "mind-self-esteem",
+        "url": "http://www.mind.org.uk/information-support/types-of-mental-health-problems/self-esteem/#.VTeqQl9wZdg",
+        "text": "MIND information and advice about how to increase your self-esteem."
+      },
+      {
+        "id": "38",
+        "name": "bupa-assertiveness",
+        "url": "https://www.bupa.co.uk/health-information/Directory/I/improving-assertiveness",
+        "text": "Information about assertiveness skills."
+      },
+      {
+        "id": "39",
+        "name": "psychcentral-independence",
+        "url": "http://psychcentral.com/blog/archives/2014/01/08/6-ways-to-become-more-independent-less-codependent/",
+        "text": "Learn to be more independent."
+      },
+      {
+        "id": "40",
+        "name": "nhs-time-management",
+        "url": "http://www.nhs.uk/conditions/stress-anxiety-depression/pages/time-management-tips.aspx",
+        "text": "NHS Choices: easy time management tips."
+      },
+      {
+        "id": "41",
+        "name": "book-getting-things-done",
+        "url": "http://bookshop.blackwell.co.uk/jsp/id/Getting_Things_Done/9780349408941",
+        "text": "Getting things done book recommendation."
+      },
+      {
+        "id": "42",
+        "name": "cruse",
+        "url": "http://www.cruse.org.uk/",
+        "text": "CRUSE helpline: 0844 477 9400."
+      },
+      {
+        "id": "43",
+        "name": "mind-benefits-faq",
+        "url": "http://www.mind.org.uk/information-support/guides-to-support-and-services/benefits-faq/",
+        "text": "MIND benefits advice for financial support."
+      },
+      {
+        "id": "44",
+        "name": "helpguide",
+        "url": "http://www.helpguide.org/articles/memory/how-to-improve-your-memory.htm",
+        "text": "For improving your memory."
+      },
+      {
+        "id": "45",
+        "name": "mindtools",
+        "url": "http://www.mindtools.com/pages/article/newHTE_78.htm",
+        "text": "For improving your concentration."
+      },
+      {
+        "id": "46",
+        "name": "mind-postnatal-depression",
+        "url": "http://www.mind.org.uk/information-support/types-of-mental-health-problems/postnatal-depression/#.VTeow19wZdg",
+        "text": "MIND information and support about post natal depression."
+      },
+      {
+        "id": "47",
+        "name": "mind-voices",
+        "url": "http://www.mind.org.uk/information-support/types-of-mental-health-problems/hearing-voices/#.VTeks19wZdg",
+        "text": "MIND information and support about coping with hearing voices."
+      },
+      {
+        "id": "48",
+        "name": "mind-paranoia",
+        "url": "http://www.mind.org.uk/information-support/types-of-mental-health-problems/paranoia/#.VTenvF9wZdg",
+        "text": "MIND information and support about paranoia."
+      },
+      {
+        "id": "49",
+        "name": "mind-psychotic",
+        "url": "http://www.mind.org.uk/information-support/types-of-mental-health-problems/psychosis/#.VTephF9wZdg",
+        "text": "MIND information and support about psychotic experiences."
+      },
+      {
+        "id": "50",
+        "name": "mind-mania",
+        "url": "http://www.mind.org.uk/information-support/types-of-mental-health-problems/hypomania-and-mania/#.VYBia0a3ExI",
+        "text": "Mind support for mania."
+      },
+      {
+        "id": "51",
+        "name": "healthline-bipolar",
+        "url": "http://www.healthline.com/health/bipolar-disorder/mania#1",
+        "text": "Healthline support for bipolar problems."
+      },
+      {
+        "id": "52",
+        "name": "tinnitus",
+        "url": "http://www.tinnitus.org.uk/http://www.nhs.uk/conditions/tinnitus/Pages/Introduction.aspx",
+        "text": "Tinnitus."
+      },
+      {
+        "id": "53",
+        "name": "bhf",
+        "url": "https://www.bhf.org.uk/",
+        "text": "Heart disease information and support."
+      },
+      {
+        "id": "54",
+        "name": "nhs-chd",
+        "url": "http://www.nhs.uk/Conditions/Coronary-heart-disease/Pages/Introduction.aspx",
+        "text": "NHS Coronary Heart Disease."
+      },
+      {
+        "id": "55",
+        "name": "british-kidney",
+        "url": "http://www.britishkidney-pa.co.uk/",
+        "text": "Kidney disease\r\ninformation and support."
+      },
+      {
+        "id": "56",
+        "name": "nhs-kidney",
+        "url": "http://www.nhs.uk/conditions/Kidney-disease-chronic/Pages/Introduction.aspx",
+        "text": "NHS Kidney disease."
+      },
+      {
+        "id": "57",
+        "name": "arthritiscare",
+        "url": "http://www.arthritiscare.org.uk/Home?gclid=CLnoiOS3y8UCFafItAod30AAnQ",
+        "text": "Arthritis information and support."
+      },
+      {
+        "id": "58",
+        "name": "nhs-arthritis",
+        "url": "http://www.nhs.uk/Conditions/Arthritis/Pages/Introduction.aspx",
+        "text": "NHS arthritis."
+      },
+      {
+        "id": "59",
+        "name": "diabetes",
+        "url": "https://www.diabetes.org.uk/",
+        "text": "Diabetes Information and support."
+      },
+      {
+        "id": "60",
+        "name": "nhs-diabetes",
+        "url": "http://www.nhs.uk/Conditions/Diabetes/Pages/Diabetes.aspx",
+        "text": "NHS diabetes support."
+      },
+      {
+        "id": "61",
+        "name": "mssociety",
+        "url": "http://www.mssociety.org.uk/what-is-ms",
+        "text": "Multiple sclerosis information and support."
+      },
+      {
+        "id": "62",
+        "name": "nhs-ms",
+        "url": "http://www.nhs.uk/conditions/Multiple-sclerosis/Pages/Introduction.aspx",
+        "text": "NHS Multiple sclerosis support."
+      },
+      {
+        "id": "63",
+        "name": "asthma",
+        "url": "http://www.asthma.org.uk/",
+        "text": "Asthma information and support."
+      },
+      {
+        "id": "64",
+        "name": "nhs-asthma",
+        "url": "http://www.nhs.uk/conditions/asthma/Pages/Introduction.aspx",
+        "text": "NHS\r\nasthma support."
+      },
+      {
+        "id": "65",
+        "name": "blf-copd",
+        "url": "http://www.blf.org.uk/Page/chronic-obstructive-pulmonary-disease-COPD?gclid=CMOAzNu6y8UCFU_LtAoddAQAKQ",
+        "text": "Lung disease/COPD/emphysema information and support."
+      },
+      {
+        "id": "66",
+        "name": "nhs-copd",
+        "url": "http://www.nhs.uk/conditions/Chronic-obstructive-pulmonary-disease/pages/introduction.aspx",
+        "text": "NHS Chronic Obstructive Pulmonary Disease support."
+      },
+      {
+        "id": "67",
+        "name": "blood-pressure",
+        "url": "http://www.bloodpressureuk.org/BloodPressureandyou/Thebasics/Whatishigh?gclid=CMal1d69y8UCFdQZtAodsj8AIA",
+        "text": "High blood pressure information and support."
+      },
+      {
+        "id": "68",
+        "name": "nhs-bp",
+        "url": "http://www.nhs.uk/conditions/Blood-pressure-(high)/Pages/Introduction.aspx",
+        "text": "NHS Blood Pressure information"
+      },
+      {
+        "id": "69",
+        "name": "scope",
+        "url": "http://www.scope.org.uk/?gclid=CN6m_Ku-y8UCFUWWtAodZycAgA",
+        "text": "Cerebral palsy, SCOPE information and support."
+      },
+      {
+        "id": "70",
+        "name": "nhs-palsy",
+        "url": "http://www.nhs.uk/conditions/cerebral-palsy/Pages/Introduction.aspx",
+        "text": "NHS Cerebral Palsy support."
+      },
+      {
+        "id": "71",
+        "name": "cancer-research",
+        "url": "http://www.cancerresearchuk.org/about-cancer/",
+        "text": "Cancer information and support."
+      },
+      {
+        "id": "72",
+        "name": "parkinsons",
+        "url": "http://www.parkinsons.org.uk/",
+        "text": "Parkinson's Disease\r\nInformation and Support."
+      },
+      {
+        "id": "73",
+        "name": "nhs-parkinsons",
+        "url": "http://www.nhs.uk/Conditions/Parkinsons-disease/Pages/Introduction.aspx",
+        "text": "NHS Parkinson's disease."
+      },
+      {
+        "id": "74",
+        "name": "rnib",
+        "url": "http://www.rnib.org.uk/",
+        "text": "Help and advice for Blindness/sight loss."
+      },
+      {
+        "id": "75",
+        "name": "actionforblind",
+        "url": "https://www.actionforblindpeople.org.uk/resources/about-sight-loss/eye-conditions?gclid=CP7uh8XAy8UCFQrKtAodmCAALw",
+        "text": "Action for blind people."
+      },
+      {
+        "id": "76",
+        "name": "britishblindsport",
+        "url": "http://www.britishblindsport.org.uk/",
+        "text": "British Blind Sport."
+      },
+      {
+        "id": "77",
+        "name": "sense",
+        "url": "http://www.sense.org.uk/",
+        "text": "Help for people who have difficulty\r\nwith both sight and hearing."
+      },
+      {
+        "id": "78",
+        "name": "bda",
+        "url": "http://www.bda.org.uk/",
+        "text": "Hearing Impairment Information and Support."
+      },
+      {
+        "id": "79",
+        "name": "afasic",
+        "url": "http://www.afasic.org.uk/",
+        "text": "Help and information for Speech\r\nimpairment."
+      },
+      {
+        "id": "80",
+        "name": "self-help",
+        "url": "http://www.self-help.org.uk/directory/speech-disorders/",
+        "text": "Self help for speech disorders."
+      },
+      {
+        "id": "81",
+        "name": "phab",
+        "url": "http://phab.org.uk/",
+        "text": "Physically Handicapped/Able Bodied (PHAB)."
+      },
+      {
+        "id": "82",
+        "name": "parasport",
+        "url": "http://parasport.org.uk/find-a-club?gclid=COX4rvjEy8UCFe7HtAodOBgAXQ",
+        "text": "Sport for the Disabled."
+      },
+      {
+        "id": "83",
+        "name": "nhs-mobility",
+        "url": "http://www.nhs.uk/conditions/social-care-and-support-guide/pages/transport-and-mobility-issues.aspx",
+        "text": "Help and information about transport."
+      },
+      {
+        "id": "84",
+        "name": "nhs-pain",
+        "url": "http://www.nhs.uk/Livewell/Pain/Pages/Longtermpain.aspx",
+        "text": "NHS pain management."
+      },
+      {
+        "id": "85",
+        "name": "mind-eating-problems",
+        "url": "http://www.mind.org.uk/information-support/types-of-mental-health-problems/eating-problems/#.VTeifl9wZdg",
+        "text": "MIND information and support about eating problems."
+      },
+      {
+        "id": "86",
+        "name": "b-eat",
+        "url": "http://www.b-eat.co.uk/about-eating-disorders?gclid=CK2gsMTNy8UCFePItAod9R8AbQ",
+        "text": "Beat eating disorders."
+      },
+      {
+        "id": "87",
+        "name": "nhs-eating-disorders",
+        "url": "http://www.nhs.uk/Conditions/Eating-disorders/Pages/Introduction.aspx",
+        "text": "NHS eating disorders help and support."
+      },
+      {
+        "id": "88",
+        "name": "npac",
+        "url": "http://napac.org.uk/?gclid=CNefr73Oy8UCFYcSwwod8kQAdQ",
+        "text": "NPAC help and support for abuse."
+      },
+      {
+        "id": "89",
+        "name": "makingspace",
+        "url": "http://www.makingspace.co.uk",
+        "text": "Making Space, service user involvement and training."
+      },
+      {
+        "id": "90",
+        "name": "skillsyouneed-self-motivation",
+        "url": "http://www.skillsyouneed.com/ps/self-motivation.html",
+        "text": "Self motivation skills."
+      },
+      {
+        "id": "91",
+        "name": "fcn",
+        "url": "http://www.fcn.org.uk",
+        "text": "he Farming Community Network (FCN), Helpline 0845 367 9990."
+      },
+      {
+        "id": "92",
+        "name": "nhs-tired",
+        "url": "http://www.nhs.uk/Livewell/tiredness-and-fatigue/Pages/energy-diet.aspx",
+        "text": "NHS Choices: the energy diet."
+      },
+      {
+        "id": "93",
+        "name": "relate",
+        "url": "http://www.relate.org.uk/",
+        "text": "Relate all relationship issues."
+      },
+      {
+        "id": "94",
+        "name": "nationaldomesticviolence",
+        "url": "http://www.nationaldomesticviolencehelpline.org.uk/",
+        "text": "Nationaldomestic violence 24 hour free helpline 0808 2000 247."
+      },
+      {
+        "id": "95",
+        "name": "refuge",
+        "url": "http://www.refuge.org.uk/get-involved/donate-now/?gclid=CM-b5_7fzcUCFWuWtAodSQoA8w",
+        "text": "Refuge for domestic violence help."
+      },
+      {
+        "id": "96",
+        "name": "mind-all-abuse",
+        "url": "http://www.mind.org.uk/information-support/guides-to-support-and-services/abuse/all-types-of-abuse/",
+        "text": "MIND abuse information."
+      },
+      {
+        "id": "97",
+        "name": "mind-housing",
+        "url": "http://www.mind.org.uk/information-support/guides-to-support-and-services/housing/#.VTek019wZdg",
+        "text": "MIND information and support about housing."
+      },
+      {
+        "id": "98",
+        "name": "shelter",
+        "url": "http://www.shelter.org.uk/",
+        "text": "Shelter - Help with housing and homelessness."
+      },
+      {
+        "id": "99",
+        "name": "advanceuk",
+        "url": "http://www.advanceuk.org",
+        "text": "Housing support."
+      },
+      {
+        "id": "100",
+        "name": "mind-debt",
+        "url": "http://www.mind.org.uk/information-support/guides-to-support-and-services/debt-and-mental-health/",
+        "text": "MIND debt advice."
+      },
+      {
+        "id": "101",
+        "name": "mind-financial",
+        "url": "http://www.mind.org.uk/information-support/guides-to-support-and-services/financial-help/",
+        "text": "MIND information and support about financial help."
+      },
+      {
+        "id": "102",
+        "name": "mind-money-control",
+        "url": "http://www.mind.org.uk/information-support/tips-for-everyday-living/money-keeping-it-under-control/",
+        "text": "MIND information about keeping money under control."
+      },
+      {
+        "id": "103",
+        "name": "mind-money-managing",
+        "url": "http://www.mind.org.uk/information-support/tips-for-everyday-living/money-managing/",
+        "text": "MIND information about managing money."
+      },
+      {
+        "id": "104",
+        "name": "mind-money-mental-health",
+        "url": "http://www.mind.org.uk/information-support/tips-for-everyday-living/money-and-mental-health/",
+        "text": "MIND information about money and mental health."
+      },
+      {
+        "id": "105",
+        "name": "citizensadvicebureau",
+        "url": "https://www.citizensadvice.org.uk/",
+        "text": "Citizens Advice Bureau for help with benefits, budgeting and\r\ngeneral financial issues."
+      },
+      {
+        "id": "106",
+        "name": "mind-sleep",
+        "url": "http://www.mind.org.uk/information-support/types-of-mental-health-problems/sleep-problems/#.VTeq6V9wZdg",
+        "text": "MIND information about how to cope with sleep problems."
+      },
+      {
+        "id": "107",
+        "name": "nhs-sleep",
+        "url": "http://www.nhs.uk/Livewell/sleep/Pages/sleep-home.aspx",
+        "text": "NHS Choices how to get better sleep."
+      },
+      {
+        "id": "108",
+        "name": "mind-exercise",
+        "url": "http://www.mind.org.uk/information-support/tips-for-everyday-living/exercise/#.VTejBl9wZdg",
+        "text": "MIND information and support about physical activity and exercise."
+      },
+      {
+        "id": "109",
+        "name": "nhs-fitness",
+        "url": "http://www.nhs.uk/LiveWell/Fitness/Pages/Fitnesshome.aspx",
+        "text": "NHS Choices, Health and Fitness: benefits of exercise."
+      },
+      {
+        "id": "110",
+        "name": "nhs-sex-health",
+        "url": "http://www.nhs.uk/Livewell/Sexualhealthtopics/Pages/Sexual-health-hub.aspx",
+        "text": "NHS Choices Sexual Health Information and Support."
+      },
+      {
+        "id": "111",
+        "name": "nhs-gambling",
+        "url": "http://www.nhs.uk/Livewell/addiction/Pages/gamblingaddiction.aspx",
+        "text": "NHS Choices information on gambling addiction."
+      },
+      {
+        "id": "112",
+        "name": "gamcare",
+        "url": "http://www.gamcare.org.uk/",
+        "text": "Gamcare gambling addiction help: freephone 0808 8020 133, 8am to midnight, 7 days a week."
+      },
+      {
+        "id": "113",
+        "name": "nhs-smoking",
+        "url": "http://www.nhs.uk/livewell/smoking/Pages/stopsmokingnewhome.aspx",
+        "text": "NHS Choices Stop Smoking Advice."
+      },
+      {
+        "id": "114",
+        "name": "nhs-good-food",
+        "url": "http://www.nhs.uk/livewell/goodfood/Pages/Goodfoodhome.aspx",
+        "text": "NHS Choices, Good food and healthy diet advice."
+      },
+      {
+        "id": "115",
+        "name": "nhs-lose-weight",
+        "url": "http://www.nhs.uk/Livewell/Loseweight/Pages/Loseweighthome.aspx",
+        "text": "NHS Choices Weight Loss Advice if you have put weight on."
+      },
+      {
+        "id": "116",
+        "name": "weightwatchers",
+        "url": "http://www.weightwatchers.co.uk/util/mtf/wide.aspx?cid=s-om-google-%5Bbrand_generic%5D%20Exact-weight%20watchers",
+        "text": "Find your local Weight Watchers group if you have put a lot of weight\r\non."
+      },
+      {
+        "id": "117",
+        "name": "alcoholics-anonymous",
+        "url": "http://www.alcoholics-anonymous.org.uk/",
+        "text": "Alcoholics Anonymous: help with alcohol addiction."
+      },
+      {
+        "id": "118",
+        "name": "mind-addiction",
+        "url": "http://www.mind.org.uk/information-support/guides-to-support-and-services/addiction-and-dependency/",
+        "text": "MIND addiction and dependency advice."
+      },
+      {
+        "id": "119",
+        "name": "nhs-drugs",
+        "url": "http://www.nhs.uk/Livewell/drugs/Pages/Drugtreatment.aspx",
+        "text": "NHS Choices: getting help with drug addiction."
+      },
+      {
+        "id": "120",
+        "name": "nhs-prescriptions",
+        "url": "http://www.nhs.uk/NHSEngland/Healthcosts/Pages/Prescriptioncosts.aspx",
+        "text": "Help with prescription costs."
+      },
+      {
+        "id": "121",
+        "name": "mind-abuse-health-workers",
+        "url": "http://www.mind.org.uk/information-support/guides-to-support-and-services/abuse/abuse-by-health-and-social-care-workers/",
+        "text": "MIND information and advice about abuse by health and social care workers."
+      },
+      {
+        "id": "122",
+        "name": "carer-help-high",
+        "url": null,
+        "text": "We recommend you seek help urgently from either your GP, the 111 service, or any mental health practitioner currently helping you."
+      }
+    ],
+    "galassify_action_send_email_templates": [
+      {
+        "id": "1",
+        "name": "email-type1",
+        "recipient": "#set-by-user#",
+        "subject": "Concern regarding myGRaCE assessment for #person#",
+        "content": "Hello,\r\n\r\n#person# just completed a myGRaCE assessment and we are concerned about certain issues...\r\n\r\n[messgae template]\r\n\r\nThank you.\r\n\r\nKind regards,\r\nmyGRaCE Team"
+      },
+      {
+        "id": "2",
+        "name": "email-type2",
+        "recipient": "#set-by-user#",
+        "subject": "this is another subject",
+        "content": "some content template.\r\n\r\nthanks."
+      },
+      {
+        "id": "3",
+        "name": "email-type3",
+        "recipient": "fixed-generic-email@email.com",
+        "subject": "myGRaCE assessment...[example of generic action]",
+        "content": "Hello,\n\n#person# just completed a myGRaCE assessment....\n\ntemplate msg."
+      }
+    ]
+  }
+}

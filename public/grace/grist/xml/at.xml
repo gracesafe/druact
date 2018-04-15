@@ -1,0 +1,25 @@
+<answers>
+	<node previous-assessment-date="31102017"/>
+	<node code="gen-feel-emot" answer-previous="YES" answer="YES"/>
+	<node code="gen-sad" answer-previous="10"/>
+	
+	<node code="gen-plans-future" answer-previous="0" answer="10"/>
+	<node code="gen-life-not-livng" answer-previous="0" answer="10"/>
+	<node1 overall-management="2017-10-31 ========== -------------------------------------------- Things I need to do immediately to stay safe -------------------------------------------- asdf  ------------------------------------------------------------------------------------------------------- On-going issues I need to deal with (e.g. where I live, who I live with, long-term physical conditions) ------------------------------------------------------------------------------------------------------- asdf  --------------------------------------------------------------------------------------------------------- Long-standing issues I need to deal with (e.g. effects of past trauma or abuse, low self-esteem, anxiety) --------------------------------------------------------------------------------------------------------- asdf"/>
+	<node code="gen-mood-swings" answer="10" management="some management comment for node.some management comment for node.some management comment for node."/>
+
+	<node code="gen-marital-status" answer="NO"/>
+	<node code="gen-ethnicity" answer="INDIAN"/>
+	<node code="gen-angry-emotns" answer="10"/>
+	
+	<node code="gen-self-worth-p" answer="YES"/>
+	<node code="ment-fac" answer="YES"/>
+	<node code="gen-cog-think-mem" answer="10" management="2017-10-31&#10;==========&#10;plan added in past assessment"/>
+	<node code="sui-specific" answer="YES"/>
+	<node code="gen-impaird-cog" answer="mild" management="new plan added in current assessment"/>
+	<node settings="persistent" s_actions-personalisations="{&quot;galassify_action_open_url_templates_overrides&quot;:[{&quot;template_id&quot;:23,&quot;text&quot;:&quot;Songs that help my mood&quot;,&quot;url&quot;:&quot;https://www.youtube.com/watch?v=CcsUYu0PVxY\n\nalso, \nhttps://www.youtube.com/watch?v=HSOtku1j600&quot;}]}"/>
+	
+	<node assessment-status="in progress"/>
+	<node date="20112017"/>
+	<node assessment-risks="all"/>
+</answers>
