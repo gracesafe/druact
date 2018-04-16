@@ -18,6 +18,7 @@ import Register from './components/register.jsx';
 import Login from './components/login.jsx';
 import Profile from './components/profile.jsx';
 import Logout from './components/logout.jsx';
+import Assessment from './components/assessment.jsx';
 
 class App extends Component {
   render() {
@@ -29,6 +30,7 @@ class App extends Component {
           <Route path="/user/profile" component={Profile} />
           <Route exact path="/" component={Profile} />
           <Route path="/home" component={Home} />
+          <Route path="/assessment" component={Assessment} />
           <Route path="/articles/:id?" component={Articles} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
