@@ -12,6 +12,7 @@ import Footer from './components/footer.jsx';
 
 import Home from './components/home.jsx';
 import Articles from './components/articles.jsx';
+import Documents from './components/documents.jsx';
 import About from './components/about.jsx';
 import Contact from './components/contact.jsx';
 import Register from './components/register.jsx';
@@ -28,8 +29,9 @@ class App extends Component {
           <Navbar />
           {/* <GraceMenu /> */}
           <Route path="/user/profile" component={Profile} />
-          <Route exact path="/" component={Profile} />
+          <Route exact path="/" component={Home} />
           <Route path="/home" component={Home} />
+          <Route path="/documents" component={Documents} />
           <Route path="/assessment" component={Assessment} />
           <Route path="/articles/:id?" component={Articles} />
           <Route path="/about" component={About} />

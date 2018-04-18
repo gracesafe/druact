@@ -40,7 +40,7 @@ class Profile extends Component {
   render() {
     return (
       <div className="row top-buffer">
-        <div className="col-md-4 offset-md-4">
+        <div className="col-md-8 offset-md-2">
           <div className="list-group">
             <a href="#" className="list-group-item list-group-item-action list-group-item-success">
               User Profile

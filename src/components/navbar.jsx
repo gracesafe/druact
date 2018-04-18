@@ -54,6 +54,9 @@ class Navbar extends Component {
 
       return (
         <div className="row top-buffer">
+        <div className="row">
+          <img src="/images/grist_header.png" alt="Home" />
+        </div>
           <div className="col">
             <nav className="navbar navbar-toggleable-md navbar-inverse bg-success">
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01">
@@ -65,7 +68,7 @@ class Navbar extends Component {
                     <NavLink exact className="nav-link" activeClassName="active" to="/">
                       <i className="fa fa-home"></i> Home
                       {/* <img src='/public/images/mygracelogo.png' className="img-fluid"/> */}
-                  </NavLink>
+                    </NavLink>
                   </li>
                   <GraceMenu />
                   <li className="nav-item dropdown">
@@ -86,6 +89,7 @@ class Navbar extends Component {
       return (
         <div className="row top-buffer">
           <div className="col">
+            <img src="/images/grist_header.png" alt="Home" /><br />
             <nav className="navbar navbar-toggleable-md navbar-inverse bg-success">
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01">
                 <span className="navbar-toggler-icon"></span>
@@ -93,9 +97,39 @@ class Navbar extends Component {
               <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                   <li className="nav-item">
-                    <NavLink exact className="nav-link" activeClassName="active" to="/">
+                    <NavLink exact className="nav-link" activeClassName="active" to="/home">
                       <i className="fa fa-home"></i> Home
                   </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink exact className="nav-link" activeClassName="active" to="/documents">
+                      <i className="fa fa-file-text-o"></i> Documents
+                  </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink exact className="nav-link" activeClassName="active" to="/news">
+                      <i className="fa fa-newspaper-o"></i> News &amp; Events
+                  </NavLink>
+                  </li>
+                  <li className="nav-item">
+                    <NavLink exact className="nav-link" activeClassName="active" to="/">
+                      <i className="fa fa-info-circle"></i> About
+                  </NavLink>
+                  </li>
+                  <li className="nav-item dropdown">
+                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+                      <i className="fa fa-tasks"></i> Applications
+                    </a>
+                    <div className="dropdown-menu">
+                      <span>
+                      <a className="dropdown-item" activeClassName="active" href="https://www.secure.egrist.org/admin/simulators/mh-dss-assess-html-light-launch-anonymous.php" >
+                          <i className="fa fa-check-circle"></i> GRiST
+                    </a>
+                        <NavLink className="dropdown-item" activeClassName="active" to="/grace">
+                          <i className="fa fa-user-circle"></i> GRaCE
+          </NavLink>
+                      </span>
+                    </div>
                   </li>
                   <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">

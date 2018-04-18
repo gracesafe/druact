@@ -53,11 +53,11 @@ class Register extends Component {
     axios.post('https://eas-grist06.aston.ac.uk/user/register?_format=json', {
       name: [{"value": this.state.name}],
       mail: [{"value": this.state.email}],
-      pass: [{"value": this.state.password}],
-      lastname: [{"value": this.state.lastName}],
-      firstName: [{"value": this.state.firstName}],
-      notes: [{"value": this.state.notes}],
-      regcode: [{"value": this.state.registrationCode}]
+      // pass: [{"value": this.state.password}],
+      field_surname: [{"value": this.state.lastName}],
+      field_first_name: [{"value": this.state.firstName}],
+      field_notes: [{"value": this.state.notes}],
+      field_registration_code: [{"value": this.state.registrationCode}]
     })
     .then(function (response) {
       self.setState({

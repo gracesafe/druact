@@ -22,7 +22,7 @@ class homeMenu extends Component {
     // document.getElementsByTagName('iframe')[0].contentWindow.LayoutManager.setupWellBeingAssessment();
     // document.getElementsByTagName('iframe')[0].contentWindow.GlobalVariables.currentMygraceVersionPathways = 2;
     // document.getElementsByTagName('iframe')[0].contentWindow.LayoutManager.setupWellBeingAssessment();
-   
+
     //
     // .setupWellBeingAssessment();
     // var w = document.getElementsByTagName('iframe')[0].contentWindow;
@@ -85,10 +85,15 @@ class homeMenu extends Component {
       <div>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li>
-          <a className="nav-link" href="#" id="navbarButtonTest" data-toggle="dropdown" onClick={this.handleClick(1)}>
-                <i className="fa fa-user"></i> Test
-          </a>
+            <li>
+              <a className="nav-link" href="/documents" id="navbarButtonTest">
+                <i className="fa fa-file"></i> Documents
+              </a>
+            </li>
+            <li>
+              <a className="nav-link" href="/users" id="navbarButtonTest">
+                <i className="fa fa-user"></i> Users
+              </a>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkCurrent" data-toggle="dropdown">

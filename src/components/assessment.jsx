@@ -50,14 +50,6 @@ class Assessment extends Component {
 
     var self = this;
 
-    if (this.state.password !== this.state.password2) {
-      self.setState({
-        'success': '',
-        'error': 'Passwords do not match'
-      });
-      return;
-    }
-
     // axios.post('https://eas-grist06.aston.ac.uk/user/register?_format=json', {
     //   name: [{ "value": this.state.name }],
     //   mail: [{ "value": this.state.email }],
@@ -104,7 +96,7 @@ class Assessment extends Component {
 
     localStorage.setItem('sourceUrl', gristURL);
     localStorage.setItem('redirect', true);
-    <Redirect to="/home" />
+    // <Redirect to="/home" />
   }
   render() {
     console.log(this.props.location.search);
