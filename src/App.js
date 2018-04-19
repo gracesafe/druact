@@ -7,9 +7,10 @@ import {
 } from 'react-router-dom';
 
 import Navbar from './components/navbar.jsx';
-import GraceMenu from './components/graceMenu.jsx';
-import Footer from './components/footer.jsx';
+// import GraceMenu from './components/graceMenu.jsx';
+// import Footer from './components/footer.jsx';
 
+import Breadcrumb from './components/breadcrumb.jsx';
 import Home from './components/home.jsx';
 import Articles from './components/articles.jsx';
 import Documents from './components/documents.jsx';
@@ -20,6 +21,7 @@ import Login from './components/login.jsx';
 import Profile from './components/profile.jsx';
 import Logout from './components/logout.jsx';
 import Assessment from './components/assessment.jsx';
+import RegCode from './components/regcode';
 
 class App extends Component {
   render() {
@@ -27,8 +29,8 @@ class App extends Component {
       <Router history={browserHistory}>
         <div className="container">
           <Navbar />
+          <Breadcrumb />
           {/* <GraceMenu /> */}
-          <Route path="/user/profile" component={Profile} />
           <Route exact path="/" component={Home} />
           <Route path="/home" component={Home} />
           <Route path="/documents" component={Documents} />
@@ -39,6 +41,8 @@ class App extends Component {
           <Route path="/user/register" component={Register} />
           <Route path="/user/login" component={Login} />
           <Route path="/user/logout" component={Logout} />
+          <Route path="/user/profile" component={Profile} />
+          <Route path="/user/regcode" component={RegCode} />
           {/* <Footer /> */}
         </div>
       </Router>

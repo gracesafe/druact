@@ -56,7 +56,10 @@ class Login extends Component {
         localStorage.setItem('csrf_token', response.data.csrf_token);
         localStorage.setItem('logout_token', response.data.logout_token);
         localStorage.setItem('auth', window.btoa(self.state.name + ':' + self.state.password));
-        localStorage.setItem('roles', response.data.roles);
+        for (var i=0; i < response.data.current_user.roles.length; i++)
+        {
+          localStorage.setItem(response.data.current_user.roles[i], true);
+        }
 
         // login to GRiST if the drupal login is successful
         axios.post('https://www.secure.egrist.org/login-headless.php?u=trust-su-drupal&p=delta4force&metaClinID=', 'GET')

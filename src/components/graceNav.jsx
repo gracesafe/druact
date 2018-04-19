@@ -1,7 +1,7 @@
-import React, { Component, Button } from 'react';
+import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
-class homeMenu extends Component {
+class GraceNav extends Component {
 
   constructor(props) {
     super(props);
@@ -28,6 +28,20 @@ class homeMenu extends Component {
     // var w = document.getElementsByTagName('iframe')[0].contentWindow;
     // w.GlobalVariables.currentMygraceVersionPathways = w.GlobalVariables.mygraceVersionPathways.MY_SAFETY;
     // w.LayoutManager.setupScreeningOnly();
+  }
+
+  renderRegCodeLink() {
+    var groupAdmin = localStorage.getItem('group_administrator');
+
+    if (groupAdmin) {
+      return (
+        <li className="nav-item">
+          <NavLink className="nav-link" activeClassName="active" to="/user/regcode">
+          <i className="fa fa-chevron-left"></i><i className="fa fa-chevron-right"></i> Registration Code
+        </NavLink>
+        </li>
+      )
+    }
   }
 
   renderCurrentLinks() {
@@ -79,7 +93,7 @@ class homeMenu extends Component {
 
   render() {
 
-    var userLinkTitle = this.state.username ? this.state.username : 'User';
+    // var userLinkTitle = this.state.username ? this.state.username : 'User';
 
     return (
       <div>
@@ -90,11 +104,32 @@ class homeMenu extends Component {
                 <i className="fa fa-file"></i> Documents
               </a>
             </li>
-            <li>
-              <a className="nav-link" href="/users" id="navbarButtonTest">
-                <i className="fa fa-user"></i> Users
-              </a>
+            {this.renderRegCodeLink()}
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+                <i className="fa fa-tasks"></i> Applications
+                    </a>
+              <div className="dropdown-menu">
+                <span>
+                  <a className="dropdown-item" href="https://www.secure.egrist.org/admin/simulators/mh-dss-assess-html-light-launch-anonymous.php" >
+                    <i className="fa fa-check-circle"></i> GRiST
+                    </a>
+                  <NavLink className="dropdown-item" activeClassName="active" to="/grace">
+                    <i className="fa fa-user-circle"></i> GRaCE
+                  </NavLink>
+                </span>
+              </div>
             </li>
+          </ul>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default GraceNav
+
+/*
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkCurrent" data-toggle="dropdown">
                 <i className="fa fa-user"></i> Current Events
@@ -111,11 +146,4 @@ class homeMenu extends Component {
                 {this.renderHistoryLinks()}
               </div>
             </li>
-          </ul>
-        </div>
-      </div>
-    );
-  }
-}
-
-export default homeMenu
+*/

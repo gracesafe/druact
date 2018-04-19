@@ -94,7 +94,9 @@ class RegCode extends Component {
       });
   }
   render() {
-    if (this.state.groupAdmin){
+    var groupAdmin = localStorage.getItem('group_administrator');
+    console.log(groupAdmin);
+    if (groupAdmin){
 
     
     return (

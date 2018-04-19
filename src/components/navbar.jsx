@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import GraceMenu from './graceMenu.jsx';
+import GraceNav from './graceNav.jsx';
 
 class Navbar extends Component {
 
@@ -54,10 +54,8 @@ class Navbar extends Component {
 
       return (
         <div className="row top-buffer">
-        <div className="row">
-          <img src="/images/grist_header.png" alt="Home" />
-        </div>
           <div className="col">
+            <img src="/images/grist_header.png" alt="Grist" className="img-fluid" />
             <nav className="navbar navbar-toggleable-md navbar-inverse bg-success">
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01">
                 <span className="navbar-toggler-icon"></span>
@@ -70,7 +68,7 @@ class Navbar extends Component {
                       {/* <img src='/public/images/mygracelogo.png' className="img-fluid"/> */}
                     </NavLink>
                   </li>
-                  <GraceMenu />
+                  <GraceNav />
                   <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
                       <i className="fa fa-user"></i> User: {userLinkTitle}
@@ -89,15 +87,15 @@ class Navbar extends Component {
       return (
         <div className="row top-buffer">
           <div className="col">
-            <img src="/images/grist_header.png" alt="Home" /><br />
-            <nav className="navbar navbar-toggleable-md navbar-inverse bg-success">
-              <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01">
+            <img src="/images/grist_header.png" alt="Home" className="img-fluid header-img" />
+            <nav className="navbar navbar-toggleable-md navbar-inverse">
+              <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerItem">
                 <span className="navbar-toggler-icon"></span>
               </button>
-              <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <div className="collapse navbar-collapse" id="navbarTogglerItem">
                 <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                   <li className="nav-item">
-                    <NavLink exact className="nav-link" activeClassName="active" to="/home">
+                    <NavLink exact className="nav-link" activeClassName="active" to="/">
                       <i className="fa fa-home"></i> Home
                   </NavLink>
                   </li>
@@ -112,7 +110,7 @@ class Navbar extends Component {
                   </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink exact className="nav-link" activeClassName="active" to="/">
+                    <NavLink exact className="nav-link" activeClassName="active" to="/about">
                       <i className="fa fa-info-circle"></i> About
                   </NavLink>
                   </li>
@@ -122,7 +120,7 @@ class Navbar extends Component {
                     </a>
                     <div className="dropdown-menu">
                       <span>
-                      <a className="dropdown-item" activeClassName="active" href="https://www.secure.egrist.org/admin/simulators/mh-dss-assess-html-light-launch-anonymous.php" >
+                        <a className="dropdown-item" href="https://www.secure.egrist.org/admin/simulators/mh-dss-assess-html-light-launch-anonymous.php" >
                           <i className="fa fa-check-circle"></i> GRiST
                     </a>
                         <NavLink className="dropdown-item" activeClassName="active" to="/grace">

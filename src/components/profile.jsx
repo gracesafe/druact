@@ -49,7 +49,7 @@ class Profile extends Component {
             <a href="#" className="list-group-item list-group-item-action"><strong>Email:</strong>&nbsp;{this.state.email}</a>
             <a href="#" className="list-group-item list-group-item-action"><strong>Date:</strong>&nbsp;{this.state.date}</a>
             <a href="#" className="list-group-item list-group-item-action"><strong>Group Admin:</strong>&nbsp;{this.groupAdmin}</a>
-            <RegCode />
+            {/* <RegCode /> */}
           </div>
         </div>
       </div>
