@@ -20,6 +20,7 @@ import Login from './components/login.jsx';
 import Profile from './components/profile.jsx';
 import Logout from './components/logout.jsx';
 import Assessment from './components/assessment.jsx';
+import BrowserUtil from './components/research.jsx';
 
 class App extends Component {
   render() {
@@ -28,6 +29,7 @@ class App extends Component {
         <div className="container">
           <Navbar />
           {/* <GraceMenu /> */}
+          <Route path="/get" component={BrowserUtil} />
           <Route path="/user/profile" component={Profile} />
           <Route exact path="/" component={Home} />
           <Route path="/home" component={Home} />

@@ -110,7 +110,7 @@ class Navbar extends Component {
                   </NavLink>
                   </li>
                   <li className="nav-item">
-                    <NavLink exact className="nav-link" activeClassName="active" to="/">
+                    <NavLink exact className="nav-link" activeClassName="active" to="/home?about">
                       <i className="fa fa-info-circle"></i> About
                   </NavLink>
                   </li>

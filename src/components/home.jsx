@@ -27,7 +27,12 @@ class Home extends Component {
   
     componentDidMount() {
       var self = this;
-      this.serverRequest = axios.get('https://eas-grist06.aston.ac.uk/home?_format=json')
+      console.log(window.location.search);
+      var url = 'https://eas-grist06.aston.ac.uk/home?_format=json';
+      if (window.location.search == '?about')
+        url = 'https://eas-grist06.aston.ac.uk/about?_format=json';
+
+      this.serverRequest = axios.get(url)
       .then(function(result){
         self.setState({
           article_title: result.data.title["0"].value,

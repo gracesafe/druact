@@ -86,12 +86,17 @@ class homeMenu extends Component {
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
           <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
             <li>
-              <a className="nav-link" href="/documents" id="navbarButtonTest">
+              <a className="nav-link" href="/get" id="navbarButtonCollect">
+                <i className="fa fa-file"></i> Collect Content
+              </a>
+            </li>
+            <li>
+              <a className="nav-link" href="/documents" id="navbarButtonDocuments">
                 <i className="fa fa-file"></i> Documents
               </a>
             </li>
             <li>
-              <a className="nav-link" href="/users" id="navbarButtonTest">
+              <a className="nav-link" href="/users" id="navbarButtonUsers">
                 <i className="fa fa-user"></i> Users
               </a>
             </li>
