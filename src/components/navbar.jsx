@@ -54,10 +54,8 @@ class Navbar extends Component {
 
       return (
         <div className="row top-buffer">
-        <div className="row">
-          <img src="/images/grist_header.png" alt="Home" />
-        </div>
           <div className="col">
+            <img src="/images/grist_header.png" alt="Home" className="img-fluid stretch" />
             <nav className="navbar navbar-toggleable-md navbar-inverse bg-success">
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01">
                 <span className="navbar-toggler-icon"></span>
@@ -89,7 +87,7 @@ class Navbar extends Component {
       return (
         <div className="row top-buffer">
           <div className="col">
-            <img src="/images/grist_header.png" alt="Home" /><br />
+            <img src="/images/grist_header.png" alt="Home" className="img-fluid stretch" />
             <nav className="navbar navbar-toggleable-md navbar-inverse bg-success">
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01">
                 <span className="navbar-toggler-icon"></span>
@@ -122,12 +120,12 @@ class Navbar extends Component {
                     </a>
                     <div className="dropdown-menu">
                       <span>
-                      <a className="dropdown-item" activeClassName="active" href="https://www.secure.egrist.org/admin/simulators/mh-dss-assess-html-light-launch-anonymous.php" >
+                        <a className="dropdown-item" activeClassName="active" href="https://www.secure.egrist.org/admin/simulators/mh-dss-assess-html-light-launch-anonymous.php" >
                           <i className="fa fa-check-circle"></i> GRiST
-                    </a>
+                        </a>
                         <NavLink className="dropdown-item" activeClassName="active" to="/grace">
                           <i className="fa fa-user-circle"></i> GRaCE
-          </NavLink>
+                        </NavLink>
                       </span>
                     </div>
                   </li>
