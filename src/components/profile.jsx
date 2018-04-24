@@ -64,8 +64,8 @@ class Profile extends Component {
             {/* <a href="#" className="list-group-item list-group-item-action"><strong>Group Admin:</strong>&nbsp;{this.groupAdmin}</a> */}
             {/* <RegCode /> */}
             <div className="row offset-md-2 top-buffer">
-              <button type="submit" className="btn btn-primary col-md-4">Change Password</button>&nbsp;
-              <button type="submit" className="btn btn-primary col-md-4">Change Email</button>
+              {/* <button type="submit" className="btn btn-primary col-md-4">Change Password</button>&nbsp; */}
+              {/* <button type="submit" className="btn btn-primary col-md-4">Change Email</button> */}
             </div>
           </div>
         </div>
