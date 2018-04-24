@@ -17,7 +17,7 @@ class Profile extends Component {
     var uid = localStorage.getItem('uid');
     var auth = localStorage.getItem('auth');
     var self = this;
-    this.serverRequest = axios.get('https://eas-grist06.aston.ac.uk/admin/index.php/user/' + uid + '?_format=json', {
+    this.serverRequest = axios.get('https://eas-grist06.aston.ac.uk/user/' + uid + '?_format=json', {
       headers: { "Authorization": "Basic " + auth }
     })
       .then(function (result) {
