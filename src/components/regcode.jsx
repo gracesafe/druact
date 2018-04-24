@@ -11,76 +11,77 @@ class RegCode extends Component {
       regcode: ''
     }
     this.handleSubmit = this.handleSubmit.bind(this);
-    
+    this.handleSubmit = this.handleSubmit.bind(this);
+
   }
 
   componentDidMount() {
     var uid = localStorage.getItem('uid');
     var auth = localStorage.getItem('auth');
+    var pass = localStorage.getItem('pass');
+    var user = localStorage.getItem('uid');
     var self = this;
+    var isAdmin = false;
+    var gid = -1;
+
     this.serverRequest = axios.get('https://eas-grist06.aston.ac.uk/user/' + uid + '?_format=json', {
       headers: { "Authorization": "Basic " + auth }
     })
       .then(function (result) {
         console.log(result);
-        var groupAdmin = false;
         for (var i = 0; i < result.data.roles.length; i++) {
-          if (result.data.roles[i].target_id === 'group_administrator')
-            groupAdmin = true;
+          if (result.data.roles[i].target_id === 'group_administrator') {
+            isAdmin = true;
+            gid = result.data.field_primary_group[0].target_id;
+            // primaryGroupName = result.data.field_primary_group[0].target_id;
+            localStorage.setItem('group_id', result.data.field_primary_group[0].target_id);
+            // gid = result.data.field_primary_group[0].target_id;
+
+          }
         }
         var userDate = new Date(parseInt(result.data.created["0"].value, 10) * 1000);
         self.setState({
           'name': result.data.name["0"].value,
           'email': result.data.mail["0"].value,
-          'groupAdmin': groupAdmin,
+          'isAdmin': isAdmin,
           'date': userDate.toISOString()
         });
+        // localStorage.setItem('group_named', result.data.field_primary_group[0].target_id);
+        self.serverRequest = axios.get('https://eas-grist06.aston.ac.uk/group/' + gid + '?_format=json', {
+          headers: { "Authorization": "Basic " + auth }
+        })
+          .then(function (result1) {
+            console.log(result1);
+            localStorage.setItem('group_name', result1.data.label[0].value);
+
+          })
+
       })
   }
 
   handleSubmit(event) {
     event.preventDefault();
-
+    
     var self = this;
+    this.state.registrationCode = 'AAA111';
 
-    axios.post('https://eas-grist06.aston.ac.uk/user/login?_format=json', {
+    axios.post('/entity/registration_code?_format=json', {
       name: this.state.name,
-      pass: this.state.password
+      title: this.state.registrationCode,
+      field_created_by: this.state.name,
+      field_email: this.state.userEmail,
+      field_registration_code: this.state.registrationCode,
+      pass: this.state.password,
+      auth: localStorage.getItem('auth'), 
+      type: {
+        'target_id': 'registration_code'
+      },
     })
       .then(function (response) {
         self.setState({
-          'success': 'Login successful',
+          'success': 'Registration Code created',
           'error': ''
         });
-
-        localStorage.setItem('username', response.data.current_user.name);
-        localStorage.setItem('uid', response.data.current_user.uid);
-        localStorage.setItem('csrf_token', response.data.csrf_token);
-        localStorage.setItem('logout_token', response.data.logout_token);
-        localStorage.setItem('auth', window.btoa(self.state.name + ':' + self.state.password));
-        localStorage.setItem('roles', response.data.roles);
-
-        // // login to GRiST if the drupal login is successful
-        // axios.post('https://www.secure.egrist.org/login-headless.php?u=trust-su-drupal&p=delta4force&metaClinID=', 'GET')
-        //   .then(function (response) {
-        //     self.setState({
-        //       'success': 'Login successful',
-        //       'error': ''
-        //     });
-
-        //     var session = response['data'];
-        //     localStorage.setItem('sid', session);
-        //     console.log(session);
-
-        //     self.setState({ redirect: true });
-        //   }).catch(function (error) {
-        //     console.log(error);
-        //     self.setState({
-        //       'success': '',
-        //       'error': error
-        //     });
-        //   });
-
         // self.setState({ redirect: true });
       })
       .catch(function (error) {
@@ -93,42 +94,79 @@ class RegCode extends Component {
         });
       });
   }
-  render() {
-    if (this.state.groupAdmin){
 
+  handleChange(event) {
+    const key = event.target.name;
+    const value = event.target.value;
     
-    return (
-      <div className="row top-buffer">
-        <div className="col">
-          <form className="col-md-8 offset-md-2 text-center" onSubmit={this.handleSubmit}>
-            <div className="form-inline">
-              <label htmlFor="userEmail" className="col-sm-6 control-label">Email for New User</label>
-              <div className="col-sm-6">
-                <input name="userEmail" value={this.state.userEmail} onChange={this.handleChange} required
-                  type="text" className="form-control" placeholder="User email e.g. user@example.com" />
-              </div>
-            </div>
-            <div className="form-inline">
-              <label htmlFor="registrationCode" className="col-sm-6 control-label">Registration Code</label>
-              <div className="col-sm-6">
-                <input name="registrationCode" value={this.state.registrationCode} type="text" className="form-control" placeholder="Code issued by trust e.g. GMH-123456" />
-              </div>
-            </div>
-            <button type="submit" className="btn btn-primary">Allocate Registration Code</button>
-            <div className="form-group messages">
-              <p className="success">{this.state.success}</p>
-              <p className="error" dangerouslySetInnerHTML={{ __html: this.state.error }} />
-            </div>
-
-          </form>
-        </div>
-      </div>
-    );
-  }else {
-    return  (
-      <div />
-    );
+    this.textCode.value = Math.floor(Math.random() * (999)); // 3 numbers 
+    this.setState({
+      [key]: value
+    })
   }
+
+  copyToClipboard = (e) => {
+    this.textCode.select();
+    document.execCommand('copy');
+    // This is just personal preference.
+    // I prefer to not show the the whole text area selected.
+    e.target.focus();
+    this.setState({ copySuccess: 'Copied!' });
+  };
+
+  render() {
+    if (this.state.isAdmin || true) {
+      var groupName = localStorage.getItem('group_name');
+      return (
+        <div className="row top-buffer">
+          <div className="col">
+            <form className="col-md-8 offset-md-2 text-center" onSubmit={this.handleSubmit}>
+              <div className="row text-center" value={groupName}><h1>New user in {groupName}</h1><br /></div>
+              <div className="row text-left" value={groupName}><h6>Once you have entered the email address for the new account click <strong>'Allocate Code'.</strong>
+                A registration code will be created and allocated to the email address. The code can only be used to create an account with the <italic>given email address</italic>.<br />
+                You can send a system email to the user with the registration code by clicking <strong>'Send Email'</strong> below. <br />
+                The user will be added to the <strong>{groupName}</strong> group once registered.
+                The copy icon will copy the registration code to your system clipboard.</h6><br />
+                <h3>Please send the registration code to the user to create a new account.</h3></div>
+              <div className="form-inline">
+                <label htmlFor="userEmail" className="col-sm-6 control-label">User Email</label>
+                <div className="col-sm-6">
+                  <input name="userEmail" value={this.state.userEmail} onChange={this.handleChange} required
+                    type="text" className="form-control" placeholder="User email (user@example.com)" />
+                </div>
+              </div>
+              <div className="form-inline">
+                <label htmlFor="registrationCode" className="col-sm-6 control-label disabled">Registration Code</label>
+                <div className="col-sm-6">
+                  <input name="registrationCode" ref={(textCode) => this.textCode = textCode} type="text" className="form-control" placeholder="Code issued by trust e.g. GMH-123456" 
+                  value={this.state.registrationCode} onChange={this.handleChange} />
+                  {
+                    /* Logical shortcut for only displaying the 
+                       button if the copy command exists */
+                    document.queryCommandSupported('copy') &&
+                    <div>
+                      <i className="fa fa-copy" onClick={this.copyToClipboard}></i>
+                      {this.state.copySuccess}
+                    </div>
+                  }
+                </div>
+              </div>
+              <button type="submit" className="btn btn-primary">Allocate Code</button>&nbsp;&nbsp;
+              <button type="submit" className="btn btn-primary disabled">Send Email</button>
+              <div className="form-group messages">
+                <p className="success">{this.state.success}</p>
+                <p className="error" dangerouslySetInnerHTML={{ __html: this.state.error }} />
+              </div>
+
+            </form>
+          </div>
+        </div>
+      );
+    } else {
+      return (
+        <div />
+      );
+    }
   }
 }
 
