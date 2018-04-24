@@ -22,10 +22,10 @@ class Navbar extends Component {
     if (loggedIn) {
       return (
         <span>
-          <NavLink className="dropdown-item" activeClassName="active" to="/mygrace/user/profile">
+          <NavLink className="dropdown-item" activeClassName="active" to="/user/profile">
             <i className="fa fa-user-circle"></i> Account Profile
           </NavLink>
-          <NavLink className="dropdown-item" activeClassName="active" to="/mygrace/user/logout">
+          <NavLink className="dropdown-item" activeClassName="active" to="/user/logout">
             <i className="fa fa-sign-out"></i> Logout
           </NavLink>
         </span>
@@ -34,10 +34,10 @@ class Navbar extends Component {
     else {
       return (
         <span>
-          <NavLink className="dropdown-item" activeClassName="active" to="/mygrace/user/register">
+          <NavLink className="dropdown-item" activeClassName="active" to="/user/register">
             <i className="fa fa-id-card"></i> Register Account
           </NavLink>
-          <NavLink className="dropdown-item" activeClassName="active" to="/mygrace/user/login">
+          <NavLink className="dropdown-item" activeClassName="active" to="/user/login">
             <i className="fa fa-sign-in"></i> Login
           </NavLink>
         </span>
@@ -63,18 +63,18 @@ class Navbar extends Component {
               <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                   <li className="nav-item">
-                    <NavLink exact className="nav-link" activeClassName="active" to="/mygrace">
+                    <NavLink exact className="nav-link" activeClassName="active" to="">
                       <i className="fa fa-home"></i> Home
-                      {/* <img src='/public/images/mygracelogo.png' className="img-fluid"/> */}
+                      {/* <img src='/public/imageslogo.png' className="img-fluid"/> */}
                     </NavLink>
                   </li>
                   <li>
-                    <a className="nav-link" href="/mygrace/documents" id="navbarButtonDocuments">
+                    <a className="nav-link" href="/documents" id="navbarButtonDocuments">
                       <i className="fa fa-file"></i> Documents
                     </a>
                   </li>
                   <li className="nav-item">
-                    <NavLink exact className="nav-link" activeClassName="active" to="/mygrace/contact">
+                    <NavLink exact className="nav-link" activeClassName="active" to="/contact">
                       <i className="fa fa-home"></i> Contact Us
                     </NavLink>
                   </li>
