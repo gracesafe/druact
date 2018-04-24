@@ -12,11 +12,3 @@
 
 .error {
   color: red; }
-
-.stretch {
-  width: 100%; }
-
-.screen {
-  min-height: 700px;
-  border-width: 1px 1px 1px 1px;
-  border-color: black; }

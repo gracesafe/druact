@@ -41,7 +41,7 @@ class Login extends Component {
 
     var self = this;
 
-    axios.post('https://eas-grist06.aston.ac.uk/user/login?_format=json', {
+    axios.post('https://eas-grist06.aston.ac.uk/drupal/user/login?_format=json', {
       name: this.state.name,
       pass: this.state.password
     })
