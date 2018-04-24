@@ -2,3 +2,4 @@
 /build
 package-lock.json
 build.zip
+yarn-error.log
