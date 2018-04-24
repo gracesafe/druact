@@ -24,7 +24,7 @@ class RegCode extends Component {
     var isAdmin = false;
     var gid = -1;
 
-    this.serverRequest = axios.get('https://eas-grist06.aston.ac.uk/user/' + uid + '?_format=json', {
+    this.serverRequest = axios.get('/admin/user/' + uid + '?_format=json', {
       headers: { "Authorization": "Basic " + auth }
     })
       .then(function (result) {
@@ -47,7 +47,7 @@ class RegCode extends Component {
           'date': userDate.toISOString()
         });
         // localStorage.setItem('group_named', result.data.field_primary_group[0].target_id);
-        self.serverRequest = axios.get('https://eas-grist06.aston.ac.uk/group/' + gid + '?_format=json', {
+        self.serverRequest = axios.get('/admin/group/' + gid + '?_format=json', {
           headers: { "Authorization": "Basic " + auth }
         })
           .then(function (result1) {
@@ -65,7 +65,7 @@ class RegCode extends Component {
     var self = this;
     this.state.registrationCode = 'AAA111';
 
-    axios.post('/entity/registration_code?_format=json', {
+    axios.post('/admin/entity/registration_code?_format=json', {
       name: this.state.name,
       title: this.state.registrationCode,
       field_created_by: this.state.name,
