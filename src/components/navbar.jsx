@@ -72,9 +72,6 @@ class Navbar extends Component {
                   <NavLink exact className="nav-link" activeClassName="active" to="/documents">
                     <i className="fa fa-file"></i> Documents
                     </NavLink>
-                  <a className="nav-link" href="/documents" id="navbarButtonDocuments">
-                    <i className="fa fa-file"></i> Documents
-                    </a>
                 </li>
                 <li className="nav-item">
                   <NavLink exact className="nav-link" activeClassName="active" to="/contact">

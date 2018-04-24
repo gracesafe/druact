@@ -82,9 +82,9 @@ class homeMenu extends Component {
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
               <li>
-                <a className="nav-link" href="/user/code" id="navbarButtonUsers">
+                <NavLink exact className="nav-link" activeClassName="active" to="/user/code">
                   <i className="fa fa-user"></i> Registration Code
-              </a>
+                </NavLink>
               </li>
               <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkCurrent" data-toggle="dropdown">
