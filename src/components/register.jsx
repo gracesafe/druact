@@ -50,6 +50,16 @@ class Register extends Component {
       return;
     }
 
+    console.log(this.state.notes.split(" ").length )
+    console.log(this.state.notes)
+    if (this.state.notes.split(" ").length <=2) {
+      self.setState({
+        'success': '',
+        'error': 'Notes is below the minimum length'
+      });
+      return;
+    }
+
     axios.post('https://eas-grist06.aston.ac.uk/user/register?_format=json', {
       name: [{"value": this.state.name}],
       mail: [{"value": this.state.email}],
@@ -131,7 +141,7 @@ class Register extends Component {
             <div className="form-inline">
               <labvel htmlFor="notes" className="col-sm-2 control-label">Notes</labvel>
               <div className="col-sm-4">
-                <textarea name="notes" onChange={this.handleChange} className="form-control" placeholder="What are your reasons for registration" value={this.state.notes}/>
+                <textarea name="notes" onChange={this.handleChange} className="form-control" required placeholder="What are your reasons for registration" value={this.state.notes}/>
               </div>
             </div>
             <div className="form-inline">

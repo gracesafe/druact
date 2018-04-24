@@ -12,6 +12,8 @@ class BrowserUtil extends Component {
     this.state = {
       _id: 'item id',
       _name: 'item name',
+      pocketv3: 'https://getpocket.com/v3/get',
+      pocketAuth:'https://getpocket.com/v3/oauth/authorize',
       short_text: 'Item short text',
       item_taxonomy: [],
       item_state: 'new',
@@ -48,6 +50,7 @@ class BrowserUtil extends Component {
       id = 6;
     }
     var self = this;
+
     this.serverRequest = axios.get('https://eas-grist06.aston.ac.uk/node/' + id + '?_format=json')
       .then(function (result) {
         var body = result.data.body["0"].value;
@@ -58,7 +61,7 @@ class BrowserUtil extends Component {
       })
   }
 
-  componentWillUpdate(){
+  componentWillUpdate() {
     var c = document.getElementsByTagName('iframe')[0].contentWindow.__html;
     console.log(c);
   }
@@ -72,9 +75,91 @@ class BrowserUtil extends Component {
       })
   }
 
+  fetchPocketItems() {
+    var self = this;
+    
+    axios.post(this.state.pocketAuth, {
+      consumer_key: '76860-1057e4f9e8d6154ac5f0d028',
+      redirect_uri: 'locahost:3000'})
+      .then(function (response) {
+        var access_token = response.access_token; 
+        self.setState({
+          'access_token': response.access_token,
+          'success': 'Login successful',
+          'error': ''
+        });
+
+    axios.post(this.state.pocketv3, {
+      consumer_key: '76860-1057e4f9e8d6154ac5f0d028',
+      access_token: this.state.access_token,
+      "count": "10",
+      "detailType": "complete"})
+      .then(function (response) {
+        // var 
+        self.setState({
+          'success': 'Login successful',
+          'error': ''
+        });
+
+        localStorage.setItem('username', response.data.current_user.name);
+        localStorage.setItem('uid', response.data.current_user.uid);
+        localStorage.setItem('csrf_token', response.data.csrf_token);
+        localStorage.setItem('logout_token', response.data.logout_token);
+        localStorage.setItem('auth', window.btoa(self.state.name + ':' + self.state.password));
+        for (var i = 0; i < response.data.roles; i++) {
+          localStorage.setItem(response.data.roles[i], true);
+        }
+
+        // login to GRiST if the drupal login is successful
+        axios.post('https://www.secure.egrist.org/login-headless.php?u=trust-su-drupal&p=delta4force&metaClinID=', 'GET')
+          .then(function (response) {
+            self.setState({
+              'success': 'Login successful',
+              'error': ''
+            });
+
+            var session = response['data'];
+            localStorage.setItem('sid', session);
+            console.log(session);
+
+            self.setState({ redirect: true });
+          }).catch(function (error) {
+            console.log(error);
+            self.setState({
+              'success': '',
+              'error': error
+            });
+          });
+
+        // self.setState({ redirect: true });
+      })
+      .catch(function (error) {
+        console.log(error);
+        var errorResponse = error.message;
+        errorResponse = errorResponse.replace(/(?:\r\n|\r|\n)/g, '<br />');
+        self.setState({
+          'success': '',
+          'error': errorResponse
+        });
+      });
+      })
+      .catch(function (error) {
+        console.log(error);
+        var errorResponse = error.message;
+        errorResponse = errorResponse.replace(/(?:\r\n|\r|\n)/g, '<br />');
+        self.setState({
+          'success': '',
+          'error': errorResponse
+        });
+      });
+  }
+
   componentDidMount() {
-    this.fetchArticleTitles();
-    this.fetchArticle();
+    //   this.fetchArticleTitles();
+    //   this.fetchArticle();
+    //
+    this.fetchPocketItems();
+
   }
 
   render() {
