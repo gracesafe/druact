@@ -42,19 +42,19 @@ class Documents extends Component {
       id = 6;
     }
     var self = this;
-    this.serverRequest = axios.get('https://eas-grist06.aston.ac.uk/drupal/entity/file?_format=json')
+    this.serverRequest = axios.get('/rest/content/file?_format=json')
       .then(function (result) {
         var body = result.data.body["0"].value;
         self.setState({
           article_title: result.data.title["0"].value,
-          article_body: body.replace('/sites/default/files', 'https://eas-grist06.aston.ac.uk/drupal/sites/default/files')
+          article_body: body.replace('/sites/default/files', 'https://eas-grist06.aston.ac.uk/sites/default/files')
         });
       })
   }
 
   fetchArticleTitles() {
     var self = this;
-    this.serverRequest = axios.get('https://eas-grist06.aston.ac.uk/entity/file')
+    this.serverRequest = axios.get('/rest/content/file?_format=json')
       .then(function (result) {
         self.setState({
           articles: result.data
