@@ -1,4 +1,4 @@
-import React, { Component, Button } from 'react';
+import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
 class homeMenu extends Component {
@@ -71,8 +71,8 @@ class homeMenu extends Component {
 
   render() {
 
-    var userLinkTitle = this.state.username ? this.state.username : 'User';
-    var userLinkTitle = this.state.username ? this.state.username : 'User';
+    // var userLinkTitle = this.state.username ? this.state.username : 'User';
+    // var userLinkTitle = this.state.username ? this.state.username : 'User';
     var loggedIn = localStorage.getItem('auth');
 
     if (loggedIn) {

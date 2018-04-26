@@ -48,7 +48,7 @@ class Navbar extends Component {
   render() {
 
     var userLinkTitle = this.state.username ? this.state.username : 'User';
-    var loggedIn = localStorage.getItem('auth');
+    // var loggedIn = localStorage.getItem('auth');
 
     // if (loggedIn) {
 

@@ -7,8 +7,8 @@ import {
 } from 'react-router-dom';
 
 import Navbar from './components/navbar.jsx';
-import GraceMenu from './components/graceMenu.jsx';
-import Footer from './components/footer.jsx';
+// import GraceMenu from './components/graceMenu.jsx';
+// import Footer from './components/footer.jsx';
 
 import Home from './components/home.jsx';
 import Articles from './components/articles.jsx';

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import {
-  NavLink
-} from 'react-router-dom';
+// import {
+//   NavLink
+// } from 'react-router-dom';
 
 class BrowserUtil extends Component {
 
@@ -76,7 +76,7 @@ class BrowserUtil extends Component {
   }
 
   fetchPocketItems() {
-    var self = this;
+    // var self = this;
     
     axios.post(this.state.pocketAuth, {
       consumer_key: '76860-1057e4f9e8d6154ac5f0d028',
@@ -84,7 +84,7 @@ class BrowserUtil extends Component {
       .then(function (response) {
         var access_token = response.access_token; 
         self.setState({
-          'access_token': response.access_token,
+          'access_token': access_token,
           'success': 'Login successful',
           'error': ''
         });
@@ -165,11 +165,11 @@ class BrowserUtil extends Component {
   render() {
 
     var rows = [];
-    var self = this;
+    // var self = this;
     var message = 'Let\'s go...'
 
     var c = 'test content';
-    var sourceURL = 'https://en.m.wikipedia.org/w/index.php?title=Knowledge_representation_and_reasoning&article_action=watch';
+    // var sourceURL = 'https://en.m.wikipedia.org/w/index.php?title=Knowledge_representation_and_reasoning&article_action=watch';
     // this.state.articles.forEach(function (article, index) {
     //   if (article.title.toLowerCase().indexOf(self.state.keyword.toLowerCase()) !== -1) {
     //     var path = '/articles/' + article.nid;

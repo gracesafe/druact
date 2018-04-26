@@ -18,8 +18,8 @@ class RegCode extends Component {
   componentDidMount() {
     var uid = localStorage.getItem('uid');
     var auth = localStorage.getItem('auth');
-    var pass = localStorage.getItem('pass');
-    var user = localStorage.getItem('uid');
+    // var pass = localStorage.getItem('pass');
+    // var user = localStorage.getItem('uid');
     var self = this;
     var isAdmin = false;
     var gid = -1;
@@ -34,7 +34,7 @@ class RegCode extends Component {
             isAdmin = true;
             gid = result.data.field_primary_group[0].target_id;
             // primaryGroupName = result.data.field_primary_group[0].target_id;
-            localStorage.setItem('group_id', result.data.field_primary_group[0].target_id);
+            this.setState({'group_id': result.data.field_primary_group[0].target_id});
             // gid = result.data.field_primary_group[0].target_id;
 
           }
@@ -52,7 +52,7 @@ class RegCode extends Component {
         })
           .then(function (result1) {
             console.log(result1);
-            localStorage.setItem('group_name', result1.data.label[0].value);
+            self.setState({'group_name': result1.data.label[0].value});
 
           })
 
@@ -63,7 +63,8 @@ class RegCode extends Component {
     event.preventDefault();
     
     var self = this;
-    this.state.registrationCode = 'AAA111';
+    self.setState({registrationCode: 'default'});
+    // this.state.registrationCode = 'AAA111';
 
     // axios.post('/entity/registration_code?_format=json', {
     axios.post('https://eas-grist06.aston.ac.uk/node?_format=json', {

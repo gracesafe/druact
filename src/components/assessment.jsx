@@ -16,10 +16,10 @@ import _ from "lodash";
 // import { setMode } from "./action"; 
 
 
-import {
-  NavLink,
-  Redirect
-} from 'react-router-dom';
+// import {
+//   // NavLink,
+//   Redirect
+// } from 'react-router-dom';
 
 class Assessment extends Component {
 
@@ -48,7 +48,7 @@ class Assessment extends Component {
   handleSubmit(event) {
     event.preventDefault();
 
-    var self = this;
+    // var self = this;
 
     // axios.post('https://eas-grist06.aston.ac.uk/user/register?_format=json', {
     //   name: [{ "value": this.state.name }],
