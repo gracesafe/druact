@@ -65,7 +65,8 @@ class RegCode extends Component {
     var self = this;
     this.state.registrationCode = 'AAA111';
 
-    axios.post('/entity/registration_code?_format=json', {
+    // axios.post('/entity/registration_code?_format=json', {
+    axios.post('https://eas-grist06.aston.ac.uk/node?_format=json', {
       name: this.state.name,
       title: this.state.registrationCode,
       field_created_by: this.state.name,
