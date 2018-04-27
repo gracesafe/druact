@@ -76,12 +76,18 @@ class Assessment extends Component {
     //   });
   }
 
-  handleClick(e) {
-    console.log('event new');
-    console.log(e);
-    localStorage.setItem('startMode', e);
+  componentWillUpdate(){
+    // this.loadGrist();
+  }
+  componentDidMount() {
+    this.loadGrist();
+  }
 
-    var sid = localStorage.getItem('sid');
+  loadGrist(){
+    var mode = this.props.location.search.split('=')[1];
+    this.setState({'startMode': mode});
+
+    var sid = this.state.sid;
 
     var gristURL = 'https://www.secure.egrist.org/panel/mhexperts/mh-dss-assess-light-launch.php?SID=' + sid;
     // eslint-disable-next-line
@@ -89,20 +95,20 @@ class Assessment extends Component {
     // eslint-disable-next-line
     gristURL += '&metaPatientName=' + localStorage.getItem('username');;
     // eslint-disable-next-line
-    gristURL += '&metaExtendedSettingsJSTool={"startMode":' + e + '}';
+    gristURL += '&metaExtendedSettingsJSTool={"startMode":' + mode + '}';
     //  self.setState({redirect: true});
 
     console.log(gristURL);
 
-    localStorage.setItem('sourceUrl', gristURL);
-    localStorage.setItem('redirect', true);
+    this.setState({ 'sourceUrl': gristURL});
     // <Redirect to="/home" />
   }
+
   render() {
     console.log(this.props.location.search);
     return (
       <div className="row">
-        <iframe name="fGrist" src={localStorage.getItem('sourceUrl')} height='720px' width='85%' className="col" />
+        <iframe name="fGrist" src={this.state.sourceUrl} height='720px' width='85%' className="col" />
       </div>
     );
   }

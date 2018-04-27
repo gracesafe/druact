@@ -1,41 +1,35 @@
+import axios from 'axios';
+
 /**
- * Make a X-Domain request to url and callback.
+ * Make a request.
  *
+ * @param obj {String}
  * @param url {String}
  * @param method {String} HTTP verb ('GET', 'POST', 'DELETE', etc.)
  * @param data {String} request body
  * @param callback {Function} to callback on completion
  * @param errback {Function} to callback on error
  */
-export default function xdr(url, method, data, callback, errback) {
-    var req;
-    
-    if(XMLHttpRequest) {
-        req = new XMLHttpRequest();
-
-        if('withCredentials' in req) {
-            req.open(method, url, true);
-            req.onerror = errback;
-            req.onreadystatechange = function() {
-                if (req.readyState === 4) {
-                    if (req.status >= 200 && req.status < 400) {
-                        callback(req.responseText);
-                    } else {
-                        errback(new Error('Response returned with non-OK status'));
-                    }
-                }
-            };
-            req.send(data);
-        }
-    } else if(XDomainRequest) {
-        req = new XDomainRequest();
-        req.open(method, url);
-        req.onerror = errback;
-        req.onload = function() {
-            callback(req.responseText);
-        };
-        req.send(data);
-    } else {
-        errback(new Error('CORS not supported'));
-    }
+export default function doRequest(obj, url, method, data, callback, errback) {
+  var auth = localStorage.getItem('auth');
+  var csrf = localStorage.getItem('csrf_token');
+  var headers = {
+    // "Authorization": "Basic " + auth,
+    'Access-Control-Allow-Origin': '*',
+    'X-CSRF-Token': csrf,
+    'Content-Type': 'application/json',
+  };
+  if (method.toLowerCase() === 'post') {
+    obj.serverRequest = axios.post(url, data, {
+        headers: headers
+      })
+      .then(callback)
+      .catch(errback);
+  } else {
+    obj.serverRequest = axios.get(url, data, {
+        headers: headers
+      })
+      .then(callback)
+      .catch(errback);
+  }
 }

@@ -75,7 +75,12 @@ class Navbar extends Component {
                 </li>
                 <li className="nav-item">
                   <NavLink exact className="nav-link" activeClassName="active" to="/contact">
-                    <i className="fa fa-home"></i> Contact Us
+                    <i className="fa fa-envelope"></i> Contact Us
+                    </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink exact className="nav-link" activeClassName="active" to="/home?about">
+                    <i className="fa fa-info"></i> About
                     </NavLink>
                 </li>
                 <GraceMenu />

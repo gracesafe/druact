@@ -32,31 +32,37 @@ class Contact extends Component {
 
     var self = this;
 
-    axios.post('https://eas-grist06.aston.ac.uk/contact_message?_format=json', {
-      contact_form: [{"target_id":"feedback"}],
-      name: [{"value": this.state.name}],
-      mail: [{"value": this.state.email}],
-      subject: [{"value": this.state.subject}],
-      message: [{"value": this.state.message}]
-    })
-    .then(function (response) {
-      self.setState({
-        'success': 'Message sent',
-        'error': ''
-      });
-    })
-    .catch(function (error) {
-      var errorResponse = error.response.data.message;
-      errorResponse = errorResponse.replace(/(?:\r\n|\r|\n)/g, '<br />');
+    axios.post('https://eas-grist06.aston.ac.uk/entity/contact_message?_format=json', {
+      contact_form: [{ "target_id": "feedback" }],
+      name: [{ "value": this.state.name }],
+      mail: [{ "value": this.state.email }],
+      subject: [{ "value": this.state.subject }],
+      message: [{ "value": this.state.message }]
 
-      self.setState({
-        'success': '',
-        'error': errorResponse
+    }, {
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'X-CSRF-Token': localStorage.getItem('csrf_token')
+        }
+      })
+      .then(function (response) {
+        self.setState({
+          'success': 'Message sent',
+          'error': ''
+        });
+      })
+      .catch(function (error) {
+        var errorResponse = error.response.data.message;
+        errorResponse = errorResponse.replace(/(?:\r\n|\r|\n)/g, '<br />');
+
+        self.setState({
+          'success': '',
+          'error': errorResponse
+        });
       });
-    });
   }
 
-  render(){
+  render() {
     return (
       <div className="row top-buffer">
         <div className="col">
@@ -76,7 +82,7 @@ class Contact extends Component {
             <button type="submit" className="btn btn-primary">Send message</button>
             <div className="form-group messages">
               <p className="success">{this.state.success}</p>
-              <p className="error" dangerouslySetInnerHTML={{__html: this.state.error}} />
+              <p className="error" dangerouslySetInnerHTML={{ __html: this.state.error }} />
             </div>
           </form>
         </div>
