@@ -83,7 +83,7 @@ class homeMenu extends Component {
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
               <li>
                 <NavLink exact className="nav-link" activeClassName="active" to="/user/code">
-                  <i className="fa fa-user"></i> Registration Code
+                  <i className="fa fa-id-card"></i> Registration Code
                 </NavLink>
               </li>
               <li className="nav-item dropdown">
