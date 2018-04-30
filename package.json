@@ -9,9 +9,11 @@
     "react-router-dom": "^4.1.1"
   },
   "devDependencies": {
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "node-sass": "^4.5.2",
     "npm-run-all": "^4.0.2",
-    "react-scripts": "0.9.5",
-    "node-sass": "^4.5.2"
+    "react-scripts": "0.9.5"
   },
   "scripts": {
     "start-js": "react-scripts start",

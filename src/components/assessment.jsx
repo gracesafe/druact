@@ -76,6 +76,10 @@ class Assessment extends Component {
     //   });
   }
 
+  componentWillReceiveProps(){
+    // this.loadGrist();
+    
+  }
   componentWillUpdate(){
     // this.loadGrist();
   }
@@ -87,7 +91,7 @@ class Assessment extends Component {
     var mode = this.props.location.search.split('=')[1];
     this.setState({'startMode': mode});
 
-    var sid = this.state.sid;
+    var sid = localStorage.getItem('sid');
 
     var gristURL = 'https://www.secure.egrist.org/panel/mhexperts/mh-dss-assess-light-launch.php?SID=' + sid;
     // eslint-disable-next-line
@@ -101,7 +105,7 @@ class Assessment extends Component {
     console.log(gristURL);
 
     this.setState({ 'sourceUrl': gristURL});
-    // <Redirect to="/home" />
+    // <Redirect to="/assessment" />
   }
 
   render() {
