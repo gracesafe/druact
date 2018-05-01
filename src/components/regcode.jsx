@@ -28,7 +28,7 @@ class RegCode extends Component {
       headers: { "Authorization": "Basic " + auth }
     })
       .then(function (result) {
-        // console.log(result);
+        console.log(result);
         for (var i = 0; i < result.data.roles.length; i++) {
           if (result.data.roles[i].target_id === 'group_administrator') {
             isAdmin = true;
@@ -77,16 +77,15 @@ class RegCode extends Component {
     var self = this;
     // self.setState({ registrationCode: 'default' });
     // this.state.registrationCode = 'AAA111';
-
+    // var groupname = localStorage.getItem('group_name');
+    var uid = localStorage.getItem('uid');
     // axios.post('/entity/registration_code?_format=json', {
     axios.post('https://eas-grist06.aston.ac.uk/node?_format=json', {
       // field_created_by: [{'value' : this.state.name}],
       title: [this.state.registrationCode],
-      field_created_by: ['2770'],
-      field_email: ['zxc@asd.x'],
+      field_created_by: [uid],
+      field_email: [this.state.userEmail],
       field_registration_code: [this.state.registrationCode],
-      // pass: this.state.password,
-      // auth: localStorage.getItem('auth'),
       type: 'registration_code'
     }, {
         headers: {
@@ -117,9 +116,9 @@ class RegCode extends Component {
     const value = event.target.value;
 
     // this.textCode.value = Math.floor(Math.random() * (999)); // 3 numbers 
-    // this.setState({
-    //   [key]: value
-    // })
+    this.setState({
+      [key]: value
+    })
   }
 
   copyToClipboard = (e) => {

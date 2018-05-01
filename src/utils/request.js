@@ -33,3 +33,6 @@ export default function doRequest(obj, url, method, data, callback, errback) {
       .catch(errback);
   }
 }
+export function dataHandler(callback, requestObj){
+  
+}
