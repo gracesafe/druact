@@ -24,11 +24,15 @@ class Profile extends Component {
         console.log(result);
         var groupAdmin = false;
         var roles = []
-        for (var i = 0; i < result.data.roles.length; i++) {
-          roles.push(result.data.roles[i].target_id);
-          if (result.data.roles[i].target_id === 'group_administrator')
-          groupAdmin = true;
-        }
+        if (result.data.roles !== undefined)
+          for (var i = 0; i < result.data.roles.length; i++) {
+            roles.push(result.data.roles[i].target_id);
+            if (result.data.roles[i].target_id === 'group_administrator')
+              groupAdmin = true;
+          }
+        var primaryGroup = '';
+        if (result.data.field_primary_group[0] !== undefined)
+        primaryGroup = result.data.field_primary_group["0"].target_id
         console.log(roles);
         var userDate = new Date(parseInt(result.data.created["0"].value, 10) * 1000);
         self.setState({
@@ -37,7 +41,7 @@ class Profile extends Component {
           'firstName': result.data.field_first_name["0"].value + ' ',
           'notes': result.data.field_notes["0"].value,
           'surname': result.data.field_surname["0"].value,
-          'primaryGroup': result.data.field_primary_group["0"].target_id,
+          'primaryGroup': primaryGroup,
           'regCode': result.data.field_registration_code.value,
           'groupAdmin': groupAdmin,
           'roles': roles.toLocaleString(),
