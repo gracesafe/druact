@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import GraceMenu from './graceMenu.jsx';
 
 class Navbar extends Component {
 
@@ -18,25 +17,30 @@ class Navbar extends Component {
   }
 
   renderUserLinks() {
+    var userLinkTitle = this.state.username ? this.state.username : 'User';
     var loggedIn = localStorage.getItem('auth');
     if (loggedIn) {
       return (
         <span>
-          <NavLink className="dropdown-item" activeClassName="active" to="/user/profile">
-            <i className="fa fa-user-circle"></i> Account Profile
-          </NavLink>
-          <NavLink className="dropdown-item" activeClassName="active" to="/user/logout">
-            <i className="fa fa-sign-out"></i> Logout
-          </NavLink>
+          <li className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+              <i className="fa fa-user"></i>User: {userLinkTitle}
+            </a>
+            <div className="dropdown-menu">
+              <NavLink className="dropdown-item" activeClassName="active" to="/user/profile">
+                <i className="fa fa-user-circle"></i> Account Profile
+              </NavLink>
+              <NavLink className="dropdown-item" activeClassName="active" to="/user/logout">
+                <i className="fa fa-sign-out"></i> Logout
+              </NavLink>
+            </div>
+          </li>
         </span>
       );
     }
     else {
       return (
-        <span>
-          <NavLink className="dropdown-item" activeClassName="active" to="/user/register">
-            <i className="fa fa-id-card"></i> Register Account
-          </NavLink>
+        <span  className="nav-item">
           <NavLink className="dropdown-item" activeClassName="active" to="/user/login">
             <i className="fa fa-sign-in"></i> Login
           </NavLink>
@@ -47,7 +51,6 @@ class Navbar extends Component {
 
   render() {
 
-    var userLinkTitle = this.state.username ? this.state.username : 'User';
     // var loggedIn = localStorage.getItem('auth');
 
     // if (loggedIn) {
@@ -83,15 +86,7 @@ class Navbar extends Component {
                     <i className="fa fa-info"></i> About
                     </NavLink>
                 </li>
-                <GraceMenu />
-                <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
-                    <i className="fa fa-user"></i> {userLinkTitle}
-                  </a>
-                  <div className="dropdown-menu">
-                    {this.renderUserLinks()}
-                  </div>
-                </li>
+                {this.renderUserLinks()}
               </ul>
             </div>
           </nav>
