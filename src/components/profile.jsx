@@ -34,12 +34,12 @@ class Profile extends Component {
         self.setState({
           'name': result.data.name["0"].value,
           'email': result.data.mail["0"].value,
-          'firstName': result.data.field_first_name["0"].value + ' ',
-          'notes': result.data.field_notes["0"].value,
-          'surname': result.data.field_surname["0"].value,
-          'primaryGroup': result.data.field_primary_group["0"].target_id,
-          'regCode': result.data.field_registration_code.value,
-          'groupAdmin': groupAdmin,
+          // 'firstName': result.data.field_first_name["0"].value + ' ',
+          // 'notes': result.data.field_notes["0"].value,
+          // 'surname': result.data.field_surname["0"].value,
+          // 'primaryGroup': result.data.field_primary_group["0"].target_id,
+          // 'regCode': result.data.field_registration_code.value,
+          // 'groupAdmin': groupAdmin,
           'roles': roles.toLocaleString(),
           'date': userDate.toISOString()
         });

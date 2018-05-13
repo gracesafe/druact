@@ -5,6 +5,7 @@ import {
   NavLink,
   Redirect
 } from 'react-router-dom';
+import doRequest from "../utils/request";
 
 class Login extends Component {
 
@@ -36,11 +37,44 @@ class Login extends Component {
     })
   }
 
+  setUserValues(response) {
+    // authentication 
+    console.log('setting auth values');
+    localStorage.setItem('username', response.data.current_user.name);
+    localStorage.setItem('uid', response.data.current_user.uid);
+    localStorage.setItem('csrf_token', response.data.csrf_token);
+    localStorage.setItem('logout_token', response.data.logout_token);
+    localStorage.setItem('auth', window.btoa(self.state.name + ':' + self.state.password));
+
+    // roles
+    console.log('setting role values');
+    if (!(response.data.current_user.roles === undefined))
+      for (var i = 0; i < response.data.current_user.roles.length; i++) {
+        localStorage.setItem(response.data.current_user.roles[i], true);
+      }
+    else
+      console.log('no role information');
+
+    // groups
+    console.log('setting group values');
+  }
+
+  handleSubmit1(event) {
+    event.preventDefault();
+    var self = this;
+    var data = { name: this.state.name, pass: this.state.password };
+    doRequest(this, 'https://eas-grist06.aston.ac.uk/rest/content/file?_format=json', 'post', data, this.setUserValues, (function (result) {
+      // console.log(result);
+      self.setState({
+        document_body: result
+      });
+    }));
+  }
+
   handleSubmit(event) {
     event.preventDefault();
-
     var self = this;
-
+   
     axios.post('https://eas-grist06.aston.ac.uk/user/login?_format=json', {
       name: this.state.name,
       pass: this.state.password
@@ -82,8 +116,6 @@ class Login extends Component {
               'error': error
             });
           });
-
-        self.setState({ redirect: true });
       })
       .catch(function (error) {
         console.log(error);
@@ -95,7 +127,6 @@ class Login extends Component {
         });
       });
   }
-
   render() {
 
     if (this.state.redirect) {

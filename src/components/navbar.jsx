@@ -40,11 +40,11 @@ class Navbar extends Component {
     }
     else {
       return (
-        <span  className="nav-item">
-          <NavLink className="dropdown-item" activeClassName="active" to="/user/login">
+        <li className="nav-item">
+          <NavLink exact className="nav-link" activeClassName="active" to="/user/login">
             <i className="fa fa-sign-in"></i> Login
           </NavLink>
-        </span>
+        </li>
       );
     }
   }
