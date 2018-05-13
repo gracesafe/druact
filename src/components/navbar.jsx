@@ -58,6 +58,9 @@ class Navbar extends Component {
               <i className="fa fa-link"></i> Applications
             </a>
             <div className="dropdown-menu">
+              <NavLink className="dropdown-item" activeClassName="active" to="/group">
+                <i className="fa fa-wrench"></i> Group
+              </NavLink>
               <NavLink className="dropdown-item" activeClassName="active" to="/grist">
                 <i className="fa fa-wrench"></i> GRiST
               </NavLink>
