@@ -49,6 +49,27 @@ class Navbar extends Component {
     }
   }
 
+  renderAppLinks() {
+    var loggedIn = localStorage.getItem('auth');
+    if (loggedIn) {
+      return (
+          <li className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+              <i className="fa fa-link"></i> Applications
+            </a>
+            <div className="dropdown-menu">
+              <NavLink className="dropdown-item" activeClassName="active" to="/grist">
+                <i className="fa fa-wrench"></i> GRiST
+              </NavLink>
+              <NavLink className="dropdown-item" activeClassName="active" to="/grace">
+                <i className="fa fa-sitemap"></i> GRaCE
+              </NavLink>
+            </div>
+          </li>
+      );
+    }
+  }
+
   render() {
 
     // var loggedIn = localStorage.getItem('auth');
@@ -86,6 +107,7 @@ class Navbar extends Component {
                     <i className="fa fa-info"></i> About
                     </NavLink>
                 </li>
+                {this.renderAppLinks()}
                 {this.renderUserLinks()}
               </ul>
             </div>
