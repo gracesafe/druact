@@ -22,18 +22,18 @@ class Profile extends Component {
     })
       .then(function (result) {
         console.log(result);
-        var groupAdmin = false;
+        // var groupAdmin = false;
         var roles = []
         if (result.data.roles !== undefined)
           for (var i = 0; i < result.data.roles.length; i++) {
             roles.push(result.data.roles[i].target_id);
-            if (result.data.roles[i].target_id === 'group_administrator')
-              groupAdmin = true;
+            // if (result.data.roles[i].target_id === 'group_administrator')
+            //   groupAdmin = true;
           }
-        var primaryGroup = '';
-        if (result.data.field_primary_group[0] !== undefined)
-        primaryGroup = result.data.field_primary_group["0"].target_id
-        console.log(roles);
+        // var primaryGroup = '';
+        // if (result.data.field_primary_group[0] !== undefined)
+        // primaryGroup = result.data.field_primary_group["0"].target_id
+        // console.log(roles);
         var userDate = new Date(parseInt(result.data.created["0"].value, 10) * 1000);
         self.setState({
           'name': result.data.name["0"].value,

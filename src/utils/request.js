@@ -11,16 +11,17 @@ import axios from 'axios';
  * @param errback {Function} to callback on error
  */
 export default function doRequest(obj, url, method, data, callback, errback) {
-  // var auth = localStorage.getItem('auth');
+  var auth = localStorage.getItem('auth');
   var csrf = localStorage.getItem('csrf_token');
   var headers = {
-    // "Authorization": "Basic " + auth,
+    "Authorization": "Basic " + auth,
     'Access-Control-Allow-Origin': '*',
     'X-CSRF-Token': csrf,
     'Content-Type': 'application/json',
   };
+  console.log(headers);
 
-  var hostURL = url.replace("https://eas-grist06.aston.ac.uk/", "https://eas-grist06.aston.ac.uk/admin/");
+  // var hostURL = url.replace("https://eas-grist06.aston.ac.uk/", "https://eas-grist06.aston.ac.uk/admin/");
 
   if (method.toLowerCase() === 'post') {
     obj.serverRequest = axios.post(url, data, {
