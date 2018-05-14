@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
-class homeMenu extends Component {
+export default class GraceMenu extends Component {
 
   constructor(props) {
     super(props);
@@ -115,4 +115,3 @@ class homeMenu extends Component {
   }
 }
 
-export default homeMenu

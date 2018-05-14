@@ -27,16 +27,21 @@ class Home extends Component {
   
     componentDidMount() {
       var self = this;
-      console.log(window.location.search);
-      var url = 'https://eas-grist06.aston.ac.uk/home?_format=json';
+      var url = 'https://eas-grist06.aston.ac.uk/rest/content?_format=json';
+      var id = 1;
       if (window.location.search === '?about')
-        url = 'https://eas-grist06.aston.ac.uk/about?_format=json';
+        id =0;
+      // url = 'https://eas-grist06.aston.ac.uk/about?_format=json';
 
+      console.log('url: ' + url);
+      console.log(window.location.search);
+      
       this.serverRequest = axios.get(url)
       .then(function(result){
+        console.log(result);
         self.setState({
-          article_title: result.data.title["0"].value,
-          article_body: result.data.body["0"].value
+          article_title: result.data[id].title["0"].value,
+          article_body: result.data[id].body["0"].value
         });
       })
     }

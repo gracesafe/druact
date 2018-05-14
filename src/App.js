@@ -22,6 +22,8 @@ import Logout from './components/logout.jsx';
 import Assessment from './components/assessment.jsx';
 import BrowserUtil from './components/research.jsx';
 import RegCode from './components/regcode.jsx';
+import GraceMenu from './components/graceMenu.jsx';
+import Group from './components/group';
 
 class App extends Component {
   render() {
@@ -29,7 +31,8 @@ class App extends Component {
       <Router history={browserHistory}>
         <div className="container">
           <Navbar />
-          {/* <GraceMenu /> */}
+          <GraceMenu />
+          <Route path="/group" component={Group} />
           <Route path="/get" component={BrowserUtil} />
           <Route path="/user/profile" component={Profile} />
           <Route exact path="/" component={Home} />

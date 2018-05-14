@@ -19,6 +19,9 @@ export default function doRequest(obj, url, method, data, callback, errback) {
     'X-CSRF-Token': csrf,
     'Content-Type': 'application/json',
   };
+
+  var hostURL = url.replace("https://eas-grist06.aston.ac.uk/", "https://eas-grist06.aston.ac.uk/admin/");
+
   if (method.toLowerCase() === 'post') {
     obj.serverRequest = axios.post(url, data, {
         headers: headers
