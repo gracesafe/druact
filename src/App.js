@@ -31,7 +31,8 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      config: File.open('./config') localStorage.getItem('username')
+      "username" : localStorage.getItem('username')
+      // config: File.open('./config') localStorage.getItem('username')
     };
   }
 

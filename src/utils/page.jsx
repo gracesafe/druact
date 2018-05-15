@@ -6,7 +6,7 @@ import {
   NavLink
 } from 'react-router-dom';
 
-export default class Page extends Component {
+export default  class Page extends Component {
 
   constructor() {
     super();
