@@ -11,7 +11,8 @@
 
 import React, { Component } from "react";
 import _ from "lodash";
-import doRequest from "../utils/request";
+// import doRequest from "../utils/request";
+import axios from 'axios';
 
 export default class Group extends Component {
 
