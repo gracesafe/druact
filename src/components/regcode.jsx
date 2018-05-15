@@ -29,16 +29,17 @@ class RegCode extends Component {
     })
       .then(function (result) {
         console.log(result);
-        for (var i = 0; i < result.data.roles.length; i++) {
-          if (result.data.roles[i].target_id === 'group_administrator') {
-            isAdmin = true;
-            gid = result.data.field_primary_group[0].target_id;
-            // primaryGroupName = result.data.field_primary_group[0].target_id;
-            // self.setState({ 'group_id': result.data.field_primary_group[0].target_id });
-            // gid = result.data.field_primary_group[0].target_id;
+        if (result.data.roles !== undefined)
+          for (var i = 0; i < result.data.roles.length; i++) {
+            if (result.data.roles[i].target_id === 'group_administrator') {
+              isAdmin = true;
+              gid = result.data.field_primary_group[0].target_id;
+              // primaryGroupName = result.data.field_primary_group[0].target_id;
+              // self.setState({ 'group_id': result.data.field_primary_group[0].target_id });
+              // gid = result.data.field_primary_group[0].target_id;
 
+            }
           }
-        }
         // var userDate = new Date(parseInt(result.data.created["0"].value, 10) * 1000);
         // self.setState({
         //   'name': result.data.name["0"].value,
@@ -140,7 +141,7 @@ class RegCode extends Component {
               <div className="row text-center" value={groupName}><h1>New user in {groupName}</h1><br /></div>
               <div className="row text-left" value={groupName}><h6>Enter the email address for the new account and click <strong>'Allocate Code'</strong> to created and allocated a registration code to the email address. The code can only be used to create an account with the <italic>given email address</italic>.<br />
                 Send a system email to the user with the registration code by clicking <strong>'Send Email'</strong> below. <br />
-                The user will be added to the <strong>{groupName}</strong> group on registeration.<br/>
+                The user will be added to the <strong>{groupName}</strong> group on registeration.<br />
                 The copy icon will copy the registration code to your system clipboard.</h6><br />
                 <h3>Please send the registration code to the user to create a new account.</h3></div>
               <div className="form-inline">
