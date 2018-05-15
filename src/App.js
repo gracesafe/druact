@@ -24,8 +24,21 @@ import BrowserUtil from './components/research.jsx';
 import RegCode from './components/regcode.jsx';
 import GraceMenu from './components/graceMenu.jsx';
 import Group from './components/group';
+import Page from './utils/page';
+import Config from './config';
 
-class App extends Component {
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      config: File.open('./config') localStorage.getItem('username')
+    };
+  }
+
+  init(){
+
+  }
+
   render() {
     return (
       <Router history={browserHistory}>
@@ -52,5 +65,3 @@ class App extends Component {
     );
   }
 }
-
-export default App

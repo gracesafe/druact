@@ -25,23 +25,31 @@ export default class Group extends Component {
 
     componentDidMount() {
         var self = this;
-        this.serverRequest = axios.get('https://eas-grist06.aston.ac.uk/group/35?_format=json')
+        var auth = localStorage.getItem('auth');
+        var csrf = localStorage.getItem('csrf_token');
+        var headers = {
+            "Authorization": "Basic " + auth,
+            'Access-Control-Allow-Origin': '*',
+            'X-CSRF-Token': csrf,
+            'Content-Type': 'application/json',
+        };
+        this.serverRequest = axios.get('https://eas-grist06.aston.ac.uk/admin/structure/views/view/group_membership', {
+            headers: headers
+          })
             .then(function (result) {
                 console.log(result);
-                console.log(result.label[0].value);
-                console.log(result.field_description[0].value);
-                console.log(result.field_body[0].processed);
-                // self.setState({
-                //     article_title: result.data.title["0"].value,
-                //     article_body: result.data.body["0"].value
-                // });
+                // console.log(result.data.field_description[0].value);
+                // console.log(result.data.field_body[0].value);
+                self.setState({
+                    article_title: result.data.field_description[0].value,
+                    article_body: result.data.field_body[0].value
+                });
             })
     }
 
     render() {
         return (
             <div className="row top-buffer">
-            <h1>Group</h1>
                 <div className="col">
                     <div className="card text-center">
                         <div className="card-header">

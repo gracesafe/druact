@@ -1,0 +1,12 @@
+a: 4: {
+  s: 6: "module";
+  a: 64: {
+    s: 14: "automated_cron";i: 0;s: 10: "basic_auth";i: 0;s: 8: "big_pipe";i: 0;s: 5: "block";i: 0;s: 13: "block_content";i: 0;s: 10: "breakpoint";i: 0;s: 7: "captcha";i: 0;s: 8: "ckeditor";i: 0;s: 5: "color";i: 0;s: 7: "comment";i: 0;s: 6: "config";i: 0;s: 7: "contact";i: 0;s: 10: "contextual";i: 0;s: 6: "ctools";i: 0;s: 12: "ctools_block";i: 0;s: 12: "ctools_views";i: 0;s: 8: "datetime";i: 0;s: 5: "dblog";i: 0;s: 18: "dynamic_page_cache";i: 0;s: 6: "editor";i: 0;s: 6: "entity";i: 0;s: 5: "field";i: 0;s: 8: "field_ui";i: 0;s: 4: "file";i: 0;s: 6: "filter";i: 0;s: 5: "gnode";i: 0;s: 5: "group";i: 0;s: 3: "hal";i: 0;s: 4: "help";i: 0;s: 7: "history";i: 0;s: 5: "image";i: 0;s: 4: "link";i: 0;s: 7: "menu_ui";i: 0;s: 7: "migrate";i: 0;s: 14: "migrate_drupal";i: 0;s: 17: "migrate_drupal_ui";i: 0;s: 4: "node";i: 0;s: 6: "nodejs";i: 0;s: 11: "nodejs_ajax";i: 0;s: 13: "nodejs_config";i: 0;s: 13: "nodejs_notify";i: 0;s: 15: "nodejs_watchdog";i: 0;s: 7: "options";i: 0;s: 10: "page_cache";i: 0;s: 4: "path";i: 0;s: 9: "quickedit";i: 0;s: 3: "rdf";i: 0;s: 16: "responsive_image";i: 0;s: 4: "rest";i: 0;s: 6: "restui";i: 0;s: 6: "search";i: 0;s: 13: "serialization";i: 0;s: 8: "shortcut";i: 0;s: 6: "system";i: 0;s: 8: "taxonomy";i: 0;s: 4: "text";i: 0;s: 7: "toolbar";i: 0;s: 4: "tour";i: 0;s: 6: "update";i: 0;s: 4: "user";i: 0;s: 8: "views_ui";i: 0;s: 17: "menu_link_content";i: 1;s: 5: "views";i: 10;s: 8: "standard";i: 1000;
+  }
+  s: 5: "theme";a: 4: {
+    s: 6: "stable";i: 0;s: 6: "classy";i: 0;s: 6: "bartik";i: 0;s: 5: "seven";i: 0;
+  }
+  s: 7: "profile";s: 8: "standard";s: 5: "_core";a: 1: {
+    s: 19: "default_config_hash";s: 43: "R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc";
+  }
+}

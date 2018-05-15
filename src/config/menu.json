@@ -1,0 +1,10 @@
+{
+  "name": "Menu",
+  "version": "0.1",
+  "items": {
+    "icon": "fa-wrench",
+    "text": "Groups",
+    "order": "1",
+    "parent": ""
+  }
+}
