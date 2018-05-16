@@ -38,10 +38,12 @@ export default class Group extends Component {
     }
 
     updateSelectedDocument(event) {
+        event.preven
         this.fetchDocument(event.target.getAttribute('data-value'));
     }
 
     fetchDocument(nid) {
+        console.log("fetchDocument" + nid);
         var id;
         if (nid !== undefined) {
             id = nid;
@@ -102,6 +104,12 @@ export default class Group extends Component {
         }));
     }
 
+    // showContent() {
+    //     this.state.document_body
+    //  onClick={self.updateSelectedDocument(document.entity_id)}
+
+    // }
+
     componentDidMount() {
         console.log("result");
         this.fetchDocumentTitles();
@@ -109,45 +117,44 @@ export default class Group extends Component {
     }
 
     render() {
-
         var rows = [];
         var self = this;
         console.log(window.location.search.length);
-        if (window.location.search.length == 0)
+        if (window.location.search.length === 0)
             this.state.documents.forEach(function (document, index) {
                 var title = document.field_description_value;
                 var nid = document.entity_id;
-                var link = '?group_id=' + document.entity_id;
+                var link = document.entity_id;
+                var group_content = document.field_body_value
                 if (title.toLowerCase().indexOf(self.state.keyword.toLowerCase()) !== -1) {
-                    rows.push(<NavLink key={nid} data-value={nid} to={link} target="_blank" className="list-group-item list-group-item-action">{title}</NavLink>);
+                    rows.push
+                        (
+                        <div className="col-md-8">
+                            <div className="card text-center">
+                                <div className="card-header">
+                                    {title}
+                                </div>
+                                <div className="card-block" dangerouslySetInnerHTML={{ __html: group_content }} />
+                            </div>
+                        </div>
+                        );
                 }
             });
 
         return (
             <div className="row top-buffer">
-                <div className="col-md-4">
-                    <h1>Groups</h1><br />
-                </div>
-                <div className="col-md-4">
+                <div className="col-md-4  offset-2">
                     <form>
                         <div className="form-group">
                             <input name="keyword" value={this.state.keyword} onChange={this.updateSearchKeyword} type="text" className="form-control" placeholder="Search groups" />
                         </div>
                     </form>
+                    <br />
                 </div>
                 <br />
                 <div className="list-group offset-1 col-md-8">
                     {rows}
                 </div><br />
-                <div className="col-md-8">
-                    <div className="card text-center">
-                        <div className="card-header">
-                            {this.state.document_title}
-                        </div>
-                        <div className="card-block" dangerouslySetInnerHTML={{ __html: this.state.document_body }} />
-                    </div>
-                </div>
-                <br />
             </div>
         );
 
