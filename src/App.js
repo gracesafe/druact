@@ -24,8 +24,8 @@ import BrowserUtil from './components/research.jsx';
 import RegCode from './components/regcode.jsx';
 import GraceMenu from './components/graceMenu.jsx';
 import Group from './components/group';
-import Page from './utils/page';
-import Config from './config';
+// import Page from './utils/page';
+// import Config from './config';
 
 export default class App extends Component {
   constructor(props) {

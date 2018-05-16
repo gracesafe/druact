@@ -6,7 +6,7 @@ import {
   NavLink
 } from 'react-router-dom';
 
-class Documents extends Component {
+export default class Documents extends Component {
 
   constructor() {
     super();
@@ -30,59 +30,13 @@ class Documents extends Component {
   updateSelectedDocument(event) {
     this.fetchDocument(event.target.getAttribute('data-value'));
   }
-
-  fetchDocument(nid) {
-    // var id;
-    // if (nid !== undefined) {
-    //   id = nid;
-    // }
-    // else if (this.props.match.params.id !== undefined) {
-    //   id = this.props.match.params.id;
-    // }
-    // else {
-    //   id = 6;
-    // }
-    // var self = this;
-    // this.serverRequest = axios.get('https://eas-grist06.aston.ac.uk/rest/content/file/' + id + '?_format=json', {
-    //   'Access-Control-Allow-Origin': '*',
-    //   'Content-Type': 'application/json',
-    // }).then(function (result) {
-    //   console.log(result);
-    //   self.setState({
-    //     documents: result.data
-    //   });
-    // }).catch(function (error) {
-    //   console.log(error);
-    //   self.setState({
-    //     document_body: error
-    //   });
-    // })
-    // xdr(self, 'https://eas-grist06.aston.ac.uk/rest/content/file?_format=json', function (result) {
-    //   console.log(result);
-    //   }, function (error) {
-    //     console.log(error);
-    //     self.setState({
-    //       document_body: error
-    //     });
-    //   })
-    // console.log(result);
-    // this.serverRequest = axios.get('https://eas-grist06.aston.ac.uk//rest/content/file?_format=json',
-    // {
-    //   'Access-Control-Allow-Origin': '*',
-    //   'Content-Type': 'application/json',
-    // },)
-    //   .then(function (result) {
-    //     var body = result.title["0"].value;
-    //     self.setState({
-    //       document_title: result.data.title["0"].value,
-    //       document_body: body.replace('/sites/default/files', 'https://eas-grist06.aston.ac.uk/sites/default/files')
-    //     });
-    //   })
-  }
-
+ 
   fetchDocumentTitles() {
     var self = this;
-    doRequest(this, 'https://eas-grist06.aston.ac.uk/rest/content/file?_format=json', 'get', '', (function (result) {
+    console.log('https://eas-grist06.aston.ac.uk/drupal-api.php');
+    var url = 'https://eas-grist06.aston.ac.uk/rest/content/file?_format=json';
+    url = 'https://eas-grist06.aston.ac.uk/drupal-api.php';
+    doRequest(this, url, 'get', '', (function (result) {
       // console.log(result);
       self.setState({
         documents: result.data
@@ -93,32 +47,6 @@ class Documents extends Component {
         document_body: result
       });
     }));
-
-    // this.serverRequest = axios.get('https://eas-grist06.aston.ac.uk/rest/content/file?_format=json', {
-    //   'Access-Control-Allow-Origin': '*',
-    //   'Content-Type': 'application/json',
-    // }).then(function (result) {
-    //   console.log(result);
-    //   self.setState({
-    //     documents: result.data
-    //   });
-    // }).catch(function (error) {
-    //   console.log(error);
-    //   self.setState({
-    //     document_body: error
-    //   });
-    // });
-    // xdr('https://eas-grist06.aston.ac.uk/entity/file?_format=json', 'GET', {}, (
-    //   function (data) {
-    //     self.setState({
-    //       documents: data.data
-    //     });
-    //   }
-    // ), (function (data) {
-    //   self.setState({
-    //     document_body: data
-    //   });
-    // }));
   }
 
   componentDidMount() {
@@ -131,9 +59,12 @@ class Documents extends Component {
     var rows = [];
     var self = this;
     this.state.documents.forEach(function (document, index) {
-      var title = document.title[0].value;
-      var nid = document.nid[0].value;
-      var link = document.field_link[0].uri;
+      var title = document.field_description_value;
+      var nid = document.entity_id;
+      var link = 'group?' + document.entity_id;
+      // var title = document.title[0].value;
+      // var nid = document.nid[0].value;
+      // var link = document.field_link[0].uri;
       // console.log(link);
       if (title.toLowerCase().indexOf(self.state.keyword.toLowerCase()) !== -1) {
         // var path = '/rest/entity/file/' + nid;
@@ -169,5 +100,3 @@ class Documents extends Component {
     );
   }
 }
-
-export default Documents

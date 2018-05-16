@@ -20,7 +20,7 @@ class RegCode extends Component {
     var auth = localStorage.getItem('auth');
     // var pass = localStorage.getItem('pass');
     // var user = localStorage.getItem('uid');
-    var isAdmin = false;
+    // var isAdmin = false;
     var gid = -1;
     var self = this;
 
@@ -32,7 +32,7 @@ class RegCode extends Component {
         if (result.data.roles !== undefined)
           for (var i = 0; i < result.data.roles.length; i++) {
             if (result.data.roles[i].target_id === 'group_administrator') {
-              isAdmin = true;
+              // isAdmin = true;
               gid = result.data.field_primary_group[0].target_id;
               // primaryGroupName = result.data.field_primary_group[0].target_id;
               // self.setState({ 'group_id': result.data.field_primary_group[0].target_id });
