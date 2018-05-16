@@ -58,6 +58,7 @@ export default class Group extends Component {
             console.log(result);
             self.setState({
                 // document_title: result.data["0"].field_description_value,
+                single: true,
                 document_body: result.data["0"].field_body_value
             });
         }), (function (result) {
@@ -81,12 +82,17 @@ export default class Group extends Component {
         console.log(window.location.search);
         var id = window.location.search.replace('?', '')
         console.log(id);
-        console.log('https://eas-grist06.aston.ac.uk/drupal-api.php');
         var url = 'https://eas-grist06.aston.ac.uk/drupal-api.php';
+        if (id.length > 0) {
+            url += "?" + id;
+        }
+        console.log(url);
         doRequest(this, url, 'get', '', (function (result) {
             // console.log(result);
             self.setState({
-                documents: result.data
+                documents: result.data,
+                document_body: result.data[0].field_body_value,
+                single: false
             });
         }), (function (result) {
             // console.log(result);
@@ -97,23 +103,25 @@ export default class Group extends Component {
     }
 
     componentDidMount() {
-            console.log("result");
+        console.log("result");
         this.fetchDocumentTitles();
-        this.fetchDocument();
+        // this.fetchDocument();
     }
 
     render() {
 
         var rows = [];
         var self = this;
-        this.state.documents.forEach(function (document, index) {
-            var title = document.field_description_value;
-            var nid = document.entity_id;
-            var link = 'group?' + document.entity_id;
-            if (title.toLowerCase().indexOf(self.state.keyword.toLowerCase()) !== -1) {
-                rows.push(<NavLink key={nid} data-value={nid} to={link} className="list-group-item list-group-item-action">{title}</NavLink>);
-            }
-        });
+        console.log(window.location.search.length);
+        if (window.location.search.length == 0)
+            this.state.documents.forEach(function (document, index) {
+                var title = document.field_description_value;
+                var nid = document.entity_id;
+                var link = '?group_id=' + document.entity_id;
+                if (title.toLowerCase().indexOf(self.state.keyword.toLowerCase()) !== -1) {
+                    rows.push(<NavLink key={nid} data-value={nid} to={link} target="_blank" className="list-group-item list-group-item-action">{title}</NavLink>);
+                }
+            });
 
         return (
             <div className="row top-buffer">
@@ -128,6 +136,9 @@ export default class Group extends Component {
                     </form>
                 </div>
                 <br />
+                <div className="list-group offset-1 col-md-8">
+                    {rows}
+                </div><br />
                 <div className="col-md-8">
                     <div className="card text-center">
                         <div className="card-header">
@@ -137,10 +148,8 @@ export default class Group extends Component {
                     </div>
                 </div>
                 <br />
-                <div className="list-group offset-1 col-md-8">
-                    {rows}
-                </div><br />
             </div>
         );
+
     }
 }
