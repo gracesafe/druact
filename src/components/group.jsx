@@ -56,7 +56,8 @@ export default class Group extends Component {
         }
         var self = this;
         var url = 'https://eas-grist06.aston.ac.uk/drupal-api.php?group_id=' + id;
-        doRequest(this, url, 'get', '', (function (result) {
+        var data = {"uid": localStorage.getItem('uid')};
+        doRequest(this, url, 'get', data, (function (result) {
             console.log(result);
             self.setState({
                 // document_title: result.data["0"].field_description_value,
@@ -84,10 +85,10 @@ export default class Group extends Component {
         console.log(window.location.search);
         var id = window.location.search.replace('?', '')
         console.log(id);
-        var url = 'https://eas-grist06.aston.ac.uk/drupal-api.php';
-        if (id.length > 0) {
-            url += "?" + id;
-        }
+        var url = 'https://eas-grist06.aston.ac.uk/drupal-api.php?uid=' + localStorage.getItem('uid');
+        // if (id.length > 0) {
+        //     url += "?" + id;
+        // }
         console.log(url);
         doRequest(this, url, 'get', '', (function (result) {
             // console.log(result);
@@ -132,7 +133,12 @@ export default class Group extends Component {
                         <div className="col-md-8">
                             <div className="card text-center">
                                 <div className="card-header">
-                                    {title}
+                                    <form>
+                                        <div className="form-group">
+                                            {title}
+                                            {/* <button className="default pull-right">View</button> */}
+                                        </div>
+                                    </form>
                                 </div>
                                 <div className="card-block" dangerouslySetInnerHTML={{ __html: group_content }} />
                             </div>
@@ -152,7 +158,7 @@ export default class Group extends Component {
                     <br />
                 </div>
                 <br />
-                <div className="list-group offset-1 col-md-8">
+                <div className="list-group offset-1 col-md-12">
                     {rows}
                 </div><br />
             </div>
