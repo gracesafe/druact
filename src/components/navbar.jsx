@@ -51,31 +51,51 @@ class Navbar extends Component {
 
   renderAppLinks() {
     var loggedIn = localStorage.getItem('auth');
+    var groupAdmin = localStorage.getItem('group_administrator');
     if (loggedIn) {
-      return (
-        <li>
-          <NavLink exact className="nav-link" activeClassName="active" to="/group">
-            <i className="fa fa-file"></i> Groups
+      if (groupAdmin) {
+        return (
+          <span>
+            <li className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+                <i className="fa fa-user"></i> Actions
+              </a>
+              <div className="dropdown-menu">
+                <NavLink exact className="nav-link" activeClassName="active" to="/registration">
+                  <i className="fa fa-file"></i> User Registration
+                </NavLink>
+                <NavLink exact className="nav-link" activeClassName="active" to="/group">
+                  <i className="fa fa-file"></i> Groups
+                </NavLink>
+              </div>
+            </li>
+          </span >
+        );
+      } else {
+        return (
+          <li>
+            <NavLink exact className="nav-link" activeClassName="active" to="/group">
+              <i className="fa fa-file"></i> Groups
           </NavLink>
-        </li>
-
-        // <li className="nav-item dropdown">
-        //   <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
-        //     <i className="fa fa-link"></i> Applications
-        //   </a>
-        //   <div className="dropdown-menu">
-        //     <NavLink className="dropdown-item" activeClassName="active" to="/group">
-        //       <i className="fa fa-wrench"></i> Group
-        //     </NavLink>
-        //     <NavLink className="dropdown-item" activeClassName="active" to="/grist">
-        //       <i className="fa fa-wrench"></i> GRiST
-        //     </NavLink>
-        //     <NavLink className="dropdown-item" activeClassName="active" to="/grace">
-        //       <i className="fa fa-sitemap"></i> GRaCE
-        //     </NavLink>
-        //   </div>
-        // </li>
-      );
+          </li>
+        );
+      }
+      // <li className="nav-item dropdown">
+      //   <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+      //     <i className="fa fa-link"></i> Applications
+      //   </a>
+      //   <div className="dropdown-menu">
+      //     <NavLink className="dropdown-item" activeClassName="active" to="/group">
+      //       <i className="fa fa-wrench"></i> Group
+      //     </NavLink>
+      //     <NavLink className="dropdown-item" activeClassName="active" to="/grist">
+      //       <i className="fa fa-wrench"></i> GRiST
+      //     </NavLink>
+      //     <NavLink className="dropdown-item" activeClassName="active" to="/grace">
+      //       <i className="fa fa-sitemap"></i> GRaCE
+      //     </NavLink>
+      //   </div>
+      // </li>
     }
   }
 

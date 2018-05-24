@@ -152,7 +152,7 @@ export default class Group extends Component {
                     <br />
                 </div>
                 <br />
-                <div className="list-group offset-1 col-md-8">
+                <div className="list-group offset-1 col-md-12">
                     {rows}
                 </div><br />
             </div>

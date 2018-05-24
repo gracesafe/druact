@@ -30,12 +30,12 @@ export default class Documents extends Component {
   updateSelectedDocument(event) {
     this.fetchDocument(event.target.getAttribute('data-value'));
   }
- 
+
   fetchDocumentTitles() {
     var self = this;
     console.log('https://eas-grist06.aston.ac.uk/drupal-api.php');
     var url = 'https://eas-grist06.aston.ac.uk/rest/content/file?_format=json';
-    url = 'https://eas-grist06.aston.ac.uk/drupal-api.php';
+    url = 'https://eas-grist06.aston.ac.uk/drupal-api.php?type=doc';
     doRequest(this, url, 'get', '', (function (result) {
       // console.log(result);
       self.setState({
@@ -59,8 +59,10 @@ export default class Documents extends Component {
     var rows = [];
     var self = this;
     this.state.documents.forEach(function (document, index) {
-      var title = document.field_description_value;
-      var nid = document.entity_id;
+      // var title = document.field_document_type_value;
+      var nid = document.field_document_author_value;
+      var title = document.title;
+      var desc = document.field_document_description_value
       var link = 'group?' + document.entity_id;
       // var title = document.title[0].value;
       // var nid = document.nid[0].value;
@@ -68,34 +70,36 @@ export default class Documents extends Component {
       // console.log(link);
       if (title.toLowerCase().indexOf(self.state.keyword.toLowerCase()) !== -1) {
         // var path = '/rest/entity/file/' + nid;
-        rows.push(<NavLink key={nid} data-value={nid} target="_blank" to={link} className="list-group-item list-group-item-action">{title}</NavLink>);
+        rows.push(<NavLink key={nid} data-value={nid} target="_blank" to={link} className="list-group-item list-group-item-action">
+        <em>{title}</em>&nbsp;{desc}
+        </NavLink>);
       }
     });
 
     return (
       <div className="row top-buffer">
-        <div className="col-md-4">
-          <h1>Documents</h1><br />
+        <div className="col">
+          <h2>Documents</h2><br />
         </div>
-        <div className="col-md-4">
+        <div className="col">
           <form>
             <div className="form-group">
-              <input name="keyword" value={this.state.keyword} onChange={this.updateSearchKeyword} type="text" className="form-control" placeholder="Search documents" />
+              <input name="keyword" value={this.state.keyword} onChange={this.updateSearchKeyword} type="text" className="form-control" placeholder="Search ..." />
             </div>
           </form>
         </div>
         <br />
-        <div className="list-group offset-1 col-md-8">
+        <div className="list-group col-md-10 offset-1 ">
           {rows}
-        </div><br />
-        {/* <div className="col-md-8">
+        </div>
+        <div className="col-md-8">
           <div className="card text-center">
             <div className="card-header">
               {this.state.document_title}
             </div>
             <div className="card-block" dangerouslySetInnerHTML={{ __html: this.state.document_body }} />
           </div>
-        </div> */}
+        </div>
       </div>
     );
   }
