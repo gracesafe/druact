@@ -128,7 +128,7 @@ export default class Groups extends Component {
             <button type="button" className="btn btn-success">New</button>
           </div>
           <br />
-          <div className="list-group offset-1 col-md-8">
+          <div className="list-group offset-1 col-md-12">
             {rows}
           </div><br />
           {/* <div className="col-md-8">
