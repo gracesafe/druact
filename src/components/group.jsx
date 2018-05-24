@@ -85,7 +85,7 @@ export default class Group extends Component {
         console.log(window.location.search);
         var id = window.location.search.replace('?', '')
         console.log(id);
-        var url = 'https://eas-grist06.aston.ac.uk/drupal-api.php?uid=' + localStorage.getItem('uid');
+        var url = 'https://eas-grist06.aston.ac.uk/drupal-api.php?type=group&uid=' + localStorage.getItem('uid');
         // if (id.length > 0) {
         //     url += "?" + id;
         // }

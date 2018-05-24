@@ -55,29 +55,34 @@ class Navbar extends Component {
     if (loggedIn) {
       if (groupAdmin) {
         return (
-          <span>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
-                <i className="fa fa-user"></i> Actions
+          <li className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+              <i className="fa fa-user"></i> Actions
               </a>
-              <div className="dropdown-menu">
-                <NavLink exact className="nav-link" activeClassName="active" to="/registration">
-                  <i className="fa fa-file"></i> User Registration
+            <div className="dropdown-menu">
+              <NavLink exact className="nav-item" activeClassName="active" to="/registration">
+                <i className="fa fa-file"></i> User Registration
+                </NavLink><br/>
+                <NavLink exact className="nav-item" activeClassName="active" to="/group">
+                <i className="fa fa-file"></i> Groups
                 </NavLink>
-                <NavLink exact className="nav-link" activeClassName="active" to="/group">
-                  <i className="fa fa-file"></i> Groups
-                </NavLink>
-              </div>
-            </li>
-          </span >
+            </div>
+          </li>
         );
       } else {
         return (
-          <li>
-            <NavLink exact className="nav-link" activeClassName="active" to="/group">
-              <i className="fa fa-file"></i> Groups
-          </NavLink>
-          </li>
+          <span>
+            <li>
+              <NavLink exact className="nav-link" activeClassName="active" to="/group">
+                <i className="fa fa-file"></i> Groups
+            </NavLink>
+            </li>
+            <li>
+              <NavLink exact className="nav-link" activeClassName="active" to="/group">
+                <i className="fa fa-file"></i> Groups
+            </NavLink>
+            </li>
+          </span>
         );
       }
       // <li className="nav-item dropdown">
@@ -120,6 +125,16 @@ class Navbar extends Component {
                     <i className="fa fa-home"></i> Home
                       {/* <img src='/public/imageslogo.png' className="img-fluid"/> */}
                   </NavLink>
+                </li>
+                <li>
+                  <NavLink exact className="nav-link" activeClassName="active" to="/news">
+                    <i className="fa fa-file"></i> News
+                    </NavLink>
+                </li>
+                <li>
+                  <NavLink exact className="nav-link" activeClassName="active" to="/timeline">
+                    <i className="fa fa-file"></i> GRiST Timeline
+                    </NavLink>
                 </li>
                 <li>
                   <NavLink exact className="nav-link" activeClassName="active" to="/documents">
