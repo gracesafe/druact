@@ -24,7 +24,8 @@ export default class Group extends Component {
             documents: [],
             document_title: '',
             document_body: '',
-            keyword: ''
+            keyword: '',
+            group_id: 0,
         };
 
         this.updateSearchKeyword = this.updateSearchKeyword.bind(this);
@@ -117,7 +118,7 @@ export default class Group extends Component {
         // this.fetchDocument();
     }
 
-    render() {
+    groupList(){
         var rows = [];
         var self = this;
         console.log(window.location.search.length);
@@ -163,6 +164,13 @@ export default class Group extends Component {
                 </div><br />
             </div>
         );
+    }
+    
+    render() {
+        var group_id = localStorage.getItem("group_id");
+        if (group_id === 0 ){
+            return this.groupList();
+        }
 
     }
 }
