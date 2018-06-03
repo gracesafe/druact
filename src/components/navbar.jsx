@@ -63,9 +63,6 @@ class Navbar extends Component {
               <NavLink exact className="nav-item" activeClassName="active" to="/registration">
                 <i className="fa fa-user"></i> User Registration
                 </NavLink><br />
-              <NavLink exact className="nav-item" activeClassName="active" to="/group">
-                <i className="fa fa-group"></i> Groups
-                </NavLink>
             </div>
           </li>
         );
@@ -77,21 +74,29 @@ class Navbar extends Component {
     }
   }
 
-  renderAppLinks() {
+  renderAssessmentLinks() {
     var loggedIn = localStorage.getItem('auth');
+    // var groupId = 19;
+    var url = 'https://eas-grist06.aston.ac.uk/org-launch-auto-login.php?group-nid=19&startMode=';
     if (loggedIn) {
       return (
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
-            <i className="fa fa-user"></i> Actions
+            <i className="fa fa-user"></i> New Assessment
               </a>
-          <div className="dropdown-menu">
-            <NavLink exact className="nav-item" activeClassName="active" to="/registration">
-              <i className="fa fa-user"></i> User Registration
-                </NavLink><br />
-            <NavLink exact className="nav-item" activeClassName="active" to="/group">
-              <i className="fa fa-group"></i> Groups
-                </NavLink>
+          <div className="dropdown-menu singleLineParent">
+            <span className="nav-item singlespanne"><a href={url + 1}>
+              My state of mind</a></span><br />
+            <span className="nav-item"><a href={url + 2}>
+              What's happening in my life right now </a></span><br />
+            <span className="nav-item"><a href={url + 3}>
+              What my health is like today</a></span><br />
+            <span className="nav-item"><a href={url + 4}>
+              My safety</a></span><br />
+            <span className="nav-item"><a href={url + 5}>
+              My wellbeing</a></span><br />
+            <span className="nav-item"><a href={url + 6}>
+              Overview of everything: past and present</a></span><br />
           </div>
         </li>
       );
@@ -102,29 +107,66 @@ class Navbar extends Component {
     }
   }
 
-render() {
+  renderProfileLinks() {
+    var loggedIn = localStorage.getItem('auth');
+    // var groupId = 19;
+    var url = 'https://eas-grist06.aston.ac.uk/org-launch-auto-login.php?group-nid=19&startMode=';
+    if (loggedIn) {
+      return (
+        <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+            <i className="fa fa-user"></i> My Profile
+              </a>
+          <div className="dropdown-menu singleLineParent">
+            <span className="nav-link"><a href={url + 7}>
+              My personal details</a></span><br />
+            <span className="nav-link"><a href={url + 8}>
+              My life journey</a></span><br />
+            <span className="nav-link"><a href={url + 9}>
+              My health and care</a></span><br />
+            <span className="nav-link"><a href={url + 10}>
+              My involvement with life and others</a></span><br />
+            <span className="nav-link"><a href={url + 11}>
+              My personalianty and way of thinking</a></span><br />
+          </div>
+        </li>
+      );
+    } else {
+      return (
+        <span />
+      );
+    }
+  }
 
-  // var loggedIn = localStorage.getItem('auth');
+  render() {
 
-  // if (loggedIn) {
+    // var loggedIn = localStorage.getItem('auth');
 
-  return (
-    <div className="row top-buffer">
-      <div className="col">
-        <img src="/images/grist_header.png" alt="Home" className="img-fluid stretch" />
-        <nav className="navbar navbar-toggleable-md navbar-inverse bg-success">
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li className="nav-item">
-                <NavLink exact className="nav-link" activeClassName="active" to="/">
-                  <i className="fa fa-home"></i> Home
+    // if (loggedIn) {
+
+    return (
+      <div className="row top-buffer">
+        <div className="col">
+          <img src="/images/grist_header.png" alt="Home" className="img-fluid stretch" />
+          <nav className="navbar navbar-toggleable-md navbar-inverse bg-success">
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li className="nav-item">
+                  <NavLink exact className="nav-link" activeClassName="active" to="/">
+                    <i className="fa fa-home"></i> Home
                       {/* <img src='/public/imageslogo.png' className="img-fluid"/> */}
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink exact className="nav-link" activeClassName="active" to="/group">
+                    <i className="fa fa-group"></i> Groups
                 </NavLink>
-              </li>
-              <li>
+                </li>
+
+                {/* <li>
                 <NavLink exact className="nav-link" activeClassName="active" to="/news">
                   <i className="fa fa-file"></i> News
                     </NavLink>
@@ -148,17 +190,18 @@ render() {
                 <NavLink exact className="nav-link" activeClassName="active" to="/home?about">
                   <i className="fa fa-info"></i> About
                     </NavLink>
-              </li>
-              {this.renderAppLinks()}
-              {this.renderAdminLinks()}
-              {this.renderUserLinks()}
-            </ul>
-          </div>
-        </nav>
+              </li> */}
+                {this.renderAssessmentLinks()}
+                {this.renderProfileLinks()}
+                {this.renderAdminLinks()}
+                {this.renderUserLinks()}
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
-    </div>
-  );
-}
+    );
+  }
   //   else {
   //     return (
   //       <div className="row top-buffer">

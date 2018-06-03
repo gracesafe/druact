@@ -19,3 +19,15 @@ $margin: 20px;
 .error {
   color: red;
 }
+
+.singleLine {
+  display: inline-block;
+  width: 100%;
+}
+
+.singleLineParent {
+  min-width: 150px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
