@@ -57,7 +57,7 @@ export default class Group extends Component {
         }
         var self = this;
         var url = 'https://eas-grist06.aston.ac.uk/drupal-api.php?group_id=' + id;
-        var data = {"uid": localStorage.getItem('uid')};
+        var data = { "uid": localStorage.getItem('uid') };
         doRequest(this, url, 'get', data, (function (result) {
             console.log(result);
             self.setState({
@@ -115,10 +115,10 @@ export default class Group extends Component {
     componentDidMount() {
         console.log("result");
         this.fetchDocumentTitles();
-        // this.fetchDocument();
+        this.fetchDocument();
     }
 
-    groupList(){
+    groupList() {
         var rows = [];
         var self = this;
         console.log(window.location.search.length);
@@ -165,11 +165,59 @@ export default class Group extends Component {
             </div>
         );
     }
-    
+
     render() {
         var group_id = localStorage.getItem("group_id");
-        if (group_id === 0 ){
-            return this.groupList();
+        if (group_id == null || group_id === 0 || group_id == undefined) {
+            var html = this.groupList();
+            console.log('group html' + html)
+            var rows = [];
+            var self = this;
+            console.log(window.location.search.length);
+            if (window.location.search.length === 0)
+                this.state.documents.forEach(function (document, index) {
+                    var title = document.field_description_value;
+                    var nid = document.entity_id;
+                    var link = document.entity_id;
+                    var group_content = document.field_body_value
+                    if (title.toLowerCase().indexOf(self.state.keyword.toLowerCase()) !== -1) {
+                        rows.push
+                            (
+                            <div className="col-md-8">
+                                <div className="card text-center">
+                                    <div className="card-header">
+                                        <form>
+                                            <div className="form-group">
+                                                {title}
+                                                {/* <button className="default pull-right">View</button> */}
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div className="card-block" dangerouslySetInnerHTML={{ __html: group_content }} />
+                                </div>
+                            </div>
+                            );
+                    }
+                });
+
+            return (
+                <div className="row top-buffer">
+                    <div className="col-md-4  offset-2">
+                        <form>
+                            <div className="form-group">
+                                <input name="keyword" value={this.state.keyword} onChange={this.updateSearchKeyword} type="text" className="form-control" placeholder="Search groups" />
+                            </div>
+                        </form>
+                        <br />
+                    </div>
+                    <br />
+                    <div className="list-group offset-1 col-md-12">
+                        {rows}
+                    </div><br />
+                </div>
+            );
+        } else {
+            return null;
         }
 
     }

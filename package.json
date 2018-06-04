@@ -4,6 +4,7 @@
   "private": false,
   "dependencies": {
     "axios": "^0.16.1",
+    "log4js": "^2.8.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router-dom": "^4.1.1",

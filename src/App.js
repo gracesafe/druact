@@ -24,8 +24,9 @@ import BrowserUtil from './components/research.jsx';
 import RegCode from './components/regcode.jsx';
 import GraceMenu from './components/graceMenu.jsx';
 import Group from './components/group';
-import News from './components/news';// import Page from './utils/page';
+import News from './components/news';
 import Timeline from './components/timeline';
+import ErrorBoundary from './utils/ErrorBoundary';
 // import Page from './utils/page';
 // import Config from './config';
 
@@ -33,12 +34,12 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      "username" : localStorage.getItem('username')
+      "username": localStorage.getItem('username')
       // config: File.open('./config') localStorage.getItem('username')
     };
   }
 
-  init(){
+  init() {
 
   }
 
@@ -46,10 +47,18 @@ export default class App extends Component {
     return (
       <Router history={browserHistory}>
         <div className="container">
-          <Navbar />
-          <GraceMenu />
-          <Route path="/group" component={Group} />
-          <Route path="/news" component={News} />
+          <ErrorBoundary>
+            <Navbar />
+          </ErrorBoundary>
+          <ErrorBoundary>
+            <GraceMenu />
+          </ErrorBoundary>
+          <ErrorBoundary>
+            <Route path="/group" component={Group} />
+          </ErrorBoundary>
+          <ErrorBoundary>
+            <Route path="/news" component={News} />
+          </ErrorBoundary>
           <Route path="/timeline" component={Timeline} />
           <Route path="/get" component={BrowserUtil} />
           <Route path="/user/profile" component={Profile} />
