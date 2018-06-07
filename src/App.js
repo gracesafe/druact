@@ -8,7 +8,7 @@ import {
 
 import Navbar from './components/navbar.jsx';
 // import GraceMenu from './components/graceMenu.jsx';
-// import Footer from './components/footer.jsx';
+import Footer from './components/footer.jsx';
 
 import Home from './components/home.jsx';
 import Articles from './components/articles.jsx';
@@ -24,6 +24,8 @@ import BrowserUtil from './components/research.jsx';
 import RegCode from './components/regcode.jsx';
 import GraceMenu from './components/graceMenu.jsx';
 import Group from './components/group';
+import News from './components/news';// import Page from './utils/page';
+import Timeline from './components/timeline';
 // import Page from './utils/page';
 // import Config from './config';
 
@@ -47,6 +49,8 @@ export default class App extends Component {
           <Navbar />
           <GraceMenu />
           <Route path="/group" component={Group} />
+          <Route path="/news" component={News} />
+          <Route path="/timeline" component={Timeline} />
           <Route path="/get" component={BrowserUtil} />
           <Route path="/user/profile" component={Profile} />
           <Route exact path="/" component={Home} />
@@ -60,7 +64,7 @@ export default class App extends Component {
           <Route path="/user/code" component={RegCode} />
           <Route path="/user/login" component={Login} />
           <Route path="/user/logout" component={Logout} />
-          {/* <Footer /> */}
+          <Footer />
         </div>
       </Router>
     );

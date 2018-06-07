@@ -24,7 +24,8 @@ export default class Group extends Component {
             documents: [],
             document_title: '',
             document_body: '',
-            keyword: ''
+            keyword: '',
+            group_id: 0,
         };
 
         this.updateSearchKeyword = this.updateSearchKeyword.bind(this);
@@ -38,10 +39,12 @@ export default class Group extends Component {
     }
 
     updateSelectedDocument(event) {
+        event.preven
         this.fetchDocument(event.target.getAttribute('data-value'));
     }
 
     fetchDocument(nid) {
+        console.log("fetchDocument" + nid);
         var id;
         if (nid !== undefined) {
             id = nid;
@@ -54,10 +57,12 @@ export default class Group extends Component {
         }
         var self = this;
         var url = 'https://eas-grist06.aston.ac.uk/drupal-api.php?group_id=' + id;
-        doRequest(this, url, 'get', '', (function (result) {
+        var data = {"uid": localStorage.getItem('uid')};
+        doRequest(this, url, 'get', data, (function (result) {
             console.log(result);
             self.setState({
                 // document_title: result.data["0"].field_description_value,
+                single: true,
                 document_body: result.data["0"].field_body_value
             });
         }), (function (result) {
@@ -81,12 +86,17 @@ export default class Group extends Component {
         console.log(window.location.search);
         var id = window.location.search.replace('?', '')
         console.log(id);
-        console.log('https://eas-grist06.aston.ac.uk/drupal-api.php');
-        var url = 'https://eas-grist06.aston.ac.uk/drupal-api.php';
+        var url = 'https://eas-grist06.aston.ac.uk/drupal-api.php?type=group&uid=' + localStorage.getItem('uid');
+        // if (id.length > 0) {
+        //     url += "?" + id;
+        // }
+        console.log(url);
         doRequest(this, url, 'get', '', (function (result) {
             // console.log(result);
             self.setState({
-                documents: result.data
+                documents: result.data,
+                document_body: result.data[0].field_body_value,
+                single: false
             });
         }), (function (result) {
             // console.log(result);
@@ -96,51 +106,71 @@ export default class Group extends Component {
         }));
     }
 
+    // showContent() {
+    //     this.state.document_body
+    //  onClick={self.updateSelectedDocument(document.entity_id)}
+
+    // }
+
     componentDidMount() {
-            console.log("result");
+        console.log("result");
         this.fetchDocumentTitles();
-        this.fetchDocument();
+        // this.fetchDocument();
     }
 
-    render() {
-
+    groupList(){
         var rows = [];
         var self = this;
-        this.state.documents.forEach(function (document, index) {
-            var title = document.field_description_value;
-            var nid = document.entity_id;
-            var link = 'group?' + document.entity_id;
-            if (title.toLowerCase().indexOf(self.state.keyword.toLowerCase()) !== -1) {
-                rows.push(<NavLink key={nid} data-value={nid} to={link} className="list-group-item list-group-item-action">{title}</NavLink>);
-            }
-        });
+        console.log(window.location.search.length);
+        if (window.location.search.length === 0)
+            this.state.documents.forEach(function (document, index) {
+                var title = document.field_description_value;
+                var nid = document.entity_id;
+                var link = document.entity_id;
+                var group_content = document.field_body_value
+                if (title.toLowerCase().indexOf(self.state.keyword.toLowerCase()) !== -1) {
+                    rows.push
+                        (
+                        <div className="col-md-8">
+                            <div className="card text-center">
+                                <div className="card-header">
+                                    <form>
+                                        <div className="form-group">
+                                            {title}
+                                            {/* <button className="default pull-right">View</button> */}
+                                        </div>
+                                    </form>
+                                </div>
+                                <div className="card-block" dangerouslySetInnerHTML={{ __html: group_content }} />
+                            </div>
+                        </div>
+                        );
+                }
+            });
 
         return (
             <div className="row top-buffer">
-                <div className="col-md-4">
-                    <h1>Groups</h1><br />
-                </div>
-                <div className="col-md-4">
+                <div className="col-md-4  offset-2">
                     <form>
                         <div className="form-group">
                             <input name="keyword" value={this.state.keyword} onChange={this.updateSearchKeyword} type="text" className="form-control" placeholder="Search groups" />
                         </div>
                     </form>
+                    <br />
                 </div>
                 <br />
-                <div className="col-md-8">
-                    <div className="card text-center">
-                        <div className="card-header">
-                            {this.state.document_title}
-                        </div>
-                        <div className="card-block" dangerouslySetInnerHTML={{ __html: this.state.document_body }} />
-                    </div>
-                </div>
-                <br />
-                <div className="list-group offset-1 col-md-8">
+                <div className="list-group offset-1 col-md-12">
                     {rows}
                 </div><br />
             </div>
         );
+    }
+    
+    render() {
+        var group_id = localStorage.getItem("group_id");
+        if (group_id === 0 ){
+            return this.groupList();
+        }
+
     }
 }

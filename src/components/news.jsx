@@ -33,9 +33,9 @@ export default class Documents extends Component {
 
   fetchDocumentTitles() {
     var self = this;
-    console.log('https://eas-grist06.aston.ac.uk/drupal-api.php');
     var url = 'https://eas-grist06.aston.ac.uk/rest/content/file?_format=json';
     url = 'https://eas-grist06.aston.ac.uk/drupal-api.php?type=doc';
+    console.log("Getting data from: " + url);
     doRequest(this, url, 'get', '', (function (result) {
       // console.log(result);
       self.setState({
@@ -50,11 +50,14 @@ export default class Documents extends Component {
   }
 
   componentDidMount() {
+    console.log (window.location.search);
+
     this.fetchDocumentTitles();
     // this.fetchDocument();
   }
 
   render() {
+    console.log (window.location.search);
 
     var rows = [];
     var documentTypes = [];
@@ -69,8 +72,8 @@ export default class Documents extends Component {
       var docType = document.field_document_type_value;
       if (documentTypes.indexOf(<option value={docType}>{docType}</option>) < 0)
         documentTypes.push(<option value={docType}>{docType}</option>);
-      console.log(docType)
-      console.log(documentTypes.indexOf(docType))
+        console.log(docType)
+        console.log(documentTypes.indexOf(docType))
       // var title = document.title[0].value;
       // var nid = document.nid[0].value;
       // var link = document.field_link[0].uri;
@@ -78,10 +81,7 @@ export default class Documents extends Component {
       if (title.toLowerCase().indexOf(self.state.keyword.toLowerCase()) !== -1) {
         // var path = '/rest/entity/file/' + nid;
         rows.push(<NavLink key={nid} data-value={nid} target="_blank" to={link} className="list-group-item list-group-item-action">
-          <div className="row">
-            <em>{title}</em>&nbsp;{docType}
-          </div>
-          {desc}
+          <em>{title}</em>&nbsp;{docType}<br/>{desc}
         </NavLink>);
       }
     });

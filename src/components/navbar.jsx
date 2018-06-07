@@ -49,32 +49,91 @@ class Navbar extends Component {
     }
   }
 
-  renderAppLinks() {
+  renderAdminLinks() {
     var loggedIn = localStorage.getItem('auth');
+    var groupAdmin = localStorage.getItem('group_administrator');
+    if (loggedIn) {
+      if (groupAdmin) {
+        return (
+          <li className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+              <i className="fa fa-user"></i> Admin
+              </a>
+            <div className="dropdown-menu">
+              <NavLink exact className="nav-item" activeClassName="active" to="/registration">
+                <i className="fa fa-user"></i> User Registration
+                </NavLink><br />
+            </div>
+          </li>
+        );
+      } else {
+        return (
+          <span />
+        );
+      }
+    }
+  }
+
+  renderAssessmentLinks() {
+    var loggedIn = localStorage.getItem('auth');
+    // var groupId = 19;
+    var url = 'https://eas-grist06.aston.ac.uk/org-launch-auto-login.php?group-nid=19&startMode=';
     if (loggedIn) {
       return (
-        <li>
-          <NavLink exact className="nav-link" activeClassName="active" to="/group">
-            <i className="fa fa-file"></i> Groups
-          </NavLink>
+        <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+            <i className="fa fa-user"></i> New Assessment
+              </a>
+          <div className="dropdown-menu singleLineParent">
+            <span className="nav-item singlespanne"><a href={url + 1}>
+              My state of mind</a></span><br />
+            <span className="nav-item"><a href={url + 2}>
+              What's happening in my life right now </a></span><br />
+            <span className="nav-item"><a href={url + 3}>
+              What my health is like today</a></span><br />
+            <span className="nav-item"><a href={url + 4}>
+              My safety</a></span><br />
+            <span className="nav-item"><a href={url + 5}>
+              My wellbeing</a></span><br />
+            <span className="nav-item"><a href={url + 6}>
+              Overview of everything: past and present</a></span><br />
+          </div>
         </li>
+      );
+    } else {
+      return (
+        <span />
+      );
+    }
+  }
 
-        // <li className="nav-item dropdown">
-        //   <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
-        //     <i className="fa fa-link"></i> Applications
-        //   </a>
-        //   <div className="dropdown-menu">
-        //     <NavLink className="dropdown-item" activeClassName="active" to="/group">
-        //       <i className="fa fa-wrench"></i> Group
-        //     </NavLink>
-        //     <NavLink className="dropdown-item" activeClassName="active" to="/grist">
-        //       <i className="fa fa-wrench"></i> GRiST
-        //     </NavLink>
-        //     <NavLink className="dropdown-item" activeClassName="active" to="/grace">
-        //       <i className="fa fa-sitemap"></i> GRaCE
-        //     </NavLink>
-        //   </div>
-        // </li>
+  renderProfileLinks() {
+    var loggedIn = localStorage.getItem('auth');
+    // var groupId = 19;
+    var url = 'https://eas-grist06.aston.ac.uk/org-launch-auto-login.php?group-nid=19&startMode=';
+    if (loggedIn) {
+      return (
+        <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+            <i className="fa fa-user"></i> My Profile
+              </a>
+          <div className="dropdown-menu singleLineParent">
+            <span className="nav-link"><a href={url + 7}>
+              My personal details</a></span><br />
+            <span className="nav-link"><a href={url + 8}>
+              My life journey</a></span><br />
+            <span className="nav-link"><a href={url + 9}>
+              My health and care</a></span><br />
+            <span className="nav-link"><a href={url + 10}>
+              My involvement with life and others</a></span><br />
+            <span className="nav-link"><a href={url + 11}>
+              My personalianty and way of thinking</a></span><br />
+          </div>
+        </li>
+      );
+    } else {
+      return (
+        <span />
       );
     }
   }
@@ -101,22 +160,40 @@ class Navbar extends Component {
                       {/* <img src='/public/imageslogo.png' className="img-fluid"/> */}
                   </NavLink>
                 </li>
-                <li>
-                  <NavLink exact className="nav-link" activeClassName="active" to="/documents">
-                    <i className="fa fa-file"></i> Documents
-                    </NavLink>
-                </li>
                 <li className="nav-item">
-                  <NavLink exact className="nav-link" activeClassName="active" to="/contact">
-                    <i className="fa fa-envelope"></i> Contact Us
-                    </NavLink>
+                  <NavLink exact className="nav-link" activeClassName="active" to="/group">
+                    <i className="fa fa-group"></i> Groups
+                </NavLink>
                 </li>
-                <li className="nav-item">
-                  <NavLink exact className="nav-link" activeClassName="active" to="/home?about">
-                    <i className="fa fa-info"></i> About
+
+                {/* <li>
+                <NavLink exact className="nav-link" activeClassName="active" to="/news">
+                  <i className="fa fa-file"></i> News
                     </NavLink>
-                </li>
-                {this.renderAppLinks()}
+              </li>
+              <li>
+                <NavLink exact className="nav-link" activeClassName="active" to="/timeline">
+                  <i className="fa fa-file"></i> GRiST Timeline
+                    </NavLink>
+              </li>
+              <li>
+                <NavLink exact className="nav-link" activeClassName="active" to="/documents">
+                  <i className="fa fa-file"></i> Documents
+                    </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink exact className="nav-link" activeClassName="active" to="/contact">
+                  <i className="fa fa-envelope"></i> Contact Us
+                    </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink exact className="nav-link" activeClassName="active" to="/home?about">
+                  <i className="fa fa-info"></i> About
+                    </NavLink>
+              </li> */}
+                {this.renderAssessmentLinks()}
+                {this.renderProfileLinks()}
+                {this.renderAdminLinks()}
                 {this.renderUserLinks()}
               </ul>
             </div>
