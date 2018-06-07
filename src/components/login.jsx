@@ -131,7 +131,7 @@ class Login extends Component {
 
     if (this.state.redirect) {
       return (
-        <Redirect to="/" />
+        <Redirect to="/home" />
       );
     }
 
