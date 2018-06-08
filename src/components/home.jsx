@@ -54,9 +54,9 @@ class Home extends Component {
             <div className="col-md-2"><SiteMenu /></div>
             <div className="col-md-10">
               <div className="card text-center">
-                <div className="card-header">
+                {/* <div className="card-header">
                   {this.state.article_title}
-                </div>
+                </div> */}
                 <div className="card-block" dangerouslySetInnerHTML={{ __html: this.state.article_body }} />
               </div>
             </div>
