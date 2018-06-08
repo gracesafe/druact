@@ -40,11 +40,21 @@ class Navbar extends Component {
     }
     else {
       return (
-        <li className="nav-item">
-          <NavLink exact className="nav-link" activeClassName="active" to="/user/login">
-            <i className="fa fa-sign-in"></i> Login
-          </NavLink>
-        </li>
+        <span>
+          <li className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown">
+              <i className="fa fa-user"></i> User Account
+            </a>
+            <div className="dropdown-menu">
+              <NavLink exact className="dropdown-item" activeClassName="active" to="/user/login">
+                <i className="fa fa-sign-in"></i> Login
+                </NavLink>
+              <NavLink className="dropdown-item" activeClassName="active" to="/user/register">
+                <i className="fa fa-user-circle"></i> Register
+              </NavLink>
+            </div>
+          </li>
+        </span>
       );
     }
   }
@@ -63,7 +73,13 @@ class Navbar extends Component {
               <NavLink exact className="nav-item" activeClassName="active" to="/registration">
                 <i className="fa fa-user"></i> User Registration
                 </NavLink><br />
+              <li className="nav-item">
+                <NavLink exact className="nav-item" activeClassName="active" to="/group">
+                  <i className="fa fa-group"></i> Groups
+                </NavLink>
+              </li>
             </div>
+
           </li>
         );
       } else {
@@ -160,27 +176,22 @@ class Navbar extends Component {
                       {/* <img src='/public/imageslogo.png' className="img-fluid"/> */}
                   </NavLink>
                 </li>
-                <li className="nav-item">
-                  <NavLink exact className="nav-link" activeClassName="active" to="/group">
-                    <i className="fa fa-group"></i> Groups
-                </NavLink>
-                </li>
 
-                {/* <li>
+                <li>
                 <NavLink exact className="nav-link" activeClassName="active" to="/news">
                   <i className="fa fa-file"></i> News
                     </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink exact className="nav-link" activeClassName="active" to="/timeline">
                   <i className="fa fa-file"></i> GRiST Timeline
                     </NavLink>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <NavLink exact className="nav-link" activeClassName="active" to="/documents">
                   <i className="fa fa-file"></i> Documents
                     </NavLink>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <NavLink exact className="nav-link" activeClassName="active" to="/contact">
                   <i className="fa fa-envelope"></i> Contact Us
@@ -188,9 +199,9 @@ class Navbar extends Component {
               </li>
               <li className="nav-item">
                 <NavLink exact className="nav-link" activeClassName="active" to="/home?about">
-                  <i className="fa fa-info"></i> About
+                  <i className="fa fa-info"></i> About Us
                     </NavLink>
-              </li> */}
+              </li>
                 {this.renderAssessmentLinks()}
                 {this.renderProfileLinks()}
                 {this.renderAdminLinks()}

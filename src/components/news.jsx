@@ -34,7 +34,7 @@ export default class Documents extends Component {
   fetchDocumentTitles() {
     var self = this;
     var url = 'https://eas-grist06.aston.ac.uk/rest/content/file?_format=json';
-    url = 'https://eas-grist06.aston.ac.uk/drupal-api.php?type=doc';
+    url = 'https://eas-grist06.aston.ac.uk/drupal-api.php?type=news';
     console.log("Getting data from: " + url);
     doRequest(this, url, 'get', '', (function (result) {
       // console.log(result);
