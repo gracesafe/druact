@@ -26,8 +26,9 @@ import GraceMenu from './components/graceMenu.jsx';
 import Group from './components/group';
 import News from './components/news';
 import Timeline from './components/timeline';
+import Tree from './components/tree';
 import ErrorBoundary from './utils/ErrorBoundary';
-// import Page from './utils/page';
+import Page from './utils/page';
 // import Config from './config';
 
 export default class App extends Component {
@@ -59,6 +60,8 @@ export default class App extends Component {
           <ErrorBoundary>
             <Route path="/news" component={News} />
           </ErrorBoundary>
+          <Route path="/page" component={Page} />
+          <Route path="/tree" component={Tree} />
           <Route path="/timeline" component={Timeline} />
           <Route path="/get" component={BrowserUtil} />
           <Route path="/user/profile" component={Profile} />
