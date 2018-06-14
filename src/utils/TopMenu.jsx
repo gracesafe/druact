@@ -19,6 +19,11 @@ export default class TopMenu extends Component {
         let menuItems = [];
 
         // add anonymous menu items for the top menu
+        siteMap.forEach(function (page, index) {
+            if (page.roles.includes('anonymous')){
+                menuItems.push(page.name)
+            }
+        });
         
         // add authenticated menu items for the top menu
         if (loggedIn) {
@@ -47,19 +52,3 @@ export default class TopMenu extends Component {
         );
     }
 }
-    /* <li className="nav-item">
-    <NavLink exact className="nav-link" activeClassName="active" to="/">
-        <i className="fa fa-home"></i> Home
-{/* <img src='/public/imageslogo.png' className="img-fluid"/> */
-    /* </NavLink> */
-    /* </li>
-    <li className="nav-item">
-        <NavLink exact className="nav-link" activeClassName="active" to="/group">
-            <i className="fa fa-group"></i> Groups
-</NavLink>
-    </li>
-
-    {this.renderAssessmentLinks()}
-    {this.renderProfileLinks()}
-    {this.renderAdminLinks()}
-    {this.renderUserLinks()} */
