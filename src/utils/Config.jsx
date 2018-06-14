@@ -1,14 +1,7 @@
 import React, { Component } from 'react';
-// import axios from 'axios';
 import doRequest from "../utils/request";
 
-import {
-    NavLink
-} from 'react-router-dom';
-import ActionBar from './ActionBar';
-import Config from './Config';
-
-export default class Page extends Component {
+export default class Config extends Component {
 
     constructor() {
         super();
@@ -30,17 +23,6 @@ export default class Page extends Component {
         this.updateSearchKeyword = this.updateSearchKeyword.bind(this);
         this.updateSelectedDocument = this.updateSelectedDocument.bind(this);
     }
-
-    updateSearchKeyword(event) {
-        this.setState({
-            'keyword': event.target.value
-        })
-    }
-
-    updateSelectedDocument(event) {
-        this.fetchDocument(event.target.getAttribute('data-value'));
-    }
-
 
     fetchDocumentTitles() {
         var self = this;
@@ -64,7 +46,6 @@ export default class Page extends Component {
     }
 
     render() {
-
         var rows = [];
         var self = this;
         // this.state.documents.forEach(function (document, index) {

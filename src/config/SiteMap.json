@@ -4,8 +4,28 @@
   "apiUrl": "https://eas-grist06.aston.ac.uk",
   "baseUrl": "http://localhost:3000",
   "pages": [{
+      "text": "Home",
+      "menu": "top",
+      "icon": "fa-home",
+      "weight": "0",
+      "component": "ContentItem",
+      "views": ["item"],
+      "url": "/",
+      "roles": ["anonymous"],
+      "title": "Home Page",
+      "dataUri": "/rest/content?_format=json",
+      "allowItem": "true",
+      "components": [{
+          "type": "SideMenu"
+        },
+        {
+          "type": "textbox",
+          "text": "data.content"
+        }
+      ]
+    }, {
       "text": "Groups",
-      "menu" : "top",
+      "menu": "top",
       "icon": "fa-group",
       "weight": "1",
       "component": "SearchableDataList",
@@ -13,7 +33,7 @@
       "url": "/group",
       "roles": ["authenticated"],
       "title": "My Groups",
-      "dataUri": "/drupal-api.php",
+      "dataUri": "/drupal-api.php?type=group",
       "allowItem": "true",
       "components": [{
           "type": "SideMenu"
@@ -32,17 +52,33 @@
     },
     {
       "text": "News",
-      "menu" : "side",
+      "menu": "side",
       "icon": "fa-event",
       "weight": "2",
-      "parent": "",
-      "component": "News",
+      "component": "SearchableDataList",
       "url": "/news",
-      "roles": ["anonymous"]
+      "roles": ["anonymous"],
+      "title": "Site News",
+      "dataUri": "/drupal-api.php?type=news",
+      "allowItem": "true",
+      "components": [{
+          "type": "SideMenu"
+        },
+        {
+          "ref": "searchString",
+          "type": "textbox",
+          "text": "Search news"
+        },
+        {
+          "type": "button",
+          "text": "Search",
+          "onclick": "this.UpdateDataList"
+        }
+      ]
     },
     {
       "text": "User Registration",
-      "menu" : "top",
+      "menu": "top",
       "icon": "fa-user",
       "weight": "3",
       "parent": "",
@@ -52,7 +88,7 @@
     },
     {
       "text": "GRiST Timeline",
-      "menu" : "side",
+      "menu": "side",
       "icon": "fa-calendar",
       "weight": "4",
       "parent": "",
@@ -62,7 +98,7 @@
     },
     {
       "text": "Contact Us",
-      "menu" : "side",
+      "menu": "side",
       "icon": "fa-mail",
       "weight": "5",
       "parent": "",
@@ -72,7 +108,7 @@
     },
     {
       "text": "About Us",
-      "menu" : "side",
+      "menu": "side",
       "icon": "fa-info",
       "weight": "6",
       "parent": "",
@@ -82,7 +118,7 @@
     },
     {
       "text": "Documents",
-      "menu" : "side",
+      "menu": "side",
       "icon": "fa-file",
       "weight": "7",
       "parent": "",

@@ -27,9 +27,9 @@ import Group from './components/group';
 import News from './components/news';
 import Timeline from './components/timeline';
 import Tree from './components/tree';
-import ErrorBoundary from './utils/ErrorBoundary';
+// import ErrorBoundary from './utils/ErrorBoundary';
 import Page from './utils/page';
-// import Config from './config';
+import Config from './utils/Config';
 
 export default class App extends Component {
   constructor(props) {
@@ -48,36 +48,28 @@ export default class App extends Component {
     return (
       <Router history={browserHistory}>
         <div className="container">
-          <ErrorBoundary>
             <Navbar />
-          </ErrorBoundary>
-          <ErrorBoundary>
             <GraceMenu />
-          </ErrorBoundary>
-          <ErrorBoundary>
             <Route path="/group" component={Group} />
-          </ErrorBoundary>
-          <ErrorBoundary>
             <Route path="/news" component={News} />
-          </ErrorBoundary>
-          <Route path="/page" component={Page} />
-          <Route path="/tree" component={Tree} />
-          <Route path="/timeline" component={Timeline} />
-          <Route path="/get" component={BrowserUtil} />
-          <Route path="/user/profile" component={Profile} />
-          <Route exact path="/" component={Home} />
-          <Route path="/home" component={Home} />
-          <Route path="/documents" component={Documents} />
-          <Route path="/assessment" component={Assessment} />
-          <Route path="/articles/:id?" component={Articles} />
-          <Route path="/about" component={About} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/user/register" component={Register} />
-          <Route path="/user/code" component={RegCode} />
-          <Route path="/user/login" component={Login} />
-          <Route path="/user/logout" component={Logout} />
-          <Footer />
-        </div>
+            <Route path="/page" component={Page} />
+            <Route path="/tree" component={Tree} />
+            <Route path="/timeline" component={Timeline} />
+            <Route path="/get" component={BrowserUtil} />
+            <Route path="/user/profile" component={Profile} />
+            <Route exact path="/" component={Home} />
+            <Route path="/home" component={Home} />
+            <Route path="/documents" component={Documents} />
+            <Route path="/assessment" component={Assessment} />
+            <Route path="/articles/:id?" component={Articles} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
+            <Route path="/user/register" component={Register} />
+            <Route path="/user/code" component={RegCode} />
+            <Route path="/user/login" component={Login} />
+            <Route path="/user/logout" component={Logout} />
+            <Footer />
+          </div>
       </Router>
     );
   }
